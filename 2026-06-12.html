@@ -1,316 +1,376 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>주간 Etsy 트렌드 리포트 · 2026.06.12</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이번 주 미국에서 잘 팔리는 것 — 2026-06-12</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-img,svg{display:block;max-width:100%}
 :root{
-  --display:'Black Han Sans',sans-serif;
-  --sans:'Noto Sans KR',system-ui,sans-serif;
-  --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --muted:#6E6258; --line:#EADBC8;
-  --digital:#0B6E99; --physical:#9B2D6B; --trend:#D24A2E; --gold:#C98A12;
-  --digital-s:#E3F0F6; --physical-s:#F7E6F0; --trend-s:#FBE6DF;
+  --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --muted:#6B5D52;
+  --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+  --green:#2E9E5B; --red:#D23B3B; --orange:#E8851A;
+  --line:#EADcCB;
 }
-body{font-family:var(--sans);background:#F1E7DA;color:var(--ink);
-  display:flex;justify-content:center;padding:34px 16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.canvas{width:1240px;max-width:100%;background:var(--bg);border-radius:28px;overflow:hidden;
-  box-shadow:0 18px 70px rgba(60,40,20,.16)}
-.pad{padding:0 72px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;background:var(--bg)}
+.han{font-family:'Black Han Sans',sans-serif;font-weight:400;letter-spacing:.5px}
 a{color:inherit;text-decoration:none}
 
-/* ===== HEADER ===== */
-header{background:#211913;color:#fff;padding:60px 72px 54px;position:relative;border-top:7px solid var(--trend)}
-.kick{font-weight:900;letter-spacing:.32em;font-size:14px;color:#F0A58E}
-header h1{font-family:var(--display);font-size:74px;line-height:1;margin:16px 0 14px;letter-spacing:-.01em}
-.subtitle{font-size:19px;font-weight:500;color:#E9DCCB;max-width:760px}
-.datechip{position:absolute;top:60px;right:72px;background:#ffffff14;border:1.5px solid #ffffff3a;
-  padding:12px 20px;border-radius:999px;font-weight:900;font-size:16px;letter-spacing:.02em}
-.hcta{display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:var(--trend);color:#fff;
-  font-weight:900;font-size:16px;padding:14px 24px;border-radius:14px;transition:.2s}
-.hcta:hover{transform:translateY(-2px);background:#e85636;box-shadow:0 10px 26px rgba(210,74,46,.4)}
+/* HEADER */
+header{background:var(--ink);color:#FFF3E6;padding:46px 40px 40px;border-top:10px solid var(--ds);position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(210,74,46,.35),transparent 70%)}
+.kicker{font-size:14px;letter-spacing:4px;color:var(--gold);font-weight:700;margin-bottom:14px}
+header h1{font-size:60px;line-height:1.02;color:#FFFFFF;margin-bottom:16px}
+header h1 .hl{color:var(--ds)}
+.sub{font-size:18px;color:#E7D6C6;max-width:760px}
+.datechip{display:inline-block;margin-top:20px;background:var(--gold);color:#231a12;font-weight:900;font-size:15px;padding:8px 18px;border-radius:40px;font-family:'Black Han Sans'}
+.weektag{display:inline-block;margin-left:8px;background:rgba(255,255,255,.12);color:#FFE9D5;font-weight:700;font-size:14px;padding:8px 16px;border-radius:40px}
 
-/* ===== HERO STATS ===== */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
-.stat{background:var(--paper);border:2px solid var(--line);border-radius:20px;padding:26px 24px}
-.stat .num{font-family:var(--display);font-size:50px;line-height:.95}
-.stat:nth-child(1) .num{color:var(--digital)} .stat:nth-child(2) .num{color:var(--physical)}
-.stat:nth-child(3) .num{color:var(--trend)} .stat:nth-child(4) .num{color:var(--gold)}
-.stat .lbl{font-size:15px;color:var(--muted);font-weight:700;margin-top:12px;line-height:1.4}
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:28px 40px 8px;background:var(--bg)}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 18px;text-align:center;box-shadow:0 6px 18px rgba(120,80,40,.06)}
+.kpi .lab{font-size:13px;color:var(--muted);font-weight:700;margin-bottom:8px;min-height:34px}
+.kpi .num{font-family:'Black Han Sans';font-size:40px;line-height:1;color:var(--ds)}
+.kpi.e .num{color:var(--etd)}
+.kpi .wow{font-size:12.5px;font-weight:700;margin-top:8px;color:var(--muted)}
+.up{color:var(--green)} .down{color:var(--red)} .new{color:var(--orange)}
 
-/* ===== SECTION ===== */
-section{padding:62px 0 6px}
-.shead{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
-.snum{font-family:var(--display);font-size:34px;line-height:1}
-.stitle{font-family:var(--display);font-size:36px;line-height:1.05;letter-spacing:-.01em}
-.sdesc{font-size:16px;color:var(--muted);font-weight:600;margin:6px 0 30px}
-.zbar{height:6px;border-radius:3px;margin-bottom:30px}
-.z-dig .snum,.z-dig .stitle{color:var(--digital)} .z-dig .zbar{background:var(--digital)}
-.z-phy .snum,.z-phy .stitle{color:var(--physical)} .z-phy .zbar{background:var(--physical)}
-.z-tr .snum,.z-tr .stitle{color:var(--trend)} .z-tr .zbar{background:var(--trend)}
-.subh{font-weight:900;font-size:19px;margin:38px 0 18px;display:flex;align-items:center;gap:11px}
-.subh .tag{font-size:13px;font-weight:800;color:#fff;padding:4px 11px;border-radius:8px}
-.seemore{margin-left:auto;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:5px;
-  padding:8px 14px;border-radius:10px;border:2px solid var(--line);transition:.2s}
-.seemore:hover{border-color:currentColor}
-
-/* ===== PRODUCT CARD GRID ===== */
-.pgrid{display:grid;gap:20px}
-.g5{grid-template-columns:repeat(5,1fr)} .g3{grid-template-columns:repeat(3,1fr)}
-.pcard{background:var(--bg);border:2px solid var(--line);border-radius:18px;overflow:hidden;
-  display:flex;flex-direction:column;transition:.22s}
-.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(60,40,20,.16);border-color:#dcc6aa}
-.pcard .thumb{position:relative;aspect-ratio:1/1;background:var(--paper) center/cover}
-.pcard .thumb img{width:100%;height:100%;object-fit:cover}
-.rankbadge{position:absolute;top:10px;left:10px;font-family:var(--display);font-size:18px;color:#fff;
-  width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center}
-.trbadge{position:absolute;top:10px;right:10px;font-weight:900;font-size:13px;padding:5px 10px;border-radius:9px;
-  background:#fff;color:var(--trend);box-shadow:0 3px 10px rgba(0,0,0,.12)}
-.trbadge.flat{color:var(--muted)} .trbadge.up{color:#1f7a4d}
-.pbody{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
-.ptitle{font-size:14.5px;font-weight:700;line-height:1.32;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.pmeta{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
-.pshop{font-size:12.5px;font-weight:700;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
-.psales{font-family:var(--display);font-size:24px;line-height:.9;text-align:right}
-.psales small{display:block;font-family:var(--sans);font-size:11px;color:var(--muted);font-weight:700;margin-top:3px}
-.z-dig .psales{color:var(--digital)} .z-phy .psales{color:var(--physical)} .z-tr .psales{color:var(--trend)}
-.z-dig .rankbadge{background:var(--digital)} .z-phy .rankbadge{background:var(--physical)} .z-tr .rankbadge{background:var(--trend)}
-
-/* ===== CHIPS ===== */
-.chips{display:flex;flex-wrap:wrap;gap:11px}
-.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:999px;
-  padding:11px 18px;font-weight:800;font-size:15px;transition:.18s;background:var(--bg)}
-.chip:hover{transform:translateY(-2px)}
-.chip .arr{opacity:.5;font-weight:900}
-.z-dig .chip:hover{border-color:var(--digital);background:var(--digital-s)}
-.chip .sc{background:var(--digital);color:#fff;border-radius:999px;font-size:12px;font-weight:900;padding:2px 9px}
-.note{font-size:15px;font-weight:600;line-height:1.55;padding:16px 20px;border-radius:14px;margin-top:18px}
-.z-dig .note{background:var(--digital-s);border-left:5px solid var(--digital)}
-
-/* opp cards */
-.opps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.opp{display:block;background:var(--bg);border:2px solid var(--line);border-radius:16px;padding:18px 20px;transition:.2s}
-.opp:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(60,40,20,.12);border-color:var(--digital)}
-.opp .ot{font-weight:900;font-size:16.5px;display:flex;align-items:center;justify-content:space-between;gap:8px}
-.opp .ot .arr{color:var(--digital);font-size:18px}
-.opp p{font-size:14px;color:var(--muted);font-weight:600;margin-top:7px;line-height:1.5}
-.opp .hl{color:var(--digital);font-weight:900}
-
-/* ===== SEASON ===== */
-.season{display:flex;flex-direction:column;gap:14px}
-.srow{display:grid;grid-template-columns:16px 1fr auto auto;gap:18px;align-items:center;
-  background:var(--bg);border:2px solid var(--line);border-radius:16px;padding:18px 22px;transition:.2s}
-.srow:hover{border-color:#dcc6aa;transform:translateX(4px)}
-.led{width:16px;height:16px;border-radius:50%}
-.led-r{background:#d33b2f;box-shadow:0 0 0 5px #d33b2f24} .led-g{background:#1f7a4d;box-shadow:0 0 0 5px #1f7a4d24} .led-a{background:#d39a1f;box-shadow:0 0 0 5px #d39a1f24}
-.s-when{font-weight:900;font-size:16.5px;margin-bottom:3px} .s-desc{font-size:14px;color:var(--muted);font-weight:600;line-height:1.4}
-.urg{font-weight:900;font-size:13px;padding:7px 14px;border-radius:999px;white-space:nowrap}
-.urg.r{background:#f8ddd8;color:#bb3122} .urg.g{background:#dff0e6;color:#1f7a4d} .urg.a{background:#f8eed3;color:#9a7314}
-.slink{font-weight:900;font-size:13.5px;color:var(--trend);white-space:nowrap;border:2px solid var(--trend-s);padding:7px 13px;border-radius:10px}
-.slink:hover{background:var(--trend-s)}
-
-/* popculture row */
-.pc{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.pcc{display:flex;gap:16px;align-items:center;background:var(--trend-s);border:2px solid #f3cfc3;border-radius:16px;padding:14px 16px;transition:.2s}
-.pcc:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(210,74,46,.18)}
-.pcc img{width:74px;height:74px;border-radius:12px;object-fit:cover;flex:none;background:#fff}
-.pcc b{font-size:16px;font-weight:900} .pcc p{font-size:13.5px;color:var(--muted);font-weight:600;margin-top:4px;line-height:1.4}
-.pcc .arr{margin-left:auto;color:var(--trend);font-size:22px;font-weight:900}
-
-/* insights */
-.insights{background:#211913;color:#fff;border-radius:24px;padding:42px 48px;margin:60px 0 0}
-.insights h3{font-family:var(--display);font-size:30px;margin-bottom:24px;color:#F0A58E}
-.iitem{display:flex;gap:16px;margin-bottom:18px;font-size:17px;font-weight:600;line-height:1.5;color:#F2E8DB}
-.iitem .n{flex:none;width:30px;height:30px;border-radius:9px;background:var(--trend);color:#fff;font-family:var(--display);
-  font-size:17px;display:flex;align-items:center;justify-content:center}
-.iitem b{color:#fff;font-weight:900}
-
-footer{padding:34px 72px 44px;color:var(--muted);font-size:14px;font-weight:600;line-height:1.7;border-top:2px solid var(--line);margin-top:40px}
-footer b{color:var(--ink)}
-
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+/* SECTIONS */
+section{padding:34px 40px}
+.partbar{display:flex;align-items:center;gap:14px;margin:8px 0 26px}
+.diamond{font-size:22px}
+.partbar h2{font-family:'Black Han Sans';font-size:30px}
+.pa .partbar h2,.pa .diamond{color:var(--ds)}
+.pb .partbar h2,.pb .diamond{color:var(--etp)}
+.partbar .pill{margin-left:auto;font-size:12px;font-weight:700;color:#fff;padding:6px 14px;border-radius:30px}
+.pa .pill{background:var(--ds)} .pb .pill{background:var(--etp)}
+.block{margin-bottom:34px}
+.block h3{font-family:'Black Han Sans';font-size:21px;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.block h3 .n{background:var(--ink);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 28px}
+.reveal{opacity:0;transform:translateY(22px);transition:all .7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
-@media(max-width:700px){.pad{padding:0 24px}header{padding:40px 24px}.datechip{position:static;display:inline-block;margin-bottom:14px}
-.stats,.g5,.g3,.opps,.pc{grid-template-columns:1fr 1fr}header h1{font-size:46px}}
+
+/* category rank */
+.ranks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rank{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--ds);border-radius:14px;padding:16px 18px}
+.rank .rk{font-family:'Black Han Sans';font-size:15px;color:var(--ds)}
+.rank .rt{font-weight:900;font-size:17px;margin:4px 0}
+.rank .rd{font-size:13.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:20px;margin-top:8px}
+.tag.u{background:#E2F5E9;color:var(--green)} .tag.d{background:#FBE3E3;color:var(--red)} .tag.n{background:#FDEBD6;color:var(--orange)}
+
+/* why cards */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.whyc{background:#FFFFFF;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 4px 14px rgba(120,80,40,.05)}
+.whyc .ic{font-size:28px} .whyc .wt{font-weight:900;font-size:16px;margin:8px 0 6px} .whyc .wd{font-size:13.5px;color:var(--muted)}
+.concl{margin-top:16px;background:var(--ink);color:#FFE9D5;border-radius:14px;padding:16px 20px;font-weight:700;font-size:15.5px}
+.concl b{color:var(--gold)}
 </style>
 </head>
 <body>
-<main class="canvas">
+<div class="wrap">
+<header>
+  <div class="kicker">WEEKLY US TREND REPORT · 미국 트렌드 주간 리포트</div>
+  <h1 class="han">이번 주 미국에서 <span class="hl">잘 팔리는 것</span></h1>
+  <div class="sub">드랍쉬핑(Sell The Trend) + Etsy(ListingView) 두 소스를 종합한 미국 판매 트렌드. 이번 주의 키워드는 <b>아버지의 날 공구 · 미국 250주년 · 여름 여행</b>.</div>
+  <div><span class="datechip">2026년 6월 12일</span><span class="weektag">6월 2주차 · 자동 생성</span></div>
+</header>
 
-  <header>
-    <span class="datechip">2026 · 06 · 12 (금)</span>
-    <div class="kick">WEEKLY ETSY TREND REPORT</div>
-    <h1>이번 주 Etsy 트렌드</h1>
-    <div class="subtitle">잘 팔리는 디지털·피지컬 제품 · 급상승 트렌드 · 시즌 캘린더 — 2026년 6월 2주차</div>
-    <a class="hcta" href="https://www.etsy.com/search?q=budget%20planner%20google%20sheets" target="_blank" rel="noopener">🔗 Etsy에서 인기 베스트셀러 보기 →</a>
-  </header>
+<div class="kpis">
+  <div class="kpi reveal"><div class="lab">아버지의 날 카운트다운 (6/21)</div><div class="num" data-cnt="9" data-pre="D-">D-9</div><div class="wow down">▼ 지난주 D-13 · 배송 마감 임박</div></div>
+  <div class="kpi e reveal"><div class="lab">NEXUS 1위 매출 (BYD 다이캐스트)</div><div class="num" data-cnt="2.9" data-pre="$" data-suf="M" data-dec="1">$2.9M</div><div class="wow up">▲ 지난주 $2.58M (+12%)</div></div>
+  <div class="kpi e reveal"><div class="lab">Etsy "budget planner" 시장</div><div class="num" data-cnt="12" data-pre="$" data-suf="M">$12M</div><div class="wow">누적 289,447 판매 · 경쟁 中</div></div>
+  <div class="kpi reveal"><div class="lab">이번 주 최고 급상승 (Etsy)</div><div class="num" data-cnt="2386" data-pre="+" data-suf="%">+2,386%</div><div class="wow new">🆕 영성·타로 (Love Spell)</div></div>
+</div>
 
-  <div class="pad">
+<style>
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 6px 16px rgba(120,80,40,.07);display:flex;flex-direction:column}
+.pthumb{position:relative;aspect-ratio:1/1;background:linear-gradient(135deg,#FFF1E2,#FBE4D2);overflow:hidden}
+.pthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.fire{position:absolute;top:10px;left:10px;background:var(--ds);color:#fff;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:20px}
+.psrc{position:absolute;top:10px;right:10px;background:rgba(27,21,16,.82);color:#FFE9D5;font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:20px}
+.pbody{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1}
+.pname{font-weight:700;font-size:14px;line-height:1.35;min-height:38px}
+.pmeta{margin-top:8px;display:flex;justify-content:space-between;align-items:baseline}
+.pprice{font-family:'Black Han Sans';color:var(--ds);font-size:19px}
+.pstat{font-size:12.5px;color:var(--muted);font-weight:700;text-align:right}
+.plinks{margin-top:11px;display:flex;gap:7px}
+.plinks a{flex:1;text-align:center;font-size:11.5px;font-weight:800;padding:7px 4px;border-radius:9px;border:1.5px solid var(--line);color:var(--ink);transition:.15s}
+.plinks a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.plinks a.ali{border-color:#E8851A;color:#C75E0E} .plinks a.amz{border-color:#0B6E99;color:#0B6E99}
+.ads{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.adc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px}
+.adc .plays{font-family:'Black Han Sans';font-size:24px;color:var(--ds)}
+.adc .ah{font-weight:900;font-size:14.5px;margin:6px 0}
+.adc .ad{font-size:13px;color:var(--muted)}
+.adc .htags{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px}
+.adc .htags a{font-size:11px;font-weight:800;background:#fff;border:1px solid var(--line);padding:4px 9px;border-radius:20px;color:var(--etd)}
+.seas{background:linear-gradient(120deg,#FFF7EE,#FDEEDD);border:1px solid var(--line);border-radius:16px;padding:8px 4px}
+.seas .row{display:flex;gap:12px;align-items:center;padding:12px 18px;border-bottom:1px dashed var(--line)}
+.seas .row:last-child{border-bottom:none}
+.dot{width:13px;height:13px;border-radius:50%;flex:0 0 13px}
+.dot.r{background:var(--red)} .dot.y{background:var(--gold)} .dot.g{background:var(--green)}
+.seas .sd{font-size:14px} .seas .sd b{font-weight:900}
+.win{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.winc{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:13px;padding:14px 15px}
+.winc .we{font-size:24px} .winc .wn{font-weight:900;font-size:14.5px;margin:5px 0}
+.winc .wm{font-size:12.5px;color:var(--muted);font-weight:700}
+.winc a{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:800;color:#C75E0E;border:1.5px solid #E8851A;padding:5px 11px;border-radius:8px}
 
-    <!-- HERO STATS -->
-    <div class="stats">
-      <div class="stat reveal"><div class="num" data-count="12" data-pre="$" data-suf="M">$0M</div><div class="lbl">‘budget planner’ 태그 누적 시장</div></div>
-      <div class="stat reveal"><div class="num" data-count="7508" data-suf="">0</div><div class="lbl">1위 피지컬 제품 <b>월 판매</b> (건)</div></div>
-      <div class="stat reveal"><div class="num" data-count="1400" data-pre="+" data-suf="%">+0%</div><div class="lbl">미국 250주년 PNG 급상승</div></div>
-      <div class="stat reveal"><div class="num" data-count="26" data-pre="$" data-suf="K">$0K</div><div class="lbl">2026 저널 번들 월 매출</div></div>
+</style>
+
+<section class="pa">
+  <div class="partbar"><span class="diamond">◆</span><h2 class="han">PART A · 드랍쉬핑</h2><span class="pill">Sell The Trend</span></div>
+
+  <div class="block reveal">
+    <h3><span class="n">1</span>이번 주 핫 카테고리 (모멘텀 이동)</h3>
+    <div class="ranks">
+      <div class="rank"><div class="rk">#2 DIY & 공구</div><div class="rt">🔧 공구 / Father's Day</div><div class="rd">VEVOR 소켓세트 1위 · 내시경·작업등 신상. 아버지의 날 직격.</div><span class="tag u">▲ 급가속</span></div>
+      <div class="rank"><div class="rk">여름 시즌</div><div class="rt">🏕️ 여행·아웃도어·쿨링</div><div class="rd">TrailSeat 백팩+의자 최고 POT · 여름 클리어런스 광고 폭발.</div><span class="tag n">🆕 신규 확산</span></div>
+      <div class="rank"><div class="rk">#1 Kitchen</div><div class="rt">🧽 청소 / 홈</div><div class="rd">Magic Emery 스펀지 226K orders · 공기청정기·이불 정리백.</div><span class="tag u">▲ 볼륨 확대</span></div>
     </div>
-
-    <!-- ============ SECTION 1 : DIGITAL ============ -->
-    <section class="z-dig">
-      <div class="shead reveal"><span class="snum">01</span><span class="stitle">디지털 베스트셀러 — 가계부 · 재무 · 플래너</span></div>
-      <div class="sdesc reveal">지금 가장 많이 팔리는 디지털 제품 (월 판매 기준) · 카드를 누르면 Etsy로 이동</div>
-      <div class="zbar reveal"></div>
-
-      <div class="pgrid g5">
-        <a class="pcard reveal" href="https://www.etsy.com/shop/ExclusiveDesignLab" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">1</span><span class="trbadge up">▲ 27%</span><img loading="lazy" src="https://i.etsystatic.com/38856492/r/il/a16f1f/7600302569/il_570xN.7600302569_2ls3.jpg" alt="Budget Planner Google Sheet"></div>
-          <div class="pbody"><div class="ptitle">Budget Planner Google Sheet · Paycheck · Biweekly</div><div class="pmeta"><span class="pshop">ExclusiveDesignLab</span><span class="psales">2,159<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/PrioriDigitalStudio" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">2</span><span class="trbadge up">▲ 6%</span><img loading="lazy" src="https://i.etsystatic.com/42054447/r/il/9d453c/7684546775/il_570xN.7684546775_eumc.jpg" alt="Ultimate Annual Budget Spreadsheet"></div>
-          <div class="pbody"><div class="ptitle">Ultimate Annual Budget · Bill &amp; Debt Tracker</div><div class="pmeta"><span class="pshop">PrioriDigitalStudio</span><span class="psales">821<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/255designsCo" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">3</span><span class="trbadge up">▲ 7%</span><img loading="lazy" src="https://i.etsystatic.com/45349834/r/il/2da72b/7917205454/il_570xN.7917205454_5g59.jpg" alt="Budget By Paycheck Google Sheets"></div>
-          <div class="pbody"><div class="ptitle">Budget By Paycheck · Google Sheets (전환율 8.9%↑)</div><div class="pmeta"><span class="pshop">255designsCo</span><span class="psales">734<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/LittleBirdieCanada" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">4</span><span class="trbadge flat">194p</span><img loading="lazy" src="https://i.etsystatic.com/40802347/r/il/6ab574/7667096529/il_570xN.7667096529_4bju.jpg" alt="2026 BIG Journal Bundle Printable"></div>
-          <div class="pbody"><div class="ptitle">2026 BIG Journal Bundle · 프린터블 194p</div><div class="pmeta"><span class="pshop">LittleBirdieCanada</span><span class="psales">863<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/phenixdigital" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">5</span><span class="trbadge up">▲ 24%</span><img loading="lazy" src="https://i.etsystatic.com/26517593/r/il/93a1ff/7685698130/il_570xN.7685698130_5x4a.jpg" alt="All-in-One Digital Planner 2026 2027 2028"></div>
-          <div class="pbody"><div class="ptitle">All-in-One 디지털 플래너 2026·27·28 (GoodNotes)</div><div class="pmeta"><span class="pshop">phenixdigital</span><span class="psales">844<small>월 판매</small></span></div></div>
-        </a>
-      </div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--digital)">기회</span>지금 비어있는 서브니치 <a class="seemore" style="color:var(--digital)" href="https://www.etsy.com/search?q=budget%20spreadsheet%20google%20sheets" target="_blank" rel="noopener">Etsy에서 보기 →</a></div>
-      <div class="chips">
-        <a class="chip reveal" href="https://www.etsy.com/search?q=couples%20budget%20spreadsheet" target="_blank" rel="noopener">커플 · 가족 예산 <span class="arr">↗</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=dark%20mode%20budget%20spreadsheet" target="_blank" rel="noopener">다크모드 버전 <span class="arr">↗</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=credit%20card%20cash%20budget%20tracker" target="_blank" rel="noopener">신용카드 vs 현금 트래커 <span class="arr">↗</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=cash%20envelope%20savings%20challenge" target="_blank" rel="noopener">캐시 엔벨로프 · 세이빙 챌린지 <span class="arr">↗</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=goodnotes%20budget%20planner%202026" target="_blank" rel="noopener">GoodNotes · iPad 2026 <span class="arr">↗</span></a>
-      </div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--digital)">SEO</span>타겟 키워드 <span style="font-weight:600;color:var(--muted);font-size:14px">(오퍼튜니티 스코어 · 누르면 Etsy 검색)</span></div>
-      <div class="chips">
-        <a class="chip reveal" href="https://www.etsy.com/search?q=biweekly%20budget" target="_blank" rel="noopener">bi-weekly budget <span class="sc">89</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=finance%20templates" target="_blank" rel="noopener">finance templates <span class="sc">86</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=bill%20calendar" target="_blank" rel="noopener">bill calendar <span class="sc">83</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=budget%20templates" target="_blank" rel="noopener">budget templates <span class="sc">83</span></a>
-        <a class="chip reveal" href="https://www.etsy.com/search?q=budget%20book" target="_blank" rel="noopener">budget book <span class="sc">83</span></a>
-      </div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--digital)">확장</span>인접 디지털 기회 — Canva 편집형 템플릿이 특히 핫</div>
-      <div class="opps">
-        <a class="opp reveal" href="https://www.etsy.com/search?q=party%20favor%20template%20canva%20chip%20bag" target="_blank" rel="noopener"><div class="ot">파티 페이버 템플릿 <span class="arr">↗</span></div><p>칩백·카프리썬·라이스크리스피 래퍼 편집형 번들. 트렌드율 <span class="hl">+575%</span></p></a>
-        <a class="opp reveal" href="https://www.etsy.com/search?q=graduation%20fan%20template%202026" target="_blank" rel="noopener"><div class="ot">졸업 부채 · 패들 팬 템플릿 <span class="arr">↗</span></div><p>Class of 2026 졸업 부채/티셔츠 Canva 템플릿 다수 진입</p></a>
-        <a class="opp reveal" href="https://www.etsy.com/search?q=personalized%20magazine%20template%20canva" target="_blank" rel="noopener"><div class="ot">개인화 매거진 템플릿 <span class="arr">↗</span></div><p>생일·어머니날 선물용 ‘개인 잡지’ Canva 템플릿 <span class="hl">+143%</span></p></a>
-        <a class="opp reveal" href="https://www.etsy.com/search?q=adhd%20cleaning%20planner%20printable" target="_blank" rel="noopener"><div class="ot">ADHD · 청소/살림 플래너 <span class="arr">↗</span></div><p>편집형 청소 플래너 월 510건 · <span class="hl">+59%</span></p></a>
-      </div>
-    </section>
-
-    <!-- ============ SECTION 2 : PHYSICAL ============ -->
-    <section class="z-phy">
-      <div class="shead reveal"><span class="snum">02</span><span class="stitle">피지컬 베스트셀러 — 직접 판매 · POD · 제휴 후보</span></div>
-      <div class="sdesc reveal">인기순 (월 판매 기준) · 드랍쉬핑 / 주문제작(POD) / 제휴·리셀로 붙을 수 있는 제품들 · 카드를 누르면 Etsy로 이동</div>
-      <div class="zbar reveal"></div>
-
-      <div class="pgrid g3">
-        <a class="pcard reveal" href="https://www.etsy.com/shop/KukiDesignerToys" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">1</span><span class="trbadge up">▲ 127%</span><img loading="lazy" src="https://i.etsystatic.com/61974430/r/il/e9d35d/7869409354/il_570xN.7869409354_ryq0.jpg" alt="Custom Seersucker Makeup Bag"></div>
-          <div class="pbody"><div class="ptitle">개인화 시어서커 메이크업 파우치 (여름·들러리)</div><div class="pmeta"><span class="pshop">KukiDesignerToys</span><span class="psales">7,508<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/KvYshopUS" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">2</span><span class="trbadge up">▲ 5%</span><img loading="lazy" src="https://i.etsystatic.com/52535302/r/il/1dd546/6629509874/il_570xN.6629509874_cv37.jpg" alt="Monogrammed Seersucker Toiletry Bag"></div>
-          <div class="pbody"><div class="ptitle">모노그램 시어서커 토일레트리 백 (들러리 선물)</div><div class="pmeta"><span class="pshop">KvYshopUS</span><span class="psales">5,664<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/MugvoyageCo" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">3</span><span class="trbadge flat">시즌</span><img loading="lazy" src="https://i.etsystatic.com/58235386/r/il/199a3c/8019515798/il_570xN.8019515798_do04.jpg" alt="Custom Dad Photo Shirt"></div>
-          <div class="pbody"><div class="ptitle">커스텀 아빠 사진 셔츠 (아버지의 날 POD)</div><div class="pmeta"><span class="pshop">MugvoyageCo</span><span class="psales">4,603<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/ConyersBoutique" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">4</span><span class="trbadge up">▲ 20%</span><img loading="lazy" src="https://i.etsystatic.com/59746572/r/il/a08600/7656800136/il_570xN.7656800136_lliq.jpg" alt="Personalized Beach Tote Bag"></div>
-          <div class="pbody"><div class="ptitle">개인화 비치 토트백 (여름·들러리 선물)</div><div class="pmeta"><span class="pshop">ConyersBoutique</span><span class="psales">4,437<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/PieDesignByWen" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">5</span><span class="trbadge flat">+1%</span><img loading="lazy" src="https://i.etsystatic.com/18723424/r/il/fd0b31/7124337886/il_570xN.7124337886_g2gv.jpg" alt="Birth Flower Trinket Dish"></div>
-          <div class="pbody"><div class="ptitle">탄생화 트링킷 디시 (개인화 도자기 선물)</div><div class="pmeta"><span class="pshop">PieDesignByWen</span><span class="psales">2,704<small>월 판매</small></span></div></div>
-        </a>
-        <a class="pcard reveal" href="https://www.etsy.com/shop/HeldDearCo" target="_blank" rel="noopener">
-          <div class="thumb"><span class="rankbadge">6</span><span class="trbadge up">▲ 325%</span><img loading="lazy" src="https://i.etsystatic.com/64434894/r/il/c3765a/7939490137/il_570xN.7939490137_cuwc.jpg" alt="Custom University Ring Dish Graduation"></div>
-          <div class="pbody"><div class="ptitle">대학교 졸업 링 디시 (Class of 2026 급상승)</div><div class="pmeta"><span class="pshop">HeldDearCo</span><span class="psales">2,682<small>월 판매</small></span></div></div>
-        </a>
-      </div>
-      <div class="note" style="background:var(--physical-s);border-left:5px solid var(--physical);color:var(--ink)">
-        <b>패턴</b> — 피지컬 상위권은 거의 다 <b>개인화(이름·사진) + POD/주문제작</b>. 시어서커 파우치·토트(여름·들러리), 링 디시(졸업), 아빠 사진 셔츠(아버지의 날)가 시즌을 타고 있음.
-      </div>
-    </section>
-
-    <!-- ============ SECTION 3 : TRENDS & SEASON ============ -->
-    <section class="z-tr">
-      <div class="shead reveal"><span class="snum">03</span><span class="stitle">급상승 트렌드 &amp; 시즌 캘린더</span></div>
-      <div class="sdesc reveal">지금 폭발하는 키워드와 다가오는 시즌 — 콘텐츠·신제품 타이밍용</div>
-      <div class="zbar reveal"></div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--trend)">HOT</span>지금 폭발하는 트렌드</div>
-      <div class="chips">
-        <a class="chip reveal" style="border-color:#f3cfc3" href="https://www.etsy.com/search?q=personalized%20ring%20dish" target="_blank" rel="noopener">개인화 링·트링킷 디시 <b style="color:var(--trend)">+198~499%</b> <span class="arr">↗</span></a>
-        <a class="chip reveal" style="border-color:#f3cfc3" href="https://www.etsy.com/search?q=tarot%20reading%20same%20hour" target="_blank" rel="noopener">심령·타로 리딩 (디지털) <b style="color:var(--trend)">+757~2386%</b> <span class="arr">↗</span></a>
-        <a class="chip reveal" style="border-color:#f3cfc3" href="https://www.etsy.com/search?q=personalized%20seersucker%20makeup%20bag" target="_blank" rel="noopener">개인화 시어서커 파우치 <span class="arr">↗</span></a>
-      </div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--trend)">시즌</span>지금 ~ 다가오는 시즌</div>
-      <div class="season">
-        <div class="srow reveal"><span class="led led-r"></span><div><div class="s-when">아버지의 날 · 6월 21일 (D-9)</div><div class="s-desc">초콜릿 바 래퍼 템플릿 +1267%, ‘Vatertag’ 프린터블 +326%</div></div><span class="urg r">마감 임박</span><a class="slink" href="https://www.etsy.com/search?q=fathers%20day%20printable" target="_blank" rel="noopener">Etsy →</a></div>
-        <div class="srow reveal"><span class="led led-g"></span><div><div class="s-when">미국 250주년 + 7월 4일 · 1776–2026</div><div class="s-desc">Retro 250th Anniversary PNG 번들 +1400% (신상). 올해 최대 시즌</div></div><span class="urg g">지금 준비 ★</span><a class="slink" href="https://www.etsy.com/search?q=250th%20anniversary%20usa%20png" target="_blank" rel="noopener">Etsy →</a></div>
-        <div class="srow reveal"><span class="led led-a"></span><div><div class="s-when">졸업 시즌 · Class of 2026</div><div class="s-desc">졸업 링 디시·티셔츠·부채(paddle fan) 템플릿 트렌딩</div></div><span class="urg a">진행 중</span><a class="slink" href="https://www.etsy.com/search?q=graduation%202026" target="_blank" rel="noopener">Etsy →</a></div>
-      </div>
-
-      <div class="subh reveal"><span class="tag" style="background:var(--trend)">팝컬처</span>지금 뜨는 IP</div>
-      <div class="pc">
-        <a class="pcc reveal" href="https://www.etsy.com/search?q=kpop%20demon%20hunters%20png" target="_blank" rel="noopener"><img loading="lazy" src="https://i.etsystatic.com/62368692/r/il/2172cf/7247332144/il_570xN.7247332144_5pho.jpg" alt="pop culture"><div><b>KPop Demon Hunters</b><p>넷플릭스 · Huntrix · Saja Boys PNG/SVG 디자인 +233% (신상)</p></div><span class="arr">↗</span></a>
-        <a class="pcc reveal" href="https://www.etsy.com/search?q=fathers%20day%20chocolate%20wrapper%20template" target="_blank" rel="noopener"><img loading="lazy" src="https://i.etsystatic.com/62197411/r/il/38ccea/7940229358/il_570xN.7940229358_a4co.jpg" alt="fathers day printable"><div><b>아버지의 날 프린터블</b><p>초콜릿 바 래퍼 템플릿 월 1,000건+ · +1267% 급상승</p></div><span class="arr">↗</span></a>
-      </div>
-    </section>
-
-    <!-- KEY INSIGHTS -->
-    <div class="insights reveal">
-      <h3>이번 주 핵심 인사이트</h3>
-      <div class="iitem"><span class="n">1</span><span><b>가계부 시장은 $12M 규모로 건강</b> — 신규 기회는 다크모드 · 커플/가족 · 신용카드 vs 현금 버전. 타이틀은 기능 키워드를 앞에서부터 쌓는 게 공식.</span></div>
-      <div class="iitem"><span class="n">2</span><span><b>올해 최대 시즌은 미국 250주년 + 7월 4일(1776–2026)</b> — 관련 PNG가 +1400% 급상승. 지금이 준비 타이밍, 아버지의 날은 마감 임박.</span></div>
-      <div class="iitem"><span class="n">3</span><span><b>피지컬은 ‘개인화 + POD’가 여전히 지배</b> — 시어서커 파우치·토트, 졸업 링 디시가 시즌을 타고 상위권. 드랍쉬핑·제휴 붙이기 좋은 카테고리.</span></div>
-    </div>
-
+    <p style="font-size:12.5px;color:var(--muted);margin-top:10px">월간 Niche Spy 랭킹(6월): Kitchen · DIY · Kids Toys · Robot Cleaner · Novelty … (월 1회 갱신 → 주간 변화는 제품·광고 단위)</p>
   </div>
 
-  <footer>
-    <b>데이터 출처</b> · ListingView (2026-06-12 조회). “월 판매/매출”=Trending 뷰 · “누적/총”=Tag Analyzer · 제품 이미지·링크는 실제 Etsy 리스팅.
-    모든 수치는 <b>추정치</b>이며, 제품 결정 전 실제 검색량(eRank 등) 교차검증 권장. 이 리포트는 “돈 되는지(매출·판매)” 신호 위주.
-  </footer>
+  <div class="block reveal">
+    <h3><span class="n">2</span>왜 이렇게 바뀌었나</h3>
+    <div class="why">
+      <div class="whyc"><div class="ic">🎁</div><div class="wt">아버지의 날 D-9 (6/21)</div><div class="wd">아빠 선물 = 공구·개인화 굿즈. 6월 2주차부터 배송 마감 임박 → 긴박감 hook. 공구·"It Was Dad's Idea" 바디수트 폭발.</div></div>
+      <div class="whyc"><div class="ic">🇺🇸</div><div class="wt">미국 250주년 + 7/4 (D-22)</div><div class="wd">Semiquincentennial(1776–2026) 애국 굿즈 대폭발. USA 250 티셔츠·깃발·기념품 선점 시작(Etsy +253%).</div></div>
+      <div class="whyc"><div class="ic">☀️</div><div class="wt">여름 피크 · 여행/졸업</div><div class="wd">휴가철 여행 용품(seersucker 파우치 +127%), 쿨링·캠핑, 졸업 선물(ring dish +325%). "beat the heat" 수요 급증.</div></div>
+    </div>
+    <div class="concl">📌 한 줄 결론: 지난주 <b>"여름 습기·청소가전"</b> 단일축에서 → 이번 주는 <b>아버지의 날 공구 + 미국 250주년 애국 + 여름 여행/졸업</b> 3대 시즌 이벤트가 동시에 시장을 끌어올렸습니다.</div>
+  </div>
 
-</main>
+  <div class="block reveal">
+    <h3><span class="n">3</span>TikTok Shop · NEXUS 잘 팔리는 제품</h3>
+    <div class="pgrid">
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 공구 1위</span><span class="psrc">TikTok Shop</span><img loading="lazy" src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/ee8a66b0-b6a7-402b-b2f2-9bd7794173cd" alt="VEVOR Socket Set" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">VEVOR 163피스 소켓 렌치 세트</div><div class="pmeta"><span class="pprice">$135.90</span><span class="pstat">$332.5M<br>2M units 누적</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=163+piece+socket+set">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=163+piece+socket+set">아마존</a></div></div></div>
+
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 아빠 유머</span><span class="psrc">TikTok Shop</span><img loading="lazy" src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/d330f8a7-89ae-4d91-a850-a8894189c71e" alt="It Was Dads Idea Bodysuit" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">"It Was Dad's Idea" 베이비 바디수트</div><div class="pmeta"><span class="pprice">$14.99</span><span class="pstat">$5.2M<br>346K units</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=funny+dad+baby+bodysuit">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=funny+dad+baby+onesie">아마존</a></div></div></div>
+
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 신규</span><span class="psrc">TikTok Shop</span><img loading="lazy" src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/cae59035-5148-44c5-ae96-50198573982f" alt="Reborn Doll" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">WOOROY 리얼 리본돌 인형 (20")</div><div class="pmeta"><span class="pprice">$48.99</span><span class="pstat">$1.3M · -30%<br>27K units</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=reborn+baby+doll+20+inch">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=reborn+baby+doll">아마존</a></div></div></div>
+
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 고매출 1위</span><span class="psrc">NEXUS AI</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0595/1507/6682/files/SKU03__ATTO3_7e2cb730-a3a7-4759-abca-f8e4254eb395.jpg?v=1763602851" alt="BYD Diecast" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">BYD Yuan PLUS 1:18 다이캐스트 모델카</div><div class="pmeta"><span class="pprice">$1,293</span><span class="pstat">$2.90M<br>2,239 orders</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=BYD+diecast+1:18">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=diecast+model+car+1:18">아마존</a></div></div></div>
+
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 226K 주문</span><span class="psrc">NEXUS AI</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0946/7058/6151/files/S10d9ada7507a4fd3b1e52af83e1eb2a8v.webp?v=1778701134" alt="Magic Emery Sponge" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">Magic Emery 세척 스펀지 브러시</div><div class="pmeta"><span class="pprice">$10.00</span><span class="pstat">$2.26M<br>226,501 orders</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=magic+emery+sponge">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=emery+sponge+cleaning">아마존</a></div></div></div>
+
+      <div class="pcard"><div class="pthumb"><span class="fire">🔥 계절교체</span><span class="psrc">NEXUS AI</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0781/6160/9051/files/spp_shopify20260128160620_ffdd11a79e2ca9aa2f6a81827bf9f8a1_4bba1019-ce1e-45ab-8611-94bf1b868229.jpg?v=1775808520" alt="Quilt Storage Bag" onerror="this.parentNode.classList.add('ph');this.remove()"></div><div class="pbody"><div class="pname">대용량 이불·의류 정리 압축백</div><div class="pmeta"><span class="pprice">$24.72</span><span class="pstat">$1.06M<br>43,076 orders</span></div><div class="plinks"><a class="ali" target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=large+quilt+storage+bag">알리</a><a class="amz" target="_blank" href="https://www.amazon.com/s?k=quilt+storage+bag">아마존</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pa" style="padding-top:0">
+  <div class="block reveal">
+    <h3><span class="n">4</span>광고 · 영상 포맷 (바이럴 angle)</h3>
+    <div class="ads">
+      <div class="adc"><div class="plays">▶ 557.4K</div><div class="ah">여름 클리어런스 70% OFF</div><div class="ad">볼드 유니코드 텍스트 + "최대 70% 할인" 포맷이 TikTok 최상위. 여름 세일 시즌 진입.</div><div class="htags"><a target="_blank" href="https://www.tiktok.com/search?q=summer%20clearance%20sale">▶ 영상</a><a target="_blank" href="https://www.tiktok.com/tag/clearance">#clearance</a><a target="_blank" href="https://www.tiktok.com/tag/sale">#sale</a></div></div>
+      <div class="adc"><div class="plays">▶ 6.1K</div><div class="ah">Bath & Body Works ☀️ 여름 뷰티 세일</div><div class="ad">대형 뷰티 브랜드 클리어런스 언박싱. "LETS GET READY…" 셀프케어 hook.</div><div class="htags"><a target="_blank" href="https://www.tiktok.com/tag/bathandbodyworks">#bathandbodyworks</a><a target="_blank" href="https://www.tiktok.com/tag/beauty">#beauty</a></div></div>
+      <div class="adc"><div class="plays">❤ 748</div><div class="ah">문제제기형 헬스 (좌골신경통)</div><div class="ad">"한 번 잘못 움직였더니 좌골신경통?" problem-agitation hook이 FB 좋아요 1위. 웰니스(수면·강황)도 강세.</div><div class="htags"><a target="_blank" href="https://www.tiktok.com/search?q=back%20pain%20relief">▶ 영상</a><a target="_blank" href="https://www.tiktok.com/tag/backpainrelief">#backpain</a></div></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3><span class="n">5</span>시즌 기회 (드랍쉬핑 타이밍)</h3>
+    <div class="ranks">
+      <div class="rank" style="border-left-color:var(--red)"><div class="rk">NOW · D-9</div><div class="rt">🎁 아버지의 날 공구</div><div class="rd">소켓세트·내시경·작업등. 6/21 배송 마감 임박 — 긴박감 마케팅 최적.</div></div>
+      <div class="rank" style="border-left-color:var(--gold)"><div class="rk">D-22</div><div class="rt">🇺🇸 미국 250주년 / 7월 4일</div><div class="rd">애국 의류·깃발·기념품. 7/4 대비 지금 선점 — Q3 최대 이벤트.</div></div>
+      <div class="rank" style="border-left-color:var(--green)"><div class="rk">여름 내내</div><div class="rt">🏕️ 캠핑·쿨링·여행</div><div class="rd">2-in-1 백팩의자, 쿨링 가젯, 압축 정리백. "beat the heat" 수요.</div></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3><span class="n">6</span>새로 떠오르는 신상 위너 (Hand-Picked)</h3>
+    <div class="win">
+      <div class="winc"><div class="we">🏕️</div><div class="wn">TrailSeat™ 2-in-1 백팩+의자</div><div class="wm">POT $67,125 · 최고 마진 · Today</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=backpack+chair+2+in+1">알리 검색</a></div>
+      <div class="winc"><div class="we">🌌</div><div class="wn">GalaxySpin™ 갤럭시 프로젝터</div><div class="wm">POT $58,605 · 우주 블로그 연결</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=galaxy+star+projector">알리 검색</a></div>
+      <div class="winc"><div class="we">🔍</div><div class="wn">InspectCam™ 내시경 검사 카메라</div><div class="wm">POT $52,755 · 공구/Father's Day</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=endoscope+inspection+camera">알리 검색</a></div>
+      <div class="winc"><div class="we">🗜️</div><div class="wn">VacuPack™ 무펌프 압축백</div><div class="wm">POT $47,205 · 계절교체 정리</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=vacuum+storage+bag+no+pump">알리 검색</a></div>
+      <div class="winc"><div class="we">🔊</div><div class="wn">SoundDock™ 스피커 스탠드</div><div class="wm">POT $43,125 · 무선 오디오 앰프</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=phone+speaker+amplifier+stand">알리 검색</a></div>
+      <div class="winc"><div class="we">🌀</div><div class="wn">PureBreeze™ 공기청정기</div><div class="wm">POT $38,265 · 홈/실내 공기</div><a target="_blank" href="https://www.aliexpress.com/wholesale?SearchText=mini+air+purifier">알리 검색</a></div>
+    </div>
+  </div>
+</section>
+
+<style>
+.etcard .pprice,.etcard .pthumb{}
+.etcard{border-color:#D7E7EF}
+.et .pthumb{background:linear-gradient(135deg,#E6F2F8,#D3E7F1)}
+.et .fire{background:var(--etd)}
+.et .pprice{color:var(--etd)}
+.et .plinks a:hover{background:var(--etd);border-color:var(--etd)}
+.et .plinks a.shop{border-color:var(--etp);color:var(--etp)}
+.et .plinks a.srch{border-color:var(--etd);color:var(--etd)}
+.pthumb .ico{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:52px;opacity:.65}
+.pthumb img{position:relative;z-index:1}
+.mkt{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:18px}
+.mkt .m{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 10px;text-align:center}
+.mkt .m .v{font-family:'Black Han Sans';font-size:26px;color:var(--etp)}
+.mkt .m .l{font-size:11.5px;color:var(--muted);font-weight:700;margin-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:flex;align-items:center;gap:9px;background:#fff;border:1.5px solid #D7E7EF;border-radius:30px;padding:8px 8px 8px 16px;font-weight:700;font-size:14px;transition:.15s}
+.chip:hover{border-color:var(--etd);box-shadow:0 4px 12px rgba(11,110,153,.12)}
+.chip .opp{background:var(--etd);color:#fff;font-family:'Black Han Sans';font-size:14px;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.pop{background:linear-gradient(120deg,#FBEAF2,#F6DCEA);border:1px solid #EBC9DC;border-radius:14px;padding:16px 20px;margin-top:16px;font-size:14px}
+.pop b{color:var(--etp)}
+</style>
+
+<section class="pb">
+  <div class="partbar"><span class="diamond">◆</span><h2 class="han">PART B · Etsy</h2><span class="pill">ListingView</span></div>
+
+  <div class="block reveal">
+    <h3><span class="n">1</span>디지털 베스트셀러 (가계부 · 플래너)</h3>
+    <div class="pgrid et">
+      <div class="pcard etcard"><div class="pthumb"><span class="ico">📊</span><span class="fire">판매 1위</span><img loading="lazy" src="https://i.etsystatic.com/38856492/r/il/a16f1f/7600302569/il_570xN.7600302569_2ls3.jpg" alt="Budget Planner Google Sheet" onerror="this.remove()"></div><div class="pbody"><div class="pname">Budget Planner Google Sheet (월간 가계부)</div><div class="pmeta"><span class="pprice">2,242<span style="font-size:12px">/월</span></span><span class="pstat">+31% ▲<br>Templates</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/ExclusiveDesignLab">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=budget%20planner%20google%20sheets">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb"><span class="ico">💵</span><span class="fire">매출 1위</span><img loading="lazy" src="https://i.etsystatic.com/42054447/r/il/9d453c/7684546775/il_570xN.7684546775_eumc.jpg" alt="Ultimate Annual Budget" onerror="this.remove()"></div><div class="pbody"><div class="pname">Ultimate Annual Budget Spreadsheet (Excel/GSheet)</div><div class="pmeta"><span class="pprice">821<span style="font-size:12px">/월</span></span><span class="pstat">$16,495/월<br>+6% ▲</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/PrioriDigitalStudio">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=annual%20budget%20spreadsheet">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb"><span class="ico">🗓️</span><span class="fire">페이체크</span><img loading="lazy" src="https://i.etsystatic.com/45349834/r/il/2da72b/7917205454/il_570xN.7917205454_5g59.jpg" alt="Budget By Paycheck" onerror="this.remove()"></div><div class="pbody"><div class="pname">Budget By Paycheck Google Sheets</div><div class="pmeta"><span class="pprice">757<span style="font-size:12px">/월</span></span><span class="pstat">+14% ▲<br>Personal Finance</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/255designsCo">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=budget%20by%20paycheck">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb"><span class="ico">📅</span><span class="fire">Bill Calendar</span></div><div class="pbody"><div class="pname">Budget Spreadsheet · Bill Calendar (GSheet)</div><div class="pmeta"><span class="pprice">627<span style="font-size:12px">/월</span></span><span class="pstat">Personal Finance<br>고수요 태그</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/ForgedByChampions">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=bill%20calendar%20spreadsheet">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb"><span class="ico">✈️</span><span class="fire">+350% 급상승</span></div><div class="pbody"><div class="pname">Ultimate Travel Planner (여름 여행)</div><div class="pmeta"><span class="pprice">263<span style="font-size:12px">/월</span></span><span class="pstat">+350% ▲▲<br>여름 시즌</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/TheBudgetCode">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=travel%20planner%20template">검색</a></div></div></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3><span class="n">2</span>서브니치 · 키워드 (Tag Analyzer)</h3>
+    <div class="mkt">
+      <div class="m"><div class="v">$12M</div><div class="l">시장 총매출</div></div>
+      <div class="m"><div class="v">289K</div><div class="l">누적 판매</div></div>
+      <div class="m"><div class="v">36,183</div><div class="l">경쟁 리스팅</div></div>
+      <div class="m"><div class="v">3,251</div><div class="l">경쟁 상점</div></div>
+      <div class="m"><div class="v">中</div><div class="l">경쟁도 (수요 高)</div></div>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px">"budget planner" 연관 태그 · 숫자 = Opportunity 스코어 (높을수록 기회) · 클릭 시 Etsy 검색</p>
+    <div class="chips">
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=bi-weekly%20budget"><span class="opp">89</span>bi-weekly budget</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=finance%20templates"><span class="opp">86</span>finance templates</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=bill%20calendar"><span class="opp">83</span>bill calendar</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=budget%20book"><span class="opp">83</span>budget book</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=budget%20templates"><span class="opp">83</span>budget templates</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=beginner%20budget"><span class="opp">82</span>beginner budget</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=budget%20worksheet"><span class="opp">82</span>budget worksheet</a>
+      <a class="chip" target="_blank" href="https://www.etsy.com/search?q=budget%20google%20sheets"><span class="opp">82</span>budget google sheets</a>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3><span class="n">3</span>피지컬 베스트셀러 (실물 상품)</h3>
+    <div class="pgrid et">
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">👜</span><span class="fire" style="background:var(--etp)">+127% · 여행</span><img loading="lazy" src="https://i.etsystatic.com/61974430/r/il/e9d35d/7869409354/il_570xN.7869409354_ryq0.jpg" alt="Seersucker Makeup Bag" onerror="this.remove()"></div><div class="pbody"><div class="pname">Custom Seersucker 메이크업 파우치 (여행)</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">7,508<span style="font-size:12px">/월</span></span><span class="pstat">$75,083/월<br>Cosmetic Bags</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/KukiDesignerToys">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=seersucker%20makeup%20bag">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🧳</span><span class="fire" style="background:var(--etp)">웨딩</span><img loading="lazy" src="https://i.etsystatic.com/52535302/r/il/1dd546/6629509874/il_570xN.6629509874_cv37.jpg" alt="Monogrammed Toiletry Bag" onerror="this.remove()"></div><div class="pbody"><div class="pname">Monogram 세면 파우치 (Bridesmaid)</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">5,664<span style="font-size:12px">/월</span></span><span class="pstat">$84,953/월<br>Cosmetic Bags</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/KvYshopUS">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=monogrammed%20toiletry%20bag">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">👕</span><span class="fire" style="background:var(--ds)">Father's Day</span><img loading="lazy" src="https://i.etsystatic.com/58235386/r/il/199a3c/8019515798/il_570xN.8019515798_do04.jpg" alt="Custom Dad Shirt" onerror="this.remove()"></div><div class="pbody"><div class="pname">Custom Dad 빈티지 포토 셔츠</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">4,603<span style="font-size:12px">/월</span></span><span class="pstat">$53,626/월<br>T-shirts</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/MugvoyageCo">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=custom%20dad%20photo%20shirt">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🧺</span><span class="fire" style="background:var(--etp)">+20% · 크로셰</span></div><div class="pbody"><div class="pname">Personalized 비치 / 크로셰 토트백</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">4,437<span style="font-size:12px">/월</span></span><span class="pstat">$50,894/월<br>Gen Z 핸드메이드</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/ConyersBoutique">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=crochet%20beach%20tote%20bag">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🏷️</span><span class="fire" style="background:var(--etp)">스티커</span></div><div class="pbody"><div class="pname">Custom Vinyl / Die Cut 스티커</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">2,898<span style="font-size:12px">/월</span></span><span class="pstat">로고 스티커<br>Stickers</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/ChloeCustomDesign">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=custom%20vinyl%20stickers">검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">💍</span><span class="fire" style="background:var(--etp)">개인화</span><img loading="lazy" src="https://i.etsystatic.com/18723424/r/il/fd0b31/7124337886/il_570xN.7124337886_g2gv.jpg" alt="Birth Flower Dish" onerror="this.remove()"></div><div class="pbody"><div class="pname">Birth Flower 트링킷 디시 (커스텀)</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">2,704<span style="font-size:12px">/월</span></span><span class="pstat">$17,575/월<br>Ring Dishes</span></div><div class="plinks"><a class="shop" target="_blank" href="https://www.etsy.com/shop/PieDesignByWen">상점</a><a class="srch" target="_blank" href="https://www.etsy.com/search?q=birth%20flower%20trinket%20dish">검색</a></div></div></div>
+    </div>
+  </div>
+
+  <div class="block reveal">
+    <h3><span class="n">4</span>급상승 트렌드 · 시즌 캘린더 · 팝컬처</h3>
+    <div class="pgrid et" style="margin-bottom:18px">
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🇺🇸</span><span class="fire" style="background:var(--gold)">+253% · 7/4</span><img loading="lazy" src="https://i.etsystatic.com/57761699/r/il/d1e8f4/7833806027/il_570xN.7833806027_cxy8.jpg" alt="USA 250th Tee" onerror="this.remove()"></div><div class="pbody"><div class="pname">USA 250th Anniversary Tee (Semiquincentennial)</div><div class="pmeta"><span class="pprice" style="color:var(--gold)">+253%</span><span class="pstat">미국 250주년<br>7/4 선점</span></div><div class="plinks"><a class="srch" target="_blank" href="https://www.etsy.com/search?q=USA%20250th%20anniversary%20shirt">Etsy 검색</a><a class="srch" target="_blank" href="https://www.amazon.com/s?k=america+250+shirt">아마존</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🎓</span><span class="fire" style="background:var(--etp)">+325% · 졸업</span><img loading="lazy" src="https://i.etsystatic.com/64434894/r/il/c3765a/7939490137/il_570xN.7939490137_cuwc.jpg" alt="University Ring Dish" onerror="this.remove()"></div><div class="pbody"><div class="pname">University 졸업 Ring Dish (개인화)</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">+325%</span><span class="pstat">졸업 시즌<br>Ring Dishes</span></div><div class="plinks"><a class="srch" target="_blank" href="https://www.etsy.com/search?q=graduation%20ring%20dish">Etsy 검색</a></div></div></div>
+
+      <div class="pcard etcard"><div class="pthumb" style="background:linear-gradient(135deg,#F3E3EE,#ECD2E2)"><span class="ico">🔮</span><span class="fire" style="background:var(--etp)">+2,386%</span></div><div class="pbody"><div class="pname">Love Spell / 타로 리딩 (영성 급등)</div><div class="pmeta"><span class="pprice" style="color:var(--etp)">+2,386%</span><span class="pstat">Psychic Readings<br>팝컬처 신호</span></div><div class="plinks"><a class="srch" target="_blank" href="https://www.etsy.com/search?q=psychic%20reading">Etsy 검색</a></div></div></div>
+    </div>
+
+    <div class="seas">
+      <div class="row"><span class="dot r"></span><div class="sd"><b>NOW · D-9 — 아버지의 날 (6/21):</b> 개인화 셔츠·머그·공구. 배송 마감 임박(개인화는 더 빠름).</div></div>
+      <div class="row"><span class="dot r"></span><div class="sd"><b>지금 · 졸업 시즌 (5~6월):</b> University ring dish(+325%), 졸업 선물·키프세이크.</div></div>
+      <div class="row"><span class="dot y"></span><div class="sd"><b>D-22 — 미국 독립 250주년 / 7월 4일:</b> 애국 의류·깃발·기념품 대폭발(USA 250 +253%). 지금 선점.</div></div>
+      <div class="row"><span class="dot y"></span><div class="sd"><b>여름 내내 — 여행 / 휴가:</b> seersucker 파우치(+127%), 비치백, 트래블 플래너(+350%).</div></div>
+      <div class="row"><span class="dot g"></span><div class="sd"><b>D-50+ — 백투스쿨 (7월말~8월):</b> 곧 선점 시작 — 플래너·라벨·기숙사 용품.</div></div>
+    </div>
+    <div class="pop">🎬 <b>팝컬처 신호:</b> 영성·타로(Love Spell·Twin Flame) +2,386% 급등 · Gen Z <b>크로셰·핸드메이드</b> 회귀(비치백·플립플롭). 개인화·실사 포토 굿즈가 Father's Day·졸업과 맞물려 강세.</div>
+  </div>
+</section>
+
+<style>
+.close{background:var(--ink);color:#FFE9D5;padding:40px}
+.close h2{font-family:'Black Han Sans';font-size:26px;color:#fff;margin-bottom:20px}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:34px}
+.vid{background:rgba(255,255,255,.06);border:1px solid rgba(255,233,213,.18);border-radius:14px;padding:18px}
+.vid .vn{font-family:'Black Han Sans';font-size:30px;color:var(--gold)}
+.vid .vt{font-weight:900;font-size:15.5px;margin:8px 0;color:#fff;line-height:1.4}
+.vid .vd{font-size:13px;color:#D9C6B6}
+.ins{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ins .i{background:rgba(255,255,255,.06);border-left:4px solid var(--ds);border-radius:12px;padding:16px}
+.ins .i:nth-child(2){border-left-color:var(--gold)} .ins .i:nth-child(3){border-left-color:var(--etd)}
+.ins .it{font-weight:900;color:#fff;font-size:15px;margin-bottom:5px}
+.ins .id{font-size:13px;color:#D9C6B6}
+footer{background:#120d09;color:#9A8975;padding:24px 40px;font-size:12px;line-height:1.7}
+footer b{color:#C2A98F}
+@media(max-width:760px){
+  header h1{font-size:38px} .kpis,.pgrid,.why,.ranks,.ads,.win,.vids,.ins,.mkt{grid-template-columns:1fr}
+  .mkt{grid-template-columns:repeat(2,1fr)} section{padding:24px 20px} header{padding:34px 22px}
+}
+</style>
+
+<section class="close">
+  <h2>🎬 미국주부 채널 영상 아이디어 3선</h2>
+  <div class="vids">
+    <div class="vid reveal"><div class="vn">01</div><div class="vt">미국 아빠가 진짜 좋아하는 Father's Day 선물 TOP 7 (D-9, 지금 주문해야 도착)</div><div class="vd">VEVOR 소켓세트·내시경 카메라(공구), "It Was Dad's Idea" 바디수트(346K 판매), 갤럭시 프로젝터. 배송 마감 긴박감 hook.</div></div>
+    <div class="vid reveal"><div class="vn">02</div><div class="vt">미국 250주년, 7월 4일에 터질 아이템 미리 보기 (애국 굿즈 + 우주)</div><div class="vd">Semiquincentennial 애국 의류·깃발 트렌드(+253%). theuniverseepisodes.com "미국 우주 250년" 기사 연결. 7/4 선점.</div></div>
+    <div class="vid reveal"><div class="vn">03</div><div class="vt">$36 백팩이 의자로? 미국 여름 캠핑·여행 필수템</div><div class="vd">TrailSeat 2-in-1(POT $67K) + seersucker 트래블 파우치 + 압축백. "미국 주부 여름 여행 준비" 정보형.</div></div>
+  </div>
+
+  <h2>💡 이번 주 핵심 인사이트</h2>
+  <div class="ins">
+    <div class="i reveal"><div class="it">① 아버지의 날 공구가 시장을 지배</div><div class="id">VEVOR 소켓세트 TikTok 1위, 내시경·작업등 신상, "It Was Dad's Idea" 바디수트 346K. D-9 배송 마감 긴박감이 절정.</div></div>
+    <div class="i reveal"><div class="it">② 미국 250주년이 다음 빅웨이브</div><div class="id">USA 250th 티셔츠 Etsy +253%. 7/4까지 D-22 — 애국 의류·깃발·기념품을 지금 선점하면 Q3 최대 이벤트 선점.</div></div>
+    <div class="i reveal"><div class="it">③ 여름 = 여행·캠핑·졸업 동시 폭발</div><div class="id">seersucker 여행 파우치 +127%, 트래블 플래너 +350%, 캠핑 2-in-1, 졸업 ring dish +325%. 디지털·실물 모두 시즌 매칭.</div></div>
+  </div>
+</section>
+
+<footer>
+  <b>출처:</b> Sell The Trend (TikTok Shop·NEXUS·Hand-Picked·Ad Finders·Niche Spy) + Etsy via ListingView (Listings·Tag Analyzer) · 시즌 원인은 웹 검색(America250.org, Father's Day/여름 트렌드 리포트) 교차 확인.<br>
+  <b>주의:</b> 모든 수치는 STD/ListingView <b>추정치</b>이며 '월 판매/매출'과 '누적'을 구분 표기했습니다. 카운트는 데모용 애니메이션입니다.<br>
+  <b>생성:</b> 2026년 6월 12일 · 미국주부 주간 트렌드 자동화 (매주 월요일) · 드랍쉬핑 + Etsy 2소스 종합.
+</footer>
+</div>
 
 <script>
-function runCounters(){
-  document.querySelectorAll('[data-count]').forEach(el=>{
-    if(el.dataset.done)return; el.dataset.done=1;
-    const t=+el.dataset.count, pre=el.dataset.pre||'', suf=el.dataset.suf||'', dur=1400, s=performance.now();
-    (function tick(now){const p=Math.min((now-s)/dur,1);const e=1-Math.pow(1-p,3);
-      el.textContent=pre+Math.floor(e*t).toLocaleString()+suf; if(p<1)requestAnimationFrame(tick);})(s);
-  });
-}
-const io=new IntersectionObserver((es)=>{es.forEach((en,i)=>{if(en.isIntersecting){
-  setTimeout(()=>en.target.classList.add('in'),(i%5)*60); io.unobserve(en.target);
-}});},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-window.addEventListener('load',()=>setTimeout(runCounters,400));
+(function(){
+  // count-up
+  function ease(t){return 1-Math.pow(1-t,3);}
+  function run(el){
+    var target=parseFloat(el.getAttribute('data-cnt'));
+    var pre=el.getAttribute('data-pre')||'', suf=el.getAttribute('data-suf')||'';
+    var dec=parseInt(el.getAttribute('data-dec')||'0');
+    var start=null, dur=1400;
+    function step(ts){
+      if(!start)start=ts; var p=Math.min((ts-start)/dur,1); var v=ease(p)*target;
+      var s=dec>0?v.toFixed(dec):Math.round(v).toLocaleString('en-US');
+      el.textContent=pre+s+suf; if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        e.target.querySelectorAll&&e.target.querySelectorAll('[data-cnt]').forEach(run);
+        if(e.target.hasAttribute&&e.target.hasAttribute('data-cnt'))run(e.target);
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:.18});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  document.querySelectorAll('.kpi .num[data-cnt]').forEach(function(el){io.observe(el);});
+})();
 </script>
 </body>
 </html>
