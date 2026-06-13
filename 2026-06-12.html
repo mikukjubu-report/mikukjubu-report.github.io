@@ -369,17 +369,23 @@ footer b{color:#C2A98F;font-weight:500}
     }
     requestAnimationFrame(step);
   }
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('in');
+  function revealAll(){
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+    document.querySelectorAll('[data-cnt]').forEach(run);
+  }
+  // Nice scroll-in effect when supported, but GUARANTEE full visibility regardless.
+  try{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in');
         if(e.target.querySelectorAll){e.target.querySelectorAll('[data-cnt]').forEach(run);}
         if(e.target.hasAttribute&&e.target.hasAttribute('data-cnt')){run(e.target);}
-        io.unobserve(e.target);
-      }
-    });
-  },{threshold:.15});
-  document.querySelectorAll('.reveal,.kpi .num[data-cnt]').forEach(function(el){io.observe(el);});
+        io.unobserve(e.target);} });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal,.kpi .num[data-cnt]').forEach(function(el){io.observe(el);});
+  }catch(e){ revealAll(); }
+  // Safety net: ensure everything is visible shortly after load (covers screenshots / no-scroll).
+  window.addEventListener('load',function(){ setTimeout(revealAll,1200); });
+  setTimeout(revealAll,2500);
 })();
 </script>
 </body>
