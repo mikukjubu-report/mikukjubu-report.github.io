@@ -287,6 +287,20 @@ footer{background:var(--paper);padding:30px 40px;color:var(--sub);font-size:12.5
     }
     requestAnimationFrame(step);
   }
+  // image fallback: broken hotlinks -> emoji placeholder
+  document.querySelectorAll('.imgw img').forEach(function(img){
+    img.addEventListener('error',function(){
+      var alt=(img.getAttribute('alt')||'').toLowerCase();
+      var map={stroller:'\uD83D\uDC76',romper:'\uD83D\uDC76',float:'\uD83C\uDFCA',"dog bowl":'\uD83D\uDC36',budget:'\uD83D\uDCB0',"annual budget":'\uD83D\uDCCA',planner:'\uD83D\uDDD3\uFE0F',paycheck:'\uD83D\uDCB5',seersucker:'\uD83D\uDC5C',toiletry:'\uD83E\uDDF4',"dad shirt":'\uD83D\uDC55',"beach tote":'\uD83D\uDC5C',usa250:'\uD83C\uDDFA\uD83C\uDDF8',"ring dish":'\uD83D\uDC8D'};
+      var emo='\uD83D\uDED2';
+      for(var k in map){if(alt.indexOf(k)>=0){emo=map[k];break;}}
+      var d=document.createElement('div');
+      d.style.cssText='width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;background:var(--paper)';
+      d.textContent=emo;
+      img.replaceWith(d);
+    });
+  });
+
   var io=new IntersectionObserver(function(ents){
     ents.forEach(function(en){
       if(en.isIntersecting){
