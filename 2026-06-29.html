@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이번 주 미국에서 잘 팔리는 것 — 2026-06-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --sub:#574A3F;
+  --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+  --line:#EADFD2; --up:#1F9D55; --down:#D23A3A; --new:#E07B1A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;background:var(--bg)}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400;letter-spacing:.5px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+header{background:var(--ink);color:#fff;padding:54px 40px 46px;border-top:10px solid var(--ds);position:relative}
+.kick{font-family:'Black Han Sans',sans-serif;letter-spacing:4px;color:var(--gold);font-size:15px;margin-bottom:14px}
+header h1{font-family:'Black Han Sans',sans-serif;font-size:62px;line-height:1.05;margin-bottom:16px}
+header .sub{font-size:18px;color:#D8CDC0;max-width:820px}
+.datechip{display:inline-block;margin-top:20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:8px 18px;border-radius:30px;font-size:14px;font-weight:700;color:#fff}
+.datechip b{color:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:34px 40px;background:var(--paper)}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;box-shadow:0 4px 14px rgba(40,25,15,.05)}
+.kpi .lab{font-size:13px;color:var(--sub);font-weight:700;margin-bottom:8px}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:34px;line-height:1;color:var(--ds)}
+.kpi .num .u{font-size:19px}
+.kpi.b .num{color:var(--etd)}
+.kpi .delta{margin-top:10px;font-size:13px;font-weight:700;display:inline-block;padding:3px 10px;border-radius:20px}
+.up{color:var(--up);background:#E7F6EE}.down{color:var(--down);background:#FBEBEB}.new{color:#fff;background:var(--new)}
+section{padding:44px 40px}
+.partband{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+.diamond{font-size:22px}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:34px}
+.partA .parttitle,.partA .diamond{color:var(--ds)}
+.partB .parttitle,.partB .diamond{color:var(--etd)}
+.partdesc{color:var(--sub);font-size:15px;margin-bottom:30px;max-width:860px}
+.block{margin-bottom:40px}
+.btitle{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:20px;margin-bottom:18px;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.btitle .ic{font-size:20px}
+.ranks{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.rank{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.rank .pos{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:22px;color:var(--ds);min-width:30px}
+.rank .nm{font-weight:700;flex:1}
+.rank .mv{font-size:12px;font-weight:700;padding:3px 9px;border-radius:14px}
+.mv.u{color:var(--up);background:#E7F6EE}.mv.d{color:var(--down);background:#FBEBEB}.mv.n{color:#fff;background:var(--new)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.whyc{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:22px}
+.whyc h4{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:16.5px;margin-bottom:10px;color:var(--ink)}
+.whyc p{font-size:14px;color:var(--sub)}
+.whyconc{margin-top:18px;background:var(--ink);color:#fff;border-radius:12px;padding:18px 22px;font-weight:700;font-size:15px}
+.whyconc b{color:var(--gold)}
+.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prods.three{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 12px rgba(40,25,15,.05);display:flex;flex-direction:column}
+.card .imgw{position:relative;aspect-ratio:1/1;background:var(--paper);overflow:hidden}
+.card .imgw img{width:100%;height:100%;object-fit:cover}
+.hot{position:absolute;top:8px;left:8px;background:var(--ds);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:14px}
+.hot.b{background:var(--etd)}.hot.p{background:var(--etp)}
+.card .body{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1}
+.card .nm{font-size:14px;font-weight:700;line-height:1.45;margin-bottom:2px;color:var(--ink)}
+.card .en{font-size:12px;font-weight:600;color:var(--sub);line-height:1.35;margin-bottom:8px;min-height:30px;letter-spacing:.2px}
+.card .meta{font-size:12.5px;color:#574A3F;margin-bottom:10px}
+.card .meta b{color:var(--ink)}
+.card .links{margin-top:auto;display:flex;gap:6px;flex-wrap:wrap}
+.lk{font-size:12px;font-weight:700;padding:6px 11px;border-radius:8px;border:1px solid var(--line);color:#574A3F}
+.lk.a{background:#FFF3E6;border-color:#F2D6B3;color:#B5650F}
+.lk.e{background:#E6F2F7;border-color:#BFE0EC;color:var(--etd)}
+.lk.t{background:#F0EAF2;border-color:#DBC9E2;color:var(--etp)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:30px;padding:9px 16px;font-size:13px;font-weight:700;color:var(--etd);display:flex;align-items:center;gap:8px}
+.chip .op{background:var(--etd);color:#fff;font-size:11px;padding:2px 8px;border-radius:12px}
+.season{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.scol{border-radius:14px;padding:18px 16px;color:#fff}
+.scol h4{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:15.5px;margin-bottom:6px}
+.scol p{font-size:13.5px;line-height:1.55;font-weight:500;opacity:1}
+.s-red{background:#C0392B}.s-org{background:#E07B1A}.s-yel{background:#C98A12}.s-grn{background:#1F9D55}.s-pur{background:#7D3C98}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.vid{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;border-left:6px solid var(--gold)}
+.vid .n{font-family:'Black Han Sans',sans-serif;font-size:30px;color:var(--gold);line-height:1}
+.vid h4{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:17px;margin:10px 0 8px;color:var(--ink)}
+.vid p{font-size:13px;color:var(--sub)}
+.insights{background:var(--ink);color:#fff;border-radius:18px;padding:34px 36px;margin-top:8px}
+.insights h3{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:21px;color:var(--gold);margin-bottom:18px}
+.insights ol{list-style:none;counter-reset:i}
+.insights li{counter-increment:i;position:relative;padding:14px 0 14px 50px;border-bottom:1px solid rgba(255,255,255,.12);font-size:15.5px;line-height:1.7}
+.insights li:last-child{border-bottom:none}
+.insights li::before{content:counter(i);position:absolute;left:0;top:12px;width:32px;height:32px;background:var(--ds);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Black Han Sans',sans-serif;font-size:16px}
+.insights li b{color:var(--gold)}
+footer{background:var(--paper);padding:30px 40px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.show{opacity:1;transform:none}
+@media(max-width:860px){
+  header h1{font-size:40px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .why,.ads,.vids,.season{grid-template-columns:1fr}
+  .prods,.prods.three{grid-template-columns:repeat(2,1fr)}
+  .ranks{grid-template-columns:1fr}
+  section{padding:34px 22px}
+  header{padding:40px 22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kick">WEEKLY US TREND REPORT</div>
+  <h1 class="bhs">이번 주 미국에서<br>잘 팔리는 것</h1>
+  <div class="sub">2026년 6월 5주차 미국 트렌드 종합 — 아버지의 날(6/21)의 여운이 상위권을 도배한 가운데, <b>7월 4일 건국 250주년(한 세대에 한 번)</b>과 토이스토리5·포켓몬 팝컬처가 다음 파도로 올라오고 있습니다.</div>
+  <div class="datechip">수집일 <b>2026-06-29 (월)</b> · 자동 생성 리포트</div>
+</header>
+
+<div class="kpis">
+  <div class="kpi rv"><div class="lab">이번 주 급상승 1위 · 미국 250주년 셔츠</div><div class="num">+<span data-to="14700">0</span><span class="u">%</span></div><div class="delta new">NEW · 7/4 선행</div></div>
+  <div class="kpi rv"><div class="lab">베스트셀러 월 판매 · 아빠 사진 셔츠</div><div class="num"><span data-to="8854">0</span><span class="u">개</span></div><div class="delta up">▲ +915%</div></div>
+  <div class="kpi b rv"><div class="lab">디지털 가계부 시장 규모 (누적)</div><div class="num">$<span data-to="12">0</span><span class="u">M</span></div><div class="delta up">수요 HIGH</div></div>
+  <div class="kpi b rv"><div class="lab">최고 매출 단일 제품 · 남성 브레이슬릿</div><div class="num">$<span data-to="259627">0</span></div><div class="delta up">월 매출 1위</div></div>
+</div>
+
+<!-- PART A -->
+<section class="partA">
+  <div class="partband"><span class="diamond">◆</span><span class="parttitle">PART A — 이번 주 급상승</span></div>
+  <div class="partdesc">월간 추세가 가장 빠르게 튄 제품·카테고리. 이번 주는 <b>아버지의 날(6/21) 잔여 수요</b>가 셔츠·기프트 상위를 도배했고, <b>미국 250주년(7/4)</b> 패트리어틱과 <b>토이스토리5·포켓몬</b> 팝컬처가 신규로 치고 올라왔습니다.</div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">🔥</span>이번 주 핫 카테고리 — 신호 변동</div>
+    <div class="ranks">
+      <div class="rank"><span class="pos">1</span><span class="nm">커스텀 사진 T-shirts (아빠 사진·포토 셔츠)</span><span class="mv u">▲ 도배</span></div>
+      <div class="rank"><span class="pos">2</span><span class="nm">패트리어틱 / America 250 (7/4 250주년)</span><span class="mv n">NEW 급상승</span></div>
+      <div class="rank"><span class="pos">3</span><span class="nm">트레이딩 카드 (포켓몬·MTG — 30주년 팝컬처)</span><span class="mv u">▲ 상승</span></div>
+      <div class="rank"><span class="pos">4</span><span class="nm">코스메틱·세면 백 (시어서커 — 여름 여행)</span><span class="mv u">▲ 유지</span></div>
+      <div class="rank"><span class="pos">5</span><span class="nm">비치·여름 (터키시 타월·크로셰 토트)</span><span class="mv n">NEW 여름</span></div>
+      <div class="rank"><span class="pos">6</span><span class="nm">아버지의 날 커스텀 (6/21 종료 — 잔여)</span><span class="mv d">▼ 둔화</span></div>
+    </div>
+  </div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">🧭</span>왜 이렇게 바뀌었나</div>
+    <div class="why">
+      <div class="whyc"><h4>① 미국 건국 250주년 (7/4)</h4><p>2026년 7월 4일 = 미국 독립 250주년(Semiquincentennial). 한 세대에 한 번뿐인 기념일로, 1776–2026 성조기·티셔츠·기념주화·파티데코 수요가 폭증. 미국인 86%가 독립기념일 기념, 31%가 새 패트리어틱 굿즈를 살 예정 — Red/White/Blue·Western Americana가 핵심 무드.</p></div>
+      <div class="whyc"><h4>② 아버지의 날(6/21) 여운</h4><p>8일 전 종료. 커스텀 아빠 사진 셔츠·이름 브레이슬릿·포토 파자마·머그가 한 달 윈도우에 +13,000%대로 상위를 도배. 잔여 수요라 다음 주부터 빠르게 둔화될 구간 — 영상은 "내년 미리 보기" 앵글이 유효합니다.</p></div>
+      <div class="whyc"><h4>③ 팝컬처 + 여름 볼륨</h4><p>토이스토리5(6/19 개봉) 워터컬러 PNG가 +4,900%, 포켓몬 30주년·MTG 트레이딩카드가 동반 상승. 동시에 여름 비치타월·시어서커 파우치·크로셰 토트가 시즌 볼륨을 받칩니다.</p></div>
+    </div>
+    <div class="whyconc">한 줄 결론: <b>"아버지의 날(여운) → 미국 250주년·7·4(다음 큰 파도) → 여름 비치·팝컬처(볼륨) → 가계부(꾸준한 빈틈)"</b> — 4중 파도가 미국 수요를 끌고 있습니다.</div>
+  </div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">🚀</span>이번 주 급상승 위너 (월간 추세 폭증)</div>
+    <div class="prods">
+      <div class="card"><div class="imgw"><span class="hot">🔥 +14,700%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/47938130/r/il/5253ad/8061296621/il_570xN.8061296621_ndmz.jpg" alt="usa250"></div><div class="body"><div class="nm">미국 250주년 패트리어틱 셔츠</div><div class="en">250th America Anniversary · US 250 Years Tee</div><div class="meta">월 <b>982개</b> · 전체 급상승 1위 · 7/4</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=america+250+1776+2026+shirt" target="_blank">Etsy</a><a class="lk a" href="https://www.aliexpress.com/wholesale?SearchText=america+250+patriotic+shirt" target="_blank">알리</a><a class="lk t" href="https://www.tiktok.com/tag/america250" target="_blank">▶ 틱톡</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot">🔥 +5,600%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/16957119/r/il/a96563/7983912083/il_570xN.7983912083_k27n.jpg" alt="bracelet"></div><div class="body"><div class="nm">아빠 커스텀 이름 브레이슬릿</div><div class="en">Father's Day Daddy Bracelet w/ Kids Name</div><div class="meta">월 <b>432개</b> · 아버지의 날 기프트</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=custom+dad+bracelet+kids+name" target="_blank">Etsy</a><a class="lk a" href="https://www.aliexpress.com/wholesale?SearchText=custom+dad+name+bracelet" target="_blank">알리</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot">🔥 +4,900%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/44145924/r/il/633524/8045760047/il_570xN.8045760047_nfeh.jpg" alt="toystory"></div><div class="body"><div class="nm">토이스토리 워터컬러 PNG (디지털)</div><div class="en">Toy Story Watercolor PNG · Woody·Buzz·Rex</div><div class="meta">월 <b>150개</b> · 토이스토리5 개봉 팝컬처</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=toy+story+watercolor+png" target="_blank">Etsy</a><a class="lk t" href="https://www.tiktok.com/tag/toystory5" target="_blank">▶ 틱톡</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot">🔥 +4,600%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/27089157/r/il/eac267/8078740113/il_570xN.8078740113_r0ov.jpg" alt="earrings"></div><div class="body"><div class="nm">패트리어틱 별 귀걸이 (Red·White·Blue)</div><div class="en">Patriotic Star Earrings · 4th of July</div><div class="meta">월 <b>47개</b> · 7/4 신규 급등</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=patriotic+star+earrings+4th+of+july" target="_blank">Etsy</a><a class="lk a" href="https://www.aliexpress.com/wholesale?SearchText=red+white+blue+star+earrings" target="_blank">알리</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PART B -->
+<section class="partB" style="background:var(--paper)">
+  <div class="partband"><span class="diamond">◆</span><span class="parttitle">PART B — 베스트셀러 & 시즌 기회</span></div>
+  <div class="partdesc">월 판매량 기준으로 꾸준히 잘 나가는 제품과, 다가오는 미국 시즌·키워드 빈틈. <b>커스텀 아빠 사진 셔츠</b>가 월 8,854개로 전체 1위, 여름 <b>시어서커·비치</b> 아이템이 볼륨을 받치고, 디지털 <b>가계부·플래너</b>는 경쟁 속에서도 꾸준한 빈틈입니다.</div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">🛍️</span>피지컬 베스트셀러 (월 판매 기준)</div>
+    <div class="prods">
+      <div class="card"><div class="imgw"><span class="hot">전체 1위 · +915%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/58235386/r/il/199a3c/8019515798/il_570xN.8019515798_do04.jpg" alt="dadshirt"></div><div class="body"><div class="nm">커스텀 아빠 빈티지 사진 셔츠</div><div class="en">Custom Dad Vintage Photo Shirt</div><div class="meta">월 <b>8,854개</b> · $103,153 · T-shirts</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=custom+dad+photo+shirt" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/MugvoyageCo" target="_blank">상점</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">여름 여행</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/52535302/r/il/1dd546/6629509874/il_570xN.6629509874_cv37.jpg" alt="toiletry"></div><div class="body"><div class="nm">모노그램 시어서커 세면백</div><div class="en">Monogrammed Seersucker Toiletry Bag</div><div class="meta">월 <b>5,057개</b> · $75,858 · Cosmetic</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=monogrammed+seersucker+toiletry+bag" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/KvYshopUS" target="_blank">상점</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">최고 매출</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/62815916/r/il/0eeb85/7783403917/il_570xN.7783403917_owax.jpg" alt="mensbracelet"></div><div class="body"><div class="nm">맞춤 남성 브레이슬릿 (남편 선물)</div><div class="en">Personalized Mens Bracelet · Husband Gift</div><div class="meta">월 <b>2,896개</b> · $259,627 · +225%</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=personalized+mens+bracelet" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/AllhisGifts" target="_blank">상점</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">여름 비치 +33%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/52170220/r/il/6bf03d/6928101429/il_570xN.6928101429_c8kv.jpg" alt="beachtowel"></div><div class="body"><div class="nm">맞춤 터키시 비치 타월</div><div class="en">Personalized Turkish Beach Towel</div><div class="meta">월 <b>2,796개</b> · $33,493 · 여름</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=personalized+turkish+beach+towel" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/TurkishTowelWeaving" target="_blank">상점</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">여름 토트</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/59746572/r/il/a08600/7656800136/il_570xN.7656800136_lliq.jpg" alt="beachtote"></div><div class="body"><div class="nm">맞춤 크로셰 비치 토트백</div><div class="en">Personalized Crochet Beach Tote Bags</div><div class="meta">월 <b>3,827개</b> · $43,896 · 여름</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=personalized+crochet+beach+tote" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/ConyersBoutique" target="_blank">상점</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot p">팝컬처 +290%</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/26454993/r/il/4cbca0/8060276527/il_570xN.8060276527_k4cb.jpg" alt="pokemoncard"></div><div class="body"><div class="nm">아버지의 날 커스텀 포켓몬 카드</div><div class="en">Father's Day Custom Pokemon Card</div><div class="meta">월 <b>1,999개</b> · $76,618 · 트레이딩카드</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=custom+pokemon+card+gift" target="_blank">Etsy 검색</a><a class="lk" href="https://www.etsy.com/shop/paperheartsinc" target="_blank">상점</a></div></div></div>
+    </div>
+  </div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">💻</span>디지털 베스트셀러 (가계부·플래너·팝컬처)</div>
+    <div class="prods">
+      <div class="card"><div class="imgw"><span class="hot b">디지털 1위</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/38856492/r/il/a16f1f/7600302569/il_570xN.7600302569_2ls3.jpg" alt="budget"></div><div class="body"><div class="nm">월간 가계부 구글시트</div><div class="en">Budget Planner Google Sheet · Monthly</div><div class="meta">월 <b>2,396개</b> · +23% · Templates</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=budget+planner+google+sheets" target="_blank">Etsy 검색</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">고매출</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/42054447/r/il/9d453c/7684546775/il_570xN.7684546775_eumc.jpg" alt="annualbudget"></div><div class="body"><div class="nm">얼티밋 연간 예산 스프레드시트</div><div class="en">Ultimate Annual Budget Spreadsheet</div><div class="meta">월 <b>733개</b> · $14,472 · Finance</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=annual+budget+spreadsheet" target="_blank">Etsy 검색</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">2026 플래너</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/26517593/r/il/93a1ff/7685698130/il_570xN.7685698130_5x4a.jpg" alt="digitalplanner"></div><div class="body"><div class="nm">올인원 디지털 플래너 2026·27·28</div><div class="en">All-in-One Digital Planner 2026-2028</div><div class="meta">월 <b>803개</b> · $3,180 · Planner</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=all+in+one+digital+planner+2026" target="_blank">Etsy 검색</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot b">프린터블</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/40802347/r/il/6ab574/7667096529/il_570xN.7667096529_4bju.jpg" alt="journal"></div><div class="body"><div class="nm">2026 빅 저널 번들 (프린터블)</div><div class="en">2026 BIG Journal Bundle · Printable</div><div class="meta">월 <b>790개</b> · $23,417 · Planner</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=printable+journal+bundle+2026" target="_blank">Etsy 검색</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot p">+235% 급상승</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/52533486/r/il/2659e6/8072969161/il_570xN.8072969161_r6k4.jpg" alt="crochetpattern"></div><div class="body"><div class="nm">15-in-1 동물 옷입히기 크로셰 패턴</div><div class="en">15-in-1 Land Turtle Dress Up Crochet</div><div class="meta">월 <b>900개</b> · $8,095 · 패턴 PDF</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=crochet+animal+dress+up+pattern" target="_blank">Etsy 검색</a></div></div></div>
+      <div class="card"><div class="imgw"><span class="hot p">팝컬처</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/62368692/r/il/2172cf/7247332144/il_570xN.7247332144_5pho.jpg" alt="pokedex"></div><div class="body"><div class="nm">포켓몬 포케덱스 카드 (프린터블)</div><div class="en">Pokémon Complete Pokédex Cards · Printable</div><div class="meta">월 <b>959개</b> · $2,177 · Digital Print</div><div class="links"><a class="lk e" href="https://www.etsy.com/search?q=pokemon+pokedex+cards+printable" target="_blank">Etsy 검색</a></div></div></div>
+    </div>
+  </div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">🔑</span>서브니치·키워드 (오퍼튜니티 스코어)</div>
+    <div class="chips">
+      <a class="chip" href="https://www.etsy.com/search?q=bi-weekly+budget" target="_blank">bi-weekly budget<span class="op">89</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=finance+templates" target="_blank">finance templates<span class="op">86</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=bill+calendar" target="_blank">bill calendar<span class="op">83</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=budget+book" target="_blank">budget book<span class="op">83</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=budget+templates" target="_blank">budget templates<span class="op">83</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=beginner+budget" target="_blank">beginner budget<span class="op">82</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=budget+worksheet" target="_blank">budget worksheet<span class="op">82</span></a>
+      <a class="chip" href="https://www.etsy.com/search?q=budget+google+sheets" target="_blank">budget google sheets<span class="op">82</span></a>
+    </div>
+    <div class="partdesc" style="margin-top:14px">시장 규모: 누적 매출 <b>$12M</b> · 누적 판매 208,493 · 경쟁 리스팅 25,836 · 경쟁 샵 2,675 · 톱 카테고리 Calendars &amp; Planners · <b>수요 HIGH / 경쟁 HIGH</b>. 성숙 시장이라 위 세부 키워드(격주 예산·청구서 캘린더 등)로 빈틈을 노리는 게 핵심입니다.</div>
+  </div>
+
+  <div class="block rv">
+    <div class="btitle"><span class="ic">📅</span>시즌 신호등 캘린더 + 팝컬처</div>
+    <div class="season">
+      <div class="scol s-red"><h4>🔴 NOW 미국 250주년</h4><p>7/4 건국 250주년 · 1776–2026 성조기·티셔츠·기념주화·파티데코 — 한 세대에 한 번, 막바지 선점</p></div>
+      <div class="scol s-org"><h4>🟠 여름 피크</h4><p>터키시/비치 타월·시어서커 파우치·크로셰 토트·물놀이·여행 파우치</p></div>
+      <div class="scol s-yel"><h4>🟡 백투스쿨 (선행)</h4><p>6월 말 조기 시작 · 7~9월 분산 구매 (관세 우려로 앞당겨진 수요)</p></div>
+      <div class="scol s-grn"><h4>🟢 팝컬처</h4><p>토이스토리5(6/19)·포켓몬 30주년·트레이딩카드·Western Americana 무드</p></div>
+      <div class="scol s-pur"><h4>🟣 가계부·플래너</h4><p>연중 꾸준 · 2026/2027 플래너·격주 예산·청구서 캘린더 빈틈</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section>
+  <div class="btitle"><span class="ic">🎬</span>지금 트렌디해서 이런 영상 찍으면 좋을 아이디어 3선</div>
+  <div class="vids">
+    <div class="vid rv"><div class="n">01</div><h4>"미국이 250살 생일 준비 중"</h4><p>7/4 Semiquincentennial 굿즈 폭증 설명형. 250주년 셔츠 +14,700%, 1776–2026 성조기·기념주화. "왜 올해 7월 4일이 특별한가"로 후킹.</p></div>
+    <div class="vid rv"><div class="n">02</div><h4>"아빠 선물 1위가 사진 셔츠?"</h4><p>커스텀 아빠 사진 셔츠가 월 8,854개로 전체 1위. 이름 브레이슬릿·포토 파자마·머그까지 묶어 "내년 미리 보기" 앵글로.</p></div>
+    <div class="vid rv"><div class="n">03</div><h4>"토이스토리5·포켓몬이 부른 굿즈 붐"</h4><p>6/19 개봉 토이스토리5 PNG +4,900%, 포켓몬 30주년 카드·포케덱스 동시 상승. 팝컬처 트레이딩카드 시장을 쉽게 풀어주기.</p></div>
+  </div>
+
+  <div class="insights rv">
+    <h3>💡 이번 주 핵심 인사이트 3</h3>
+    <ol>
+      <li><b>미국 250주년(7/4)이 이번 주 최대 동력 — 한 세대에 한 번.</b> 250주년 셔츠가 전체 급상승 1위(+14,700%), 패트리어틱 별 귀걸이 +4,600%. 1776–2026 굿즈를 선점할 막바지 타이밍입니다.</li>
+      <li><b>아버지의 날(6/21) 여운이 상위권을 도배.</b> 커스텀 아빠 사진 셔츠가 월 8,854개로 전체 1위(+915%), 급상승 TOP10 중 8개가 Father's Day 관련. 잔여 수요라 다음 주 빠르게 식으니 영상은 "내년 대비" 앵글로.</li>
+      <li><b>팝컬처·가계부는 꾸준한 빈틈.</b> 토이스토리5·포켓몬 30주년이 트레이딩카드·PNG 수요를 끌고, 디지털 가계부 시장 $12M(월 208K 판매)에 'bi-weekly budget'(89)·'finance templates'(86) 기회 키워드가 유효합니다.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  모든 수치는 추정치이며 '월 판매/매출'과 '누적'을 구분 표기했습니다 &nbsp;|&nbsp; 생성일 2026-06-29
+</footer>
+</div>
+
+<script>
+(function(){
+  function animate(el){
+    var to=parseFloat(el.getAttribute('data-to'));
+    var suf=el.getAttribute('data-suffix')||'';
+    var start=null,dur=1400;
+    function step(ts){
+      if(!start)start=ts;
+      var p=Math.min((ts-start)/dur,1);
+      var e=1-Math.pow(1-p,3);
+      var v=Math.floor(e*to);
+      el.textContent=v.toLocaleString('en-US')+suf;
+      if(p<1)requestAnimationFrame(step);else el.textContent=to.toLocaleString('en-US')+suf;
+    }
+    requestAnimationFrame(step);
+  }
+  document.querySelectorAll('.imgw img').forEach(function(img){
+    img.addEventListener('error',function(){
+      var alt=(img.getAttribute('alt')||'').toLowerCase();
+      var map={usa250:'🇺🇸',bracelet:'📿',toystory:'🤠',earrings:'⭐',dadshirt:'👕',toiletry:'🧴',mensbracelet:'📿',beachtowel:'🏖️',beachtote:'👜',pokemoncard:'🃏',budget:'💰',annualbudget:'📊',digitalplanner:'🗓️',journal:'📓',crochetpattern:'🧶',pokedex:'🃏'};
+      var emo='🛒';
+      for(var k in map){if(alt.indexOf(k)>=0){emo=map[k];break;}}
+      var d=document.createElement('div');
+      d.style.cssText='width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px;background:var(--paper)';
+      d.textContent=emo;
+      img.replaceWith(d);
+    });
+  });
+  function revealAll(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('show');el.querySelectorAll('[data-to]').forEach(animate);if(el.hasAttribute('data-to'))animate(el);});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('show');
+          en.target.querySelectorAll('[data-to]').forEach(animate);
+          if(en.target.hasAttribute('data-to'))animate(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    },{threshold:.15});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+    document.querySelectorAll('.kpi [data-to]').forEach(function(el){animate(el);});
+    setTimeout(revealAll,2500);
+  } else { revealAll(); }
+})();
+</script>
+</body>
+</html>
