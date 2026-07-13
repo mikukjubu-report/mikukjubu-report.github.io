@@ -149,17 +149,17 @@ footer .fbig{color:#E8D6BE;font-weight:800;font-size:15px;margin-bottom:6px}
     <div class="wow newc">● 미국 개최 · 신규 정점</div>
   </div>
   <div class="kpi">
-    <div class="num c-drop" data-count="59000" data-suffix="개">0</div>
+    <div class="num c-drop" data-count="59000" data-suffix="개">59,000개</div>
     <div class="lbl">유아 최고템 월 판매</div>
     <div class="wow up">▲ 유아·베이비 볼륨 장악</div>
   </div>
   <div class="kpi">
-    <div class="num c-phy" data-count="133" data-prefix="+" data-suffix="%">0</div>
+    <div class="num c-phy" data-count="133" data-prefix="+" data-suffix="%">+133%</div>
     <div class="lbl">개인화 유아 백팩 (Etsy)</div>
     <div class="wow up">▲ 백투스쿨 램프업</div>
   </div>
   <div class="kpi">
-    <div class="num c-dig" data-count="12" data-prefix="$" data-suffix="M">0</div>
+    <div class="num c-dig" data-count="12" data-prefix="$" data-suffix="M">$12M</div>
     <div class="lbl">가계부 템플릿 시장 규모</div>
     <div class="wow flat">→ 꾸준한 에버그린</div>
   </div>
@@ -405,24 +405,24 @@ footer .fbig{color:#E8D6BE;font-weight:800;font-size:15px;margin-bottom:6px}
 <script>
 (function(){
   function fmt(n){return n.toLocaleString('en-US');}
+  function finalText(el){return (el.dataset.prefix||'')+fmt(parseFloat(el.dataset.count||'0'))+(el.dataset.suffix||'');}
   function animate(el){
     if(el.dataset.plain){return;}
     var target=parseFloat(el.dataset.count||'0');
-    var prefix=el.dataset.prefix||'';var suffix=el.dataset.suffix||'';
-    var dur=1200,start=null;
-    function step(ts){
-      if(!start)start=ts;var p=Math.min((ts-start)/dur,1);
-      var eased=1-Math.pow(1-p,3);
-      el.textContent=prefix+fmt(Math.round(target*eased))+suffix;
-      if(p<1){requestAnimationFrame(step);}else{el.textContent=prefix+fmt(target)+suffix;}
-    }
-    requestAnimationFrame(step);
+    var prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+    var dur=1200,start=null,done=false;
+    function set(v){el.textContent=prefix+fmt(v)+suffix;}
+    function step(ts){if(done)return;if(!start)start=ts;var p=Math.min((ts-start)/dur,1);set(Math.round(target*(1-Math.pow(1-p,3))));if(p<1){requestAnimationFrame(step);}else{done=true;set(target);}}
+    set(0);requestAnimationFrame(step);
+    setTimeout(function(){if(!done){done=true;el.textContent=finalText(el);}},dur+400);
   }
   var nums=[].slice.call(document.querySelectorAll('.kpi .num'));
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animate(e.target);io.unobserve(e.target);}});},{threshold:.4});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animate(e.target);io.unobserve(e.target);}});},{threshold:.35});
     nums.forEach(function(n){io.observe(n);});
   }else{nums.forEach(animate);}
+  setTimeout(function(){nums.forEach(function(el){if(!el.dataset.plain){el.textContent=finalText(el);}});},3200);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden){nums.forEach(function(el){if(!el.dataset.plain){el.textContent=finalText(el);}});}});
 })();
 </script>
 </body>
