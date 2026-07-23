@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이번 주 미국에서 잘 팔리는 것 — 2026년 7월 3주차</title>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR',sans-serif;background:#FFFFFF;color:#1B1510;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 60px}
+a{color:inherit}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400}
+header{background:#211913;border-top:10px solid #D24A2E;padding:46px 20px 40px;text-align:center}
+.kicker{color:#C98A12;letter-spacing:6px;font-size:14px;font-weight:800;margin-bottom:14px}
+header h1{font-family:'Black Han Sans',sans-serif;font-weight:400;color:#FFF7EE;font-size:52px;line-height:1.15;margin-bottom:12px}
+header .sub{color:#E8DCCC;font-size:17px;font-weight:500}
+.datechip{display:inline-block;margin-top:16px;background:#D24A2E;color:#fff;font-weight:800;font-size:14px;padding:7px 18px;border-radius:999px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 8px}
+.kpi{background:#FFF7EE;border:1px solid #F0E2D0;border-radius:16px;padding:20px 14px;text-align:center}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:40px;line-height:1.1}
+.kpi .lb{font-size:14px;font-weight:700;color:#574A3F;margin-top:6px}
+.kpi .dl{font-size:13px;font-weight:700;margin-top:2px}
+.up{color:#1E7D3C}.dn{color:#C0392B}.nw{color:#D97706}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:34px;margin:54px 0 6px;display:flex;align-items:center;gap:12px}
+.parttitle .bar{width:14px;height:34px;border-radius:4px;display:inline-block}
+.psub{color:#574A3F;font-size:15px;font-weight:500;margin-bottom:18px}
+.btitle{font-size:21px;font-weight:800;margin:34px 0 4px}
+.bsub{font-size:14px;color:#574A3F;font-weight:500;margin-bottom:14px}
+.ranks{background:#FFF7EE;border:1px solid #F0E2D0;border-radius:16px;padding:8px 18px}
+.rank{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px dashed #EADBC6;font-size:15.5px}
+.rank:last-child{border-bottom:none}
+.rank .pos{font-weight:800;font-size:17px;width:26px;color:#D24A2E;flex-shrink:0}
+.rank .nm{font-weight:800;flex:1}
+.rank .nm .en{display:block;font-size:12px;font-weight:600;color:#8A7A66}
+.rank .why{font-size:13.5px;font-weight:500;color:#574A3F;flex:1.4;text-align:right}
+.badge{font-size:12.5px;font-weight:800;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.b-up{background:#E3F4E8;color:#1E7D3C}.b-dn{background:#FBE7E4;color:#C0392B}.b-new{background:#FDEBD2;color:#B45309}.b-st{background:#EFE9E0;color:#574A3F}
+.whycards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.whyc{background:#FFF7EE;border:1px solid #F0E2D0;border-left:6px solid #D24A2E;border-radius:14px;padding:18px}
+.whyc h4{font-size:18px;font-weight:800;margin-bottom:8px}
+.whyc p{font-size:14.5px;color:#2C231C;font-weight:500}
+.oneline{margin-top:14px;background:#211913;color:#FFF7EE;border-radius:12px;padding:14px 20px;font-size:15.5px;font-weight:700}
+.oneline b{color:#C98A12}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:#fff;border:1px solid #EFE4D4;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(33,25,19,.06)}
+.thumb{height:190px;background:#F6EEE2;position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .fb{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(135deg,#FDEBD2,#F6D9C4)}
+.hot{position:absolute;top:10px;left:10px;background:#D24A2E;color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px}
+.tr-b{position:absolute;top:10px;right:10px;font-size:12.5px;font-weight:800;padding:4px 10px;border-radius:999px;background:#fff}
+.card .bd{padding:14px 16px 16px}
+.card h5{font-size:15.5px;font-weight:800;line-height:1.35}
+.card .en{display:block;font-size:12px;font-weight:600;color:#8A7A66;margin-top:2px}
+.card .meta{margin-top:8px;font-size:14.5px;font-weight:700;color:#2C231C}
+.card .meta b{font-size:16px}
+.links{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.lk{font-size:12.5px;font-weight:800;text-decoration:none;padding:5px 12px;border-radius:999px;border:1.5px solid}
+.lk-a{color:#B45309;border-color:#E8C48A;background:#FFF8EC}
+.lk-z{color:#1B1510;border-color:#D8CBB8;background:#FBF6EE}
+.lk-t{color:#C2185B;border-color:#F3B8CE;background:#FEF0F5}
+.lk-e{color:#0B6E99;border-color:#A8D4E5;background:#EFF8FC}
+.adcards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.adc{background:#FFF7EE;border:1px solid #F0E2D0;border-radius:14px;padding:18px}
+.adc .fmt{font-size:12px;font-weight:800;color:#D24A2E;letter-spacing:2px}
+.adc h4{font-size:18px;font-weight:800;margin:6px 0 6px}
+.adc h4 .en{display:block;font-size:13px;font-weight:600;color:#8A7A66}
+.adc p{font-size:14.5px;font-weight:500;color:#2C231C}
+.seasons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.scol{border-radius:14px;padding:18px;border:1px solid #F0E2D0}
+.scol h4{font-size:17px;font-weight:800;margin-bottom:6px}
+.scol p{font-size:14.5px;font-weight:500}
+.s-g{background:#EBF7EE}.s-y{background:#FEF7E6}.s-r{background:#FBEDEA}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{text-decoration:none;background:#EFF8FC;border:1.5px solid #A8D4E5;color:#0B4F6E;font-weight:800;font-size:14px;padding:9px 16px;border-radius:999px}
+.chip b{color:#D24A2E}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.vid{background:#211913;border-radius:16px;padding:22px;color:#FFF7EE}
+.vid .n{font-family:'Black Han Sans',sans-serif;font-size:34px;color:#C98A12}
+.vid h4{font-size:17.5px;font-weight:800;margin:6px 0 8px;color:#FFF7EE}
+.vid p{font-size:14px;font-weight:500;color:#D9CCB9}
+.insights{background:#FFF7EE;border:2px solid #D24A2E;border-radius:18px;padding:26px 28px;margin-top:40px}
+.insights h3{font-size:22px;font-weight:800;margin-bottom:12px}
+.insights li{margin:0 0 10px 22px;font-size:15.5px;font-weight:600}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid #EADBC6;color:#8A7A66;font-size:13px;font-weight:500;text-align:center}
+@media(max-width:900px){.kpis,.grid4{grid-template-columns:repeat(2,1fr)}.grid3,.whycards,.adcards,.seasons,.vids{grid-template-columns:1fr}header h1{font-size:36px}.rank .why{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="kicker">WEEKLY US TREND REPORT</div>
+<h1>이번 주 미국에서 잘 팔리는 것</h1>
+<div class="sub">드랍쉬핑 + Etsy 핸드메이드·디지털 두 시장 통합 리서치 · 2026년 7월 3주차</div>
+<div class="datechip">📅 2026.07.20 – 07.26</div>
+</header>
+<div class="wrap">
+
+<div class="kpis">
+<div class="kpi"><div class="num" style="color:#D24A2E" data-v="3.4" data-f="$@M">$3.4M</div><div class="lb">2-in-1 아기 보행기 월매출</div><div class="dl up">▲ 틱톡샵 볼륨 1위급</div></div>
+<div class="kpi"><div class="num" style="color:#0B6E99" data-v="433" data-f="+@%">+433%</div><div class="lb">선생님 선물 키체인 월판매</div><div class="dl up">▲ 백투스쿨 신호</div></div>
+<div class="kpi"><div class="num" style="color:#9B2D6B" data-v="489" data-f="$@">$489</div><div class="lb">신학기 아동 1인 쇼핑 예산</div><div class="dl up">▲ 전년 대비 +11.7%</div></div>
+<div class="kpi"><div class="num" style="color:#C98A12" data-v="12" data-f="$@M">$12M</div><div class="lb">'budget planner' 시장 누적 매출</div><div class="dl">─ 에버그린 유지</div></div>
+</div>
+
+<div class="parttitle" style="color:#D24A2E"><span class="bar" style="background:#D24A2E"></span>PART A · 드랍쉬핑 트렌드</div>
+<div class="psub">틱톡샵 베스트셀러 · AI 추천 위너 · 광고 라이브러리 기반</div>
+
+<div class="btitle">① 핫 카테고리 순위 변동</div>
+<div class="bsub">지난주 대비 · ▲상승 ▼하락 🆕신규 ─유지</div>
+<div class="ranks">
+<div class="rank"><span class="pos">1</span><span class="nm">유아·베이비<span class="en">Baby &amp; Maternity</span></span><span class="badge b-up">▲ 2주 연속 장악</span><span class="why">얼룩제거 $2.8M · 보행기 $3.4M · 유아복 $432.6K</span></div>
+<div class="rank"><span class="pos">2</span><span class="nm">백투스쿨<span class="en">Back to School</span></span><span class="badge b-up">▲ 피크 진입</span><span class="why">선생님 선물 +433% · 유아 백팩 +18% · 문구 세일 광고</span></div>
+<div class="rank"><span class="pos">3</span><span class="nm">개인화 주얼리·기프트<span class="en">Personalized Gifts</span></span><span class="badge b-up">▲ 급등</span><span class="why">이름 반지 +117%/$118.4K · 메이크업백 +120%</span></div>
+<div class="rank"><span class="pos">4</span><span class="nm">홈·클리닝<span class="en">Home &amp; Cleaning</span></span><span class="badge b-up">▲ 상승</span><span class="why">드레인 바스켓 $365.6K · 전동 스크러버 · 니치 1위 Kitchen</span></div>
+<div class="rank"><span class="pos">5</span><span class="nm">네일·뷰티 툴<span class="en">Nail &amp; Beauty Tools</span></span><span class="badge b-new">🆕 신상 위너</span><span class="why">캣아이 마그넷 툴 · 스마트 네일클리퍼 마진 $28.91</span></div>
+<div class="rank"><span class="pos">6</span><span class="nm">스피리추얼·리추얼<span class="en">Spiritual &amp; Ritual</span></span><span class="badge b-new">🆕 Etsy 실물 1위</span><span class="why">러브스펠 $110.9K +105% · 날씨 리추얼 +35%</span></div>
+<div class="rank"><span class="pos">7</span><span class="nm">무드 조명<span class="en">Mood Lighting</span></span><span class="badge b-st">─ 지속</span><span class="why">선셋 프로젝션 램프 $497.5K / 24.9K주문</span></div>
+<div class="rank"><span class="pos">8</span><span class="nm">월드컵 팬굿즈<span class="en">World Cup Fan Goods</span></span><span class="badge b-dn">▼ 시즌 종료</span><span class="why">7/19 결승 종료 → 재고 할인 국면, 신규 진입 비추</span></div>
+<div class="rank"><span class="pos">9</span><span class="nm">비치·여름 여행<span class="en">Beach &amp; Summer Travel</span></span><span class="badge b-dn">▼ 냉각</span><span class="why">비치 토트 -51% · 세면백 -17% · 타월 +142% 잔열</span></div>
+<div class="rank"><span class="pos">10</span><span class="nm">가계부 디지털<span class="en">Budget Templates</span></span><span class="badge b-st">─ 에버그린</span><span class="why">구글시트 가계부 월 2,496건 · 시장 누적 $12M</span></div>
+</div>
+
+<div class="btitle">② 왜 바뀌었나</div>
+<div class="bsub">이번 주 순위를 움직인 시즌 드라이버 3가지</div>
+<div class="whycards">
+<div class="whyc"><h4>🎒 백투스쿨 피크 윈도 (7/15~8/14)</h4><p>쇼퍼 66%가 7월 말~개학 직전 구매 완료. 7월 말 온라인 매출은 7월 초의 <b>1.5배</b>, 8월 1~14일은 <b>2배</b>로 정점. 예산은 아동 1인 <b>$489(+11.7%)</b>, 총 $30.4B. 선생님 선물·백팩·문구 급등의 배경.</p></div>
+<div class="whyc"><h4>🏆 월드컵 종료 (7/19 결승)</h4><p>미국 개최 월드컵이 끝나며 지난주 신규 진입했던 팬굿즈 수요 급랭. 저지 판매가 직전 대회의 4배를 기록한 초대형 시즌이었던 만큼 이제는 <b>재고 처분 할인 국면</b> — 신규 진입은 비추천.</p></div>
+<div class="whyc"><h4>🎃 Summerween 개막 (7월의 할로윈)</h4><p>소비자 <b>70%가 9월 전</b>에 폴/할로윈 쇼핑 계획. 대형 리테일이 7월 중순부터 할로윈 컬렉션 조기 출시. 스푸키+여름(비치타월·플로티) 하이브리드가 특징 — <b>지금 준비하면 8~9월 수확</b>.</p></div>
+</div>
+<div class="oneline">한 줄 결론 — <b>"월드컵이 끝난 자리를 백투스쿨이 즉시 채웠다."</b> 베이비 볼륨은 그대로, 다음 타자는 Summerween.</div>
+<div class="btitle">③ 틱톡샵 · AI 추천 볼륨 제품</div>
+<div class="bsub">이번 주 판매 볼륨 상위 — 클릭하면 소싱처 검색</div>
+<div class="grid3">
+<div class="card"><div class="thumb"><img src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/16d7ea54-76d0-4eab-b872-32909408cb54" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🧴</div>'"><span class="hot">🔥 하이 디맨드</span></div><div class="bd"><h5>유아 얼룩제거 스프레이·물티슈<span class="en">Messy Eater Stain Treater Spray &amp; Wipes</span></h5><div class="meta">$9.99~24.99 · 매출 <b>$2.8M</b> · 281K개</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=baby+stain+remover+spray" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=baby+stain+remover" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/108e8693-744d-4726-bdca-e5dc96e9e5af" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>👶</div>'"><span class="hot">🔥 하이 디맨드</span></div><div class="bd"><h5>곰돌이 자수 유아 투피스<span class="en">Cartoon Bear Embroidery Baby Two-piece Set</span></h5><div class="meta">$7.30~9.45 · 매출 <b>$432.6K</b> · 59K개</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=baby+bear+embroidery+outfit" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=baby+bear+outfit" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/d692b3c6-0edd-4af7-89d4-09daae6502be" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🍼</div>'"><span class="tr-b dn">-31%할인</span></div><div class="bd"><h5>240ML 레이드백 젖병 (누수 방지)<span class="en">240ML Leak-Proof Laid-Back Feeding Bottle</span></h5><div class="meta">$8.20 · 매출 <b>$51.9K</b> · 6K개</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=laid+back+feeding+bottle" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=anti+colic+baby+bottle" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/01699e6f-b951-4948-9458-28a558a992b4" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🦦</div>'"></div><div class="bd"><h5>수달 인형 플러시<span class="en">Cute Sea Otter Stuffed Animal Plushie</span></h5><div class="meta">$7.99~15.99 · 매출 <b>$39.6K</b> · 5K개</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=sea+otter+plush" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=otter+plush" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://facebook-ads-static-content.s3.us-east-1.amazonaws.com/fb-ads-data/e28d7313-39a8-48f6-a12d-d8bc8e5e31d7" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>😴</div>'"></div><div class="bd"><h5>태핑 모션 아기 수면 쿠션<span class="en">Baby Sleeping Pillow with Tapping Motion</span></h5><div class="meta">$22.99 · 매출 <b>$23.1K</b> · 1K개</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=baby+soothing+tapping+pillow" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=baby+sleep+soother" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://cdn.shopify.com/s/files/1/0979/2962/5917/files/S22bd66c1f34d46feab866fd641edbee2y_85654ac7-d8e0-4ade-bac3-16fd1d2b75a6.webp" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🌅</div>'"><span class="hot">🔥 하이 디맨드</span></div><div class="bd"><h5>선셋 프로젝션 램프<span class="en">Sunset Projection Lamp USB Atmosphere Light</span></h5><div class="meta">$19.99 · 매출 <b>$497.5K</b> · 24.9K주문</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=sunset+projection+lamp" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=sunset+lamp" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://cdn.shopify.com/s/files/1/0901/9736/0929/files/Sd2092573c0c142ac83326c0aa7851d61V.webp" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>💇</div>'"><span class="hot">🔥 하이 디맨드</span></div><div class="bd"><h5>워터 스프레이 헤어브러시 2-in-1<span class="en">Hair Brush with Water Spray Mister</span></h5><div class="meta">$38.01 · 매출 <b>$476.1K</b> · 12.5K주문</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=water+spray+hair+brush" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=spray+hair+brush" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://cdn.shopify.com/s/files/1/0762/8164/3236/files/S8435125f0d994d79a2953ef346e107a6z.webp" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🧺</div>'"><span class="hot">🔥 하이 디맨드</span></div><div class="bd"><h5>프레스형 싱크 드레인 바스켓<span class="en">Press-Type Drain Basket</span></h5><div class="meta">$23.99 · 매출 <b>$365.6K</b> · 15.2K주문</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=press+type+sink+drain+basket" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=sink+drain+basket" target="_blank">아마존 시세</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://cdn.shopify.com/s/files/1/0634/5084/1181/files/S02b1aff8f2db40639d4645689df600adl.webp" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🧽</div>'"></div><div class="bd"><h5>무선 전동 스핀 스크러버<span class="en">Electric Spin Scrubber, Cordless</span></h5><div class="meta">$8.99 · 매출 <b>$56.2K</b> · 6.2K주문</div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=electric+spin+scrubber" target="_blank">알리 소싱</a><a class="lk lk-z" href="https://www.amazon.com/s?k=electric+spin+scrubber" target="_blank">아마존 시세</a></div></div></div>
+</div>
+
+<div class="btitle">④ 지금 도는 광고·영상 포맷</div>
+<div class="bsub">광고 라이브러리에서 포착한 크리에이티브 앵글 3</div>
+<div class="adcards">
+<div class="adc"><div class="fmt">FORMAT 01 · 공포 소구</div><h4>"호텔에 몰래카메라가?"<span class="en">Hidden Camera Detector — fear &amp; travel safety</span></h4><p>"에어비앤비 도착했는데 뭔가 이상하다" → RF 탐지기로 스캔 시연. 여행 성수기 + 불안 소구 조합. 스페인어권 타깃 확장 중.</p><div class="links"><a class="lk lk-t" href="https://www.tiktok.com/tag/hiddencamera" target="_blank">#hiddencamera</a><a class="lk lk-t" href="https://www.tiktok.com/search?q=camera%20detector" target="_blank">▶ 영상 보기</a></div></div>
+<div class="adc"><div class="fmt">FORMAT 02 · 시즌 세일</div><h4>"학용품 50% + 책 2+1"<span class="en">Back-to-School Bundle Sale</span></h4><p>문구·도서 묶음 할인을 전면에 내세운 백투스쿨 직격 광고. 기한 임박 문구로 7월 말 피크 윈도를 정조준.</p><div class="links"><a class="lk lk-t" href="https://www.tiktok.com/tag/backtoschool" target="_blank">#backtoschool</a><a class="lk lk-t" href="https://www.tiktok.com/search?q=back%20to%20school%20haul" target="_blank">▶ 영상 보기</a></div></div>
+<div class="adc"><div class="fmt">FORMAT 03 · 긴급 세일</div><h4>"PRICE DROP ALERT 🚨"<span class="en">Urgency price-drop format, 4 creatives A/B</span></h4><p>같은 광고주가 동일 카피로 크리에이티브 4종을 동시 A/B 테스트. 사이렌 이모지 + "놓치면 후회" 카피의 반복 노출 전략.</p><div class="links"><a class="lk lk-t" href="https://www.tiktok.com/tag/pricedrop" target="_blank">#pricedrop</a><a class="lk lk-t" href="https://www.tiktok.com/search?q=price%20drop%20alert" target="_blank">▶ 영상 보기</a></div></div>
+</div>
+
+<div class="btitle">⑤ 시즌 기회 타이밍</div>
+<div class="seasons">
+<div class="scol s-g"><h4>🟢 백투스쿨 — 지금이 피크</h4><p>7/15~8/14 매출 정점(7월 초의 1.5~2배). 백팩·문구·선생님 선물·기숙사 안전템. <b>지금 리스팅 올려야 하는 시즌.</b></p></div>
+<div class="scol s-y"><h4>🟡 Summerween — 지금 준비</h4><p>7월 중순부터 할로윈 조기 쇼핑 시작, 수확은 8~9월. 스푸키+여름 하이브리드(할로윈 비치타월·호박 소품) 선점.</p></div>
+<div class="scol s-r"><h4>🔴 비치·월드컵 — 정리 국면</h4><p>비치 토트 -51%, 월드컵 팬굿즈 시즌 종료. 재고 있으면 할인 소진, 신규 진입은 금지 구간.</p></div>
+</div>
+
+<div class="btitle">⑥ 이번 주 신상 위너 후보</div>
+<div class="bsub">막 발굴된 고마진 신제품 — 잠재 월매출 추정</div>
+<div class="grid4">
+<div class="card"><div class="thumb"><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FTW3bMlV64rtlWDEjTcPEW1MwECZV8sF1784638820.jpeg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>💅</div>'"><span class="tr-b nw">13시간 전</span></div><div class="bd"><h5>캣아이 마그넷 네일 툴<span class="en">CatEyePro Magnet Nail Tool</span></h5><div class="meta">마진 $24.97 · 잠재 <b>$41.9K/월</b></div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=cat+eye+nail+magnet" target="_blank">알리 소싱</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FJLHYkMaNl9FdJpU1xqrYKmygsy8mEdF1784638858.jpeg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🐦</div>'"></div><div class="bd"><h5>게임 앵무새 사운드 버튼 키체인<span class="en">MineSquawk Button Keychain</span></h5><div class="meta">마진 $26.91 · 잠재 <b>$47.8K/월</b></div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=parrot+sound+button+keychain" target="_blank">알리 소싱</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FpJgR85gDK0uYQyVLgMtPvZF79G471fF1784541619.jpeg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>✂️</div>'"></div><div class="bd"><h5>스마트 네일클리퍼 (클립+폴리시)<span class="en">TrimGlow Smart Nail Clipper</span></h5><div class="meta">마진 $28.91 · 잠재 <b>$44.8K/월</b></div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=electric+nail+clipper+polisher" target="_blank">알리 소싱</a></div></div></div>
+<div class="card"><div class="thumb"><div class="fb">🚗</div></div><div class="bd"><h5>귀여운 카 헤드레스트 커버<span class="en">SmileRide Headrest Covers</span></h5><div class="meta">마진 $17.18 · 잠재 <b>$33.6K/월</b></div><div class="links"><a class="lk lk-a" href="https://www.aliexpress.com/wholesale?SearchText=cute+car+headrest+cover" target="_blank">알리 소싱</a></div></div></div>
+</div>
+<div class="parttitle" style="color:#0B6E99"><span class="bar" style="background:#0B6E99"></span>PART B · Etsy 트렌드</div>
+<div class="psub">디지털 다운로드 · 핸드메이드 실물 · 태그 시장 데이터 기반</div>
+
+<div class="btitle" style="color:#0B6E99">① 디지털 베스트셀러 6</div>
+<div class="bsub">월판매 기준 상위 — 상점·검색으로 바로 확인</div>
+<div class="grid3">
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/38856492/r/il/a16f1f/7600302569/il_570xN.7600302569_2ls3.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>📊</div>'"><span class="hot" style="background:#0B6E99">👑 디지털 1위</span><span class="tr-b up">+3%</span></div><div class="bd"><h5>구글시트 월간 가계부 스프레드시트<span class="en">Budget Planner Google Sheet Monthly Spreadsheet</span></h5><div class="meta">월 <b>2,496건</b> · $4.9K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/ExclusiveDesignLab" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=budget+planner+google+sheets" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/59104465/r/il/283597/7800457775/il_570xN.7800457775_4mnt.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🌤️</div>'"><span class="tr-b up">+35%</span></div><div class="bd"><h5>당일 좋은 날씨 리추얼 (스피리추얼)<span class="en">Same Day Good Weather Ritual</span></h5><div class="meta">월 <b>1,654건</b> · $17.6K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/mysticniora" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=weather+ritual+spell" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/65868490/r/il/1207ea/8189695040/il_570xN.8189695040_22gm.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🥟</div>'"><span class="tr-b" style="color:#574A3F">0%</span></div><div class="bd"><h5>만두+찜기 크로셰 패턴 (노소우 바이럴)<span class="en">Dumpling &amp; Steamer Crochet Pattern, No Sew</span></h5><div class="meta">월 <b>1,651건</b> · $9.5K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/PeachyStitchh" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=dumpling+crochet+pattern" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/21468624/r/il/62842a/6135259724/il_570xN.6135259724_rmse.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🎨</div>'"><span class="tr-b" style="color:#574A3F">0%</span></div><div class="bd"><h5>커스텀 디자인 피 · 디지털 목업 서비스<span class="en">Custom Design Fee: Digital Mockup Service</span></h5><div class="meta">월 <b>1,125건</b> · $506</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/ByChelseaNicole" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=custom+digital+mockup" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/61945501/r/il/64a415/7954297103/il_570xN.7954297103_oeov.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>✉️</div>'"><span class="tr-b up">+121%</span></div><div class="bd"><h5>에디터블 봉투 라이너 템플릿<span class="en">Editable Envelope Liner Template: DIY Stationery</span></h5><div class="meta">월 <b>951건</b> · $1.9K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/EventsByAnn" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=envelope+liner+template" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/18710982/r/il/59d31a/8226803749/il_570xN.8226803749_5iw1.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>💡</div>'"><span class="tr-b up">+53%</span></div><div class="bd"><h5>10만+ 디지털 제품 아이디어 2026<span class="en">100,000+ Digital Product Ideas 2026, Passive Income</span></h5><div class="meta">월 <b>945건</b> · $4.3K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/KatherineDream" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=digital+product+ideas" target="_blank">Etsy 검색</a></div></div></div>
+</div>
+
+<div class="btitle" style="color:#0B6E99">② 저경쟁 서브니치 키워드</div>
+<div class="bsub">'budget planner' 시장 누적 $12M — 연관 태그 오퍼튜니티 스코어(높을수록 기회)</div>
+<div class="chips">
+<a class="chip" href="https://www.etsy.com/search?q=bi-weekly+budget" target="_blank">bi-weekly budget <b>89</b></a>
+<a class="chip" href="https://www.etsy.com/search?q=finance+templates" target="_blank">finance templates <b>86</b></a>
+<a class="chip" href="https://www.etsy.com/search?q=bill+calendar" target="_blank">bill calendar <b>83</b></a>
+<a class="chip" href="https://www.etsy.com/search?q=teacher+appreciation+gift" target="_blank">teacher appreciation 🎒</a>
+<a class="chip" href="https://www.etsy.com/search?q=budget+binder+a6" target="_blank">budget binder A6 💵</a>
+<a class="chip" href="https://www.etsy.com/search?q=adhd+planner+2026" target="_blank">ADHD planner 2026 🧠</a>
+<a class="chip" href="https://www.etsy.com/search?q=back+to+school+printable" target="_blank">back to school printable ✏️</a>
+</div>
+
+<div class="btitle" style="color:#9B2D6B">③ 실물 베스트셀러 6</div>
+<div class="bsub">월판매 기준 상위 핸드메이드</div>
+<div class="grid3">
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/63114023/r/il/ecbd83/7948717332/il_570xN.7948717332_7r11.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>🔮</div>'"><span class="hot" style="background:#9B2D6B">👑 실물 1위</span><span class="tr-b up">+105%</span></div><div class="bd"><h5>러브스펠 (스피리추얼 서비스)<span class="en">Avoidant to Obsessed Love Spell</span></h5><div class="meta">월 <b>5,041건</b> · $110.9K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/MediumAURA" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=love+spell" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/52535302/r/il/1dd546/6629509874/il_570xN.6629509874_cv37.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>👝</div>'"><span class="tr-b dn">-17%</span></div><div class="bd"><h5>모노그램 시어서커 세면백<span class="en">Monogrammed Seersucker Toiletry Bag</span></h5><div class="meta">월 <b>4,437건</b> · $66.6K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/KvYshopUS" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=seersucker+toiletry+bag" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/58235386/r/il/199a3c/8019515798/il_570xN.8019515798_do04.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>👕</div>'"><span class="tr-b dn">-49%</span></div><div class="bd"><h5>아빠 빈티지 포토 셔츠<span class="en">Custom Dad Vintage Photo Shirt</span></h5><div class="meta">월 <b>3,617건</b> · $42.1K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/MugvoyageCo" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=custom+photo+shirt" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/52565980/r/il/23df0d/8011659717/il_570xN.8011659717_lxse.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>💄</div>'"><span class="tr-b up">+120%</span></div><div class="bd"><h5>개인화 시어서커 메이크업백 (셔닐 이름)<span class="en">Personalized Seersucker Makeup Bag, Chenille Name</span></h5><div class="meta">월 <b>3,385건</b> · $32.7K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/FifiWedding" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=personalized+makeup+bag+chenille" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/37454625/r/il/1b5a2a/7120640562/il_570xN.7120640562_ru2.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>💍</div>'"><span class="tr-b up">+117%</span></div><div class="bd"><h5>커스텀 이름 반지 (데인티)<span class="en">Personalized Custom Name Ring, Dainty</span></h5><div class="meta">월 <b>2,961건</b> · <b>$118.4K</b></div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/StayChicJewelry" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=custom+name+ring" target="_blank">Etsy 검색</a></div></div></div>
+<div class="card"><div class="thumb"><img src="https://i.etsystatic.com/36540294/r/il/a15e7c/8182352446/il_570xN.8182352446_4an.jpg" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=fb>👔</div>'"><span class="tr-b up">+21%</span></div><div class="bd"><h5>커스텀 로고 셔츠 (단체복)<span class="en">Custom Logo Shirts, Personalized</span></h5><div class="meta">월 <b>2,774건</b> · $41K</div><div class="links"><a class="lk lk-e" href="https://www.etsy.com/shop/TeaShirtsUS" target="_blank">상점</a><a class="lk lk-e" href="https://www.etsy.com/search?q=custom+logo+shirts" target="_blank">Etsy 검색</a></div></div></div>
+</div>
+
+<div class="btitle" style="color:#9B2D6B">④ 급상승 & 시즌 캘린더</div>
+<div class="whycards">
+<div class="whyc" style="border-left-color:#9B2D6B"><h4>📈 이번 주 급상승</h4><p>선생님 선물 키체인 <b class="up">+433%</b>($12.4K) · 터키시 비치타월 <b class="up">+142%</b> · 봉투 라이너 <b class="up">+121%</b> · 메이크업백 <b class="up">+120%</b> · 이름 반지 <b class="up">+117%</b> · 러브스펠 <b class="up">+105%</b></p></div>
+<div class="whyc" style="border-left-color:#C98A12"><h4>🚦 시즌 캘린더</h4><p>🟢 <b>백투스쿨</b> 지금~8월 중순 피크 · 🟡 <b>Summerween/할로윈</b> 지금 제작, 8~9월 수확 · 🟡 <b>늦여름 웨딩</b>(브라이드메이드 파우치·반지) 지속 · 🔴 <b>비치·여름</b> 정리 국면</p></div>
+<div class="whyc" style="border-left-color:#0B6E99"><h4>🎬 팝컬처 신호</h4><p>게임 사운드 키체인(앵무새 버튼) 신상 위너 진입 · 포켓몬 카드 정리용 플레이스홀더 꾸준 · 'Summerween' 자체가 애니메이션 밈에서 출발한 소비 트렌드 — 스푸키 굿즈 조기 수요.</p></div>
+</div>
+
+<div class="btitle">🎥 이번 주 트렌드로 만들 영상 아이디어 3선</div>
+<div class="vids">
+<div class="vid"><div class="n">01</div><h4>"미국 개학 쇼핑, 지금이 반값 타이밍"</h4><p>아동 1인 $489 · 총 $30.4B 시장. 7월 말 1.5배 → 8월 초 2배 피크 전에 사야 하는 것들, 세일 캘린더로 풀기.</p></div>
+<div class="vid"><div class="n">02</div><h4>"월드컵 끝난 다음 날, 마트에 호박이 떴다"</h4><p>7월에 할로윈 쇼핑하는 미국 — Summerween 현상. 소비자 70%가 9월 전에 폴 쇼핑을 시작하는 이유.</p></div>
+<div class="vid"><div class="n">03</div><h4>"틱톡에서 한 달 $3.4M 파는 아기 보행기"</h4><p>얼룩제거 스프레이 $2.8M, 베이비랩 $618K — 미국 육아템 틱톡 랭킹 훑기. 육아맘 시점 리뷰 포맷.</p></div>
+</div>
+
+<div class="insights">
+<h3>💡 핵심 인사이트</h3>
+<ul>
+<li><b>시즌 슬롯이 교체됐다.</b> 월드컵(종료) 자리를 백투스쿨(피크)이 즉시 채움 — 지금 올리는 리스팅이 8월 초 2배 매출 윈도에 올라탄다.</li>
+<li><b>베이비는 유행이 아니라 볼륨.</b> 2주 연속 틱톡샵 상위 도배($2.8M 얼룩제거·$3.4M 보행기) — '30초 시연이 되는 육아 필수템'이 알고리즘 승자.</li>
+<li><b>디지털은 저경쟁 태그로 우회.</b> 'budget planner'(누적 $12M)는 레드오션, 파생 태그 bi-weekly budget(89)·bill calendar(83)가 빈틈. 선생님 선물 +433%는 디지털 카드·기프트태그로도 전환 가능.</li>
+</ul>
+</div>
+
+<footer>본 리포트의 판매·매출 수치는 시장 추정치이며, '월판매'와 '누적'을 구분해 표기했습니다 · 2026.07.23 발행 · Weekly US Trend Report</footer>
+</div>
+<script>
+function fin(){document.querySelectorAll('.kpi .num').forEach(function(e){var v=e.getAttribute('data-v'),f=e.getAttribute('data-f');e.textContent=f.replace('@',v);});}
+function animate(){
+document.querySelectorAll('.kpi .num').forEach(function(e){
+var v=parseFloat(e.getAttribute('data-v')),f=e.getAttribute('data-f'),dec=(''+v).indexOf('.')>-1?1:0;
+var t0=null,dur=1400;
+function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);p=1-Math.pow(1-p,3);
+e.textContent=f.replace('@',(v*p).toFixed(dec));if(p<1)requestAnimationFrame(step);else e.textContent=f.replace('@',v);}
+requestAnimationFrame(step);
+});
+setTimeout(fin,1800);
+}
+if(document.readyState==='complete')animate();else window.addEventListener('load',animate);
+setTimeout(fin,3200);
+document.addEventListener('visibilitychange',fin);
+</script>
+</body>
+</html>
