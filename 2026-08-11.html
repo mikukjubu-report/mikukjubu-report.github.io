@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이번 주 미국에서 잘 팔리는 것 · 2026-08-11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --ink2:#574A3F;
+ --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+ --hdr:#211913; --line:#EADFD1; --up:#1E9E5A; --down:#D23B3B; --new:#E08A1E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;background:var(--bg)}
+header{background:var(--hdr);border-top:10px solid var(--ds);color:#fff;padding:46px 46px 40px}
+header .kick{font-size:15px;font-weight:800;letter-spacing:.28em;color:var(--gold);margin-bottom:16px}
+header h1{font-family:'Black Han Sans',sans-serif;font-size:58px;line-height:1.05;color:#fff;letter-spacing:-.01em}
+header .sub{margin-top:14px;font-size:18px;color:#E9DECF;font-weight:500;max-width:760px}
+header .chips{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+header .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:700}
+header .chip.gold{background:var(--gold);border-color:var(--gold);color:#211913}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:34px 46px 8px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px;text-align:center}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:40px;line-height:1}
+.kpi.a .num{color:var(--ds)} .kpi.b .num{color:var(--etd)} .kpi.c .num{color:var(--etp)} .kpi.d .num{color:var(--gold)}
+.kpi .lab{margin-top:10px;font-size:14px;font-weight:700;color:var(--ink2)}
+.kpi .delta{margin-top:7px;font-size:13px;font-weight:800}
+.kpi .delta.up{color:var(--up)} .kpi .delta.dn{color:var(--down)} .kpi .delta.fl{color:var(--ink2)}
+section{padding:26px 46px}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:30px;margin:14px 0 6px;padding-bottom:10px;border-bottom:4px solid}
+.partA .parttitle{color:var(--ds);border-color:var(--ds)}
+.partB .parttitle{color:var(--etd);border-color:var(--etd)}
+.partlead{font-size:15px;color:var(--ink2);margin-bottom:20px;font-weight:500}
+.btitle{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:21px;margin:26px 0 14px;color:var(--ink);display:flex;align-items:center;gap:9px}
+.btitle .bar{width:6px;height:22px;border-radius:3px;background:var(--ds)}
+.partB .btitle .bar{background:var(--etd)}
+.ranks{display:flex;flex-direction:column;gap:9px}
+.rank{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 17px}
+.rank .pos{font-weight:800;font-size:19px;color:var(--ds);min-width:30px}
+.rank .nm{font-weight:800;font-size:16px;flex:1 1 auto;min-width:150px;color:var(--ink)}
+.rank .sig{font-size:13px;font-weight:800;padding:4px 11px;border-radius:999px}
+.sig.up{background:#E4F5EC;color:var(--up)} .sig.new{background:#FCEBD5;color:var(--new)} .sig.fl{background:#EFE7DC;color:var(--ink2)} .sig.dn{background:#FBEAEA;color:var(--down)}
+.rank .ev{font-size:13.5px;color:var(--ink2);flex-basis:100%;margin-top:5px;padding-left:44px;font-weight:500}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.whyc{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:18px}
+.whyc h4{font-weight:800;font-size:17px;color:var(--ds);margin-bottom:8px}
+.whyc p{font-size:14.5px;color:var(--ink2);font-weight:500}
+.whyconc{margin-top:14px;background:#211913;color:#fff;border-radius:13px;padding:15px 18px;font-size:15px;font-weight:700}
+.whyconc b{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{position:relative;width:100%;aspect-ratio:1/1;background:linear-gradient(135deg,#FDEFE0,#F6DFC9);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .fire{position:absolute;top:9px;left:9px;background:var(--ds);color:#fff;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;z-index:2}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card .nm{font-weight:800;font-size:15.5px;color:var(--ink);line-height:1.35}
+.card .en{font-size:12px;font-weight:600;color:#8A7B6C;margin-top:3px}
+.card .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.card .price{font-weight:800;font-size:15px;color:var(--ds)}
+.card .rev{font-size:13px;font-weight:700;color:var(--ink2)}
+.card .tr{font-size:12.5px;font-weight:800;padding:3px 9px;border-radius:999px}
+.tr.up{background:#E4F5EC;color:var(--up)} .tr.dn{background:#FBEAEA;color:var(--down)} .tr.new{background:#FCEBD5;color:var(--new)}
+.card .links{margin-top:auto;padding-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card .lk{font-size:12px;font-weight:800;text-decoration:none;padding:6px 11px;border-radius:8px;border:1.5px solid var(--line);color:var(--ink2)}
+.card .lk:hover{border-color:var(--ds);color:var(--ds)}
+.partB .card .price{color:var(--etp)} .partB .card .lk:hover{border-color:var(--etd);color:var(--etd)}
+.note{background:#FFF3E2;border:1px solid #F0DCBE;border-left:6px solid var(--new);border-radius:13px;padding:15px 18px;font-size:14.5px;font-weight:600;color:#5C4A32;margin-bottom:18px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){.kpis,.cards,.whys{grid-template-columns:repeat(2,1fr)}header h1{font-size:40px}section{padding:22px 20px}header{padding:32px 20px}.kpis{padding:24px 20px 4px}}
+@media(max-width:560px){.kpis,.cards,.whys{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="kick">WEEKLY US TREND REPORT</div>
+ <h1>이번 주 미국에서<br>잘 팔리는 것</h1>
+ <div class="sub">드랍쉬핑 위너 + Etsy 실물·디지털을 한 장에 — 지금 미국 소비자가 사고 있는 것과, 왜 사는지.</div>
+ <div class="chips">
+   <span class="chip gold">2026년 8월 11일</span>
+   <span class="chip">Week 33</span>
+   <span class="chip">가을 의류 전환 · 공구 2주차 · 손뜨개 패턴 폭발</span>
+ </div>
+</header>
+<section class="kpis">
+ <div class="kpi a reveal"><div class="num" data-final="$52.8M">$52.8M</div><div class="lab">이번 주 1위 제품 매출<br>(플레어진 한 품목)</div><div class="delta up">▲ 200만 개 판매</div></div>
+ <div class="kpi b reveal"><div class="num" data-final="15">15</div><div class="lab">상위 24개 중 의류 제품 수<br>(여성 의류 중심)</div><div class="delta up">▲ 지난주 3개</div></div>
+ <div class="kpi c reveal"><div class="num" data-final="$13.1B">$13.1B</div><div class="lab">미국 할로윈 지출 전망<br>(역대 최고 · 1인 $114.45)</div><div class="delta up">▲ 8/25부터 검색 시작</div></div>
+ <div class="kpi d reveal"><div class="num" data-final="8">8</div><div class="lab">어제 미국 Etsy 급상승<br>상위 11개 중 손뜨개 패턴</div><div class="delta up">▲ 1위 키워드 경쟁 4,679뿐</div></div>
+</section>
+<section class="partA">
+ <div class="parttitle">◆ PART A · 드랍쉬핑</div>
+ <div class="partlead">틱톡샵·발견형 위너·광고에서 지금 팔리는 실물 제품과, 그 배경의 시즌 신호.</div>
+
+ <div class="btitle"><span class="bar"></span>① 이번 주 핫 카테고리 (순위 변동)</div>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">여성 의류 · 라운지웨어</span><span class="sig new">🆕 폭발</span><span class="ev">상위 24개 중 <b>15개가 의류</b>. 플레어진 <b>$52.8M · 200만개</b>, 하이컴프레션 파하 $19.4M, 카미 라운지세트 $5.4M + $4.4M.</span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">공구 · 하드웨어</span><span class="sig fl">─ 2주 연속 강세</span><span class="ev">무선 앵글그라인더 키트 <b>$15.2M · 17.5만개</b>, 라쳇 케이블커터 $4.5M, 62cc 체인쏘 $3.2M, 티타늄 드릴비트 $2.2M.</span></div>
+  <div class="rank reveal"><span class="pos">3</span><span class="nm">반려동물</span><span class="sig up">▲ 신규 부상</span><span class="ev">신상 위너 2개(펫 목욕 스탠드 $91.8K · 자동 급수기 $56.3K) + 누적 상품 3개(릭매트 $108K · 캐리어 백팩 $89K · 캣타워 $77K).</span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">베이비 · 유아</span><span class="sig fl">─ 유지</span><span class="ev">유아 장난감·표면 클리너 $4.7M · 19.7만개, 여아 메쉬 양말 10켤레 $2.7M · 26.9만개.</span></div>
+  <div class="rank reveal"><span class="pos">5</span><span class="nm">할로윈 · 크리스마스 (선행)</span><span class="sig new">🆕 진입</span><span class="ev">스켈레톤 코스튬(6일 전 등록, 잠재 $74.7K), 강아지 공포 마스크. 그리고 <b>8월 초에 크리스마스 트리 공예 키트</b>까지 등록됐다.</span></div>
+  <div class="rank reveal"><span class="pos">—</span><span class="nm">무선 카플레이 스크린</span><span class="sig dn">▼ 상위권 이탈</span><span class="ev">지난주 누적 1위($1.74M)였으나 이번 주 상위 목록에서 빠짐. 여름 카 액세서리 사이클이 꺾이는 신호.</span></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">상위 10 니치(월 단위 갱신 · 8월 값 유지): ①키친 ②뷰티 ③피트니스 ④강아지 ⑤고양이 ⑥DIY·라이프핵 ⑦노벨티 ⑧로봇청소기 ⑨키즈토이 ⑩내추럴 헬스 — 니치 순위는 한 달에 한 번 바뀌므로, 주간 변화는 제품 단위로 봐야 한다.</p>
+
+ <div class="btitle"><span class="bar"></span>② 왜 바뀌었나 (시즌 드라이버)</div>
+ <div class="whys">
+  <div class="whyc reveal"><h4>👖 가을옷 교체 = 8월 둘째 주</h4><p>2026 가을 키워드는 <b>플레어진(“The Year of Flare Jeans”)</b>, 다크워시 데님, 코지 라운지세트, 버건디·다크브라운·어시그린. 틱톡샵 상위를 플레어진·카미세트·V넥 플리츠가 채운 것과 정확히 겹친다.</p></div>
+  <div class="whyc reveal"><h4>🔧 공구 세일이 8/20~25 시작</h4><p>노동절은 9월 7일이지만 대형 홈센터 세일은 <b>8월 25일~9월 1일</b>, 일부는 <b>8월 20일</b>부터. 공구·콤보키트에서 $800~$1,500까지 빠진다. 소비자는 세일 2~3주 전부터 비교·검색을 시작한다.</p></div>
+  <div class="whyc reveal"><h4>🎃 할로윈은 8/25부터 진짜 시작</h4><p>지출 <b>$13.1B</b>(1인 $114.45), 데코만 $4.2B. <b>주문의 60%가 10월 이전</b>에 발생하고, 조기 구매 이유 1위가 “가을이 기다려져서(44%)”. 신상 위너의 코스튬은 시장보다 2주 빠른 신호다.</p></div>
+ </div>
+ <div class="whyconc">결론 — 8월 둘째 주는 <b>백투스쿨(후반) · 노동절 공구(8/20~) · 할로윈(8/25~) · 크리스마스 공예(선행)</b> 네 시즌이 동시에 열려 있는 유일한 구간이다. 지금 만든 콘텐츠 하나가 최대 4개 시즌 키워드를 물 수 있다.</div>
+
+ <div class="btitle"><span class="bar"></span>③ 틱톡샵에서 팔리는 제품 (10,000주문 이상)</div>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 200만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/2f54d28225a842bb84a1993102f4e53f~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;👖&lt;/div&gt;'"></div><div class="body"><div class="nm">플레어진 (미디엄 블루 워시)</div><div class="en">Deep In My Soul Flare Jeans — Medium Blue Wash</div><div class="meta"><span class="price">$27.99</span><span class="rev">매출 $52.8M</span><span class="tr new">1위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=flare+jeans+women" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=flare+jeans+women" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 15.5만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/f61a834c4a374fb18219d392133dbd35~tplv-fhlh96nyum-crop-webp:800:1066.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🩱&lt;/div&gt;'"></div><div class="body"><div class="nm">스테이지2 하이컴프레션 파하 (콜롬비안)</div><div class="en">Stage 2 High Compression Faja, Colombian</div><div class="meta"><span class="price">$124.79</span><span class="rev">매출 $19.4M</span><span class="tr up">고가 1위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=colombian+faja+shapewear" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=colombian+faja+shapewear" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 17.5만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8defcde27f5d4928994ee0b73e2a5c0d~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🛠️&lt;/div&gt;'"></div><div class="body"><div class="nm">무선 앵글그라인더 키트 (배터리 2개)</div><div class="en">Cordless Angle Grinder Kit with 2x4.0Ah Batteries</div><div class="meta"><span class="price">$86.99 (-57%)</span><span class="rev">매출 $15.2M</span><span class="tr up">공구 1위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=cordless+angle+grinder+kit" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=cordless+angle+grinder+kit" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 31.6만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general.ttcdn-us.com/tos-maliva-i-o3syd03w52-us/35e6d7c0db544a7ebb2a0d132f05e26c~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;👚&lt;/div&gt;'"></div><div class="body"><div class="nm">백리스 카미 라운지 세트</div><div class="en">Women's Backless Solid Color Cami Lounge Set</div><div class="meta"><span class="price">$16.99</span><span class="rev">매출 $5.4M</span><span class="tr up">최다 판매수</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=cami+lounge+set+women" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=cami+lounge+set+women" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 19.7만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/af9a83f7a9424fc5b8b20ac06099323e~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🧴&lt;/div&gt;'"></div><div class="body"><div class="nm">유아 장난감·표면 클리너 16oz (무향)</div><div class="en">Infant &amp; Toddler Toy and Surface Cleaner, 16oz</div><div class="meta"><span class="price">$23.78 (-15%)</span><span class="rev">매출 $4.7M</span><span class="tr up">베이비 1위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=baby+toy+surface+cleaner+spray" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=baby+toy+surface+cleaner+spray" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 18.7만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/0e66e99a479a5d6fc1a1935dba9cccfd~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;✂️&lt;/div&gt;'"></div><div class="body"><div class="nm">라쳇 케이블 커터</div><div class="en">Ratcheting Cable Cutter</div><div class="meta"><span class="price">$23.90</span><span class="rev">매출 $4.5M</span><span class="tr up">공구 2위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=ratcheting+cable+cutter" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=ratcheting+cable+cutter" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 24.8만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/46a960f8e38a439484734640c291327f~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🪛&lt;/div&gt;'"></div><div class="body"><div class="nm">6팩 티타늄 코팅 HSS 드릴비트</div><div class="en">6 Pack Titanium-Plated High-Speed Steel Drill Bits</div><div class="meta"><span class="price">$8.99 (-55%)</span><span class="rev">매출 $2.2M</span><span class="tr new">$10 이하</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=titanium+step+drill+bit+set" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=titanium+step+drill+bit+set" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 2.9만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/6b8d146f906e4d7e8e4c8c82bd4fc287~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🪚&lt;/div&gt;'"></div><div class="body"><div class="nm">62cc 가스 체인쏘</div><div class="en">62cc Gas-Powered Chainsaw</div><div class="meta"><span class="price">$113.48 (-40%)</span><span class="rev">매출 $3.2M</span><span class="tr up">가을 벌목</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=gas+chainsaw+62cc" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=gas+chainsaw+20+inch" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 26.9만개</span><img loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-general.ttcdn-us.com/tos-maliva-i-o3syd03w52-us/4962db0552674c8a9d05cbcc6f28ad27~tplv-fhlh96nyum-crop-webp:800:800.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🧦&lt;/div&gt;'"></div><div class="body"><div class="nm">여아 메쉬 양말 10켤레 세트</div><div class="en">10 Pairs Baby Girls Thin Breathable Mesh Socks</div><div class="meta"><span class="price">$9.99 (-50%)</span><span class="rev">매출 $2.7M</span><span class="tr new">멀티팩</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=baby+girl+mesh+socks+set" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=baby+girl+mesh+socks+set" target="_blank">아마존</a></div></div></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">카테고리 분포(상위 24개): 여성의류 9 · 스포츠아웃도어 6(대부분 여성 의류) · 공구 5 · 자동차 1 · 베이비 1 · 가방 1 · 남성 1 — 지난주 <b>공구 6 / 베이비 5</b> 구조에서 의류 중심으로 완전히 뒤집혔다.</p>
+ <div class="btitle"><span class="bar"></span>④ 누적 매출 상위 발굴 상품 (지난주 대비)</div>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $1.62M</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0718/4842/7686/files/imgi_34_Se0b0c0899db74f6b8c1e942e6c85926ds.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;💡&lt;/div&gt;'"></div><div class="body"><div class="nm">30W LED 실링팬 라이트 (리모컨·디머)</div><div class="en">30W LED Ceiling Fan Light with Remote &amp; Dimmable</div><div class="meta"><span class="price">$52.50</span><span class="rev">누적 주문 30,841</span><span class="tr">변동 없음</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=led+ceiling+fan+light+remote" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/amazonfinds" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $1.01M</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0888/7946/4813/files/image_533_1755633105465-6067584-72950364-12870822_0.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🌀&lt;/div&gt;'"></div><div class="body"><div class="nm">브리즈버디 포터블 팬</div><div class="en">Breeze Buddy Portable Fan</div><div class="meta"><span class="price">$32.81</span><span class="rev">누적 주문 30,846</span><span class="tr up">+4.2%</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=portable+neck+fan" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=portable+handheld+fan" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $246K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0644/8414/7269/files/S14439795e02d4a18b765880d068a4f18C.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🚗&lt;/div&gt;'"></div><div class="body"><div class="nm">차량 앞유리 선셰이드 (리트랙터블)</div><div class="en">Car Windshield Sun Shade, Retractable</div><div class="meta"><span class="price">$21.99</span><span class="rev">누적 주문 11,204</span><span class="tr up">+16.6%</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=retractable+windshield+sun+shade" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=retractable+windshield+sun+shade" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $170K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0974/9712/1068/files/Multi_Function_Small_Portable_Juicer_1.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🥤&lt;/div&gt;'"></div><div class="body"><div class="nm">멀티펑션 소형 포터블 주서</div><div class="en">Multi-Function Small Portable Juicer</div><div class="meta"><span class="price">$47.50</span><span class="rev">누적 주문 3,580</span><span class="tr new">🆕 신규 진입</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=portable+juicer+blender" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/healthreset" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $137K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0596/5044/1260/files/Se6fd1fdd9fbb4e0084c67e1ea2596e99T.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;💄&lt;/div&gt;'"></div><div class="body"><div class="nm">컬러 루스 세팅 파우더 (브라이트닝)</div><div class="en">Color Loose Setting Powder, Brightening</div><div class="meta"><span class="price">$20.46</span><span class="rev">누적 주문 6,710</span><span class="tr new">🆕 신규 진입</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=loose+setting+powder" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=loose+setting+powder" target="_blank">아마존</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">누적 $139K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.shopify.com/s/files/1/0819/0509/0797/files/Se0520a5371474799909e9b6a9f9e45b5C_7d3ba29a-2429-4d92-8fb5-16dff2b47068.webp" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🍹&lt;/div&gt;'"></div><div class="body"><div class="nm">프리미엄 포터블 주서 블렌더</div><div class="en">Premium Portable Juicer Blender</div><div class="meta"><span class="price">$29.99</span><span class="rev">누적 주문 4,637</span><span class="tr new">🆕 신규 진입</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=portable+blender+usb" target="_blank">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=portable+blender+usb" target="_blank">아마존</a></div></div></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">읽는 법: 여름 냉방(팬·선셰이드)은 아직 오르지만 증가율이 둔화됐다. 그 자리를 <b>주서 2종(가을 건강 리셋)</b>과 <b>반려동물 3종</b>(릭매트 $108K · 펫 캐리어 백팩 $89K · 캣타워 $77K)이 채웠다.</p>
+
+ <div class="btitle"><span class="bar"></span>⑤ 신상 위너 — 최근 6일 이내 등록</div>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🐾 $91.8K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FxrGV9IXPJGXudPar4jJtITzBIcJInpF1786183226.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🛁&lt;/div&gt;'"></div><div class="body"><div class="nm">펫 목욕 스탠드 (해먹형)</div><div class="en">PawHammock Bath Stand — 1일 전 등록</div><div class="meta"><span class="price">마진 $56.59</span><span class="rev">잠재 $91,815</span><span class="tr new">신상 1위</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=pet+bath+hammock+stand" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/petgrooming" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 $32.8K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FC7nbaF2PwbqAj0MyaVdQxXKgT3IU72F1785924026.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;💀&lt;/div&gt;'"></div><div class="body"><div class="nm">강아지 공포 마스크 (할로윈)</div><div class="en">GhostGuard Dog Mask — 4일 전 등록</div><div class="meta"><span class="price">마진 $19.92</span><span class="rev">잠재 $32,805</span><span class="tr new">할로윈 선행</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=halloween+dog+costume+mask" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/halloweenpets" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎄 $34.4K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FQCTZ9lakJ6x5IPgdM4BOgG1VbaIfi4F1785999616.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🎄&lt;/div&gt;'"></div><div class="body"><div class="nm">크리스탈 트리 크래프트 키트</div><div class="en">CrystalTree Craft Kit — 3일 전 등록</div><div class="meta"><span class="price">마진 $28.46</span><span class="rev">잠재 $34,425</span><span class="tr new">4분기 선행</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=beaded+christmas+tree+craft+kit" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/christmascrafts" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🧻 $71.0K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FWhtMGAPAXtSMlggdUuZL7T8CWvwAeHF1786269617.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🍽️&lt;/div&gt;'"></div><div class="body"><div class="nm">3-in-1 랩 오거나이저 (컷·보관·디스펜서)</div><div class="en">WrapMate 3-in-1 Organizer — 오늘 등록</div><div class="meta"><span class="price">마진 $41.64</span><span class="rev">잠재 $70,965</span><span class="tr new">오늘</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=plastic+wrap+dispenser+organizer" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/kitchengadgets" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🐾 $56.4K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/Fs2gTuBbOSnYHk8N2tSkzuKs4NdUNQoF1786118421.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;💧&lt;/div&gt;'"></div><div class="body"><div class="nm">자동 펫 급수기 (필터 불필요)</div><div class="en">CleanFlow Pet Bowl, Automatic — 2일 전 등록</div><div class="meta"><span class="price">마진 $30.77</span><span class="rev">잠재 $56,355</span><span class="tr new">신상</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=automatic+cat+water+fountain" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/catsoftiktok" target="_blank">틱톡 ▶</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🧚 $60.2K</span><img loading="lazy" referrerpolicy="no-referrer" src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FCmAxQqJc0DxFiqeBfb8IWNaESyCD34F1786183215.jpeg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;💦&lt;/div&gt;'"></div><div class="body"><div class="nm">워터 완드 (풀아웃 스위블 스프레이)</div><div class="en">FairySplash Wand — 1일 전 등록</div><div class="meta"><span class="price">마진 $34.06</span><span class="rev">잠재 $60,225</span><span class="tr new">신상</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=kids+water+wand+toy" target="_blank">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/summertoys" target="_blank">틱톡 ▶</a></div></div></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">최근 6일 신상 14개 중 <b>반려동물 2 · 할로윈 2 · 크리스마스 공예 2</b>. 스켈레톤 코스튬(6일 전 등록)은 잠재 $74,715로 신상 2위였다 — 8월 초에 4분기 상품이 올라온다는 건 셀러들이 이미 리드타임을 계산하고 있다는 뜻이다.</p>
+
+ <div class="btitle"><span class="bar"></span>⑥ 광고 · 영상 포맷 (이번 주 공유수 상위)</div>
+ <div class="whys">
+  <div class="whyc reveal" style="border-left-color:var(--ds)"><h4>🏷️ 클래식 태그 하나로 확산 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Classic hashtag hook</span></h4><p>재생 <b>2,400만</b> · 좋아요 260만 · <b>공유 44.7만</b>. 특별한 세팅 없이 정통 태그 하나로 이번 주 공유 1위. 기본기가 여전히 가장 세다.</p><a class="lk" style="display:inline-block;margin-top:9px" href="https://www.tiktok.com/tag/tiktokmademebuyit" target="_blank">틱톡 태그 ▶</a></div>
+  <div class="whyc reveal" style="border-left-color:var(--ds)"><h4>⏳ 재고·시간 압박 2단 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Scarcity + deadline</span></h4><p>“마지막 재고 + 무료배송” 550만 재생·공유 10.9만(8/7 집행). “자정까지 50% + 재고 한정” 410만 재생·공유 7.8만(8/4). 두 개가 동시에 걸릴 때 공유가 뛴다.</p><a class="lk" style="display:inline-block;margin-top:9px" href="https://www.tiktok.com/search?q=last%20pieces%20left" target="_blank">틱톡 검색 ▶</a></div>
+  <div class="whyc reveal" style="border-left-color:var(--ds)"><h4>📢 정보 제보 위장 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Tip-off format</span></h4><p>“지금 베이비 코너 85% 클리어런스 중” — 재생은 120만으로 작은데 <b>공유 7.6만</b>. 광고를 정보처럼 만들면 저장·공유 효율이 압도적이다.</p><a class="lk" style="display:inline-block;margin-top:9px" href="https://www.tiktok.com/tag/clearancefinds" target="_blank">틱톡 태그 ▶</a></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">그 외 상위: “오들리 새티스파잉” 주방 가젯(1,710만 재생 · 공유 5.1만) · “정리된 조리대 10가지” 리스티클(330만 · 4.0만) · 2-in-1 실링팬 라이트 시연(610만 · 3.7만). <b>제품 설명형 영상은 공유 상위에 한 개도 없다.</b></p>
+</section>
+<section class="partB">
+ <div class="parttitle">◆ PART B · Etsy</div>
+ <div class="partlead">미국 Etsy에서 어제 실제로 검색된 것 — 그리고 그 키워드로 지금 돈이 벌리고 있는지.</div>
+
+ <div class="btitle"><span class="bar"></span>① 어제 미국 Etsy 급상승 검색어 TOP 11</div>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">teddy bear crochet pattern amigurumi</span><span class="sig new">🆕 1위</span><span class="ev">검색 <b>4,805</b> · 클릭 2,628 · CTR 55% · 경쟁 리스팅 <b>4,679개뿐</b> — 검색량 대비 경쟁이 가장 얇은 자리.</span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">svg bundle</span><span class="sig up">▲ 3계단</span><span class="ev">검색 5,080 · CTR 95% · 경쟁 <b>497,456</b> — 수요는 크지만 이미 포화. 신규 진입은 비추천.</span></div>
+  <div class="rank reveal"><span class="pos">3</span><span class="nm">cat crochet pattern amigurumi</span><span class="sig up">▲▲ 77계단</span><span class="ev">이번 주 최대 점프. CTR 92%, 경쟁 6,827 — 아직 열려 있다.</span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">cat crochet pattern</span><span class="sig fl">─ 유지</span><span class="ev">검색 1,729 · <b>CTR 101%</b>(검색보다 클릭이 많다 = 구매 의도 높음) · 경쟁 19,089.</span></div>
+  <div class="rank reveal"><span class="pos">6·7</span><span class="nm">crochet pattern amigurumi / amigurumi crochet pattern</span><span class="sig fl">─ 상위 고정</span><span class="ev">검색 6,019 · 4,567. 다만 경쟁이 각각 19.3만·19.4만으로 두껍다 — 롱테일로 들어가야 한다.</span></div>
+  <div class="rank reveal"><span class="pos">14</span><span class="nm">halloween</span><span class="sig up">▲ 16계단</span><span class="ev">검색 <b>47,830</b> · CTR 128%. 8월 둘째 주에 이미 순위가 오르기 시작했다 — 시장 예상(8/25)보다 빠르다.</span></div>
+  <div class="rank reveal"><span class="pos">12</span><span class="nm">monogram</span><span class="sig dn">▼ 8계단</span><span class="ev">검색 7,383이지만 하락. 웨딩 개인화 시즌이 정점을 지나고 있다는 첫 신호.</span></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">★ <b>상위 11개 중 8개가 크로셰·니팅 패턴</b>이다(teddy bear · cat ×2 · alpine baby blanket · crochet pattern amigurumi · amigurumi crochet pattern · amigurumi hedgehog · socks knitting · bear crochet blanket). 나머지 3개는 svg bundle · font bundle · monogram. <b>지금 미국 Etsy 검색을 지배하는 건 손뜨개 패턴이다.</b></p>
+
+ <div class="btitle"><span class="bar"></span>② 이 키워드로 실제로 돈이 벌리나 — 상위 리스팅 (추정치)</div>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire" style="background:var(--etd)">추정 $3,980</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/18339571/r/il/c0ef3e/7394985529/il_570xN.7394985529_7wav.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🧸&lt;/div&gt;'"></div><div class="body"><div class="nm">K-pop 소녀 인형 아미구루미 패턴 (스페인어·영어)</div><div class="en">Patrón Amigurumi muñeca niña Kpop</div><div class="meta"><span class="price">$6.70</span><span class="rev">조회 17,974 · 추정 594건</span><span class="tr new">1위</span></div><div class="links"><a class="lk" href="https://www.etsy.com/shop/Creacionespopalina" target="_blank">상점</a><a class="lk" href="https://www.etsy.com/search?q=kpop+amigurumi+pattern" target="_blank">검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire" style="background:var(--etd)">추정 $2,231</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/47481749/c/1744/1744/148/627/il/db063b/6425117061/il_570xN.6425117061_t1ss.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🦌&lt;/div&gt;'"></div><div class="body"><div class="nm">노소잉 사슴·순록 크로셰 패턴 (튜토리얼 포함)</div><div class="en">LOW SEW Deer / Reindeer Crochet Pattern</div><div class="meta"><span class="price">$5.20</span><span class="rev">조회 12,981 · 추정 429건</span><span class="tr up">❤️ 1,487</span></div><div class="links"><a class="lk" href="https://www.etsy.com/shop/crochetwithkyra" target="_blank">상점</a><a class="lk" href="https://www.etsy.com/search?q=low+sew+crochet+pattern" target="_blank">검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire" style="background:var(--etd)">추정 $270</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/56428141/r/il/a47743/6831971283/il_570xN.6831971283_mvav.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;📷&lt;/div&gt;'"></div><div class="body"><div class="nm">미니 카메라 아미구루미 키체인 패턴</div><div class="en">Crochet Camera Amigurumi Pattern, Keychain</div><div class="meta"><span class="price">$6.00</span><span class="rev">조회 1,388 · 추정 45건</span><span class="tr up">❤️ 108</span></div><div class="links"><a class="lk" href="https://www.etsy.com/shop/ImaginePatterntr" target="_blank">상점</a><a class="lk" href="https://www.etsy.com/search?q=amigurumi+keychain+pattern" target="_blank">검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire" style="background:var(--gold)">🎄 신규</span><img loading="lazy" referrerpolicy="no-referrer" src="https://i.etsystatic.com/66363919/r/il/ec9436/8366561834/il_570xN.8366561834_1yvf.jpg" onerror="this.parentElement.innerHTML='&lt;div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:50px&quot;&gt;🐢&lt;/div&gt;'"></div><div class="body"><div class="nm">로즈 거북이 크로셰 패턴 (키체인·플러시)</div><div class="en">Rose Turtle Crochet Pattern PDF, Plush Turtle</div><div class="meta"><span class="price">$3.15</span><span class="rev">등록 0일차 · 데이터 없음</span><span class="tr new">갓 등록</span></div><div class="links"><a class="lk" href="https://www.etsy.com/shop/TheCraftyNeedleFinds" target="_blank">상점</a><a class="lk" href="https://www.etsy.com/search?q=turtle+crochet+pattern" target="_blank">검색</a></div></div></div>
+  <div class="card reveal" style="background:#211913;color:#fff;border:none"><div class="body"><div class="bhs" style="font-size:36px;color:var(--etd)">8/11</div><div class="nm" style="color:#fff;margin-top:8px">어제 미국 Etsy 급상승 상위 11개 중 손뜨개 패턴</div><div class="en" style="color:#C9B79E;margin-top:6px">svg bundle · font bundle · monogram 3개를 빼면 전부 크로셰·니팅이다.</div><div class="en" style="color:#E9DECF;margin-top:12px;font-size:13.5px">1위 키워드의 경쟁 리스팅은 <b style="color:#fff">4,679개뿐</b> — 검색 4,805에 경쟁 4,679이면 사실상 1:1이다.</div></div></div>
+  <div class="card reveal" style="background:#211913;color:#fff;border:none"><div class="body"><div class="bhs" style="font-size:36px;color:var(--gold)">54%</div><div class="nm" style="color:#fff;margin-top:8px">amigurumi 검색의 미국 비중</div><div class="en" style="color:#C9B79E;margin-top:6px">미국 54.3% · 모로코 11.6% · 파키스탄 11.5%</div><div class="en" style="color:#E9DECF;margin-top:12px;font-size:13.5px">반대로 <b style="color:#fff">budget planner는 미국이 12.3%뿐</b>이고 파키스탄이 34.5%다. 검색량이 커도 미국 수요가 아닐 수 있다.</div></div></div>
+ </div>
+ <div class="btitle"><span class="bar"></span>③ 지금 비어 있는 자리 — 저경쟁 롱테일 (검색 · 경쟁 · 난이도)</div>
+ <div style="display:flex;flex-wrap:wrap;gap:10px">
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#E4F5EC;border-color:#C6E7D5;color:#1E9E5A" href="https://www.etsy.com/search?q=bear+amigurumi+pattern" target="_blank">bear amigurumi pattern · 검색 1,348 / 경쟁 9,206 / 난이도 42</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#E4F5EC;border-color:#C6E7D5;color:#1E9E5A" href="https://www.etsy.com/search?q=llama+amigurumi+pattern" target="_blank">llama amigurumi pattern · 127 / 416 / 26</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#E4F5EC;border-color:#C6E7D5;color:#1E9E5A" href="https://www.etsy.com/search?q=iguana+amigurumi+pattern" target="_blank">iguana amigurumi pattern · 93 / 41 / 난이도 1</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#E4F5EC;border-color:#C6E7D5;color:#1E9E5A" href="https://www.etsy.com/search?q=winter+amigurumi+pattern" target="_blank">winter amigurumi pattern · 90 / 2,676 / 74</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#EAF3F8;border-color:#CDE3EF;color:#0B6E99" href="https://www.etsy.com/search?q=budget+planner+2026" target="_blank">budget planner 2026 · 147 / 1,143 / 45</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#EAF3F8;border-color:#CDE3EF;color:#0B6E99" href="https://www.etsy.com/search?q=weekly+budget+planner" target="_blank">weekly budget planner · 719 / 15,999 / 67</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#F6EAF1;border-color:#EBD2E1;color:#9B2D6B" href="https://www.etsy.com/search?q=amigurumi+pattern" target="_blank">⚠️ amigurumi pattern · 6,656 / 197,609 / 74</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#F6EAF1;border-color:#EBD2E1;color:#9B2D6B" href="https://www.etsy.com/search?q=budget+planner" target="_blank">⚠️ budget planner · 5,734 / 117,929 / 66</a>
+  <a class="lk" style="font-size:14px;padding:9px 14px;background:#F6EAF1;border-color:#EBD2E1;color:#9B2D6B" href="https://www.etsy.com/search?q=monthly+budget+planner" target="_blank">⚠️ monthly budget planner · 546 / 37,964 / 92</a>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">초록 = 들어갈 자리가 있는 키워드, 자주색 = 이미 포화. <b>bear amigurumi pattern</b>이 이번 주 최고 조합이다 — 검색 1,348인데 경쟁이 9,206밖에 안 되고, 어제 급상승 1위(teddy bear crochet pattern amigurumi)와 같은 수요다. 반대로 대표 키워드 두 개(amigurumi pattern 19.7만 · budget planner 11.7만)는 신규 리스팅이 뚫기 어렵다.</p>
+
+ <div class="btitle"><span class="bar"></span>④ 월간 인기 검색어 · 시즌 신호등</div>
+ <div class="whys">
+  <div class="whyc reveal" style="border-left-color:var(--etd)"><h4>📅 지난달 미국 Etsy 인기 검색어 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Monthly top searches</span></h4><p>①shirt 70,032 ②tshirt 60,089 ③wall art 57,343 ④stickers 66,073 <b>⑤halloween 47,830</b> ⑦necklace 49,493 <b>⑧halloween shirt 17,192</b> ⑭back to school 8,043 ⑯crochet 39,099 ⑲crochet pattern 30,554 ㉒pokemon 50,667</p></div>
+  <div class="whyc reveal" style="border-left-color:var(--new)"><h4>🎃 할로윈이 이미 5위·8위 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Halloween already top-10</span></h4><p>지난달 월간 검색에서 <b>halloween이 5위, halloween shirt가 8위</b>. 게다가 어제 일간 순위에서 halloween이 <b>16계단 상승</b>했다. 시장 통설(8/25 시작)보다 <b>2주 빠르다</b> — 지금 만들어야 늦지 않는다.</p></div>
+  <div class="whyc reveal" style="border-left-color:var(--gold)"><h4>🚦 시즌 신호등 <span class="en" style="display:block;font-size:13px;font-weight:600;color:#8A7B6C">Season traffic light</span></h4><p><span style="color:#1E9E5A;font-weight:800">🟢 지금</span> 크로셰·아미구루미 패턴, 가을 의류<br><span style="color:#E08A1E;font-weight:800">🟡 곧(8/20~)</span> 노동절 공구 세일<br><span style="color:#D23B3B;font-weight:800">🔴 이미 시작</span> 할로윈 — 검색이 벌써 붙었다<br><span style="color:#8A7B6C;font-weight:800">⚪ 저무는 중</span> monogram(▼8) · 백투스쿨</p></div>
+ </div>
+ <p style="margin-top:14px;font-size:14px;color:#574A3F;font-weight:600">참고 — 지난달 6위에 <b>burnout recovery workbook</b>(검색 4,266)이 올라왔다. 검색량은 크지 않은데 월간 상위에 든 건 <b>짧고 강한 스파이크</b>가 있었다는 뜻이다. 셀프케어·번아웃 워크북 계열은 지켜볼 가치가 있다.</p>
+</section>
+<section class="partB">
+ <div class="btitle" style="margin-top:8px"><span class="bar" style="background:var(--gold)"></span>🎬 지금 트렌디해서 찍기 좋은 영상 아이디어 3선</div>
+ <div class="cards">
+  <div class="card reveal" style="background:#211913;color:#fff;border:none"><div class="body"><div class="bhs" style="font-size:34px;color:var(--ds)">01</div><div class="nm" style="color:#fff;margin-top:6px">미국에서 지금 200만 개 팔린 청바지</div><div class="en" style="color:#C9B79E">플레어진 $52.8M 데이터 훅 + "2026은 플레어의 해". 3초 안에 숫자부터.</div></div></div>
+  <div class="card reveal" style="background:#211913;color:#fff;border:none"><div class="body"><div class="bhs" style="font-size:34px;color:var(--etd)">02</div><div class="nm" style="color:#fff;margin-top:6px">미국 사람들이 지금 제일 많이 검색하는 취미</div><div class="en" style="color:#C9B79E">어제 미국 Etsy 급상승 11개 중 8개가 손뜨개 패턴. 곰인형 아미구루미 클로즈업 + 검색 4,805 대 경쟁 4,679 비교.</div></div></div>
+  <div class="card reveal" style="background:#211913;color:#fff;border:none"><div class="body"><div class="bhs" style="font-size:34px;color:var(--gold)">03</div><div class="nm" style="color:#fff;margin-top:6px">공구, 지금 사면 손해입니다</div><div class="en" style="color:#C9B79E">세일이 8/20~25 시작이라는 정보 훅 + 앵글그라인더·체인쏘 가격 비교. 이번 주 공유 상위 포맷인 '제보형'.</div></div></div>
+ </div>
+
+ <div class="btitle"><span class="bar" style="background:var(--gold)"></span>💡 핵심 인사이트</div>
+ <div style="display:flex;flex-direction:column;gap:11px">
+  <div class="reveal" style="background:#fff;border:1px solid var(--line);border-left:6px solid var(--ds);border-radius:12px;padding:15px 18px;font-size:15.5px;font-weight:600;color:var(--ink)"><b>1. 의류로 무게중심이 넘어갔다 — 그런데 가격대가 둘로 갈렸다.</b> 플레어진 $27.99·카미세트 $16.99 같은 저가 볼륨과, 파하 $124.79 같은 고가 문제해결형이 동시에 상위에 있다. 중간 가격($40~80) 의류는 상위에 거의 없다. 싸게 많이 팔거나, 비싸게 문제를 풀거나 둘 중 하나다.</div>
+  <div class="reveal" style="background:#fff;border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:12px;padding:15px 18px;font-size:15.5px;font-weight:600;color:var(--ink)"><b>2. 할로윈이 통설보다 2주 빠르다.</b> 지난달 월간 검색에서 halloween이 이미 5위, halloween shirt가 8위였고, 어제 일간 순위에서 다시 16계단 올랐다. "8월 25일부터 시작"이라는 업계 기준을 그대로 믿고 기다리면 늦는다. 드랍쉬핑 쪽 신상 위너에 코스튬·강아지 마스크가 뜬 것과 정확히 같은 신호다.</div>
+  <div class="reveal" style="background:#fff;border:1px solid var(--line);border-left:6px solid var(--etd);border-radius:12px;padding:15px 18px;font-size:15.5px;font-weight:600;color:var(--ink)"><b>3. 손뜨개 패턴은 "유행"이 아니라 지금 미국 Etsy 검색의 본류다.</b> 어제 급상승 상위 11개 중 8개. 그리고 중요한 건 <b>경쟁이 아직 얇다</b>는 것 — 1위 키워드가 검색 4,805 대 경쟁 4,679로 거의 1:1이다. 대표 키워드(amigurumi pattern, 경쟁 19.7만)로 정면 승부하지 말고 <b>bear / llama / winter</b> 같은 동물·시즌 롱테일로 들어가야 한다. 반대로 가계부는 검색 5,734에 경쟁 11.7만이고 미국 검색 비중이 12.3%뿐이다.</div>
+ </div>
+
+ <div style="margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:#8A7B6C;font-weight:500">
+  드랍쉬핑 수치는 라이브 실측 추정치이며 '월 판매/매출'과 '누적 매출($)'을 구분해 표기했습니다. Etsy 검색량·클릭·경쟁 수치는 라이브 실측, 리스팅의 판매건수·매출은 조회수 기반 <b>추정치</b>입니다. 시즌·이벤트 배경은 공개 시장 자료 기반. · 생성일 2026년 8월 11일 (Week 33)
+ </div>
+</section>
+</div>
+<script>
+(function(){
+ function setFinal(){document.querySelectorAll('.kpi .num').forEach(function(el){el.textContent=el.getAttribute('data-final');});}
+ function animate(){
+  document.querySelectorAll('.kpi .num').forEach(function(el){
+   var fin=el.getAttribute('data-final');
+   var m=fin.match(/^(\D*)([\d.]+)(\D*)$/);
+   if(!m){el.textContent=fin;return;}
+   var pre=m[1],num=parseFloat(m[2]),suf=m[3],dec=(m[2].split('.')[1]||'').length;
+   var t0=null,dur=1100;
+   function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var v=(num*p).toFixed(dec);el.textContent=pre+v+suf;if(p<1)requestAnimationFrame(step);else el.textContent=fin;}
+   el.textContent=pre+'0'+suf;requestAnimationFrame(step);
+   setTimeout(function(){el.textContent=fin;},dur+400);
+  });
+ }
+ setFinal();
+ if(document.readyState==='complete')animate();else window.addEventListener('load',animate);
+ setTimeout(setFinal,3200);
+ document.addEventListener('visibilitychange',function(){if(!document.hidden)setFinal();});
+ function revealAll(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('on');});}
+ try{
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+ }catch(e){revealAll();}
+ setTimeout(revealAll,2500);
+ window.addEventListener('load',function(){setTimeout(revealAll,600);});
+ window.addEventListener('beforeprint',revealAll);
+})();
+</script>
+</body>
+</html>
