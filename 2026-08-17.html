@@ -47,6 +47,25 @@ section{padding:26px 46px}
 .rank .sig{font-size:13px;font-weight:800;padding:4px 11px;border-radius:999px}
 .sig.up{background:#E4F5EC;color:var(--up)} .sig.new{background:#FCEBD5;color:var(--new)} .sig.fl{background:#EFE7DC;color:var(--ink2)} .sig.dn{background:#FBEAEA;color:var(--down)}
 .rank .ev{font-size:13.5px;color:var(--ink2);flex-basis:100%;margin-top:5px;padding-left:44px;font-weight:500}
+.rank .nm .gl{display:block;font-size:13.5px;font-weight:700;color:var(--etd);margin-top:3px}
+.partA .rank .nm .gl{color:var(--ds)}
+.kw .gl{display:block;font-size:12.5px;font-weight:800;margin-top:2px;opacity:.95}
+.partC .parttitle{color:var(--gold);border-color:var(--gold)}
+.partC .btitle .bar{background:var(--gold)}
+.partC .rank .pos{color:var(--gold)}
+.verd{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.vc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px 18px;border-top:6px solid var(--gold)}
+.vc .tag{font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;display:inline-block}
+.vc h4{font-weight:800;font-size:17px;margin:9px 0 2px;color:var(--ink)}
+.vc .en{font-size:12.5px;font-weight:600;color:#8A7B6C}
+.vc .nums{margin:10px 0 8px;display:flex;flex-wrap:wrap;gap:6px}
+.vc .nums span{font-size:12.5px;font-weight:800;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink2)}
+.vc p{font-size:14px;color:var(--ink2);font-weight:500}
+.sig3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.s3{border-radius:14px;padding:16px 18px;border:1px solid var(--line);background:var(--paper);border-left:7px solid}
+.s3 .st{font-size:12.5px;font-weight:800;letter-spacing:.05em}
+.s3 h5{font-weight:800;font-size:18px;margin:6px 0 4px;color:var(--ink)}
+.s3 p{font-size:13.5px;color:var(--ink2);font-weight:600}
 .whys{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
 .whyc{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:18px}
 .whyc h4{font-weight:800;font-size:17px;color:var(--ds);margin-bottom:8px}
@@ -114,11 +133,12 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
 <header>
  <div class="kick">WEEKLY US TREND REPORT</div>
  <h1>이번 주 미국에서<br>잘 팔리는 것</h1>
- <div class="sub">드랍쉬핑 위너 + 미국 Etsy 실검 키워드와 디지털 제품을 한 장에 — 지금 미국 소비자가 사고 찾는 것과, 왜 그런지.</div>
+ <div class="sub">드랍쉬핑 위너 + 미국 Etsy 실검 키워드 + 핀터레스트 시즌 신호 + 구글 검색량·난이도·광고단가를 한 장에 — 지금 미국 소비자가 사고 찾는 것, 왜 그런지, 그리고 <b>어디서 팔아야 하는지</b>.</div>
  <div class="chips">
    <span class="chip gold">2026년 8월 17일</span>
    <span class="chip">Week 34</span>
    <span class="chip">크리스마스 검색 진입 · 할로윈 가속 · 무경쟁 시장 발견</span>
+   <span class="chip">4개 소스 교차 · 판정 27건</span>
  </div>
 </header>
 <section class="kpis">
@@ -206,16 +226,16 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
 
  <div class="btitle"><span class="bar"></span>① 어제 미국 Etsy 급상승 검색어 TOP 10</div>
  <div class="ranks">
-  <div class="rank reveal"><span class="pos">1</span><span class="nm">png</span><span class="sig up">▲ 8계단</span><span class="ev">검색 <b>26,164</b> · 클릭 34,198 · CTR 131% · 경쟁 리스팅 554.9만. 디지털 이미지 파일 수요 자체가 1위 — 다만 경쟁이 압도적이다.</span></div>
-  <div class="rank reveal"><span class="pos">2</span><span class="nm">halloween</span><span class="sig up">▲ 12계단</span><span class="ev">검색 <b>47,830</b> · CTR 128% · 경쟁 411.8만. 지난주 14위에서 <b>2위로</b>. 지난달 월간에서도 이미 5위였다.</span></div>
-  <div class="rank reveal"><span class="pos">3</span><span class="nm">trendy shirt</span><span class="sig up">▲ 30계단</span><span class="ev">검색 6,300 · CTR 131% · 경쟁 99.2만. “유행하는”이라는 모호한 수식어로 검색한다 = 구체적 디자인이 아니라 <b>지금 뜨는 것</b>을 찾는 심리.</span></div>
-  <div class="rank reveal"><span class="pos">4</span><span class="nm">halloween shirt</span><span class="sig up">▲▲ 408계단</span><span class="ev">검색 17,192 · CTR <b>140%</b> · 경쟁 124.6만 · 난이도 93. <b>단, 검색자의 54.3%가 베트남이고 미국은 15%뿐</b>이다(아래 국가 비중 경고 참조).</span></div>
-  <div class="rank reveal"><span class="pos">5</span><span class="nm">bracelet</span><span class="sig up">▲▲ 2332계단</span><span class="ev">검색 26,764 · CTR 130% · 경쟁 190.5만. 지난주에도 ▲100으로 올라왔던 키워드가 이번 주 대폭 점프 — 가을 액세서리 사이클.</span></div>
-  <div class="rank reveal"><span class="pos">6</span><span class="nm">christmas</span><span class="sig new">🆕 ▲▲ 3894계단</span><span class="ev">검색 <b>42,031</b> · 클릭 60,557 · CTR <b>144%</b> · 경쟁 1,279만. <b>8월 중순에 크리스마스가 검색 상위 10에 들어왔다.</b> 이번 주 가장 큰 순위 변동이다.</span></div>
-  <div class="rank reveal"><span class="pos">9</span><span class="nm">berserk</span><span class="sig fl">─ 유지</span><span class="ev">검색 5,565인데 경쟁 리스팅이 <b>5,334개뿐</b>. 만화 팬덤 키워드는 검색 대비 경쟁이 거의 1:1이다.</span></div>
-  <div class="rank reveal"><span class="pos">13</span><span class="nm">dungeon crawler carl</span><span class="sig up">▲ 551계단</span><span class="ev">검색 9,449에 경쟁 <b>1,729개뿐</b> — 이번 주 팬덤 키워드 중 최고 비율(5.5:1). 웹소설 팬덤이 굿즈 수요로 넘어오는 중.</span></div>
-  <div class="rank reveal"><span class="pos">15</span><span class="nm">fursuit</span><span class="sig new">🆕 ▲▲ 2061계단</span><span class="ev">검색 <b>24,468</b> · CTR 127% · 경쟁 <b>15,205</b> · 난이도 <b>KD 1</b> · 미국 <b>55%</b> · 구글 49,500. <b>이번 주 최대 발견</b>이다.</span></div>
-  <div class="rank reveal"><span class="pos">16</span><span class="nm">lamp</span><span class="sig up">▲▲ 2313계단</span><span class="ev">검색 18,619 · 경쟁 23.5만. 드랍쉬핑 신상 위너에 튤립 플래닛 램프($77.9K)가 뜬 것과 <b>같은 주에 겹쳤다</b> — 두 시장이 동시에 조명을 가리킨다.</span></div>
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">png<span class="gl">PNG 이미지 파일 — 배경이 투명한 그림 파일</span></span><span class="sig up">▲ 8계단</span><span class="ev">검색 <b>26,164</b> · 클릭 34,198 · CTR 131% · 경쟁 리스팅 554.9만. 디지털 이미지 파일 수요 자체가 1위 — 다만 경쟁이 압도적이다.</span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">halloween<span class="gl">할로윈</span></span><span class="sig up">▲ 12계단</span><span class="ev">검색 <b>47,830</b> · CTR 128% · 경쟁 411.8만. 지난주 14위에서 <b>2위로</b>. 지난달 월간에서도 이미 5위였다.</span></div>
+  <div class="rank reveal"><span class="pos">3</span><span class="nm">trendy shirt<span class="gl">유행하는 티셔츠 — 특정 디자인이 아니라 "지금 뜨는 것"을 찾는 검색</span></span><span class="sig up">▲ 30계단</span><span class="ev">검색 6,300 · CTR 131% · 경쟁 99.2만. “유행하는”이라는 모호한 수식어로 검색한다 = 구체적 디자인이 아니라 <b>지금 뜨는 것</b>을 찾는 심리.</span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">halloween shirt<span class="gl">할로윈 티셔츠</span></span><span class="sig up">▲▲ 408계단</span><span class="ev">검색 17,192 · CTR <b>140%</b> · 경쟁 124.6만 · 난이도 93. <b>단, 검색자의 54.3%가 베트남이고 미국은 15%뿐</b>이다(아래 국가 비중 경고 참조).</span></div>
+  <div class="rank reveal"><span class="pos">5</span><span class="nm">bracelet<span class="gl">팔찌</span></span><span class="sig up">▲▲ 2332계단</span><span class="ev">검색 26,764 · CTR 130% · 경쟁 190.5만. 지난주에도 ▲100으로 올라왔던 키워드가 이번 주 대폭 점프 — 가을 액세서리 사이클.</span></div>
+  <div class="rank reveal"><span class="pos">6</span><span class="nm">christmas<span class="gl">크리스마스</span></span><span class="sig new">🆕 ▲▲ 3894계단</span><span class="ev">검색 <b>42,031</b> · 클릭 60,557 · CTR <b>144%</b> · 경쟁 1,279만. <b>8월 중순에 크리스마스가 검색 상위 10에 들어왔다.</b> 이번 주 가장 큰 순위 변동이다.</span></div>
+  <div class="rank reveal"><span class="pos">9</span><span class="nm">berserk<span class="gl">베르세르크 — 일본 다크판타지 만화·애니 팬덤</span></span><span class="sig fl">─ 유지</span><span class="ev">검색 5,565인데 경쟁 리스팅이 <b>5,334개뿐</b>. 만화 팬덤 키워드는 검색 대비 경쟁이 거의 1:1이다.</span></div>
+  <div class="rank reveal"><span class="pos">13</span><span class="nm">dungeon crawler carl<span class="gl">던전 크롤러 칼 — 미국에서 인기 급등한 웹소설(LitRPG) 시리즈</span></span><span class="sig up">▲ 551계단</span><span class="ev">검색 9,449에 경쟁 <b>1,729개뿐</b> — 이번 주 팬덤 키워드 중 최고 비율(5.5:1). 웹소설 팬덤이 굿즈 수요로 넘어오는 중.</span></div>
+  <div class="rank reveal"><span class="pos">15</span><span class="nm">fursuit<span class="gl">퍼수트 — 동물 캐릭터 전신 착용 코스튬 (퍼리 팬덤·컨벤션용)</span></span><span class="sig new">🆕 ▲▲ 2061계단</span><span class="ev">검색 <b>24,468</b> · CTR 127% · 경쟁 <b>15,205</b> · 난이도 <b>KD 1</b> · 미국 <b>55%</b> · 구글 49,500. <b>이번 주 최대 발견</b>이다.</span></div>
+  <div class="rank reveal"><span class="pos">16</span><span class="nm">lamp<span class="gl">조명 · 램프</span></span><span class="sig up">▲▲ 2313계단</span><span class="ev">검색 18,619 · 경쟁 23.5만. 드랍쉬핑 신상 위너에 튤립 플래닛 램프($77.9K)가 뜬 것과 <b>같은 주에 겹쳤다</b> — 두 시장이 동시에 조명을 가리킨다.</span></div>
  </div>
  <p class="rdnote">★ <b>지난주와 완전히 뒤바뀌었다.</b> 지난주 급상승 상위 11개 중 8개가 크로셰·니팅 패턴이었는데, 이번 주 상위 10개는 <b>시즌(할로윈·크리스마스)과 패션(shirt·bracelet)</b>이 채웠다. 크로셰는 10위(검색 39,099)·14위(↑663)로 내려갔지만 <b>검색량 자체는 그대로다</b> — 꺼진 게 아니라 시즌 키워드에 자리를 내준 것이다. 그 아래 구간의 큰 점프: fitness planner ↑3357 · spells ↑3287 · painting ↑3728 · spider ↑2969.</p>
 
@@ -261,26 +281,26 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
  <div class="btitle"><span class="bar"></span>③ 지금 비어 있는 자리 — 저경쟁 롱테일 (검색 · 경쟁 · 난이도)</div>
  <div class="note" style="border-left-color:var(--etd);background:#EAF3F8;border-color:#CDE3EF;color:#134E68">🌍 <b>키워드를 고르기 전에 반드시 볼 것 — 검색자 국가 비중.</b> 이번 주 조회한 8개 중 <b>미국 비중이 50%를 넘는 건 단 2개</b>다: <b>fursuit 55.0%</b> · <b>amigurumi pattern 54.3%</b>. 나머지는 전부 미국이 소수다 — christmas 23.1% · christmas svg 29.9% · halloween svg 18.9% · fitness planner <b>16.1%</b>(파키스탄 41.1%) · halloween shirt <b>15.0%</b>(베트남 54.3%) · digital planner <b>14.4%</b>(파키스탄 25%). <b>즉 fitness planner의 ↑3357 스파이크는 대부분 비미국 검색이다.</b> 볼륨만 보고 판단하면 안 된다.</div>
  <div class="chipsw">
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+head" target="_blank">fursuit head<small>검색 11,986 · 경쟁 4,203 · KD 1 ← 최고 조합</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+accessories" target="_blank">fursuit accessories<small>검색 5,278 · 경쟁 7,408 · KD 7</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+premade" target="_blank">fursuit premade<small>검색 4,601 · 경쟁 1,433 · KD 1</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+paws" target="_blank">fursuit paws<small>검색 3,540 · 경쟁 2,041 · KD 1</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+eyes" target="_blank">fursuit eyes<small>검색 2,734 · 경쟁 961 · KD 1</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+headbase" target="_blank">fursuit headbase<small>검색 2,653 · 경쟁 549 · KD 1</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=adhd+digital+planner" target="_blank">adhd digital planner<small>검색 1,686 · 경쟁 22,554 · KD 56</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=2026+digital+planner" target="_blank">2026 digital planner<small>검색 1,463 · 경쟁 25,420 · KD 62</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=bear+amigurumi+pattern" target="_blank">bear amigurumi pattern<small>검색 1,348 · 경쟁 9,206 · KD 42</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=nicu+halloween+shirt" target="_blank">nicu halloween shirt<small>검색 1,002 · 경쟁 6,931 · KD 42 ← 할로윈 셔츠 유일한 빈자리</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=racoon+halloween+svg" target="_blank">racoon halloween svg<small>검색 209 · 경쟁 88 · KD 1</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=labubu+halloween+svg" target="_blank">labubu halloween svg<small>검색 187 · 경쟁 103 · KD 1 · CTR 149%</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=christian+halloween+svg" target="_blank">christian halloween svg<small>검색 127 · 경쟁 1,302 · KD 51</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=llama+amigurumi+pattern" target="_blank">llama amigurumi pattern<small>검색 127 · 경쟁 416 · KD 26</small></a>
-  <a class="kw g" href="https://www.etsy.com/search?q=iguana+amigurumi+pattern" target="_blank">iguana amigurumi pattern<small>검색 93 · 경쟁 41 · KD 1</small></a>
-  <a class="kw y" href="https://www.etsy.com/search?q=disney+halloween+svg" target="_blank">disney halloween svg<small>검색 268 · 경쟁 9,011 · KD 76 · IP 리스크</small></a>
-  <a class="kw r" href="https://www.etsy.com/search?q=christmas+shirt" target="_blank">christmas shirt<small>검색 15,345 · 경쟁 224만 · KD 100 · 포화</small></a>
-  <a class="kw r" href="https://www.etsy.com/search?q=christmas+svg+bundle" target="_blank">christmas svg bundle<small>검색 469 · 경쟁 69,535 · KD 100 · 포화</small></a>
-  <a class="kw r" href="https://www.etsy.com/search?q=merry+christmas+svg" target="_blank">merry christmas svg<small>검색 451 · 경쟁 83,295 · KD 100 · 포화</small></a>
-  <a class="kw r" href="https://www.etsy.com/search?q=digital+planner+stickers" target="_blank">digital planner stickers<small>검색 1,411 · 경쟁 121,723 · KD 97 · 포화</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+head" target="_blank">fursuit head<span class="gl">퍼수트 머리(헤드) — 가장 비싼 핵심 부품</span><small>검색 11,986 · 경쟁 4,203 · KD 1 ← 최고 조합</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+accessories" target="_blank">fursuit accessories<span class="gl">퍼수트 액세서리 — 귀·꼬리·장식</span><small>검색 5,278 · 경쟁 7,408 · KD 7</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+premade" target="_blank">fursuit premade<span class="gl">기성품 퍼수트 — 주문제작 아닌 완성품</span><small>검색 4,601 · 경쟁 1,433 · KD 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+paws" target="_blank">fursuit paws<span class="gl">퍼수트 손·발 커버</span><small>검색 3,540 · 경쟁 2,041 · KD 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+eyes" target="_blank">fursuit eyes<span class="gl">퍼수트 눈 부품 (아이 메쉬)</span><small>검색 2,734 · 경쟁 961 · KD 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=fursuit+headbase" target="_blank">fursuit headbase<span class="gl">퍼수트 머리 골격(베이스) — 초보 제작용</span><small>검색 2,653 · 경쟁 549 · KD 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=adhd+digital+planner" target="_blank">adhd digital planner<span class="gl">ADHD용 디지털 플래너</span><small>검색 1,686 · 경쟁 22,554 · KD 56</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=2026+digital+planner" target="_blank">2026 digital planner<span class="gl">2026년용 디지털 플래너</span><small>검색 1,463 · 경쟁 25,420 · KD 62</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=bear+amigurumi+pattern" target="_blank">bear amigurumi pattern<span class="gl">곰인형 코바늘 도안</span><small>검색 1,348 · 경쟁 9,206 · KD 42</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=nicu+halloween+shirt" target="_blank">nicu halloween shirt<span class="gl">신생아중환자실(NICU) 간호사용 할로윈 티셔츠</span><small>검색 1,002 · 경쟁 6,931 · KD 42 ← 할로윈 셔츠 유일한 빈자리</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=racoon+halloween+svg" target="_blank">racoon halloween svg<span class="gl">라쿤 할로윈 SVG (커팅기용 도안)</span><small>검색 209 · 경쟁 88 · KD 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=labubu+halloween+svg" target="_blank">labubu halloween svg<span class="gl">라부부(팝마트 인기 인형) 할로윈 SVG</span><small>검색 187 · 경쟁 103 · KD 1 · CTR 149%</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=christian+halloween+svg" target="_blank">christian halloween svg<span class="gl">기독교인용 할로윈 SVG</span><small>검색 127 · 경쟁 1,302 · KD 51</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=llama+amigurumi+pattern" target="_blank">llama amigurumi pattern<span class="gl">라마 인형 코바늘 도안</span><small>검색 127 · 경쟁 416 · KD 26</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=iguana+amigurumi+pattern" target="_blank">iguana amigurumi pattern<span class="gl">이구아나 인형 코바늘 도안</span><small>검색 93 · 경쟁 41 · KD 1</small></a>
+  <a class="kw y" href="https://www.etsy.com/search?q=disney+halloween+svg" target="_blank">disney halloween svg<span class="gl">디즈니 할로윈 SVG — 저작권 주의</span><small>검색 268 · 경쟁 9,011 · KD 76 · IP 리스크</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=christmas+shirt" target="_blank">christmas shirt<span class="gl">크리스마스 티셔츠</span><small>검색 15,345 · 경쟁 224만 · KD 100 · 포화</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=christmas+svg+bundle" target="_blank">christmas svg bundle<span class="gl">크리스마스 SVG 묶음 세트</span><small>검색 469 · 경쟁 69,535 · KD 100 · 포화</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=merry+christmas+svg" target="_blank">merry christmas svg<span class="gl">메리 크리스마스 SVG</span><small>검색 451 · 경쟁 83,295 · KD 100 · 포화</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=digital+planner+stickers" target="_blank">digital planner stickers<span class="gl">디지털 플래너용 스티커</span><small>검색 1,411 · 경쟁 121,723 · KD 97 · 포화</small></a>
  </div>
  <p class="rdnote">🟢 초록 = 지금 비어 있는 자리 · 🟡 노랑 = 조건부(IP·시즌 한정) · 🔴 빨강 = 포화. <b>크리스마스 머리 키워드는 전부 난이도 100이다</b> — 검색은 폭발하는데 정면으로는 못 들어간다. 반대로 <b>퍼수트 계열은 하위 키워드까지 전부 KD 1</b>이고, headbase는 경쟁 리스팅이 <b>549개</b>뿐이다.</p>
 
@@ -305,6 +325,108 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
   <div class="calc reveal" style="border-left:6px solid var(--etd)"><div class="lt">🔵</div><h5>지나간 것 / 대기</h5><p><b>백투스쿨</b> — 월간 14위(8,043)로 후반전. <b>크로셰</b>는 순위가 밀렸을 뿐 검색 39,099로 살아있다 — 가을 공예 시즌(9~11월)에 다시 온다.</p></div>
  </div>
 </section>
+<section class="partC">
+ <div class="parttitle">◆ PART C · 크로스 플랫폼 판정</div>
+ <div class="partlead">앞의 제품·키워드를 <b>핀터레스트(방향·타이밍)</b> · <b>Etsy 내부검색(절대 수요)</b> · <b>구글(검색량·난이도·광고단가)</b> 세 곳에 다시 넣어봤다. 같은 제품이라도 팔아야 할 곳이 전부 다르다.</div>
+ <div class="note">📌 <b>왜 세 곳을 겹치나</b> — 핀터레스트는 절대 검색량을 주지 않는다(변화율과 상태 표시뿐). 대신 <b>무엇이 오르고 언제 정점인지</b>를 가장 먼저 알려준다. 절대 숫자는 Etsy 내부검색과 구글에서 가져와야 하고, <b>이 셋이 어긋나는 지점에 기회가 있다.</b><br>⚠️ <b>광고단가는 달러로 환산한 값이다.</b> 원자료는 센트 단위로 나오는데, 이전 샘플 리포트는 이걸 그대로 달러로 적어 100배 부풀려져 있었다(예: 배기진 "$45" → 실제 <b>$0.45</b>). 이번 리포트의 단가는 전부 정정된 값이다.</div>
+
+ <div class="btitle"><span class="bar"></span>① 시즌 신호등 — 지금 어느 시즌이 열려 있나 (핀터레스트 Moments)</div>
+ <div class="sig3">
+  <div class="s3 reveal" style="border-left-color:var(--down)"><div class="st" style="color:var(--down)">🔥 RISING · 지금 진행 중</div><h5>할로윈 Halloween</h5><p>핀터레스트가 유일하게 <b>RISING</b>으로 표시한 시즌. 구글 <code>halloween decorations</code> 검색 <b>59,000</b>·난이도 23, <code>halloween costume</code> 43,000·난이도 72. Etsy 급상승 2위·4위와 완전히 일치한다. <b>지금이 정점 진입 구간.</b></p></div>
+  <div class="s3 reveal" style="border-left-color:var(--new)"><div class="st" style="color:var(--new)">🟠 APPROACHING · 곧 열림</div><h5>추수감사절 · 하누카 · 크리스마스 · 새해</h5><p>네 개가 동시에 APPROACHING이다. 구글 난이도가 아직 낮다 — <code>thanksgiving decor</code> 7,200·<b>난이도 0</b>, <code>hanukkah gifts</code> 2,300·<b>난이도 0</b>, <code>christmas crafts</code> 15,000·난이도 7. <b>경쟁이 아직 안 붙은 지금이 선점 구간.</b></p></div>
+  <div class="s3 reveal" style="border-left-color:var(--etd)"><div class="st" style="color:var(--etd)">🧊 FROZEN · 지금은 아님</div><h5>밸런타인데이 Valentine&apos;s Day</h5><p>핀터레스트가 <b>FROZEN</b>으로 표시 — 저장·검색이 사실상 멈춘 상태다. 지금 밸런타인 상품을 만드는 건 최소 4개월 이르다. <b>12월 말~1월에 다시 볼 것.</b></p></div>
+ </div>
+ <p class="rdnote">★ <b>이번 주 핵심 타이밍 판정:</b> 할로윈은 <b>지금 팔 것</b>(RISING·난이도 23), 크리스마스·추수감사절·하누카는 <b>지금 만들 것</b>(APPROACHING이지만 구글 난이도 0~7로 아직 빈자리), 밸런타인은 <b>건드리지 말 것</b>(FROZEN). Etsy에서 <code>christmas</code>가 ↑3894로 튄 것과 핀터레스트가 아직 APPROACHING인 게 어긋나 보이지만, 실은 같은 얘기다 — <b>수요는 이미 검색으로 오는데 공급(경쟁)이 아직 안 왔다.</b></p>
+
+ <div class="btitle"><span class="bar"></span>② 쇼핑 클릭이 튄 카테고리 TOP 10 (전월 대비 · 핀터레스트)</div>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">마스카라<span class="gl">Mascaras</span></span><span class="sig up">▲ 클릭 157%</span><span class="ev">압도적 1위. 구글 <code>mascara</code> 검색 <b>76,000</b>·난이도 48·광고단가 <b>$0.70</b>(이번 주 최고 단가). 가을 메이크업 교체 + 할로윈 분장 수요가 겹친다.</span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">시즌 · 홀리데이 데코<span class="gl">Seasonal &amp; holiday decorations</span></span><span class="sig up">▲ 클릭 85%</span><span class="ev">구글 <code>halloween decorations</code> 59,000·난이도 23 / <code>christmas ornaments</code> 46,000·난이도 <b>17</b>. 신상 위너의 박쥐 나이트라이트($66.6K)·홀리데이 DIY 키트($36.3K)와 정확히 겹친다.</span></div>
+  <div class="rank reveal"><span class="pos">3</span><span class="nm">뷰티 보조제<span class="gl">Beauty supplements</span></span><span class="sig up">▲ 클릭 56%</span><span class="ev">이너뷰티 축. 누적 상품의 두피 마사지기($243K)·필터 샤워헤드($105K)와 같은 셀프케어 흐름이다.</span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">코스튬 · 액세서리<span class="gl">Costumes &amp; accessories</span></span><span class="sig up">▲ 클릭 45%</span><span class="ev">🎃 구글 <code>costumes</code> 47,000·난이도 53. <b>퍼수트(KD 1)·펌프킨 원피스($67.3K)가 여기 들어간다</b> — 코스튬 클릭이 오르는데 Etsy 퍼수트 경쟁은 15,205개뿐이다.</span></div>
+  <div class="rank reveal"><span class="pos">5·6</span><span class="nm">코트 · 재킷 / 아우터<span class="gl">Coats &amp; jackets / Outerwear</span></span><span class="sig up">▲ 클릭 43%</span><span class="ev">🍂 두 카테고리가 동률로 나란히 올랐다 = 아우터 사이클 개시. 틱톡샵 신규가 후디·트랙수트·플리스로 갈아탄 것과 <b>같은 신호</b>.</span></div>
+  <div class="rank reveal"><span class="pos">7</span><span class="nm">스웨터 · 카디건<span class="gl">Sweaters &amp; cardigans</span></span><span class="sig up">▲ 클릭 38%</span><span class="ev">구글 <code>sweater</code> 검색 <b>131,000</b>·난이도 12·광고단가 $0.40. <b>니트가 오른다 = 손뜨개(크로셰) 수요의 선행지표다</b> — Etsy에서 크로셰가 순위만 밀렸을 뿐 안 죽은 이유.</span></div>
+  <div class="rank reveal"><span class="pos">8·9</span><span class="nm">신발 액세서리 / 클로그 · 뮬<span class="gl">Shoe accessories / Clogs &amp; mules</span></span><span class="sig up">▲ 클릭 37% · 35%</span><span class="ev">구글 <code>clogs</code> 검색 <b>159,000</b>·난이도 <b>10</b>·트래픽 잠재력 27,000. 검색은 큰데 난이도가 낮다 — <b>블로그·제휴 소재로 이번 주 최상위급.</b></span></div>
+  <div class="rank reveal"><span class="pos">10</span><span class="nm">반다나<span class="gl">Bandanas</span></span><span class="sig up">▲ 클릭 31%</span><span class="ev">구글 <code>bandana</code> 75,000·난이도 13. 가을 헤어 액세서리 + 반려동물 반다나 양쪽으로 붙는다.</span></div>
+ </div>
+ <p class="rdnote">📌 <b>읽는 법</b> — 클릭 증가율은 핀터레스트 수치이고, 가격·매출은 틱톡샵 실판매 수치다. 둘이 같은 방향이면 <b>수요가 실제 구매로 이어지고 있다</b>는 뜻이다. 이번 주 최고의 일치: <b>아우터·스웨터 클릭 43·38% ↔ 틱톡샵 신규 24개 중 15개가 가을 의류</b>, 그리고 <b>코스튬 클릭 45% ↔ 퍼수트 KD 1</b>. 반대로 <b>마스카라 157%는 틱톡샵 상위에 대응 제품이 없다</b> — 핀터레스트가 먼저 움직인 것이므로 2~3주 후 실판매를 확인할 구간.</p>
+
+ <div class="btitle"><span class="bar"></span>③ 라이징 스타 — 이번 달 저장이 급등한 것 (핀터레스트 저장 기준)</div>
+ <div class="verd">
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">저장 ▲400% · 전체 1위</span><h4>🎃 펌킨 패치 룩</h4><div class="en">Pumpkin Patch Outfits</div><div class="nums"><span>구글 검색 2,600</span><span>난이도 0</span><span>Travel·Fashion·Event</span></div><p>이번 달 저장 1위. 구글 검색은 2,600뿐이지만 <b>난이도 0</b>이라 블로그로 바로 1페이지가 가능하다. 가을 나들이 룩 = <b>배기진·플래드·스웨터를 묶어 파는 최적의 콘텐츠 각도.</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--new)"><span class="tag" style="background:var(--new)">저장 ▲300%</span><h4>🏠 원룸 · 아파트 인테리어</h4><div class="en">Apartment Rooms</div><div class="nums"><span>구글 검색 250</span><span>난이도 16</span><span>트래픽 잠재력 21,000</span></div><p>직접 검색량은 250뿐인데 <b>트래픽 잠재력이 21,000</b>이다 = 이 주제로 상위에 오르면 연관 검색으로 트래픽이 쏟아진다. 커튼봉·탁상시계 같은 가을 홈데코 소품과 붙는다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--etd)"><span class="tag" style="background:var(--etd)">저장 ▲300%</span><h4>💅 백투스쿨 네일 디자인</h4><div class="en">Back to School Nail Designs</div><div class="nums"><span>구글 검색 300뿐</span><span>난이도 0</span><span>광고단가 없음</span></div><p><b>핀터레스트 안에서만 도는 트렌드다.</b> 구글 검색이 300뿐이고 광고단가가 아예 안 붙는다 = 상업적 가치가 검증되지 않았다. <b>구글 SEO로 노리면 헛수고, 핀·숏폼 콘텐츠로만 먹을 것.</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">저장 ▲300%</span><h4>🦇 할로윈 파티 · 홈데코 아이디어</h4><div class="en">Halloween Party and Home Decorating Ideas</div><div class="nums"><span>구글 검색 7,200</span><span>난이도 5</span><span>광고단가 $0.04</span></div><p>구글 <code>halloween party ideas</code> 7,200에 <b>난이도 5</b> — 거의 빈자리다. 다만 광고단가가 $0.04로 극히 낮다 = <b>광고로는 돈이 안 되고, 트래픽·저장을 모으는 콘텐츠용</b>이다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--gold)"><span class="tag">에디터 픽 · 다음 분기</span><h4>🥗 간단 사이드 샐러드</h4><div class="en">Easy Side Salads and Crowd-Pleasing Salad Recipes</div><div class="nums"><span>Food and Drinks</span><span>증가율 미표기</span></div><p>유일하게 증가율 없이 &quot;Popular&quot;로만 표시된 항목 = <b>급등이 아니라 이미 큰 카테고리</b>다. 추수감사절(APPROACHING) 대비 요리·홈파티 콘텐츠의 사전 신호로 본다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--etp)"><span class="tag" style="background:var(--etp)">교차 판정</span><h4>🧶 니트 → 손뜨개 연결</h4><div class="en">Sweaters &amp; cardigans → crochet</div><div class="nums"><span>핀 클릭 ▲38%</span><span>Etsy crochet 39,099</span><span>구글 난이도 0</span></div><p>핀터레스트에서 <b>니트·스웨터 쇼핑 클릭이 38% 올랐다.</b> Etsy 크로셰 검색량 39,099은 그대로고, 구글 <code>crochet pattern</code>은 난이도 <b>0</b>에 트래픽 잠재력 <b>29,000</b>이다. <b>세 곳이 다 같은 방향 = 가을 공예 시즌이 실제로 열리는 중.</b></p></div>
+ </div>
+
+ <div class="btitle"><span class="bar"></span>④ 이 제품, 어디서 팔아야 하나 — 3중 교차 판정</div>
+ <p class="rdnote" style="margin-top:-6px"><b>난이도</b>는 구글 1페이지 진입 난도(0~100, 낮을수록 유리) · <b>광고단가</b>는 광고주가 클릭 하나에 내는 실제 금액(높을수록 돈이 되는 키워드) · <b>트래픽 잠재력</b>은 1위 페이지가 받는 전체 방문량.</p>
+ <div class="verd">
+  <div class="vc reveal" style="border-top-color:var(--up)"><span class="tag" style="background:var(--up)">🥇 이번 주 최고의 제휴 소재</span><h4>배기진 · 와이드 데님</h4><div class="en">baggy jeans</div><div class="nums"><span>구글 검색 <b>215,000</b></span><span>난이도 <b>1</b></span><span>단가 $0.45</span><span>잠재력 42,000</span></div><p>검색 <b>21.5만에 난이도 1</b>. 이번 주 전체에서 가장 좋은 조합이다. 틱톡샵 1위 의류(배기진 $53.8M·200만개)와 같은 제품이라 <b>실판매까지 검증된 상태.</b> → <b>블로그 + 제휴마케팅</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--up)"><span class="tag" style="background:var(--up)">난이도 0 · 신상 1위와 일치</span><h4>무선 압력 세척기</h4><div class="en">cordless pressure washer</div><div class="nums"><span>구글 검색 5,100</span><span>난이도 <b>0</b></span><span>단가 $0.20</span></div><p>신상 위너 잠재 매출 1위($99,195)인데 구글 난이도가 <b>0</b>이다. 가을 외부청소 시즌 진입과 겹친다. → <b>블로그 + 리셀링</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--etp)"><span class="tag" style="background:var(--etp)">Etsy가 구글의 22배</span><h4>아미구루미 · 코바늘 인형 도안</h4><div class="en">amigurumi pattern</div><div class="nums"><span>Etsy 검색 <b>6,656</b></span><span>구글 검색 <b>300</b></span><span>난이도 37</span></div><p>구글엔 사실상 없는 수요(300)인데 Etsy 안에서는 6,656 — <b>22배</b>다. <b>블로그로 노리면 헛수고, 리스팅으로만 먹는다.</b> → <b>Etsy 전용</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--gold)"><span class="tag">3박자 다 맞음</span><h4>디지털 플래너</h4><div class="en">digital planner</div><div class="nums"><span>구글 검색 11,000</span><span>난이도 <b>7</b></span><span>단가 <b>$0.50</b></span><span>Etsy 추정 $231,157</span></div><p>난이도 7 + 단가 $0.50 + Etsy 실매출(추정 $23만) — <b>드물게 셋 다 맞는다.</b> 게다가 AI로 완성까지 가능한 포맷이다. → <b>전방위</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--ds)"><span class="tag" style="background:var(--ds)">🔥 퍼수트 — 구글에도 있다</span><h4>퍼수트 (동물 전신 코스튬)</h4><div class="en">fursuit</div><div class="nums"><span>Etsy 24,468 / 경쟁 15,205</span><span>구글 검색 <b>31,000</b></span><span>난이도 25</span><span>fursuit head 난이도 <b>0</b></span></div><p>Etsy만의 틈새가 아니다 — <b>구글에서도 월 31,000</b>이 검색되고 <code>fursuit head</code>는 검색 3,200에 <b>난이도 0</b>이다. Etsy 리스팅(경쟁 15,205·KD 1)과 블로그를 <b>동시에</b> 가져갈 수 있는 유일한 주제. → <b>Etsy + 블로그 둘 다</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">⚠️ 한 소스만 보면 틀리는 사례</span><h4>크리스마스 SVG</h4><div class="en">christmas svg</div><div class="nums"><span>구글 검색 13,000</span><span>난이도 <b>0</b></span><span>Etsy 상위 최고 매출 <b>$852</b></span></div><p><b>구글 기준으로는 난이도 0에 검색 13,000 = 완벽해 보인다.</b> 그런데 Etsy 상위 10개 중 2개가 매출 $0이고 최고가 $852다. <b>같은 키워드인데 블로그는 열려 있고 Etsy 판매는 막혀 있다.</b> → <b>블로그로만, Etsy 진입 금지</b></p></div>
+ </div>
+
+ <div class="btitle"><span class="bar"></span>⑤ 전체 판정표 (한눈에)</div>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>제품 / 키워드</th><th>핀터레스트</th><th>Etsy 검색</th><th>구글 검색</th><th>난이도</th><th>광고단가</th><th>판정</th></tr>
+  <tr><td><b>배기진</b> baggy jeans</td><td>아우터 ▲43%</td><td>—</td><td><b>215,000</b></td><td><b>1</b></td><td>$0.45</td><td><b>블로그+제휴</b></td></tr>
+  <tr><td><b>라부부</b> labubu</td><td>—</td><td>187 (할로윈SVG)</td><td><b>2,340,000</b></td><td>32</td><td>$0.15</td><td><b>SVG 롱테일+블로그</b></td></tr>
+  <tr><td>클로그·뮬 clogs</td><td>▲35%</td><td>—</td><td>159,000</td><td>10</td><td>$0.40</td><td>블로그+제휴</td></tr>
+  <tr><td>스웨터 sweater</td><td>▲38%</td><td>—</td><td>131,000</td><td>12</td><td>$0.40</td><td>블로그+제휴</td></tr>
+  <tr><td>마스카라 mascara</td><td><b>▲157%</b></td><td>—</td><td>76,000</td><td>48</td><td><b>$0.70</b></td><td>광고</td></tr>
+  <tr><td>반다나 bandana</td><td>▲31%</td><td>—</td><td>75,000</td><td>13</td><td>$0.30</td><td>블로그+제휴</td></tr>
+  <tr><td><b>할로윈 데코</b></td><td><b>RISING</b> ▲85%</td><td>일간 2위</td><td>59,000</td><td>23</td><td>$0.25</td><td><b>지금 당장</b></td></tr>
+  <tr><td>크리스마스 오너먼트</td><td>APPROACHING</td><td>일간 6위 ↑3894</td><td>46,000</td><td><b>17</b></td><td>$0.25</td><td><b>곧 · 선점</b></td></tr>
+  <tr><td>할로윈 코스튬 costumes</td><td>▲45%</td><td>—</td><td>47,000</td><td>72</td><td>$0.15</td><td>광고</td></tr>
+  <tr><td>두피 마사지기 scalp massager</td><td>뷰티 ▲56%</td><td>—</td><td>34,000</td><td><b>5</b></td><td>$0.20</td><td>블로그+제휴</td></tr>
+  <tr><td><b>퍼수트</b> fursuit</td><td>코스튬 ▲45%</td><td><b>24,468</b> / 경쟁 15,205</td><td><b>31,000</b></td><td>25</td><td>$0.15</td><td><b>Etsy+블로그</b></td></tr>
+  <tr><td>크리스마스 공예 christmas crafts</td><td>APPROACHING</td><td>—</td><td>15,000</td><td><b>7</b></td><td>$0.08</td><td><b>곧 · 선점</b></td></tr>
+  <tr><td>크리스마스 SVG christmas svg</td><td>APPROACHING</td><td>상위 최고 $852</td><td>13,000</td><td><b>0</b></td><td>$0.06</td><td><b>블로그만 · Etsy 금지</b></td></tr>
+  <tr><td>리퍼 애플워치</td><td>—</td><td>—</td><td>13,000</td><td><b>3</b></td><td>$0.20</td><td>리셀링+블로그</td></tr>
+  <tr><td>포터블 블렌더</td><td>—</td><td>—</td><td>12,000</td><td>9</td><td>$0.25</td><td>블로그+제휴</td></tr>
+  <tr><td><b>디지털 플래너</b></td><td>—</td><td>추정 $231,157</td><td>11,000</td><td><b>7</b></td><td><b>$0.50</b></td><td><b>전방위</b></td></tr>
+  <tr><td>추수감사절 데코</td><td>APPROACHING</td><td>—</td><td>7,200</td><td><b>0</b></td><td>$0.20</td><td><b>곧 · 선점</b></td></tr>
+  <tr><td>크로셰 패턴 crochet pattern</td><td>니트 ▲38%</td><td><b>30,554</b></td><td>5,600</td><td><b>0</b></td><td>$0.15</td><td><b>Etsy+블로그</b></td></tr>
+  <tr><td>무선 압력세척기</td><td>—</td><td>—</td><td>5,100</td><td><b>0</b></td><td>$0.20</td><td>블로그+리셀링</td></tr>
+  <tr><td>할로윈 셔츠 halloween shirt</td><td>—</td><td>17,192 <b>(미국 15%)</b></td><td>3,400</td><td>0</td><td>$0.30</td><td>롱테일만</td></tr>
+  <tr><td>퍼수트 헤드 fursuit head</td><td>—</td><td>11,986 / 경쟁 4,203</td><td>3,200</td><td><b>0</b></td><td>$0.20</td><td><b>Etsy 최우선</b></td></tr>
+  <tr><td>펌킨 패치 룩</td><td><b>저장 ▲400%</b></td><td>—</td><td>2,600</td><td><b>0</b></td><td>$0.10</td><td>핀+블로그</td></tr>
+  <tr><td>하누카 기프트</td><td>APPROACHING</td><td>—</td><td>2,300</td><td><b>0</b></td><td>$0.35</td><td><b>곧 · 선점</b></td></tr>
+  <tr><td>운동 플래너 fitness planner</td><td>—</td><td>1,976 <b>(미국 16%)</b></td><td>1,000</td><td>8</td><td><b>$1.20</b></td><td>광고 (단가 최고)</td></tr>
+  <tr><td>아미구루미 패턴</td><td>니트 ▲38%</td><td><b>6,656</b></td><td>300</td><td>37</td><td>$0.20</td><td><b>Etsy 전용</b></td></tr>
+  <tr><td>백투스쿨 네일</td><td><b>저장 ▲300%</b></td><td>—</td><td>300</td><td>0</td><td>—</td><td><b>핀·숏폼만</b></td></tr>
+  <tr><td>밸런타인 관련</td><td><b>FROZEN</b></td><td>—</td><td>—</td><td>—</td><td>—</td><td><b>지금 금지</b></td></tr>
+ </table>
+ </div>
+
+ <div class="btitle"><span class="bar"></span>⑥ AI로 바로 만들 수 있는 디지털 제품인가</div>
+ <div class="verd">
+  <div class="vc reveal" style="border-top-color:var(--up)"><span class="tag" style="background:var(--up)">✅ 만들 수 있음 · 1순위</span><h4>디지털 플래너 · 예산 시트 · 워크북</h4><div class="en">Digital planner · Budget spreadsheet · Workbook</div><div class="nums"><span>구글 11,000</span><span>난이도 7</span><span>단가 $0.50</span></div><p>구조·수식·안내문까지 전부 완성 가능. 이번 주 디지털 <b>최고 매출(추정 $231,157)</b>이 여기서 나왔고, 3중 교차에서 유일하게 <b>전방위 판정</b>을 받았다. <b>👉 이번 주 1순위</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--up)"><span class="tag" style="background:var(--up)">✅ 만들 수 있음</span><h4>정보형 리포트 · 체크리스트 · 가이드</h4><div class="en">Report · Checklist · Guide PDF</div><div class="nums"><span>진입장벽 거의 없음</span><span>등록 0일차도 상위</span></div><p>텍스트 기반 정보 상품은 AI가 가장 잘 만들고, 이번 주 <code>digital planner</code> 상위 10개 중 <b>4개가 등록 0~3일차</b>였다 = 신규도 즉시 상위 노출된다. <b>👉 진입장벽 최저</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--new)"><span class="tag" style="background:var(--new)">⚠️ 조건부</span><h4>SVG · 프린터블 아트</h4><div class="en">SVG cut files · Printables</div><div class="nums"><span>평면 SVG $1.50~4.00</span><span>3D 레이어드 <b>$8.50</b></span></div><p>도안 생성은 되지만 <b>커팅기용 벡터 품질</b>은 별도 작업이 필요하고 캐릭터 저작권 리스크가 크다. 평면 크리스마스 SVG는 Etsy 최고 매출이 $852뿐. <b>👉 3D·시즌 SVG만 선별</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">❌ 못 만듦</span><h4>크로셰 · 아미구루미 도안</h4><div class="en">Crochet / Amigurumi patterns</div><div class="nums"><span>Etsy 6,656~30,554</span><span>구글 난이도 0</span></div><p>실제로 떠서 검증한 <b>도안·단수·사진</b>이 필요하다. AI가 낸 패턴은 그대로 뜨면 형태가 안 나온다. <b>👉 대신 블로그 글로</b>(<code>crochet pattern</code> 난이도 0·트래픽 잠재력 29,000)</p></div>
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">❌ 못 만듦</span><h4>퍼수트 실물 · 부품</h4><div class="en">Fursuit heads · paws · headbase</div><div class="nums"><span>단가 $98~$1,000</span><span>KD 1</span></div><p>이번 주 최대 기회지만 <b>봉제·조형 실물 제작</b>이다. AI로 대체 불가. 다만 <b>DIY 패턴 + 튜토리얼($6.00, 566일째 판매 중)</b>은 디지털로 만들 수 있고, 블로그(<code>fursuit head</code> 난이도 0)로도 붙는다. <b>👉 디지털 패턴·콘텐츠로 우회</b></p></div>
+  <div class="vc reveal" style="border-top-color:var(--gold)"><span class="tag">📌 단가 원칙</span><h4>시즌·날짜가 박힌 것을 골라라</h4><div class="en">Seasonal beats generic — 2~4&times;</div><div class="nums"><span>일반 아미구루미 $2.99~5.99</span><span>할로윈 아미구루미 <b>$14.00</b></span></div><p>AI로 만들 수 있는 것 중에서도 <b>시즌·날짜가 박힌 것</b>을 골라야 단가가 선다. 같은 노동에 2~4배다. 지금 만들 시즌은 핀터레스트 APPROACHING인 <b>추수감사절·크리스마스</b>(구글 난이도 0~7).</p></div>
+ </div>
+
+ <div class="btitle"><span class="bar"></span>⑦ 용도별 한 줄 정리</div>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">🛒</span><span class="nm">Etsy에 올릴 것</span><span class="ev"><b>퍼수트 부품이 1순위</b> — <code>fursuit eyes</code>(경쟁 961) · <code>fursuit headbase</code>(경쟁 549) · <code>fursuit paws</code>(2,041), 전부 KD 1. 그다음 크로셰·아미구루미 <b>동물 롱테일</b>(bear 9,206 / llama 416 / iguana 41) · 디지털 플래너 · <b>시즌 프리미엄 붙인</b> 할로윈 도안($12~14). ❌ 크리스마스 평면 SVG·프린터블 월아트는 제외.</span></div>
+  <div class="rank reveal"><span class="pos">✍️</span><span class="nm">블로그 + 제휴마케팅</span><span class="ev">난이도 낮고 검색 큰 순: <code>baggy jeans</code>(21.5만·난이도 <b>1</b>) · <code>clogs</code>(15.9만·10) · <code>sweater</code>(13.1만·12) · <code>bandana</code>(7.5만·13) · <code>scalp massager</code>(3.4만·<b>5</b>) · <code>crochet pattern</code>(난이도 <b>0</b>·잠재력 <b>29,000</b>) · <code>christmas svg</code>(1.3만·난이도 <b>0</b>). <b>배기진이 이번 주 최고 조합.</b></span></div>
+  <div class="rank reveal"><span class="pos">📢</span><span class="nm">유료광고를 돌릴 것</span><span class="ev"><code>fitness planner</code> 단가 <b>$1.20</b>(이번 주 최고) · <code>mascara</code> $0.70 · <code>digital planner</code> $0.50. 단가가 높다 = 광고주가 돈을 쓴다 = <b>구매력이 검증된 키워드</b>다. 단 fitness planner는 Etsy 미국 비중이 16%뿐이니 광고는 미국 타겟으로 좁혀야 한다.</span></div>
+  <div class="rank reveal"><span class="pos">♻️</span><span class="nm">리셀링 (사서 되팔기)</span><span class="ev"><code>cordless pressure washer</code>(난이도 <b>0</b>·검색 5,100) · <code>refurbished apple watch</code>(1.3만·난이도 <b>3</b>·잠재력 29,000). 둘 다 스펙·상태 검색이라 <b>상품평 글이 바로 먹힌다.</b> 리퍼 전자는 "1년 보증"을 타이틀에.</span></div>
+  <div class="rank reveal"><span class="pos">📌</span><span class="nm">핀 · 숏폼 콘텐츠용 (판매 아님)</span><span class="ev"><b>펌킨 패치 룩 저장 ▲400%</b> · 백투스쿨 네일 ▲300% · 원룸 인테리어 ▲300% · 할로윈 파티 아이디어 ▲300%. 구글 검색량은 250~2,600뿐이라 <b>판매·SEO 기대는 낮지만 저장·조회는 폭발</b>하는 소재다.</span></div>
+  <div class="rank reveal"><span class="pos">🔮</span><span class="nm">지금 만들어 두면 나중에 먹는 것</span><span class="ev">핀터레스트가 <b>APPROACHING</b>으로 표시 중 = 아직 경쟁이 안 붙었다. <code>christmas crafts</code>(1.5만·난이도 <b>7</b>) · <code>christmas ornaments</code>(4.6만·<b>17</b>) · <code>thanksgiving decor</code>(7,200·<b>0</b>) · <code>hanukkah gifts</code>(2,300·<b>0</b>). <b>추수감사절·하누카는 난이도 0인데 아무도 안 하고 있다.</b></span></div>
+  <div class="rank reveal"><span class="pos">⛔</span><span class="nm">지금 하지 말 것</span><span class="ev"><b>밸런타인데이</b>(핀터레스트 <b>FROZEN</b> — 최소 4개월 이르다) · <b>크리스마스 평면 SVG를 Etsy에</b>(상위 최고 매출 $852) · <b>halloween shirt 머리 키워드</b>(미국 비중 15%·경쟁 124.6만) · 프린터블 월아트.</span></div>
+ </div>
+</section>
 <section>
  <div class="btitle"><span class="bar"></span>🎬 지금 트렌디해서 이런 영상 찍으면 좋을 아이디어</div>
  <div class="ideas">
@@ -317,11 +439,12 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
  <div class="ins">
   <div class="insc reveal"><div class="n">INSIGHT 01</div><h4>시즌은 ‘언제 팔리나’가 아니라 ‘언제 검색되나’로 봐야 한다 — 지금은 8월인데 이미 크리스마스다</h4><p><b>christmas가 어제 하루 ↑3894로 6위에 진입</b>했고(검색 42,031 · CTR 144%), halloween shirt는 ↑408, 할로윈 클러스터가 상위 30에 5개다. 배경도 명확하다 — 소비자 <b>24%가 8월에</b> 홀리데이 쇼핑을 시작하고, ‘Summerween’ 때문에 구글 트렌드 “Halloween 2026”이 <b>7월에 이미 100</b>을 찍었다(2025년 10월 피크는 75). 드랍쉬핑 신상 위너에 할로윈 2개·크리스마스 공예 1개가 같은 주에 등록된 것과 정확히 같은 신호다. <b>다만 검색이 열렸다는 것과 들어갈 자리가 있다는 것은 전혀 다르다</b> — 크리스마스 머리 키워드는 전부 난이도 92~100으로 막혀 있다.</p></div>
   <div class="insc reveal"><div class="n" style="color:var(--etd)">INSIGHT 02</div><h4>fursuit은 이 리포트에서 처음 보는 조합이다 — 큰 검색, 얇은 경쟁, 높은 미국 비중, 높은 단가가 동시에 성립한다</h4><p>검색 <b>24,468</b> 대 경쟁 리스팅 <b>15,205</b>(거의 1.6:1), <b>난이도 1</b>, <b>미국 55%</b>, 구글 검색 49,500. 하위 키워드까지 전부 KD 1이고 <code>fursuit headbase</code>는 경쟁이 <b>549개</b>뿐이다. 그리고 단가가 <b>$10(테일)에서 $1,000(완성 헤드)까지 실제로 팔린다</b> — 상위 리스팅 하나가 등록 <b>55일에 추정 $74,000</b>. 팬덤이 실체가 있다는 근거도 있다: 미국만 관련 키워드 <b>월 512,440회</b> 검색, 컨벤션 3년 <b>+245%</b>. 진입은 완성품이 아니라 <b>부품·액세서리($26~$98)와 DIY 패턴($6)</b>부터가 현실적이다.</p></div>
-  <div class="insc reveal"><div class="n" style="color:var(--etp)">INSIGHT 03</div><h4>디지털에서 돈 버는 방식이 두 갈래로 완전히 갈렸고, 둘을 섞으면 실패한다</h4><p><b>볼륨 쪽</b>은 $2.96~$5.99에 <b>6,000~58,000건</b> — 플래너가 $3.96에 추정 $231,157, 아미구루미 인형 패턴이 $5.99에 추정 $60,876이다. <b>단가 쪽</b>은 같은 노동에 시즌·포맷을 얹어 <b>2~4배</b> — 할로윈 아미구루미 $14.00, 3D 레이어드 크리스마스 SVG $8.50(평면 $1.50~4.00 대비). 실패는 이 둘을 섞을 때 나온다: <code>christmas svg</code>는 <b>포화된 키워드(KD 95)에 평면 포맷으로 초저가($1.50~4.00)</b>로 들어간 결과 상위 10개 중 2개가 매출 $0이고 6~7년 된 리스팅도 판매 0~2건이다. <b>볼륨을 하려면 압도적 물량이 필요하고, 그게 안 되면 포맷·시즌으로 단가를 올려야 한다.</b></p></div>
+  <div class="insc reveal"><div class="n" style="color:var(--gold)">INSIGHT 03</div><h4>한 소스만 보면 반드시 틀린다 — 같은 키워드가 한쪽에선 열려 있고 다른 쪽에선 막혀 있다</h4><p>이번 주 가장 명확한 증거가 <code>christmas svg</code>다. <b>구글에서는 검색 13,000에 난이도 0</b> — 완벽해 보인다. 그런데 <b>Etsy 상위 10개 중 2개가 매출 $0이고 최고가 $852</b>다. 같은 키워드인데 <b>블로그는 열려 있고 판매는 막혀 있다.</b> 반대 방향 사례도 있다: <code>amigurumi pattern</code>은 구글 검색이 <b>300뿐</b>이라 무시하기 쉽지만 Etsy 안에서는 <b>6,656으로 22배</b>다. 그리고 <b>핀터레스트만 보면 또 틀린다</b> — 저장 1위 <b>펌킨 패치 룩(▲400%)</b>과 백투스쿨 네일(▲300%)은 구글 검색이 각각 2,600·300뿐이고 후자는 광고단가가 아예 안 붙는다(= 상업적 가치 미검증). <b>같은 제품이라도 팔 곳이 정해져 있고, 그건 세 곳을 겹쳐야만 보인다.</b> 이번 주 셋이 모두 같은 방향을 가리킨 건 <b>디지털 플래너</b>(난이도 7·단가 $0.50·Etsy 추정 $231,157)와 <b>가을 니트·아우터</b>(핀 클릭 ▲38~43% ↔ 틱톡샵 의류 15개 ↔ 구글 sweater 13.1만·난이도 12) 두 개뿐이다.</p></div>
+  <div class="insc reveal"><div class="n" style="color:var(--etp)">INSIGHT 04</div><h4>디지털에서 돈 버는 방식이 두 갈래로 완전히 갈렸고, 둘을 섞으면 실패한다</h4><p><b>볼륨 쪽</b>은 $2.96~$5.99에 <b>6,000~58,000건</b> — 플래너가 $3.96에 추정 $231,157, 아미구루미 인형 패턴이 $5.99에 추정 $60,876이다. <b>단가 쪽</b>은 같은 노동에 시즌·포맷을 얹어 <b>2~4배</b> — 할로윈 아미구루미 $14.00, 3D 레이어드 크리스마스 SVG $8.50(평면 $1.50~4.00 대비). 실패는 이 둘을 섞을 때 나온다: <code>christmas svg</code>는 <b>포화된 키워드(KD 95)에 평면 포맷으로 초저가($1.50~4.00)</b>로 들어간 결과 상위 10개 중 2개가 매출 $0이고 6~7년 된 리스팅도 판매 0~2건이다. <b>볼륨을 하려면 압도적 물량이 필요하고, 그게 안 되면 포맷·시즌으로 단가를 올려야 한다.</b></p></div>
  </div>
 </section>
 <footer>
- 드랍쉬핑 수치는 라이브 실측이며 ‘누적 매출’과 ‘잠재 매출’을 구분해 표기했다. Etsy 검색량·클릭·CTR·경쟁 리스팅 수·난이도(KD)·검색자 국가 비중은 라이브 실측이고, <b>리스팅별 판매 건수와 매출은 조회수 기반 추정치(Est.)</b> 다. 니치 랭킹은 월 단위로 갱신되므로 같은 달 안에서는 변하지 않는다. 시즌 배경 수치는 공개 시장 자료를 참조했다. &nbsp;·&nbsp; 생성일 2026년 8월 17일 (Week 34)
+ 드랍쉬핑 수치는 라이브 실측이며 ‘누적 매출’과 ‘잠재 매출’을 구분해 표기했다. Etsy 검색량·클릭·CTR·경쟁 리스팅 수·난이도(KD)·검색자 국가 비중은 라이브 실측이고, <b>리스팅별 판매 건수와 매출은 조회수 기반 추정치(Est.)</b> 다. 핀터레스트 수치는 <b>절대 검색량이 아니라 전월 대비 변화율·시즌 상태</b>이며(플랫폼이 절대값을 제공하지 않는다), 구글 검색량·난이도·광고단가·트래픽 잠재력은 별도 SEO 데이터 기준이다. <b>광고단가는 원자료의 센트 값을 달러로 환산한 실제 금액</b>이다. 니치 랭킹은 월 단위로 갱신되므로 같은 달 안에서는 변하지 않는다. 시즌 배경 수치는 공개 시장 자료를 참조했다. &nbsp;·&nbsp; 생성일 2026년 8월 17일 (Week 34)
 </footer>
 </div>
 <script>
