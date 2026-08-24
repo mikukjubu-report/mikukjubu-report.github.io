@@ -174,7 +174,24 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .reveal.on{opacity:1;transform:none}
 @media(max-width:860px){header h1{font-size:clamp(21px,calc(7.9vw - 3px),60px)}.srcbar{padding:12px 20px}.kpis,.cards,.whys,.ideas,.cal,.verd,.sig3,.srcs{grid-template-columns:repeat(2,1fr)}section{padding:22px 20px}header{padding:32px 20px}.kpis{padding:24px 20px 4px}footer{padding:22px 20px 32px}}
-@media(max-width:560px){.kpis,.cards,.whys,.ideas,.cal,.verd,.sig3,.srcs{grid-template-columns:1fr}}
+@media(max-width:560px){
+ .kpis,.whys,.ideas,.verd,.sig3,.srcs{grid-template-columns:1fr}
+ /* 제품·시즌 카드는 2열 유지 — 모바일 세로 길이를 절반으로 (2026-08-24) */
+ .cards,.cal{grid-template-columns:repeat(2,1fr);gap:11px}
+ .cards .card .body{padding:11px 11px 13px}
+ .cards .card .nm{font-size:14px;line-height:1.32}
+ .cards .card .en{font-size:12px}
+ .cards .card .price{font-size:14px}
+ .cards .card .rev{font-size:12px}
+ .cards .card .tr{font-size:12px;padding:3px 7px}
+ .cards .card .fire{font-size:12px;padding:3px 7px}
+ .cards .card .links{gap:6px;padding-top:10px}
+ .cards .card .lk{font-size:12px;padding:5px 9px}
+ .cards .card .meta{gap:5px}
+ .calc h5{font-size:15px}
+ .calc p{font-size:12.5px}
+ .calc{padding:13px 13px}
+}
 </style>
 </head>
 <body>
