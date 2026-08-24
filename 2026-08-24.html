@@ -148,6 +148,22 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
 .chartbox .ct{font-weight:800;font-size:17px;color:var(--ink);margin-bottom:4px}
 .chartbox .cs{font-size:13.5px;color:var(--ink2);font-weight:600;margin-bottom:16px}
 .chartbox svg{width:100%;height:auto;display:block;overflow:visible}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:170px 1fr auto;gap:12px;align-items:center}
+.bar .bl{font-size:14px;font-weight:800;color:var(--ink);text-align:right;line-height:1.3}
+.bar .bl small{display:block;font-size:12px;font-weight:600;color:#8A7B6C}
+.bar .bt{height:24px;background:#EFE7DC;border-radius:6px;overflow:hidden}
+.bar .bf{display:block;height:100%;border-radius:6px;min-width:4px}
+.bar .bv{font-size:14px;font-weight:800;white-space:nowrap;color:var(--ink2)}
+.barsec{font-size:14px;font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.barsec:first-child{margin-top:0}
+@media(max-width:700px){
+ .bar{grid-template-columns:1fr auto;gap:4px 10px}
+ .bar .bl{grid-column:1/-1;text-align:left}
+ .bar .bt{height:20px}
+ .bar .bv{font-size:13.5px}
+ .chartbox{padding:18px 16px}
+}
 .chartbox .lgd{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:13px;font-weight:700;color:var(--ink2)}
 .chartbox .lgd i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
@@ -299,25 +315,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
 
  <div class="chartbox reveal">
   <div class="ct">오르는 건 전부 $3 미만, 꺾이는 건 중고가</div>
-  <div class="cs">가로축 = 매출 증감액(달러). 오른쪽(초록)이 늘어난 것, 왼쪽(빨강)이 줄어든 것.</div>
-  <svg viewBox="0 0 660 330" role="img" aria-label="소싱처 매출 증감 다이버징 차트">
-   <line x1="330" y1="0" x2="330" y2="300" stroke="#EADFD1" stroke-width="2"/>
-   <g font-family="Noto Sans KR,sans-serif" font-size="11.5" font-weight="700">
-    <rect x="330" y="6" width="150" height="18" rx="3" fill="#1E9E5A"/><text x="486" y="19" fill="#126B41" font-weight="800">+$136.1K</text><text x="326" y="19" text-anchor="end" fill="#1B1510">LED 헤드램프 $2.87</text>
-    <rect x="330" y="30" width="79" height="18" rx="3" fill="#1E9E5A"/><text x="415" y="43" fill="#126B41" font-weight="800">+$71.3K</text><text x="326" y="43" text-anchor="end" fill="#1B1510">절연 전기테이프 $2.25</text>
-    <rect x="330" y="54" width="74" height="18" rx="3" fill="#1E9E5A"/><text x="410" y="67" fill="#126B41" font-weight="800">+$67K</text><text x="326" y="67" text-anchor="end" fill="#1B1510">셀프타이트닝 렌치 $1.69</text>
-    <rect x="330" y="78" width="53" height="18" rx="3" fill="#1E9E5A"/><text x="389" y="91" fill="#126B41" font-weight="800">+$48.2K</text><text x="326" y="91" text-anchor="end" fill="#1B1510">자석 집게 $1.54</text>
-    <rect x="330" y="102" width="51" height="18" rx="3" fill="#2FB56F"/><text x="387" y="115" fill="#126B41" font-weight="800">+$45.9K</text><text x="326" y="115" text-anchor="end" fill="#9B2D6B">💄 컬리헤어 브러시 $2.20</text>
-    <rect x="330" y="126" width="47" height="18" rx="3" fill="#1E9E5A"/><text x="383" y="139" fill="#126B41" font-weight="800">+$42.8K</text><text x="326" y="139" text-anchor="end" fill="#1B1510">양면 스펀지 $2.08</text>
-    <rect x="330" y="150" width="42" height="18" rx="3" fill="#1E9E5A"/><text x="378" y="163" fill="#126B41" font-weight="800">+$37.9K</text><text x="326" y="163" text-anchor="end" fill="#1B1510">카펫 고정 스티커 $1.47</text>
-    <rect x="65" y="180" width="265" height="18" rx="3" fill="#D23B3B"/><text x="59" y="193" text-anchor="end" fill="#1B1510" font-size="11">주방저울 $8.76</text><text x="70" y="193" fill="#fff" font-weight="800">-$238.5K</text>
-    <rect x="76" y="204" width="254" height="18" rx="3" fill="#D23B3B"/><text x="70" y="217" text-anchor="end" fill="#1B1510" font-size="11">나노 양면테이프 $1.57</text><text x="81" y="217" fill="#fff" font-weight="800">-$228K</text>
-    <rect x="132" y="228" width="198" height="18" rx="3" fill="#E06060"/><text x="126" y="241" text-anchor="end" fill="#1B1510" font-size="11">유선 이어폰 $3.82</text><text x="137" y="241" fill="#fff" font-weight="800">-$179.4K</text>
-    <rect x="205" y="252" width="125" height="18" rx="3" fill="#E06060"/><text x="199" y="265" text-anchor="end" fill="#1B1510" font-size="11">프로젝션 LED $2.64</text><text x="210" y="265" fill="#fff" font-weight="800">-$113.4K</text>
-    <rect x="225" y="276" width="105" height="18" rx="3" fill="#E88080"/><text x="219" y="289" text-anchor="end" fill="#1B1510" font-size="11">솔라 모션조명 $5.95</text><text x="230" y="289" fill="#fff" font-weight="800">-$94.9K</text>
-   </g>
-   <text x="330" y="318" text-anchor="middle" font-family="Noto Sans KR,sans-serif" font-size="12" font-weight="800" fill="#574A3F">← 꺾이는 중 &nbsp;|&nbsp; 오르는 중 →</text>
-  </svg>
+  <div class="cs">막대 길이 = 매출 증감액. 상승 그룹과 하락 그룹을 나눠 놨습니다.</div>
+  <div class="barsec" style="color:#126B41">📈 오르는 중 — 전부 $2.87 이하</div><div class="bars"><div class="bar"><div class="bl">LED 헤드램프<small>$2.87 · 누적 144,290주문</small></div><div class="bt"><span class="bf" style="width:100%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$136.1K</div></div><div class="bar"><div class="bl">절연 전기테이프<small>$2.25 · 90,631주문</small></div><div class="bt"><span class="bf" style="width:52.4%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$71.3K</div></div><div class="bar"><div class="bl">셀프타이트닝 렌치<small>$1.69 · 110,331주문</small></div><div class="bt"><span class="bf" style="width:49.2%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$67K</div></div><div class="bar"><div class="bl">자석 집게<small>$1.54 · 93,044주문</small></div><div class="bt"><span class="bf" style="width:35.4%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$48.2K</div></div><div class="bar"><div class="bl">💄 컬리헤어 브러시<small>$2.20 · 95,703주문</small></div><div class="bt"><span class="bf" style="width:33.7%;background:#2FB56F"></span></div><div class="bv" style="color:#126B41">+$45.9K</div></div><div class="bar"><div class="bl">양면 흡수 스펀지<small>$2.08 · 128,718주문</small></div><div class="bt"><span class="bf" style="width:31.4%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$42.8K</div></div><div class="bar"><div class="bl">카펫 고정 스티커<small>$1.47 · 115,164주문</small></div><div class="bt"><span class="bf" style="width:27.8%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">+$37.9K</div></div></div><div class="barsec" style="color:#D23B3B">📉 꺾이는 중 — 대부분 중고가</div><div class="bars"><div class="bar"><div class="bl">디지털 주방 저울<small>$8.76 · 158,636주문</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">-$238.5K</div></div><div class="bar"><div class="bl">나노 양면 테이프<small>$1.57 · 304,245주문</small></div><div class="bt"><span class="bf" style="width:95.6%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">-$228K</div></div><div class="bar"><div class="bl">유선 이어폰<small>$3.82 · 139,671주문</small></div><div class="bt"><span class="bf" style="width:75.2%;background:#E06060"></span></div><div class="bv" style="color:#D23B3B">-$179.4K</div></div><div class="bar"><div class="bl">프로젝션 LED<small>$2.64 · 137,903주문</small></div><div class="bt"><span class="bf" style="width:47.5%;background:#E06060"></span></div><div class="bv" style="color:#D23B3B">-$113.4K</div></div><div class="bar"><div class="bl">솔라 모션 조명<small>$5.95 · 103,757주문</small></div><div class="bt"><span class="bf" style="width:39.8%;background:#E88080"></span></div><div class="bv" style="color:#D23B3B">-$94.9K</div></div></div>
   <div class="lgd"><span>📌 상승 7개 전부 <b>$1.47~$2.87</b> · 하락 5개 중 4개가 <b>$2.64 이상</b></span></div>
  </div>
  <div class="tblwrap" style="margin-top:18px"><table class="tbl">
@@ -355,16 +354,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
  <div class="chartbox reveal">
   <div class="ct">셀러가 적을수록 더 팔립니다 — 6.9배</div>
   <div class="cs">같은 32개 상품을 셀러 수로 갈랐을 때의 평균 누적 주문.</div>
-  <svg viewBox="0 0 660 170" role="img" aria-label="셀러 수 대비 평균 주문 비교">
-   <g font-family="Noto Sans KR,sans-serif">
-    <text x="10" y="26" font-size="13" font-weight="800" fill="#126B41">셀러 3곳 이하 · 16개 상품</text>
-    <rect x="10" y="36" width="620" height="34" rx="6" fill="#1E9E5A"/>
-    <text x="24" y="59" font-size="17" font-weight="800" fill="#fff">평균 14,222건</text>
-    <text x="10" y="106" font-size="13" font-weight="800" fill="#D23B3B">셀러 7곳 이상 · 12개 상품</text>
-    <rect x="10" y="116" width="90" height="34" rx="6" fill="#D23B3B"/>
-    <text x="112" y="139" font-size="17" font-weight="800" fill="#D23B3B">평균 2,072건</text>
-   </g>
-  </svg>
+  <div class="bars"><div class="bar"><div class="bl">셀러 3곳 이하<small>상품 16개</small></div><div class="bt"><span class="bf" style="width:100%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">평균 14,222건</div></div><div class="bar"><div class="bl">셀러 7곳 이상<small>상품 12개</small></div><div class="bt"><span class="bf" style="width:14.6%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">평균 2,072건</div></div></div>
   <div class="lgd"><span>⚠️ 누적 매출 1위(LED 캔들 $147만)가 <b>셀러 수도 1위(17곳)</b>였습니다 — 매출만 보면 가장 붐비는 자리로 갑니다</span></div>
  </div>
  <div class="btitle" style="font-size:18px;margin:22px 0 12px"><span class="bar" style="background:var(--up)"></span>🟢 아직 셀러 3곳 이하인데 이미 팔리는 것 — 이번 주 최우선</div>
@@ -587,41 +577,15 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
  <div class="chartbox reveal">
   <div class="ct">난이도 분포 — 시즌 키워드는 사실상 전멸</div>
   <div class="cs">Etsy 난이도(KD) 구간별 키워드 개수. 100은 "신규 진입 불가" 수준입니다.</div>
-  <svg viewBox="0 0 660 210" role="img" aria-label="Etsy 키워드 난이도 분포">
-   <g font-family="Noto Sans KR,sans-serif" font-size="12.5" font-weight="700">
-    <rect x="140" y="8" width="196" height="30" rx="5" fill="#1E9E5A"/><text x="134" y="28" text-anchor="end" fill="#126B41" font-weight="800">KD 1~20 · 열림</text><text x="346" y="28" fill="#126B41" font-weight="800">14개</text>
-    <rect x="140" y="46" width="42" height="30" rx="5" fill="#C98A12"/><text x="134" y="66" text-anchor="end" fill="#8A6410" font-weight="800">KD 21~50</text><text x="192" y="66" fill="#8A6410" font-weight="800">3개</text>
-    <rect x="140" y="84" width="98" height="30" rx="5" fill="#E08A1E"/><text x="134" y="104" text-anchor="end" fill="#A0620E" font-weight="800">KD 51~85</text><text x="248" y="104" fill="#A0620E" font-weight="800">7개</text>
-    <rect x="140" y="122" width="476" height="30" rx="5" fill="#D23B3B"/><text x="134" y="142" text-anchor="end" fill="#D23B3B" font-weight="800">KD 86~100 · 막힘</text><text x="356" y="142" fill="#fff" font-weight="800">34개 — 절반 이상</text>
-    <text x="140" y="180" font-size="13" font-weight="800" fill="#1B1510">막힌 34개에 들어있는 것 ▸</text>
-    <text x="140" y="199" font-size="12" font-weight="600" fill="#574A3F">크리스마스 · 할로윈 · 추수감사절 · 개학 · SVG · 프린터블 · 웨딩 · 월아트 — 시즌 키워드 전부</text>
-   </g>
-  </svg>
+  <div class="bars"><div class="bar"><div class="bl">KD 1~20 · 열림<small>팬덤 IP · 퍼수트 · 폰케이스 롱테일</small></div><div class="bt"><span class="bf" style="width:41.2%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">14개</div></div><div class="bar"><div class="bl">KD 21~50<small>애니 스티커 인접 · 데스크매트</small></div><div class="bt"><span class="bf" style="width:8.8%;background:#C98A12"></span></div><div class="bv" style="color:#8A6410">3개</div></div><div class="bar"><div class="bl">KD 51~85<small>네일 스티커 · 메이크업 파우치 · 아미구루미</small></div><div class="bt"><span class="bf" style="width:20.6%;background:#E08A1E"></span></div><div class="bv" style="color:#A0620E">7개</div></div><div class="bar"><div class="bl">KD 86~100 · 막힘<small>크리스마스 · 할로윈 · 개학 · SVG · 웨딩 전부</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">34개</div></div></div>
   <div class="lgd"><span><i style="background:#1E9E5A"></i>지금 들어갈 수 있는 자리</span><span><i style="background:#D23B3B"></i>후발주자는 못 이기는 자리</span><span>· 검색량 &lt;20 인 10개는 제외</span></div>
  </div>
 
  <div class="btitle" style="font-size:19px;margin:24px 0 12px"><span class="bar" style="background:var(--up)"></span>🏆 이번 주 최대 발견 — 팬덤 IP 키워드가 통째로 비어 있습니다</div>
  <div class="chartbox reveal">
   <div class="ct">같은 검색량인데 경쟁은 1,000분의 1</div>
-  <div class="cs">막대 = 경쟁 리스팅 수(로그 스케일 아님, 실제 비율). 시즌 키워드와 팬덤 키워드를 나란히 놨습니다.</div>
-  <svg viewBox="0 0 660 340" role="img" aria-label="시즌 키워드와 팬덤 키워드 경쟁 비교">
-   <g font-family="Noto Sans KR,sans-serif" font-size="12" font-weight="700">
-    <text x="10" y="16" font-size="13" font-weight="800" fill="#D23B3B">🔴 시즌 키워드 — 경쟁 리스팅</text>
-    <rect x="200" y="26" width="430" height="19" rx="3" fill="#D23B3B"/><text x="194" y="40" text-anchor="end" fill="#1B1510">디지털 다운로드</text><text x="214" y="40" fill="#fff" font-weight="800">859만 · KD 100</text>
-    <rect x="200" y="50" width="381" height="19" rx="3" fill="#D23B3B"/><text x="194" y="64" text-anchor="end" fill="#1B1510">크리스마스 기프트</text><text x="214" y="64" fill="#fff" font-weight="800">761만 · KD 100</text>
-    <rect x="200" y="74" width="138" height="19" rx="3" fill="#E06060"/><text x="194" y="88" text-anchor="end" fill="#1B1510">프린터블 월아트</text><text x="346" y="88" fill="#D23B3B" font-weight="800">276만 · KD 100</text>
-    <rect x="200" y="98" width="112" height="19" rx="3" fill="#E06060"/><text x="194" y="112" text-anchor="end" fill="#1B1510">크리스마스 셔츠</text><text x="320" y="112" fill="#D23B3B" font-weight="800">224만 · KD 100</text>
-    <rect x="200" y="122" width="62" height="19" rx="3" fill="#E88080"/><text x="194" y="136" text-anchor="end" fill="#1B1510">할로윈 셔츠</text><text x="270" y="136" fill="#D23B3B" font-weight="800">125만 · KD 93</text>
-    <rect x="200" y="146" width="23" height="19" rx="3" fill="#E88080"/><text x="194" y="160" text-anchor="end" fill="#1B1510">추수감사절 데코</text><text x="230" y="160" fill="#D23B3B" font-weight="800">46만 · KD 100</text>
-
-    <text x="10" y="196" font-size="13" font-weight="800" fill="#126B41">🟢 팬덤 IP 키워드 — 같은 축척인데 거의 안 보입니다</text>
-    <rect x="200" y="206" width="0.6" height="19" rx="1" fill="#1E9E5A"/><text x="194" y="220" text-anchor="end" fill="#1B1510">머더 드론즈</text><text x="210" y="220" fill="#126B41" font-weight="800">274개 · KD 1 <tspan fill="#574A3F" font-weight="600">(검색 4,178 · 구글 20.1만)</tspan></text>
-    <rect x="200" y="230" width="0.9" height="19" rx="1" fill="#1E9E5A"/><text x="194" y="244" text-anchor="end" fill="#1B1510">프로토젠</text><text x="210" y="244" fill="#126B41" font-weight="800">442개 · KD 1 <tspan fill="#574A3F" font-weight="600">(검색 3,338 · 구글 4만)</tspan></text>
-    <rect x="200" y="254" width="1.4" height="19" rx="1" fill="#1E9E5A"/><text x="194" y="268" text-anchor="end" fill="#1B1510">그린치 폰케이스</text><text x="210" y="268" fill="#126B41" font-weight="800">606개 · KD 1 <tspan fill="#574A3F" font-weight="600">(검색 3,131)</tspan></text>
-    <rect x="200" y="278" width="1.5" height="19" rx="1" fill="#1E9E5A"/><text x="194" y="292" text-anchor="end" fill="#1B1510">애니 신작 A</text><text x="210" y="292" fill="#126B41" font-weight="800">670개 · KD 1 <tspan fill="#574A3F" font-weight="600">(검색 11,138)</tspan></text>
-    <rect x="200" y="302" width="4.9" height="19" rx="1" fill="#2FB56F"/><text x="194" y="316" text-anchor="end" fill="#1B1510">프리렌</text><text x="212" y="316" fill="#126B41" font-weight="800">2,151개 · KD 1 <tspan fill="#574A3F" font-weight="600">(검색 8,249)</tspan></text>
-   </g>
-  </svg>
+  <div class="cs">막대 = 경쟁 리스팅 수. <b>두 그룹이 같은 축척</b>이라 팬덤 쪽은 막대가 거의 안 보입니다 — 그게 요점입니다.</div>
+  <div class="barsec" style="color:#D23B3B">🔴 시즌 키워드 — 경쟁 리스팅 수</div><div class="bars"><div class="bar"><div class="bl">디지털 다운로드<small>KD 100</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">859만</div></div><div class="bar"><div class="bl">크리스마스 기프트<small>KD 100</small></div><div class="bt"><span class="bf" style="width:88.6%;background:#D23B3B"></span></div><div class="bv" style="color:#D23B3B">761만</div></div><div class="bar"><div class="bl">프린터블 월아트<small>KD 100</small></div><div class="bt"><span class="bf" style="width:32.1%;background:#E06060"></span></div><div class="bv" style="color:#D23B3B">276만</div></div><div class="bar"><div class="bl">크리스마스 셔츠<small>KD 100</small></div><div class="bt"><span class="bf" style="width:26.1%;background:#E06060"></span></div><div class="bv" style="color:#D23B3B">224만</div></div><div class="bar"><div class="bl">할로윈 셔츠<small>KD 93</small></div><div class="bt"><span class="bf" style="width:14.5%;background:#E88080"></span></div><div class="bv" style="color:#D23B3B">125만</div></div><div class="bar"><div class="bl">추수감사절 데코<small>KD 100</small></div><div class="bt"><span class="bf" style="width:5.3%;background:#E88080"></span></div><div class="bv" style="color:#D23B3B">46만</div></div></div><div class="barsec" style="color:#126B41">🟢 팬덤 IP 키워드 — <u>같은 축척</u>이라 막대가 거의 안 보입니다</div><div class="bars"><div class="bar"><div class="bl">프리렌<small>KD 1 · Etsy 검색 8,249</small></div><div class="bt"><span class="bf" style="width:0.025%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">2,151개</div></div><div class="bar"><div class="bl">애니 신작 A<small>KD 1 · Etsy 검색 11,138</small></div><div class="bt"><span class="bf" style="width:0.008%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">670개</div></div><div class="bar"><div class="bl">그린치 폰케이스<small>KD 1 · Etsy 검색 3,131</small></div><div class="bt"><span class="bf" style="width:0.007%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">606개</div></div><div class="bar"><div class="bl">프로토젠<small>KD 1 · 구글 40,500</small></div><div class="bt"><span class="bf" style="width:0.005%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">442개</div></div><div class="bar"><div class="bl">머더 드론즈<small>KD 1 · 구글 201,000</small></div><div class="bt"><span class="bf" style="width:0.003%;background:#1E9E5A"></span></div><div class="bv" style="color:#126B41">274개</div></div></div>
   <div class="lgd"><span>📌 <b>애니 신작 A는 검색 11,138인데 경쟁 리스팅이 670개</b>입니다 — 크리스마스 기프트(761만)의 <b>1만분의 1</b></span></div>
  </div>
 
@@ -705,20 +669,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46p
  <div class="chartbox reveal">
   <div class="ct">쇼핑 클릭 증가율 — 뷰티 3종이 위를 통째로 먹었습니다</div>
   <div class="cs">막대 길이 = 전월 대비 증가율(%). 🆕는 이번 주 새로 TOP10에 들어온 것.</div>
-  <svg viewBox="0 0 660 300" role="img" aria-label="쇼핑 클릭 증가율 막대 차트">
-   <g font-family="Noto Sans KR,sans-serif" font-size="12" font-weight="700">
-    <rect x="150" y="6" width="480" height="20" rx="4" fill="#9B2D6B"/><text x="146" y="21" text-anchor="end" fill="#1B1510">블러셔·브론저 🆕</text><text x="638" y="21" fill="#9B2D6B" font-weight="800">980%</text>
-    <rect x="150" y="34" width="75" height="20" rx="4" fill="#C0508A"/><text x="146" y="49" text-anchor="end" fill="#1B1510">페이스 메이크업 🆕</text><text x="233" y="49" fill="#9B2D6B" font-weight="800">154%</text>
-    <rect x="150" y="62" width="57" height="20" rx="4" fill="#D07FA8"/><text x="146" y="77" text-anchor="end" fill="#1B1510">마스카라 ▼</text><text x="215" y="77" fill="#D23B3B" font-weight="800">116% (전주 157%)</text>
-    <rect x="150" y="90" width="36" height="20" rx="4" fill="#C98A12"/><text x="146" y="105" text-anchor="end" fill="#1B1510">시즌·홀리데이 장식</text><text x="194" y="105" fill="#8A6410" font-weight="800">74%</text>
-    <rect x="150" y="118" width="25" height="20" rx="4" fill="#D24A2E"/><text x="146" y="133" text-anchor="end" fill="#1B1510">코스튬·액세서리</text><text x="183" y="133" fill="#A03A22" font-weight="800">51%</text>
-    <rect x="150" y="146" width="23" height="20" rx="4" fill="#C98A12"/><text x="146" y="161" text-anchor="end" fill="#1B1510">뷰티 보조제</text><text x="181" y="161" fill="#8A6410" font-weight="800">47%</text>
-    <rect x="150" y="174" width="22" height="20" rx="4" fill="#5B4B9E"/><text x="146" y="189" text-anchor="end" fill="#1B1510">아우터</text><text x="180" y="189" fill="#463A7A" font-weight="800">45%</text>
-    <rect x="150" y="202" width="21.5" height="20" rx="4" fill="#5B4B9E"/><text x="146" y="217" text-anchor="end" fill="#1B1510">코트·재킷</text><text x="179" y="217" fill="#463A7A" font-weight="800">44%</text>
-    <rect x="150" y="230" width="21" height="20" rx="4" fill="#5B4B9E"/><text x="146" y="245" text-anchor="end" fill="#1B1510">스웨터·카디건</text><text x="179" y="245" fill="#463A7A" font-weight="800">43%</text>
-    <rect x="150" y="258" width="18.5" height="20" rx="4" fill="#8A7B6C"/><text x="146" y="273" text-anchor="end" fill="#1B1510">장식용 자</text><text x="176" y="273" fill="#574A3F" font-weight="800">38%</text>
-   </g>
-  </svg>
+  <div class="bars"><div class="bar"><div class="bl">블러셔·브론저 🆕<small>Blushes &amp; bronzers</small></div><div class="bt"><span class="bf" style="width:100%;background:#9B2D6B"></span></div><div class="bv" style="color:#9B2D6B">▲ 980%</div></div><div class="bar"><div class="bl">페이스 메이크업 🆕<small>Face makeup</small></div><div class="bt"><span class="bf" style="width:15.7%;background:#C0508A"></span></div><div class="bv" style="color:#9B2D6B">▲ 154%</div></div><div class="bar"><div class="bl">마스카라 ▼<small>Mascaras · 전주 157%</small></div><div class="bt"><span class="bf" style="width:11.8%;background:#D07FA8"></span></div><div class="bv" style="color:#D23B3B">▲ 116%</div></div><div class="bar"><div class="bl">시즌·홀리데이 장식<small>Seasonal decorations</small></div><div class="bt"><span class="bf" style="width:7.6%;background:#C98A12"></span></div><div class="bv" style="color:#8A6410">▲ 74%</div></div><div class="bar"><div class="bl">코스튬·액세서리<small>Costumes</small></div><div class="bt"><span class="bf" style="width:5.2%;background:#D24A2E"></span></div><div class="bv" style="color:#A03A22">▲ 51%</div></div><div class="bar"><div class="bl">뷰티 보조제<small>Beauty supplements</small></div><div class="bt"><span class="bf" style="width:4.8%;background:#C98A12"></span></div><div class="bv" style="color:#8A6410">▲ 47%</div></div><div class="bar"><div class="bl">아우터<small>Outerwear</small></div><div class="bt"><span class="bf" style="width:4.6%;background:#5B4B9E"></span></div><div class="bv" style="color:#463A7A">▲ 45%</div></div><div class="bar"><div class="bl">코트·재킷<small>Coats &amp; jackets</small></div><div class="bt"><span class="bf" style="width:4.5%;background:#5B4B9E"></span></div><div class="bv" style="color:#463A7A">▲ 44%</div></div><div class="bar"><div class="bl">스웨터·카디건<small>Sweaters</small></div><div class="bt"><span class="bf" style="width:4.4%;background:#5B4B9E"></span></div><div class="bv" style="color:#463A7A">▲ 43%</div></div><div class="bar"><div class="bl">장식용 자<small>Decorative jars</small></div><div class="bt"><span class="bf" style="width:3.9%;background:#8A7B6C"></span></div><div class="bv" style="color:#574A3F">▲ 38%</div></div></div>
   <div class="lgd"><span><i style="background:#9B2D6B"></i>뷰티</span><span><i style="background:#C98A12"></i>시즌 장식</span><span><i style="background:#D24A2E"></i>코스튬</span><span><i style="background:#5B4B9E"></i>가을 의류</span><span style="color:#D23B3B">▼ 전주 1위였던 마스카라가 3위로</span></div>
  </div>
  <div class="tblwrap"><table class="tbl">
