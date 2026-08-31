@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미국주부 · 이번 주 미국에서 잘 팔리는 것 · 2026-08-31</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --ink2:#574A3F;
+ --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+ --hdr:#211913; --line:#EADFD1; --up:#1E9E5A; --down:#D23B3B; --new:#E08A1E; --eb:#5B4B9E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;background:var(--bg)}
+header{background:var(--hdr);border-top:10px solid var(--ds);color:#fff;padding:46px 46px 40px}
+header .brand{font-family:'Black Han Sans',sans-serif;font-size:clamp(22px,2.6vw,30px);color:var(--gold);line-height:1;margin-bottom:10px}
+header .kick{font-size:clamp(11px,1.15vw,14px);font-weight:800;letter-spacing:.26em;color:#C9B79E;margin-bottom:18px}
+header h1{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:clamp(56px,6.2vw,68px);line-height:1.12;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+header .sub{margin-top:14px;font-size:18px;color:#E9DECF;font-weight:500;max-width:780px}
+header .chips{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+header .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:700}
+header .chip.gold{background:var(--gold);border-color:var(--gold);color:#211913}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:34px 46px 8px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px;text-align:center}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:40px;line-height:1}
+.kpi.a .num{color:var(--ds)} .kpi.b .num{color:var(--etd)} .kpi.c .num{color:var(--etp)} .kpi.d .num{color:var(--gold)}
+.kpi .lab{margin-top:10px;font-size:14px;font-weight:700;color:var(--ink2)}
+.kpi .delta{margin-top:7px;font-size:13px;font-weight:800}
+.kpi .delta.up{color:var(--up)} .kpi .delta.dn{color:var(--down)} .kpi .delta.fl{color:var(--ink2)}
+section{padding:26px 46px}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:30px;margin:14px 0 6px;padding-bottom:10px;border-bottom:4px solid}
+.partA .parttitle{color:var(--ds);border-color:var(--ds)}
+.partEtsy .parttitle{color:var(--etd);border-color:var(--etd)}
+.partlead{font-size:15px;color:var(--ink2);margin-bottom:20px;font-weight:500}
+.btitle{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:21px;margin:26px 0 14px;color:var(--ink);display:flex;align-items:center;gap:9px}
+.btitle .bar{width:6px;height:22px;border-radius:3px;background:var(--ds)}
+.partEtsy .btitle .bar{background:var(--etd)}
+.ranks{display:flex;flex-direction:column;gap:9px}
+.rank{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 17px}
+.rank .pos{font-weight:800;font-size:19px;color:var(--ds);min-width:30px}
+.partEtsy .rank .pos{color:var(--etd)}
+.rank .nm{font-weight:800;font-size:16px;flex:1 1 auto;min-width:150px;color:var(--ink)}
+.rank .sig{font-size:13px;font-weight:800;padding:4px 11px;border-radius:999px}
+.sig.up{background:#E4F5EC;color:var(--up)} .sig.new{background:#FCEBD5;color:var(--new)} .sig.fl{background:#EFE7DC;color:var(--ink2)} .sig.dn{background:#FBEAEA;color:var(--down)}
+.rank .ev{font-size:13.5px;color:var(--ink2);flex-basis:100%;margin-top:5px;padding-left:44px;font-weight:500}
+.rank .nm .gl{display:block;font-size:13.5px;font-weight:700;color:var(--etd);margin-top:3px}
+.partA .rank .nm .gl{color:var(--ds)}
+.kw .gl{display:block;font-size:12.5px;font-weight:800;margin-top:2px;opacity:.95}
+.partSum .parttitle{color:var(--gold);border-color:var(--gold)}
+.partSum .btitle .bar{background:var(--gold)}
+.partSum .rank .pos{color:var(--gold)}
+.partEbay .parttitle{color:var(--eb);border-color:var(--eb)}
+.partEbay .btitle .bar{background:var(--eb)}
+.partEbay .rank .pos{color:var(--eb)}
+.partEbay .rank .nm .gl{color:var(--eb)}
+.partEbay .card .price{color:var(--eb)}
+.partEbay .card .lk:hover{border-color:var(--eb);color:var(--eb)}
+.partEbay .vc{border-top-color:var(--eb)}
+.partEbay .vc .tag{background:var(--eb)}
+.verd{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.vc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px 18px;border-top:6px solid var(--gold)}
+.vc .tag{font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;display:inline-block}
+.vc h4{font-weight:800;font-size:17px;margin:9px 0 2px;color:var(--ink)}
+.vc .en{font-size:12.5px;font-weight:600;color:#8A7B6C}
+.vc .nums{margin:10px 0 8px;display:flex;flex-wrap:wrap;gap:6px}
+.vc .nums span{font-size:12.5px;font-weight:800;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink2)}
+.vc p{font-size:14px;color:var(--ink2);font-weight:500}
+.sig3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.s3{border-radius:14px;padding:16px 18px;border:1px solid var(--line);background:var(--paper);border-left:7px solid}
+.s3 .st{font-size:12.5px;font-weight:800;letter-spacing:.05em}
+.s3 h5{font-weight:800;font-size:18px;margin:6px 0 4px;color:var(--ink)}
+.s3 p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.whyc{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:18px}
+.whyc h4{font-weight:800;font-size:17px;color:var(--ds);margin-bottom:8px}
+.whyc p{font-size:14.5px;color:var(--ink2);font-weight:500}
+.whyc .en{display:block;font-size:13px;font-weight:600;color:#8A7B6C}
+.whyconc{margin-top:14px;background:#211913;color:#fff;border-radius:13px;padding:15px 18px;font-size:15px;font-weight:700}
+.whyconc b{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{position:relative;width:100%;aspect-ratio:1/1;background:linear-gradient(135deg,#FDEFE0,#F6DFC9);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .fire{position:absolute;top:9px;left:9px;background:var(--ds);color:#fff;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;z-index:2}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card .nm{font-weight:800;font-size:15.5px;color:var(--ink);line-height:1.35}
+.card .en{font-size:12px;font-weight:600;color:#8A7B6C;margin-top:3px}
+.card .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.card .price{font-weight:800;font-size:15px;color:var(--ds)}
+.card .rev{font-size:13px;font-weight:700;color:var(--ink2)}
+.card .tr{font-size:12.5px;font-weight:800;padding:3px 9px;border-radius:999px}
+.tr.up{background:#E4F5EC;color:var(--up)} .tr.dn{background:#FBEAEA;color:var(--down)} .tr.new{background:#FCEBD5;color:var(--new)}
+.card .links{margin-top:auto;padding-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card .lk{font-size:12px;font-weight:800;text-decoration:none;padding:6px 11px;border-radius:8px;border:1.5px solid var(--line);color:var(--ink2)}
+.card .lk:hover{border-color:var(--ds);color:var(--ds)}
+.partEtsy .card .price{color:var(--etp)} .partEtsy .card .lk:hover{border-color:var(--etd);color:var(--etd)}
+.note{background:#FFF3E2;border:1px solid #F0DCBE;border-left:6px solid var(--new);border-radius:13px;padding:15px 18px;font-size:14.5px;font-weight:600;color:#5C4A32;margin-bottom:18px}
+.rdnote{margin-top:14px;font-size:14px;color:var(--ink2);font-weight:600}
+.buck{margin:24px 0 14px;font-size:14.5px;color:var(--ink2);font-weight:600}
+.chipsw{display:flex;flex-wrap:wrap;gap:9px}
+.kw{display:inline-flex;flex-direction:column;gap:2px;text-decoration:none;padding:9px 14px;border-radius:11px;border:2px solid;font-weight:800;font-size:14.5px}
+.kw small{font-size:12px;font-weight:700;opacity:.85}
+.kw.g{border-color:#9FD9BC;background:#EDF9F2;color:#126B41}
+.kw.y{border-color:#F0DCBE;background:#FFF6E8;color:#8A6410}
+.kw.r{border-color:#F0C9C9;background:#FCEFEF;color:#9E2A2A}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{background:var(--hdr);color:#fff;font-weight:800;padding:11px 12px;text-align:left;font-size:13.5px}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink2);font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--paper)}
+.tbl td b{color:var(--ink)}
+.tblwrap{overflow-x:auto}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.calc{border-radius:13px;padding:15px 16px;border:1px solid var(--line);background:var(--paper)}
+.calc .lt{font-size:20px;line-height:1}
+.calc h5{font-weight:800;font-size:16px;margin:8px 0 5px;color:var(--ink)}
+.calc p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.idea{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:20px;border-top:6px solid var(--ds)}
+.idea .n{font-family:'Black Han Sans',sans-serif;font-size:30px;color:var(--ds);line-height:1}
+.idea h4{font-weight:800;font-size:17px;margin:8px 0 8px;color:var(--ink)}
+.idea p{font-size:14px;color:var(--ink2);font-weight:500}
+.ins{display:flex;flex-direction:column;gap:14px}
+.insc{background:#211913;color:#fff;border-radius:15px;padding:22px 24px}
+.insc .n{font-family:'Black Han Sans',sans-serif;font-size:22px;color:var(--gold)}
+.insc h4{font-weight:800;font-size:19px;margin:6px 0 9px;color:#fff}
+.insc p{font-size:14.5px;color:#E4D9C9;font-weight:500}
+.insc p b{color:#fff}
+.srcbar{background:#2C2119;border-bottom:1px solid #3D2F24;padding:13px 46px;display:flex;flex-wrap:wrap;align-items:center;gap:7px 12px}
+.srcbar .lb{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-right:2px}
+.srcbar a{font-size:13.5px;font-weight:800;color:#EFE4D4;text-decoration:none;border-bottom:1.5px solid rgba(201,138,18,.45);padding-bottom:1px}
+.srcbar a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.srcbar .dot{color:#6B5B4B;font-size:12px}
+.srcs{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.src{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:15px 17px;transition:.15s}
+.src:hover{border-left-color:var(--ds);transform:translateY(-2px);box-shadow:0 8px 18px rgba(120,80,40,.10)}
+.src .sn{font-weight:800;font-size:17px;color:var(--ink)}
+.src .sn::after{content:' ↗';font-size:13px;color:var(--gold)}
+.src .sw{font-size:12.5px;font-weight:800;color:var(--ds);margin-top:3px}
+.src .sd{font-size:13.5px;color:var(--ink2);font-weight:500;margin-top:7px}
+.srcnote{margin-top:14px;font-size:13px;color:#7A6A59;font-weight:600}
+footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46px 40px;font-size:13px;color:#7A6A59;font-weight:600}
+.chartbox{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 4px}
+.chartbox .ct{font-weight:800;font-size:17px;color:var(--ink);margin-bottom:4px}
+.chartbox .cs{font-size:13.5px;color:var(--ink2);font-weight:600;margin-bottom:16px}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:170px 1fr auto;gap:12px;align-items:center}
+.bar .bl{font-size:14px;font-weight:800;color:var(--ink);text-align:right;line-height:1.3}
+.bar .bl small{display:block;font-size:12px;font-weight:600;color:#8A7B6C}
+.bar .bt{height:24px;background:#EFE7DC;border-radius:6px;overflow:hidden}
+.bar .bf{display:block;height:100%;border-radius:6px;min-width:4px}
+.bar .bv{font-size:14px;font-weight:800;white-space:nowrap;color:var(--ink2)}
+.barsec{font-size:14px;font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.barsec:first-child{margin-top:0}
+.psrc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;background:#2C2119;border-radius:12px;padding:12px 16px;margin:0 0 18px}
+.psrc .pl{font-size:11.5px;font-weight:800;letter-spacing:.14em;color:var(--gold)}
+.psrc a{font-size:14px;font-weight:800;color:#fff;text-decoration:none;border-bottom:2px solid rgba(201,138,18,.55);padding-bottom:1px}
+.psrc a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.psrc .pw{font-size:13px;font-weight:600;color:#C9B79E}
+@media(max-width:700px){
+ .bar{grid-template-columns:1fr auto;gap:4px 10px}
+ .bar .bl{grid-column:1/-1;text-align:left}
+ .bar .bt{height:20px}
+ .bar .bv{font-size:13.5px}
+ .chartbox{padding:18px 16px}
+}
+@media(max-width:700px){
+ .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+ .tbl{min-width:680px}
+ .tbl th,.tbl td{font-size:13.5px;padding:9px 10px}
+ .tbl th:first-child,.tbl td:first-child{min-width:132px}
+}
+.chartbox .lgd{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:13px;font-weight:700;color:var(--ink2)}
+.chartbox .lgd i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){header h1{font-size:clamp(21px,calc(7.9vw - 3px),60px)}.srcbar{padding:12px 20px}.kpis,.cards,.whys,.ideas,.cal,.verd,.sig3,.srcs{grid-template-columns:repeat(2,1fr)}section{padding:22px 20px}header{padding:32px 20px}.kpis{padding:24px 20px 4px}footer{padding:22px 20px 32px}}
+@media(max-width:560px){
+ .kpis,.whys,.ideas,.verd,.sig3,.srcs{grid-template-columns:1fr}
+ .cards,.cal{grid-template-columns:repeat(2,1fr);gap:11px}
+ .cards .card .body{padding:11px 11px 13px}
+ .cards .card .nm{font-size:14px;line-height:1.32}
+ .cards .card .en{font-size:12px}
+ .cards .card .price{font-size:14px}
+ .cards .card .rev{font-size:12px}
+ .cards .card .tr{font-size:12px;padding:3px 7px}
+ .cards .card .fire{font-size:12px;padding:3px 7px}
+ .cards .card .links{gap:6px;padding-top:10px}
+ .cards .card .lk{font-size:12px;padding:5px 9px}
+ .cards .card .meta{gap:5px}
+ .calc h5{font-size:15px}
+ .calc p{font-size:12.5px}
+ .calc{padding:13px 13px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+ <div class="brand">미국주부</div>
+ <div class="kick">WEEKLY US TREND REPORT</div>
+ <h1>이번 주 미국에서 잘 팔리는 것</h1>
+ <p class="sub">드랍쉬핑 · 되팔기(eBay) · 직접 만들어 팔기(Etsy) · 종합 판정을 한 장에. 수치는 전부 이번 주 라이브 조회 결과입니다.</p>
+ <div class="chips">
+  <span class="chip gold">Week 36 · 2026년 8월 31일</span>
+  <span class="chip">개학 D-1</span>
+  <span class="chip">노동절 D-7</span>
+  <span class="chip">할로윈 D-61</span>
+  <span class="chip">크리스마스 D-116</span>
+ </div>
+</header>
+
+<div class="srcbar">
+ <span class="lb">DATA SOURCES</span>
+ <a href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener">Sell The Trend</a><span class="dot">·</span>
+ <a href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener">ZIK Analytics</a><span class="dot">·</span>
+ <a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener">eRank</a><span class="dot">·</span>
+ <a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a><span class="dot">·</span>
+ <a href="https://ahrefs.com/" target="_blank" rel="noopener">Ahrefs</a><span class="dot">·</span>
+ <a href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener">NRF</a>
+</div>
+
+<div class="kpis">
+ <div class="kpi a reveal"><div class="num" data-count="50000" data-suffix="">0</div><div class="lab">부 바스켓 구글 월 검색량<br>난이도 0 · 4중 전부 일치</div><div class="delta up">이번 주 유일한 4중 일치</div></div>
+ <div class="kpi b reveal"><div class="num" data-count="63" data-suffix="%">0</div><div class="lab">eBay 할로윈 장식<br>성공 리스팅 비율</div><div class="delta up">같은 날 재조회 67% — 상승 중</div></div>
+ <div class="kpi c reveal"><div class="num" data-count="4" data-suffix="자리">0</div><div class="lab">Etsy 급상승 상위를<br>크로셰가 차지</div><div class="delta up">지난주 TOP100 이탈 → 1위</div></div>
+ <div class="kpi d reveal"><div class="num" data-count="92" data-suffix=".5%">0</div><div class="lab">eBay 전기담요<br>2주간 매출 상승</div><div class="delta up">3주 연속 상승</div></div>
+</div>
+
+<section class="partA">
+ <h2 class="parttitle bhs">◆ PART A · 드랍쉬핑 — 소싱해서 팔기</h2>
+ <div class="psrc">
+  <span class="pl">이 데이터는 어디서 보나</span>
+  <a href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener">Sell The Trend</a>
+  <span class="pw">틱톡샵 신규 베스트셀러 목록 · AI 상품 발굴 · 신상 위너 목록 · 소싱처별 판매 증감률 · 틱톡/페이스북 광고 크리에이티브</span>
+ </div>
+ <p class="partlead">주문 1만 건 이상 + 최근 등록순으로 본 틱톡샵 신규 23개, 누적 매출 상위 26개, 최근 등록된 신상 위너 32개, 알리익스프레스 판매 증감 24개를 전부 훑었습니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>① 이번 주 핫 카테고리 (순위 변동)</h3>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">실·바늘 공예 (크로셰·십자수)<span class="gl">Crochet &amp; Cross-stitch</span></span><span class="sig new">🆕 신규 1위 · 3소스 동시</span><span class="ev">Etsy 일간 급상승 <b>1·2·7·32위</b>를 크로셰가 차지(지난주엔 TOP100 이탈). 핀터레스트 에디터 픽 1번이 십자수. 구글 <code>crochet blanket pattern</code> 8,800 · 난이도 <b>0</b></span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">할로윈 (되팔기 쪽)<span class="gl">Halloween — resale channel</span></span><span class="sig up">▲ D-61 · 회전 최고</span><span class="ev">eBay 성공 리스팅 <b>63%</b> · 30일 335건 · 1위 셀러 0.3%. 틱톡 코스튬 영상 <b>2,490만 재생</b>. 구글 <code>couples halloween costumes</code> 51,000 · 난이도 <b>7</b></span></div>
+  <div class="rank reveal"><span class="pos">3</span><span class="nm">공구·하드웨어·정비<span class="gl">Tools &amp; Hardware</span></span><span class="sig up">▲▲ 6소스 교차</span><span class="ev">틱톡샵 신규 <b>4개</b>($9.1M·$2.1M·$1.4M·$1.1M) · 알리 상승 8건 중 <b>6건</b>이 정비·청소 도구 · eBay 멀티툴. 구글 <code>socket set</code> 난이도 <b>1</b></span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">가을·겨울 여성 의류<span class="gl">Fall &amp; Winter womenswear</span></span><span class="sig fl">─ 4주 연속 상위</span><span class="ev">틱톡샵 신규 23개 중 <b>11개가 여성복</b>이고 전부 가을 전환(코듀로이 $1.9M · 와이드진 $6.5M · 긴팔 $10.1M · 플러시베스트 $231K). 핀터레스트 아우터 45% · 코트 44% · 스웨터 43%</span></div>
+  <div class="rank reveal"><span class="pos">5</span><span class="nm">크리스마스<span class="gl">Christmas</span></span><span class="sig up">▲ D-116 · 변형 증가</span><span class="ev">eBay <b>5변형 $39,027</b>(지난주 3변형 $35,422). 신상 위너 3D 크리스마스 와인세트 잠재 $92,085. Etsy <code>advent calendar</code> 8,162 · 난이도 30</span></div>
+  <div class="rank reveal"><span class="pos">6</span><span class="nm">가을 난방<span class="gl">Fall heating</span></span><span class="sig up">▲▲ 3주 연속 급등</span><span class="ev">eBay 전기담요 8/17 <b>$3,903</b> → 8/24 <b>$4,908</b> → 8/31 <b>$7,513</b>(2주 +92.5%). 신상 위너 후디 블랭킷·서포트 필로우</span></div>
+  <div class="rank reveal"><span class="pos">7</span><span class="nm">시즌·홀리데이 장식<span class="gl">Seasonal &amp; holiday decorations</span></span><span class="sig new">🆕 핀터레스트 신규 3위</span><span class="ev">핀터레스트 쇼핑 클릭 <b>72% MoM</b>. 장식용 자 38% · 장식 태피스트리 36%도 같이 신규 진입</span></div>
+  <div class="rank reveal"><span class="pos">—</span><span class="nm">뷰티<span class="gl">Beauty</span></span><span class="sig dn">▼▼ 1위급 → 실판매 소멸</span><span class="ev">틱톡샵 신규 23개 중 <b>0개</b>(지난주엔 한 브랜드가 화면을 다 먹었다). AI 발굴 상품에 1건만 잔존. 핀터레스트만 969%로 남았다</span></div>
+  <div class="rank reveal"><span class="pos">—</span><span class="nm">개학<span class="gl">Back to school</span></span><span class="sig dn">▼ D-1 · 종료</span><span class="ev">eBay 30일 니치 진입 <b>0건</b>. Etsy <code>school backpack</code> 검색 23 · 난이도 <b>100</b></span></div>
+  <div class="rank reveal"><span class="pos">—</span><span class="nm">크록스 참<span class="gl">Crocs charms (jibbitz)</span></span><span class="sig dn">▼ 허수 판명</span><span class="ev">Etsy 급상승 100위에 8건이나 올라왔지만 <b>전부 검색량 Unknown 또는 20 미만</b>. 상위어 <code>crocs charms</code>는 검색 469에 난이도 <b>72</b></span></div>
+ </div>
+ <p class="rdnote">니치 랭킹(키친·뷰티·피트니스·강아지·고양이·DIY·노벨티·로봇청소기·키즈토이·내추럴헬스)은 월 단위 갱신이라 <b>5주 연속 동일</b>합니다. 주간 변동은 제품·키워드 레벨에서 봐야 합니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>② 왜 바뀌었나 (시즌 드라이버)</h3>
+ <div class="whys">
+  <div class="whyc reveal"><h4>9월은 "집수리의 달"이다<span class="en">September = fall maintenance season</span></h4><p>미국 주택 관리 가이드들은 <b>9월을 가을 유지보수의 최적기</b>로 꼽습니다. 여름 더위는 끝났고 낙엽은 아직 안 쌓인 시점이기 때문입니다. 여기에 <b>노동절(9월 7일 · D-7) 공구 세일</b>이 겹칩니다. 이번 주 공구 신호가 여기서 나왔습니다.</p></div>
+  <div class="whyc reveal"><h4>할로윈은 이제 "장식" 시즌이다<span class="en">Halloween — decor overtakes candy</span></h4><p>전미소매협회 조사 기준 할로윈 지출은 <b>$131억</b>(전년 $116억 대비 +12.9%), 참여율 73%, 1인당 $114.45입니다. 그중 <b>코스튬 $43억 · 장식 $42억 · 사탕 $39억</b>으로 <b>장식이 사탕을 넘어섰습니다.</b> eBay 할로윈 장식 성공률 63%가 같은 이야기입니다.</p></div>
+  <div class="whyc reveal"><h4>뜨개질은 유행이 아니라 구조다<span class="en">Yarn craft — structural growth</span></h4><p>편물·크로셰 원사 소매 시장은 <b>2026년 $84억 → 2036년 $137억(연 5.0%)</b>로 추정되고 수요의 <b>58%가 18~34세</b>에서 나옵니다. 2026년 트렌드로 <b>그래니 스퀘어·복고 기하학</b>이 지목되는데, 이번 주 Etsy 1위가 <b>핑크 그래니 스퀘어 베이비 블랭킷</b> 패턴인 건 우연이 아닙니다.</p></div>
+ </div>
+ <div class="whyconc">9월 1일은 <b>"개학 → 할로윈"</b>이 아니라 <b>"개학 → 집수리 → 할로윈"</b> 3단 구조입니다. 이번 주 가장 강한 실판매 신호는 할로윈이 아니라 <b>공구·정비</b>였습니다.</div>
+ <p class="rdnote">⚠️ 할로윈 지출은 <b>2025년 조사 기준</b>입니다(2026년 조사는 9월 발표 예정). 시장 규모 수치는 공개 업계 자료 참조값이며 본 리포트가 직접 측정한 값이 아닙니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>③ 틱톡샵 신규 베스트셀러 — 카테고리가 갈아엎어졌다</h3>
+ <div class="chartbox reveal">
+  <div class="ct">이번 주 신규 진입 23개의 카테고리 분포</div>
+  <div class="cs">주문 1만 건 이상 + 최근 등록순. 전부 8월 30일 등록된 신상입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">여성복<small>Womenswear</small></div><div class="bt"><span class="bf" style="width:100%;background:#D24A2E"></span></div><div class="bv">11개</div></div>
+   <div class="bar"><div class="bl">공구·하드웨어<small>Tools &amp; Hardware</small></div><div class="bt"><span class="bf" style="width:36.4%;background:#1E9E5A"></span></div><div class="bv">4개 🆕</div></div>
+   <div class="bar"><div class="bl">홈·도서·유아·잡화<small>Home / Books / Baby / Accessories</small></div><div class="bt"><span class="bf" style="width:36.4%;background:#C98A12"></span></div><div class="bv">4개</div></div>
+   <div class="bar"><div class="bl">자동차·스포츠·남성복<small>Auto / Sports / Menswear</small></div><div class="bt"><span class="bf" style="width:27.3%;background:#5B4B9E"></span></div><div class="bv">3개</div></div>
+   <div class="bar"><div class="bl">뷰티<small>Beauty</small></div><div class="bt"><span class="bf" style="width:0%;background:#D23B3B"></span></div><div class="bv">0개 ▼</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#1E9E5A"></i>신규 진입</span><span><i style="background:#D23B3B"></i>완전 소멸</span><span>지난주에는 뷰티 한 브랜드가 화면을 통째로 먹었습니다. 이번 주는 0개입니다.</span></div>
+ </div>
+ <div class="cards" style="margin-top:18px">
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 매출 1위</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/a56dceb48e2148e29cddfef213b9a940~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="19pc 초박형 오픈엔드 렌치 세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🔧</div>&quot;)"></div><div class="body"><div class="nm">19pc 초박형 오픈엔드 렌치 세트</div><div class="en">19pc Super-Thin Open End Wrench Set with Rolling Pouch</div><div class="meta"><span class="price">$38.99–45.99</span><span class="rev">매출 $9.1M · 232K개</span><span class="tr new">🆕 8/30 등록</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=open+end+wrench+set" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=super+thin+open+end+wrench+set" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔧 자동차 공구</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/54fab441d4404a34abec87f134d54941~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="5-in-1 볼조인트 세퍼레이터 세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🚗</div>&quot;)"></div><div class="body"><div class="nm">5-in-1 볼조인트 세퍼레이터·피트먼암 풀러 세트</div><div class="en">5-in-1 Ball Joint Separator, Pitman Arm Puller, Tie Rod End Tool Set</div><div class="meta"><span class="price">$35.99</span><span class="rev">매출 $2.1M · 58K개</span><span class="tr new">🆕 8/30 등록</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=ball+joint+separator+tool+set" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=ball+joint+separator+kit" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔧 여성 타깃 공구</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/7f4febc06ec347bd820fccc40adf12a5~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="여성용 39/24피스 다목적 가정용 공구세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧰</div>&quot;)"></div><div class="body"><div class="nm">여성용 39/24피스 다목적 가정용 공구세트</div><div class="en">Women&#39;s 39/24 Piece All Purpose Basic Household Tool Set</div><div class="meta"><span class="price">$15.29–15.99</span><span class="rev">매출 $1.4M · 89K개</span><span class="tr new">🆕 8/30 등록</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=women+household+tool+set+pink" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=womens+household+tool+kit" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🍼 유아 최대</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/50348d8a17b142a5a54c7600bcc913c3~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="hahaland 서프라이즈 반 아기 장난감" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧸</div>&quot;)"></div><div class="body"><div class="nm">서프라이즈 반 아기 장난감 (6종 플러시)</div><div class="en">Surprise Barn Baby Toy with 6 Plush Animal Pals, Montessori</div><div class="meta"><span class="price">$19.99 (-52%)</span><span class="rev">매출 $3.3M · 165K개</span><span class="tr new">🆕 8/30 등록</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=montessori+baby+plush+barn+toy" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=baby+plush+barn+sensory+toy" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🍂 가을 전환</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/f3a195dd9801439b96636cc16de3d1fc~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="여성 2팩 코듀로이 팬츠" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>👖</div>&quot;)"></div><div class="body"><div class="nm">여성 2팩 스트레이트레그 코듀로이 팬츠</div><div class="en">Women&#39;s 2 Pack Solid Plain Straight Leg Corduroy Bottoms</div><div class="meta"><span class="price">$20.50–26.99</span><span class="rev">매출 $1.9M · 92K개</span><span class="tr up">구글 난이도 0</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=women+corduroy+straight+pants" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.tiktok.com/search?q=corduroy%20pants%20outfit" target="_blank" rel="noopener">틱톡 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 할로윈 첫 진입</span><img src="https://p16-oec-general.ttcdn-us.com/tos-alisg-i-aphluv4xwc-sg/837648501bf8407d893c318f9531d287~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="빈티지 90년대 할로윈 무비 워시드 티셔츠" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>👻</div>&quot;)"></div><div class="body"><div class="nm">빈티지 90년대 할로윈 무비 워시드 티셔츠</div><div class="en">Vintage 90s Halloween Movies Washed T-shirt, Retro Horror Night</div><div class="meta"><span class="price">$9.88</span><span class="rev">매출 $172K · 17K개</span><span class="tr new">🎃 시즌 첫 진입</span></div><div class="links"><a class="lk" href="https://www.tiktok.com/tag/halloweenshirt" target="_blank" rel="noopener">틱톡 태그</a><a class="lk" href="https://www.amazon.com/s?k=vintage+90s+halloween+movie+shirt" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+ </div>
+ <p class="rdnote">여성복 11개는 전부 <b>가을 아이템으로 갈아탔습니다</b> — 코듀로이 $1.9M · 와이드진 $6.5M · 나일론 긴팔 $10.1M · 플러시 베스트 $231K · 스웻팬츠 $165K. 나머지 수치는 아래 표와 §소싱처 추세에 있습니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>④ 신상 위너 — 할로윈 실물 3종 + 크리스마스 첫 진입</h3>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 23시간 전 등록</span><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FAqH5ts3ZEt6krwpQMiEWxvBAguuszQF1787986816.jpeg" alt="WitchGlow 할로윈 램프" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧙</div>&quot;)"></div><div class="body"><div class="nm">할로윈 밤을 위한 마녀 램프</div><div class="en">WitchGlow Lamp — Enchanting Light for Halloween Nights</div><div class="meta"><span class="price">마진 $46.41</span><span class="rev">잠재 매출 $79,275</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=halloween+witch+table+lamp" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.tiktok.com/tag/halloweendecor" target="_blank" rel="noopener">틱톡 태그</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">💰 잠재 매출 최고</span><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/F4C3fHQL2SleZ7B3fQ1RkXWPHiP3x7cF1787835617.jpeg" alt="DreamDuo 서포트 필로우" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🛏️</div>&quot;)"></div><div class="body"><div class="nm">듀오 서포트 필로우</div><div class="en">DreamDuo Support Pillow — Cozy Comfort, Perfect Angle</div><div class="meta"><span class="price">마진 $62.81</span><span class="rev">잠재 매출 $116,475</span><span class="tr new">2일 전</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=couple+support+pillow" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=cuddle+support+pillow" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🍂 가을 포근함</span><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FMrEX4CZ8aBIZhgKapUIQMPeynbyElaF1787911218.jpeg" alt="CozyCloud 후디 블랭킷" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧣</div>&quot;)"></div><div class="body"><div class="nm">오버사이즈 후디 블랭킷</div><div class="en">CozyCloud Hoodie Blanket — Oversized Warmth &amp; Comfort</div><div class="meta"><span class="price">마진 $38.27</span><span class="rev">잠재 매출 $60,855</span><span class="tr up">구글 9,400 · 난이도 2</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=oversized+hoodie+blanket" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=wearable+hoodie+blanket" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎄 크리스마스 첫 진입</span><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FNqf3UMr0X1YcTtK6xJooLRqjuzLibLF1786885217.jpeg" alt="WineWonder 3D 크리스마스 기프트세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🍷</div>&quot;)"></div><div class="body"><div class="nm">3D 크리스마스 와인 기프트세트</div><div class="en">WineWonder Gift Set — Elegant 3D Christmas Charm</div><div class="meta"><span class="price">마진 $56.68</span><span class="rev">잠재 매출 $92,085</span><span class="tr new">32개 중 최고 마진</span></div><div class="links"><a class="lk" href="https://www.aliexpress.com/wholesale?SearchText=3d+christmas+wine+gift+box" target="_blank" rel="noopener">알리 검색</a><a class="lk" href="https://www.amazon.com/s?k=christmas+wine+gift+set" target="_blank" rel="noopener">아마존 검색</a></div></div></div>
+ </div>
+ <p class="rdnote">할로윈 실물은 이 램프 말고도 <b>북램프(4일 전 · $54,045)</b>와 <b>발광 귀걸이(1주 전 · $69,285)</b>가 더 들어왔습니다. 뷰티는 남아 있으나 <b>펩타이드 크림 · 콜라겐 밤 · 눈썹 트리머 같은 스킨케어·도구로 이동</b>했고, 블러셔·브론저 실물은 <b>0개</b>입니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>⑤ 소싱처 실판매 추세 — 지금 오르는가, 꺾이는가</h3>
+ <div class="chartbox reveal">
+  <div class="ct">알리익스프레스 누적 매출 증감액 (24개 중 상하위)</div>
+  <div class="cs">같은 축척으로 그렸습니다. 상승 쪽이 작아 보이는 게 요점입니다 — 빠지는 돈이 붙는 돈보다 큽니다.</div>
+  <div class="barsec" style="color:#1E9E5A">📈 상승 8건 — 정비·청소 도구가 6건</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">충전식 COB LED 헤드램프<small>Rechargeable COB LED Headlamp</small></div><div class="bt"><span class="bf" style="width:47.9%;background:#1E9E5A"></span></div><div class="bv">+$136.1K</div></div>
+   <div class="bar"><div class="bl">식품용 온도계 TP300<small>Food Thermometer TP300</small></div><div class="bt"><span class="bf" style="width:30.1%;background:#1E9E5A"></span></div><div class="bv">+$85.5K</div></div>
+   <div class="bar"><div class="bl">텔레스코픽 자석 픽업툴<small>Telescopic Magnet Picking Tool</small></div><div class="bt"><span class="bf" style="width:17.7%;background:#1E9E5A"></span></div><div class="bv">+$50.3K</div></div>
+   <div class="bar"><div class="bl">곱슬머리 스타일링 브러시<small>Curly Hair Styling Brush</small></div><div class="bt"><span class="bf" style="width:16.2%;background:#1E9E5A"></span></div><div class="bv">+$45.9K</div></div>
+   <div class="bar"><div class="bl">양면 매직 클리닝 스펀지<small>Double-sided Magic Sponge</small></div><div class="bt"><span class="bf" style="width:15.6%;background:#1E9E5A"></span></div><div class="bv">+$44.4K</div></div>
+   <div class="bar"><div class="bl">카펫 고정 스티커<small>Carpet Fixing Stickers</small></div><div class="bt"><span class="bf" style="width:13.3%;background:#1E9E5A"></span></div><div class="bv">+$37.9K</div></div>
+   <div class="bar"><div class="bl">헤드라이트 복원 키트<small>Car Headlight Restoration Kit</small></div><div class="bt"><span class="bf" style="width:6.5%;background:#1E9E5A"></span></div><div class="bv">+$18.5K</div></div>
+  </div>
+  <div class="barsec" style="color:#D23B3B">💥 급락·하락 — 전기·전자 소품이 상위 3건</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">E27 LED 모션센서 전구<small>E27 LED PIR Motion Sensor Bulb</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv">−$284.1K</div></div>
+   <div class="bar"><div class="bl">나노 양면테이프<small>Transparent Double Sided Nano Tape</small></div><div class="bt"><span class="bf" style="width:80.3%;background:#D23B3B"></span></div><div class="bv">−$228K</div></div>
+   <div class="bar"><div class="bl">KZ EDX PRO 이어폰<small>KZ EDX PRO Dynamic Earphone</small></div><div class="bt"><span class="bf" style="width:63.3%;background:#D23B3B"></span></div><div class="bv">−$179.7K</div></div>
+   <div class="bar"><div class="bl">베이비 액티비티 짐<small>Musical Baby Activity Gym</small></div><div class="bt"><span class="bf" style="width:40.5%;background:#D23B3B"></span></div><div class="bv">−$115.1K</div></div>
+   <div class="bar"><div class="bl">2000루멘 손전등<small>2000LM Tactical Flashlight</small></div><div class="bt"><span class="bf" style="width:34.1%;background:#D23B3B"></span></div><div class="bv">−$96.9K</div></div>
+   <div class="bar"><div class="bl">솔라 모션센서 등<small>LED/COB Solar Motion Sensor Light</small></div><div class="bt"><span class="bf" style="width:33.4%;background:#D23B3B"></span></div><div class="bv">−$94.9K</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#1E9E5A"></i>매출 증가</span><span><i style="background:#D23B3B"></i>매출 감소</span><span>전주 대비: 상승 31%→<b>33%</b> · 하락 50%→<b>38%</b> · 급락 19%→<b>29%</b> — 중간이 사라지고 양극화됐습니다.</span></div>
+ </div>
+ <p class="rdnote">⚠️ 카드에 찍히는 <code>-999.99%</code>는 실제 증감률이 아니라 <b>하한 표기</b>입니다. 그래서 % 대신 <b>매출 증감액</b>으로 크기를 판단했습니다. <b>식품 온도계는 일간과 전체가 둘 다 +99.94%</b> = 최근에 갑자기 붙은 신규 수요로, 가을 베이킹·조리 시즌 진입 신호입니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>⑥ 광고·영상 포맷 — 공유수가 진짜 지표다</h3>
+ <div class="verd">
+  <div class="vc reveal" style="border-top-color:var(--ds)"><span class="tag" style="background:var(--ds)">앵글 1</span><h4>커플·듀오 코스튬 리스트</h4><div class="en">Costume inspo for duos</div><div class="nums"><span>2,490만 재생</span><span>31.6만 공유</span><span>구글 51,000 · 난이도 7</span></div><p>저장·공유가 목적인 <b>리스트형 포맷</b>입니다. 해시태그는 <code>#easyhalloweencostume</code> <code>#itgirl</code>. 구글 트래픽 잠재력이 <b>66,000</b>으로 검색량보다 큽니다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--ds)"><span class="tag" style="background:var(--ds)">앵글 2</span><h4>아기·반려동물이 주인공</h4><div class="en">Baby &amp; pet costumes</div><div class="nums"><span>780만 재생</span><span>38.7만 공유 (최고)</span><span>강아지 리뷰 880만</span></div><p><b>본인이 아니라 아기나 개가 입을 때 공유가 폭발</b>합니다. eBay 할로윈 키워드에도 <code>halloween pet costumes</code>가 들어 있습니다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--ds)"><span class="tag" style="background:var(--ds)">앵글 3</span><h4>애니매트로닉 언박싱</h4><div class="en">Animatronic decor unboxing</div><div class="nums"><span>1,790만 재생</span><span>1,500만 재생</span><span>흔들리는 유령 290만</span></div><p><b>"올해 신제품" + 매장명</b>을 붙이는 게 공통 포맷입니다. eBay 플랫폼 할로윈 키워드의 <code>hanging ghost halloween</code>과 정확히 같은 물건을 가리킵니다.</p></div>
+ </div>
+ <div class="note" style="margin-top:16px">📌 <b>페이스북 광고</b>는 이번 주 미국향이 소수였습니다(아랍어·벵골어·헝가리어권 다수). 눈여겨볼 건 두 가지 — ① <b>아이폰 17 케이스 광고가 이미 돌고 있습니다</b>(8월 28일 생성 · "지금까지 나온 가장 혁신적인 케이스"). ② 한 프로젝터 브랜드가 제품은 그대로 두고 크리에이티브만 <b>"방을 다른 세계로" → "할로윈 밤이 더 무서워졌다"</b>로 교체했습니다. <b>제품을 안 바꾸고 앵글만 시즌에 맞추는 방식</b>입니다.</div>
+</section>
+
+<section class="partEbay">
+ <h2 class="parttitle bhs">◆ PART B · eBay — 사다가 되팔기</h2>
+ <div class="psrc">
+  <span class="pl">이 데이터는 어디서 보나</span>
+  <a href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener">ZIK Analytics</a>
+  <span class="pw">30일 트렌딩 니치 · 7일 회전 상품 · 시즌 이벤트 캘린더 · 트렌딩 셀러 · 진입 검증(회전율·성공 리스팅·점유율·롱테일 경쟁도)</span>
+ </div>
+ <p class="partlead">eBay 상위권은 틱톡샵과 카테고리가 거의 안 겹칩니다. 아마존은 진입이 까다롭고 월마트는 법인+아마존 이력이 필요한데 <b>eBay는 누구나 개설할 수 있어서</b>, 조합쇼핑·리셀링 관점에서 가장 실행 가능한 채널입니다.</p>
+ <div class="note">⚠️ eBay 수치는 <b>약 100개 리스팅 샘플 기반 추정</b>이며 플랫폼 공식 전수 데이터가 아닙니다. <code>회전율(Sell through)</code>은 판매수÷샘플 리스팅수라 100%를 넘습니다 — <b>전환율이 아닙니다.</b></div>
+
+ <h3 class="btitle"><span class="bar"></span>① 30일 트렌딩 니치 TOP 10 (매출 기준)</h3>
+ <div class="chartbox reveal">
+  <div class="ct">미국 eBay 30일 매출 상위 니치</div>
+  <div class="cs">전체 56개 중 상위 10개입니다. ⚠️ 표시는 소비자 수요가 아니라 <b>셀러용 소모품</b>입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">화이트 티셔츠<small>White T Shirts</small></div><div class="bt"><span class="bf" style="width:100%;background:#5B4B9E"></span></div><div class="bv">$151,910</div></div>
+   <div class="bar"><div class="bl">큐리그 K컵<small>Keurig K Cup</small></div><div class="bt"><span class="bf" style="width:86.4%;background:#5B4B9E"></span></div><div class="bv">$131,312</div></div>
+   <div class="bar"><div class="bl">투명 포장테이프 ⚠️<small>Sealing Clear Packing Tape</small></div><div class="bt"><span class="bf" style="width:75.6%;background:#B0A6CF"></span></div><div class="bv">$114,796</div></div>
+   <div class="bar"><div class="bl">리얼 다이아몬드 체인<small>Real Diamond Chains</small></div><div class="bt"><span class="bf" style="width:69.8%;background:#5B4B9E"></span></div><div class="bv">$106,021</div></div>
+   <div class="bar"><div class="bl">LED 숍라이트<small>LED Shop Light</small></div><div class="bt"><span class="bf" style="width:64.3%;background:#C98A12"></span></div><div class="bv">$97,603</div></div>
+   <div class="bar"><div class="bl">딥포켓 침대 시트<small>Deep Pocket Fitted Sheets</small></div><div class="bt"><span class="bf" style="width:46.5%;background:#5B4B9E"></span></div><div class="bv">$70,701</div></div>
+   <div class="bar"><div class="bl">가정용 조명<small>Lights For Home</small></div><div class="bt"><span class="bf" style="width:46.1%;background:#C98A12"></span></div><div class="bv">$69,967</div></div>
+   <div class="bar"><div class="bl">골판 이사박스 ⚠️<small>Moving Boxes Corrugated</small></div><div class="bt"><span class="bf" style="width:45.5%;background:#B0A6CF"></span></div><div class="bv">$69,047</div></div>
+   <div class="bar"><div class="bl">LED 조명<small>Led Lights</small></div><div class="bt"><span class="bf" style="width:35.2%;background:#C98A12"></span></div><div class="bv">$53,519</div></div>
+   <div class="bar"><div class="bl">기타·베이스<small>Guitars &amp; Basses</small></div><div class="bt"><span class="bf" style="width:34.7%;background:#5B4B9E"></span></div><div class="bv">$52,762</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#C98A12"></i>조명·LED 계열</span><span><i style="background:#B0A6CF"></i>셀러용 소모품(수요 아님)</span><span><i style="background:#5B4B9E"></i>일반 소비재</span></div>
+ </div>
+ <p class="rdnote">★ <b>조명·LED 관련 니치가 56개 중 11개</b>(숍라이트 · 가정용 조명 · LED 조명 · 솔라 조명 6종 · LED 스트링 · 솔라 포스트등)로 <b>합계 $41만 이상</b> — eBay에서 가장 큰 단일 덩어리입니다.<br>★ <b>시즌 그룹 합산</b> — 크리스마스 <b>5변형 $39,027</b>(지난주 3변형 $35,422 → 변형 +2 · 금액 +10.2%) · 난방 3종 $17,882 · <b>개학 품목 0건</b>.</p>
+
+ <h3 class="btitle"><span class="bar"></span>② 시즌 카운트다운 — 플랫폼이 찍어주는 D-day</h3>
+ <div class="cal">
+  <div class="calc reveal" style="border-left:6px solid var(--down)"><div class="lt">🎒</div><h5>개학 · D-1</h5><p><b>9월 1일 · 사실상 종료</b><br>Markers · lunch bag · Lunchbox · folders with pockets · Pencils · school backpack<br><b style="color:var(--down)">→ 30일 매출 진입 0건</b></p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--up)"><div class="lt">🎃</div><h5>할로윈 · D-61</h5><p><b>10월 31일 · 지금이 최적</b><br>string light · disney costume · scary face masks · halloween skeleton · pumpkin decoration · <b>hanging ghost halloween</b> · <b>halloween pet costumes</b> · vampire fangs</p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--new)"><div class="lt">🦃</div><h5>추수감사절 · D-87</h5><p><b>11월 26일 · 선점 구간</b><br>Thanksgiving table runner · decor · signs · Pie Pans · Napkins · tablecloth · Plates · Cards<br><b style="color:var(--down)">→ Etsy는 난이도 100. 블로그만</b></p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--eb)"><div class="lt">🎄</div><h5>크리스마스 · D-116</h5><p><b>12월 25일 · 선점 구간</b><br>christmas decoration · <b>pre-lit christmas tree</b> · outdoor christmas decoration · Christmas String Lights · led bulb · Baby doll</p></div>
+ </div>
+ <div class="note" style="margin-top:16px">★ <b>플랫폼 키워드와 바이럴 영상이 같은 물건을 가리킵니다.</b> <code>hanging ghost halloween</code> = 틱톡 "바이럴 흔들리는 유령" 290만 재생. <code>halloween pet costumes</code> = "강아지 Rustyn이 우리 코스튬을 리뷰합니다" 880만 재생. <b>서로 다른 두 플랫폼이 독립적으로 같은 답을 냈습니다.</b></div>
+
+ <h3 class="btitle"><span class="bar"></span>③ 진입 판정 — 회전형 vs 단가형</h3>
+ <div class="chartbox reveal">
+  <div class="ct">세 시장의 성공 리스팅 비율 (같은 축척)</div>
+  <div class="cs">"10개 올리면 몇 개가 실제로 팔리는가"입니다. 1위 셀러 점유율은 셋 다 <b>1% 미만</b> — 독점 셀러가 없습니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">할로윈 장식<small>Halloween decorations</small></div><div class="bt"><span class="bf" style="width:63%;background:#1E9E5A"></span></div><div class="bv">63% · 평균 $21.43</div></div>
+   <div class="bar"><div class="bl">전기담요<small>Heated blanket</small></div><div class="bt"><span class="bf" style="width:55%;background:#C98A12"></span></div><div class="bv">55% · 평균 $42.28</div></div>
+   <div class="bar"><div class="bl">크리스마스 야외장식<small>Christmas outdoor decorations</small></div><div class="bt"><span class="bf" style="width:38%;background:#D23B3B"></span></div><div class="bv">38% · 평균 $72.37</div></div>
+  </div>
+  <div class="lgd"><span><b>할로윈 = 회전형</b> 30일 335건 · 성공률 최고 · 단가 최저</span><span>⚠️ 라이브 데이터라 같은 날 재조회에서 <b>성공률 63%→67% · 판매 335→347건</b>으로 올랐습니다. 표의 수치는 첫 조회 기준이며, <b>수치가 지금도 오르는 중</b>이라는 뜻입니다.</span><span><b>크리스마스 = 단가형</b> 단가 3.4배지만 10개 중 6개는 안 팔림</span><span><b>전기담요 = 균형형</b> 30일 매출 $9,736으로 셋 중 최대</span></div>
+ </div>
+ <div class="tblwrap" style="margin-top:18px">
+ <table class="tbl">
+  <tr><th>지표</th><th>할로윈 장식</th><th>크리스마스 야외장식</th><th>전기담요</th></tr>
+  <tr><td><b>30일 판매</b></td><td><b>335건</b></td><td>106건</td><td>241건</td></tr>
+  <tr><td>30일 매출(샘플)</td><td>$6,243</td><td>$7,590</td><td><b>$9,736</b></td></tr>
+  <tr><td><b>성공 리스팅 비율</b></td><td><b>63%</b></td><td><b>38%</b></td><td>55%</td></tr>
+  <tr><td>평균가</td><td>$21.43</td><td><b>$72.37</b></td><td>$42.28</td></tr>
+  <tr><td>1위 셀러 점유율</td><td>0.3%</td><td>0.9%</td><td>0.4%</td></tr>
+  <tr><td><b>제목에 넣을 롱테일</b></td><td><b>Halloween Decorations Outdoor</b><br>경쟁 29 · 판매 51 (최고점)</td><td><b>Outdoor Christmas Yard</b><br>경쟁 3 · 판매 22</td><td>Sunbeam / Brookstone 브랜드명<br>$29~35 구간</td></tr>
+  <tr><td>상위 리스팅 예시</td><td>매다는 박쥐 18개입 $14.24 (19건)<br>라이팅 스켈레톤 $18.04 (22건)<br>마녀 조각상 $11.99 (30건)</td><td>6FT LED 솔라 야자수 $51.99 (22건)<br>루돌프 &amp; 미스핏 섬 $64.99 (누적 1,332)<br>5FT 순록 썰매 $89.99</td><td>전기 스로우 50x60 $29.99 (30건)<br>마이크로플러시 플리스 $35.99<br>(누적 3,944)</td></tr>
+ </table>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>④ 이번 주 회전 빠른 상품 · 트렌딩 셀러</h3>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>7일 회전 상품</th><th>7일 판매</th><th>누적 판매</th><th>가격</th><th>마진</th></tr>
+  <tr><td><b>GE 냉장고 LED 라이트보드</b> (Choice Parts WR55X26671)</td><td><b>20</b></td><td>219</td><td>$17.71</td><td>$6.29</td></tr>
+  <tr><td>14 In 1 미니 멀티툴 플라이어 (캠핑)</td><td>7</td><td>20</td><td>$9.31</td><td>$2.40</td></tr>
+  <tr><td>GE 건조기 타이머 노브 (WE1M964)</td><td>6</td><td><b>1,354</b></td><td>$8.07</td><td>$1.25</td></tr>
+  <tr><td>Sony WH-CH520 무선 헤드폰 (블랙)</td><td>4</td><td>8</td><td>$19.99</td><td>$1.30</td></tr>
+  <tr><td>아크릴 글레이징 미디엄 32oz (미술 재료)</td><td>3</td><td>3</td><td>$45.11</td><td><b>$12.76</b></td></tr>
+ </table>
+ </div>
+ <p class="rdnote"><b>가전 수리 부품 2종이 상위</b>입니다. 회전은 빠른데 단가 $8~18에 마진 $1.2~6.3이라 <b>건당 이익이 작습니다.</b> 유일하게 마진 $12.76인 미술 재료는 <b>판매 3건뿐이라 표본이 부족</b>해서 헤드라인 수치로 쓰지 않았습니다.</p>
+ <div class="tblwrap" style="margin-top:16px">
+ <table class="tbl">
+  <tr><th>30일 트렌딩 셀러</th><th>피드백</th><th>30일 매출</th><th>주력</th></tr>
+  <tr><td><b>a4c</b></td><td>881,834</td><td><b>$760,198</b></td><td>자동차 부품</td></tr>
+  <tr><td>mvpdentalsupply</td><td>65,002</td><td>$554,177</td><td>치과 용품</td></tr>
+  <tr><td>ds18sound</td><td>41,326</td><td>$525,618</td><td>카오디오</td></tr>
+  <tr><td>6ave</td><td>102,736</td><td>$380,264</td><td>전자</td></tr>
+  <tr><td>www-sonicelectronix-com</td><td>541,693</td><td>$342,116</td><td>카오디오·전자</td></tr>
+  <tr><td>labworkautocom</td><td>52,200</td><td>$317,235</td><td>자동차 부품</td></tr>
+  <tr><td>foreverunauto</td><td>184,739</td><td>$289,221</td><td>자동차 부품</td></tr>
+  <tr><td>cyclemaxwilson</td><td>69,853</td><td>$271,284</td><td>오토바이 부품</td></tr>
+  <tr><td>scsmkm</td><td>186,918</td><td>$261,379</td><td>자동차 부품</td></tr>
+  <tr><td>motoringmax</td><td>320,217</td><td>$232,729</td><td>자동차 부품</td></tr>
+  <tr><td><b>cbmtools</b></td><td>138,179</td><td><b>$5,526</b></td><td>공구 — 규모 대비 회전 사망</td></tr>
+ </table>
+ </div>
+ <p class="rdnote"><b>11곳 중 6곳이 자동차·오토바이 부품</b>, 2곳이 카오디오·전자입니다. eBay 상위 드랍쉬퍼는 <b>사실상 자동차 부품 시장</b>이고 틱톡샵·Etsy와 카테고리가 거의 안 겹칩니다. 맨 아래 cbmtools는 피드백이 13만인데 30일 매출이 $5,526입니다 — <b>규모가 있어도 회전이 죽으면 소용없다</b>는 반례입니다.</p>
+</section>
+
+<section class="partEtsy">
+ <h2 class="parttitle bhs">◆ PART C · Etsy — 직접 만들어 팔기</h2>
+ <div class="psrc">
+  <span class="pl">이 데이터는 어디서 보나</span>
+  <a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener">eRank</a>
+  <span class="pw">일간 급상승 검색어 100개 · 대량 키워드 조회(80개) · 키워드 정밀 수치(검색·클릭·CTR·경쟁 리스팅·난이도·검색자 국가 비중) · 상위 리스팅</span>
+ </div>
+ <p class="partlead">이번 주 대량 조회로 <b>키워드 80개</b>를 한 번에 쟀고, 핵심 5개는 검색자 국가 비중까지 따로 확인했습니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>① 이번 주 급상승 키워드 — 크로셰가 1위로 돌아왔다</h3>
+ <div class="note">지난주 리포트는 <b>"크로셰·니팅 패턴이 일간 급상승 TOP100에서 완전히 빠졌다"</b>고 썼습니다. 이번 주는 <b>1위·2위·7위·32위 네 자리</b>입니다.</div>
+ <div class="ranks">
+  <div class="rank reveal"><span class="pos">1</span><span class="nm">테디베어 크로셰 블랭킷 패턴<span class="gl">teddy bear crochet blanket pattern</span></span><span class="sig new">🧶 경쟁 522 · 난이도 1</span><span class="ev">검색 <b>635</b> · 미국 검색자 <b>81.8%</b> · 상위 10개 중 6개가 Age 90일 이하</span></div>
+  <div class="rank reveal"><span class="pos">2</span><span class="nm">크로셰 패턴<span class="gl">crochet pattern</span></span><span class="sig fl">광의어 · 난이도 65</span><span class="ev">검색 30,554 · 경쟁 <b>600,496</b> · 미국 검색자 17.1%(지난주 확인) — <b>광의어는 들어가면 안 됩니다</b></span></div>
+  <div class="rank reveal"><span class="pos">4</span><span class="nm">할로윈<span class="gl">halloween</span></span><span class="sig up">↑1</span><span class="ev">검색 47,830 · 경쟁 <b>411만</b> · 난이도 <b>97</b></span></div>
+  <div class="rank reveal"><span class="pos">5</span><span class="nm">디지털 상품<span class="gl">digital products</span></span><span class="sig up">↑36</span><span class="ev">검색 30,570 · 경쟁 156,839 · 난이도 <b>36</b> — 광의어치고 드물게 열려 있습니다</span></div>
+  <div class="rank reveal"><span class="pos">7</span><span class="nm">코지 베이비 블랭킷 크로셰 패턴<span class="gl">cozy baby blanket crochet pattern</span></span><span class="sig new">🧶 경쟁 1,722</span><span class="ev">검색량은 아직 집계 전(Unknown)이지만 경쟁이 1,722뿐입니다</span></div>
+  <div class="rank reveal"><span class="pos">11</span><span class="nm">오너먼트<span class="gl">ornament</span></span><span class="sig up">↑28</span><span class="ev">검색 16,271 · 경쟁 <b>253만</b> · 난이도 <b>100</b> — 올라오지만 닫혀 있습니다</span></div>
+  <div class="rank reveal"><span class="pos">32</span><span class="nm">아미구루미 크로셰 패턴<span class="gl">amigurumi crochet pattern</span></span><span class="sig new">🧶 4번째 크로셰</span><span class="ev">검색 4,567 · 경쟁 194,303 · 난이도 81 · 구글 <code>amigurumi</code> 27,000 / 난이도 <b>11</b></span></div>
+  <div class="rank reveal"><span class="pos">96</span><span class="nm">코랄라인<span class="gl">coraline</span></span><span class="sig new">🎃 경쟁 4,386 · 난이도 1</span><span class="ev">검색 <b>4,139</b> · 미국 검색자 <b>58.6%</b> · 최고 리스팅 매출 <b>$3,311</b> — 할로윈 IP 중 유일하게 열린 자리</span></div>
+  <div class="rank reveal"><span class="pos">24</span><span class="nm">주얼리<span class="gl">jewelry</span></span><span class="sig dn">↓25</span><span class="ev">검색 53,050 · 경쟁 <b>1,285만</b></span></div>
+  <div class="rank reveal"><span class="pos">99</span><span class="nm">BTS<span class="gl">bts</span></span><span class="sig dn">↓73</span><span class="ev">검색 10,918 · 경쟁 37,225 — 100위권에서 가장 크게 빠졌습니다</span></div>
+ </div>
+ <div class="note" style="margin-top:16px">⚠️ <b>"저경쟁"에는 두 종류가 있고 하나는 함정입니다.</b> 이번 주 급상승 100개 중 <b>크록스 참(jibbitz) 계열이 8건</b>이나 됐고 경쟁이 0~277로 극단적으로 낮아 빈 자리처럼 보였습니다. 그런데 조회해보니 <b>전부 검색량 Unknown 또는 20 미만</b>이었고, 상위어 <code>crocs charms</code>조차 검색 469에 난이도 <b>72</b>였습니다. <b>경쟁 숫자만 보면 안 됩니다.</b></div>
+
+ <h3 class="btitle"><span class="bar"></span>② Etsy 난이도 지도 — 어디가 열려 있고 어디가 닫혔나</h3>
+ <div class="chartbox reveal">
+  <div class="ct">이번 주 조회한 키워드의 Etsy 난이도 분포</div>
+  <div class="cs">대량 조회 80개 중 난이도 값이 나온 75개입니다. 난이도 90 이상은 사실상 신규 진입이 불가능한 구간입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">난이도 0~19 (활짝 열림)<small>Wide open</small></div><div class="bt"><span class="bf" style="width:21.2%;background:#1E9E5A"></span></div><div class="bv">7개</div></div>
+   <div class="bar"><div class="bl">난이도 20~49 (열림)<small>Open</small></div><div class="bt"><span class="bf" style="width:18.2%;background:#7BC49A"></span></div><div class="bv">6개</div></div>
+   <div class="bar"><div class="bl">난이도 50~79 (붐빔)<small>Crowded</small></div><div class="bt"><span class="bf" style="width:63.6%;background:#C98A12"></span></div><div class="bv">21개</div></div>
+   <div class="bar"><div class="bl">난이도 80~89 (거의 닫힘)<small>Nearly closed</small></div><div class="bt"><span class="bf" style="width:24.2%;background:#E08A1E"></span></div><div class="bv">8개</div></div>
+   <div class="bar"><div class="bl">난이도 90~100 (닫힘)<small>Closed</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv">33개 ⛔</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#1E9E5A"></i>지금 들어갈 자리</span><span><i style="background:#D23B3B"></i>들어가면 안 되는 자리</span><span>75개 중 <b>41개(55%)가 난이도 80 이상</b>입니다. 시즌 광의어가 대부분 여기 있습니다.</span></div>
+ </div>
+ <div class="note" style="margin-top:16px">★ <b>이번 주 가장 중요한 대비</b> — 같은 "할로윈 장식"인데 <b>Etsy는 난이도 99~100에 경쟁 리스팅 131만개</b>로 완전히 닫혔고, <b>eBay는 성공 리스팅 63%에 1위 셀러 0.3%</b>로 활짝 열려 있습니다. <b>채널을 잘못 고르면 같은 물건을 못 팝니다.</b></div>
+
+ <h3 class="btitle"><span class="bar"></span>③ 디지털 제품 — 성격별로 골고루</h3>
+ <p class="buck">🔥 <b>지금 제일 잘 팔리는 것</b> — 상위 두 리스팅이 각각 39만 달러·23만 달러를 먹고 나머지는 거의 0인 <b>완전 승자독식</b> 구조입니다. 게다가 이 키워드는 미국 검색자가 14.4%뿐입니다.</p>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 Est. 매출 1위</span><img src="https://i.etsystatic.com/22694265/r/il/609a52/5317130120/il_570xN.5317130120_kmdw.jpg" alt="언데이티드 굿노트 플래너" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>📓</div>&quot;)"></div><div class="body"><div class="nm">언데이티드 굿노트 플래너 (월간 디지털 플래너)</div><div class="en">Undated Goodnotes Planner, Monthly Digital Planner, iPad Planner</div><div class="meta"><span class="price">$3.95</span><span class="rev">Est. 판매 98,901 · Est. 매출 $390,659</span><span class="tr up">Age 1,815일 · 하트 39,623</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=undated%20goodnotes%20planner" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🔥 Est. 매출 2위</span><img src="https://i.etsystatic.com/26517593/r/il/93a1ff/7685698130/il_570xN.7685698130_5x4a.jpg" alt="올인원 디지털 플래너 2026" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🗓️</div>&quot;)"></div><div class="body"><div class="nm">올인원 디지털 플래너 2026/27/28</div><div class="en">All-in-One Digital Planner, Digital Journal, Goodnotes Template</div><div class="meta"><span class="price">$3.96</span><span class="rev">Est. 판매 59,297 · Est. 매출 $234,816</span><span class="tr up">Age 707일 · 하트 21,818</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=all%20in%20one%20digital%20planner" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+ </div>
+ <p class="buck">💚 <b>오랫동안 사랑받는 것</b> — 둘 다 <b>크로셰</b>입니다. 5년 된 $2.71짜리 패턴 하나가 948건을 팔고 하트 2,000개를 받았습니다. 크로셰가 이번 주 갑자기 뜬 게 아니라는 증거이기도 합니다.</p>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">💚 Age 1,821일</span><img src="https://i.etsystatic.com/24341949/r/il/f232ac/3357084819/il_570xN.3357084819_9rm8.jpg" alt="코랄라인 핑거리스 장갑 크로셰 패턴" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧤</div>&quot;)"></div><div class="body"><div class="nm">코랄라인 핑거리스 장갑 크로셰 패턴</div><div class="en">Coraline-Inspired Fingerless Gloves Crochet Pattern</div><div class="meta"><span class="price">$2.71</span><span class="rev">Est. 판매 948 · Est. 매출 $2,568</span><span class="tr up">하트 2,000</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=coraline%20fingerless%20gloves%20crochet" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">💚 Age 343일</span><img src="https://i.etsystatic.com/59460597/r/il/90fee4/7218716528/il_570xN.7218716528_a4kr.jpg" alt="코랄라인 북슬리브 크로셰" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>📚</div>&quot;)"></div><div class="body"><div class="nm">코랄라인 북슬리브 (별밤 블루 크로셰 북커버)</div><div class="en">Coraline Book Sleeve — Starry Blue Crochet Book Protector</div><div class="meta"><span class="price">$36.00</span><span class="rev">Est. 판매 53 · Est. 매출 $1,908</span><span class="tr up">하트 614</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=coraline%20book%20sleeve%20crochet" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+ </div>
+ <p class="buck">🎃 <b>지금 시즌이라 뜨는 것</b> — 부 바스켓(Boo Basket)은 이웃·동료 문 앞에 두고 가는 할로윈 선물 바구니입니다. 틱톡에서 <code>#boobasket</code> 영상이 410만 재생을 찍었고, Etsy 검색자의 <b>74%가 미국</b>입니다.</p>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 조회 27,718</span><img src="https://i.etsystatic.com/18623087/r/il/8ef936/8074687400/il_570xN.8074687400_rb5y.jpg" alt="할로윈 플래시라이트 부바스켓" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🔦</div>&quot;)"></div><div class="body"><div class="nm">할로윈 플래시라이트 (논캔디 부바스켓 파버)</div><div class="en">Halloween Flashlight: Boo Baskets, Non Candy Favors, Trunk or Treat</div><div class="meta"><span class="price">$0.80</span><span class="rev">Est. 판매 1,430 · Est. 매출 $1,144</span><span class="tr new">Age 354일 · 하트 837</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=boo%20basket%20flashlight" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 단가 $22.50</span><img src="https://i.etsystatic.com/5492298/r/il/b4d92b/6169044906/il_570xN.6169044906_nlh3.jpg" alt="니트 호박 3개 세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🎃</div>&quot;)"></div><div class="body"><div class="nm">니트 호박 3개 세트 (부바스켓 스터퍼)</div><div class="en">Knit pumpkins set of 3, boo basket stuffers, Halloween bowl fillers</div><div class="meta"><span class="price">$22.50</span><span class="rev">Est. 판매 54 · Est. 매출 $1,215</span><span class="tr new">🧶 여기도 뜨개질</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=knit%20pumpkins%20boo%20basket" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+ </div>
+ <p class="buck">🆕 <b>새로 나온 것</b> — 어드벤트 캘린더 상위 10위에 <b>등록 7일짜리</b>와 <b>17일짜리</b>가 나란히 들어왔습니다. 이 자리는 <b>지금 문이 열려 있다</b>는 뜻입니다.</p>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🆕 등록 7일</span><img src="https://i.etsystatic.com/67334111/r/il/360e4c/8424447158/il_570xN.8424447158_124l.jpg" alt="스노우맨 어드벤트 캘린더 크로셰 패턴" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>⛄</div>&quot;)"></div><div class="body"><div class="nm">스노우맨 어드벤트 캘린더 패턴 (24포켓 · 크로셰 PDF)</div><div class="en">Snowman Advent Calendar Pattern, 24 Pocket Christmas Countdown, Crochet PDF</div><div class="meta"><span class="price">$3.34</span><span class="rev">Est. 판매 6</span><span class="tr new">🧶 7일 만에 상위 10위</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=advent%20calendar%20crochet%20pattern" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🆕 등록 17일</span><img src="https://i.etsystatic.com/67219416/r/il/334403/8428422779/il_570xN.8428422779_am6f.jpg" alt="24일 놈 어드벤트 캘린더" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🎁</div>&quot;)"></div><div class="body"><div class="nm">24일 놈 어드벤트 캘린더 (플러시 오너먼트 세트)</div><div class="en">24-Day Gnome Advent Calendar, Plush Ornament Countdown Set</div><div class="meta"><span class="price">$65.00</span><span class="rev">Est. 판매 5 · Est. 매출 $325</span><span class="tr new">실물 · 단가 최고</span></div><div class="links"><a class="lk" href="https://www.etsy.com/search?q=gnome%20advent%20calendar" target="_blank" rel="noopener">Etsy 검색</a></div></div></div>
+ </div>
+ <div class="note" style="margin-top:18px">⚠️ <b>들어가면 안 되는 것 두 가지</b><br>① <code>digital planner</code> 광의어 — 상위 10개 중 <b>4개가 Est. 매출 $0</b>이고 1·2위가 전부를 먹습니다. 게다가 <b>미국 검색자가 14.4%뿐</b>입니다.<br>② <code>teddy bear crochet blanket pattern</code> — 급상승 <b>1위</b>이고 신규가 상위 10개 중 6개라 문은 활짝 열렸는데, <b>최고 Est. 매출이 $327.59</b>이고 10개를 합쳐도 $667입니다. 검색 635짜리 시장이라 그렇습니다. <b>"급상승 1위 = 돈 되는 자리"가 아닙니다.</b></div>
+ <p class="rdnote"><b>포맷별 가격대</b> — 크로셰·니트 PDF 패턴 <b>$2.71~6.32</b> / 할로윈 디지털 태그·PNG <b>$0.80~12.23</b> / 디지털 플래너 <b>$2.88~13.90</b> / 어드벤트 캘린더 실물 <b>$20~65</b> / 할로윈·코랄라인 실물 <b>$22.50~77.00</b>. <b>디지털은 볼륨, 실물은 단가</b>입니다 — 같은 <code>coraline</code> 키워드 안에서도 $2.71과 $77.00으로 <b>27배</b> 차이가 납니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>④ 저경쟁 롱테일 · 검색자 국가 비중 경고</h3>
+ <div class="chipsw">
+  <a class="kw g" href="https://www.etsy.com/search?q=coraline" target="_blank" rel="noopener">coraline 코랄라인<small class="gl">검색 4,139 · 경쟁 4,386 · 난이도 1 · 미국 58.6%</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=pokemon%20binder" target="_blank" rel="noopener">pokemon binder 포켓몬 바인더<small class="gl">검색 3,833 · 경쟁 2,918 · 난이도 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=grinch%20phone%20case" target="_blank" rel="noopener">grinch phone case<small class="gl">검색 3,131 · 경쟁 606 · 난이도 1</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=boo%20basket" target="_blank" rel="noopener">boo basket 부 바스켓<small class="gl">검색 3,484 · 경쟁 16,100 · 난이도 33 · 미국 74%</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=notion%20template" target="_blank" rel="noopener">notion template<small class="gl">검색 8,006 · 경쟁 16,948 · 난이도 16</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=advent%20calendar" target="_blank" rel="noopener">advent calendar 어드벤트 캘린더<small class="gl">검색 8,162 · 경쟁 33,071 · 난이도 30</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=twitch%20overlay" target="_blank" rel="noopener">twitch overlay<small class="gl">검색 13,370 · 경쟁 74,922 · 난이도 37</small></a>
+  <a class="kw g" href="https://www.etsy.com/search?q=book%20nook" target="_blank" rel="noopener">book nook 북눅<small class="gl">검색 7,214 · 경쟁 48,228 · 난이도 41</small></a>
+  <a class="kw y" href="https://www.etsy.com/search?q=elf%20on%20the%20shelf" target="_blank" rel="noopener">elf on the shelf<small class="gl">검색 2,166 · 경쟁 16,705 · 난이도 44</small></a>
+  <a class="kw y" href="https://www.etsy.com/search?q=fursuit" target="_blank" rel="noopener">fursuit 퍼수트<small class="gl">검색 24,468 · 경쟁 15,205(4주 연속 동일) · 난이도 1</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=halloween%20decor" target="_blank" rel="noopener">halloween decor ⛔<small class="gl">경쟁 131만 · 난이도 99</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=thanksgiving%20decor" target="_blank" rel="noopener">thanksgiving decor ⛔<small class="gl">경쟁 455,327 · 난이도 100</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=svg%20bundle" target="_blank" rel="noopener">svg bundle ⛔<small class="gl">경쟁 497,456 · 난이도 100</small></a>
+  <a class="kw r" href="https://www.etsy.com/search?q=canva%20template" target="_blank" rel="noopener">canva template ⛔<small class="gl">경쟁 113만 · 난이도 100</small></a>
+ </div>
+ <div class="note" style="margin-top:18px">🌍 <b>검색자 국가 비중 함정에 세 번째로 걸렸습니다 — 이번엔 지난주 자기 추천이었습니다.</b><br>
+ 지난주 리포트는 "디지털 플래너 <b>$15 단가</b> 구간으로 가라"고 썼습니다. 그런데 <code>digital planner</code>의 <b>미국 검색자는 14.4%뿐</b>이고 파키스탄 25% · 모로코 12.2% · 인도 8.4%입니다.<br>
+ <code>crochet pattern</code>(미국 17.1%) · <code>budget planner</code>(미국 12.3%)에 이은 <b>세 번째 같은 함정</b>입니다.<br>
+ 반대로 롱테일 <code>teddy bear crochet blanket pattern</code>은 <b>미국 81.8%</b>, <code>boo basket</code>은 <b>74%</b>(영국 포함 영어권 92.6%), <code>coraline</code>은 <b>58.6%</b>입니다.<br>
+ <b>→ 광의어는 국가 비중을 확인하기 전에 추천하지 않습니다.</b></div>
+ <p class="rdnote"><b>월간 인기 검색어</b>는 월 단위 갱신이라 지난주와 동일합니다(shirt 75,880 · tshirt 64,870 · wall art 55,860 · stickers 54,860 · halloween 49,850 · halloween shirt 41,850 · back to school 35,840 · crochet 34,840 · crochet pattern 32,840). ⚠️ 참고로 <b>2026년 8월분은 아직 집계 전</b>이라 7월 기준입니다. 주간 변동은 위 ①번 일간 급상승에서 봐야 합니다.</p>
+</section>
+
+<section class="partSum">
+ <h2 class="parttitle bhs">◆ PART D · 종합 판정 — 어디에 뭘 팔까</h2>
+ <div class="psrc">
+  <span class="pl">이 데이터는 어디서 보나</span>
+  <a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a>
+  <span class="pw">쇼핑 클릭 증가율 · 저장 급등 키워드 · 에디터 선정 (방향과 타이밍만, 절대 검색량은 안 줌)</span>
+  <a href="https://ahrefs.com/" target="_blank" rel="noopener">Ahrefs</a>
+  <span class="pw">구글 검색량 · 키워드 난이도 · 광고단가 · 트래픽 잠재력 — 이번 주 70개 조회</span>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>① 지난주 확인 항목 6건 — 전부 판정</h3>
+ <div class="note">적중 2 · 부분 적중 2 · <b>빗나감 2</b>. 빗나간 둘(개학·뷰티)의 공통점은 <b>"핀터레스트나 플랫폼 캘린더가 가리켰지만 실판매 데이터가 따라오지 않은 것"</b>입니다.</div>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>항목</th><th>지난주 값</th><th>이번 주 실측</th><th>판정</th></tr>
+  <tr><td><b>개학이 실제로 팔렸나</b></td><td>D-8 · lunch bag 32,000</td><td>eBay 30일 니치 <b>56개 중 개학 품목 0건</b>. 핀터레스트는 "개학 네일 300%"만 상승</td><td>❌ <b>안 팔렸다.</b> 캘린더는 날짜만 맞았다</td></tr>
+  <tr><td><b>퍼수트 경쟁이 움직이나</b></td><td>2주 연속 15,205</td><td><b>15,205 그대로 (4주 연속)</b> · 검색 24,468 · 난이도 1</td><td>✅ <b>재분류 확정</b> — "닫히는 자리"가 아니라 <b>원래 안 붐비는 자리</b></td></tr>
+  <tr><td><b>뷰티가 블러셔 실물로 가나</b></td><td>브러시 $153,117 · 핀 ▲980%</td><td>핀 <b>969%(2주 연속 1위)</b> · 신상 위너 블러셔 <b>0개</b> · 틱톡샵 신규 뷰티 <b>0개</b> · 구글 검색 <b>400</b></td><td>❌ <b>빗나감.</b> 실판매가 오히려 뷰티에서 빠져나갔다</td></tr>
+  <tr><td><b>크리스마스 롱테일이 20을 넘나</b><br><small>(구글 난이도)</small></td><td>추수감사절 데코 4 · 크리스마스 공예 9 · 머리 20</td><td>추수감사절 데코 <b>9</b> · 크리스마스 공예 <b>9</b> · 머리 <b>39</b></td><td>⚠️ <b>부분 적중.</b> 방향은 맞고 <b>속도를 과소평가</b>(1주에 20→39)</td></tr>
+  <tr><td><b>아이폰 17 케이스 난이도 3이 유지되나</b></td><td>케이스 3 · 액세서리 8</td><td>케이스 <b>3 유지</b>(검색 88,000) · 액세서리 <b>8 → 4로 되돌아감</b></td><td>✅ 케이스 적중. ⚠️ 단 "창 닫히는 중" 판단은 <b>근거가 약해졌다</b></td></tr>
+  <tr><td><b>크리스마스 SVG에 신규가 들어가나</b></td><td>상위 10개 <b>전부 Age 323일+</b> · 최고 $1,325</td><td><b>#7 = Age 22일</b> 등장(판매 2건·$7.00). 최고 매출은 <b>$2,437.81</b>(+84%)</td><td>✅ <b>문은 열렸다 — 문틈만큼.</b> 돈은 여전히 오래된 리스팅이 먹는다</td></tr>
+ </table>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>② 시즌 신호등</h3>
+ <div class="note">⚠️ <b>핀터레스트의 시즌 신호등(Moments) 섹션이 이번 주 사라졌습니다.</b> 전용 주소도 404입니다. 그래서 이번 주 신호등은 <b>eBay 플랫폼 캘린더의 D-day로 대체</b>했습니다. 다음 주에 복구 여부를 확인합니다.</div>
+ <div class="cal">
+  <div class="calc reveal" style="border-left:6px solid var(--down)"><div class="lt">🔴</div><h5>개학 · D-1</h5><p><b>종료</b><br>eBay 진입 0건. 지금 시작하면 늦습니다</p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--new)"><div class="lt">🟡</div><h5>노동절 · D-7</h5><p><b>공구 세일 구간</b><br>알리·틱톡샵 공구 상승과 맞물립니다</p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--up)"><div class="lt">🟢🟢</div><h5>할로윈 · D-61</h5><p><b>지금이 최적</b><br>eBay 성공률 63% · 신상 위너 3종 진입</p></div>
+  <div class="calc reveal" style="border-left:6px solid var(--gold)"><div class="lt">🟢</div><h5>크리스마스 · D-116</h5><p><b>선점 구간</b><br>eBay 변형 증가 중 · 머리 키워드는 이미 닫힘</p></div>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>③ 쇼핑 클릭이 튄 카테고리 TOP 10 (전월 대비)</h3>
+ <div class="chartbox reveal">
+  <div class="ct">핀터레스트 쇼핑 클릭 증가율 · 구글로 교차 검증</div>
+  <div class="cs">핀터레스트는 <b>절대 검색량을 주지 않습니다.</b> 그래서 상승률이 커도 시장이 큰지는 구글로 따로 확인해야 합니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">블러셔·브론저 🔴<small>Blushes &amp; bronzers</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv">969% · 구글 검색 400</div></div>
+   <div class="bar"><div class="bl">페이스 메이크업 🔴<small>Face makeup</small></div><div class="bt"><span class="bf" style="width:16.2%;background:#D23B3B"></span></div><div class="bv">157% · 미확인</div></div>
+   <div class="bar"><div class="bl">시즌·홀리데이 장식 🟢<small>Seasonal &amp; holiday decorations</small></div><div class="bt"><span class="bf" style="width:7.4%;background:#1E9E5A"></span></div><div class="bv">72% 🆕 · 확인됨</div></div>
+   <div class="bar"><div class="bl">코스튬·액세서리 🟢<small>Costumes &amp; accessories</small></div><div class="bt"><span class="bf" style="width:5.3%;background:#1E9E5A"></span></div><div class="bv">51% · 구글 51,000/난이도 7</div></div>
+   <div class="bar"><div class="bl">뷰티 보충제 🟡<small>Beauty supplements</small></div><div class="bt"><span class="bf" style="width:4.7%;background:#C98A12"></span></div><div class="bv">46% 🆕 · 미확인</div></div>
+   <div class="bar"><div class="bl">아우터 🟢<small>Outerwear</small></div><div class="bt"><span class="bf" style="width:4.6%;background:#1E9E5A"></span></div><div class="bv">45% · winter coats 난이도 1</div></div>
+   <div class="bar"><div class="bl">코트·재킷 🟢<small>Coats &amp; jackets</small></div><div class="bt"><span class="bf" style="width:4.5%;background:#1E9E5A"></span></div><div class="bv">44%</div></div>
+   <div class="bar"><div class="bl">스웨터·가디건 🟢<small>Sweaters &amp; cardigans</small></div><div class="bt"><span class="bf" style="width:4.4%;background:#1E9E5A"></span></div><div class="bv">43% · 구글 52,000/7</div></div>
+   <div class="bar"><div class="bl">장식용 자 🟡<small>Decorative jars</small></div><div class="bt"><span class="bf" style="width:3.9%;background:#C98A12"></span></div><div class="bv">38% 🆕</div></div>
+   <div class="bar"><div class="bl">장식 태피스트리 🟡<small>Decorative tapestries</small></div><div class="bt"><span class="bf" style="width:3.7%;background:#C98A12"></span></div><div class="bv">36% 🆕 · Etsy 쪽만</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#1E9E5A"></i>구글·실판매로 확인됨</span><span><i style="background:#C98A12"></i>아직 미확인</span><span><i style="background:#D23B3B"></i>핀에서만 도는 트렌드</span><span>★ <b>마스카라가 TOP10에서 빠졌습니다</b>(지난주 3위 ▲116%) — 지난주 판정이 맞았습니다.</span></div>
+ </div>
+ <div class="tblwrap" style="margin-top:18px">
+ <table class="tbl">
+  <tr><th>저장(핀) 급등 키워드</th><th>%MoM</th><th>구글 실측</th><th>판정</th></tr>
+  <tr><td>Apartment Rooms 원룸 꾸미기</td><td>300%</td><td><code>apartment room ideas</code> 검색 <b>150</b></td><td>🔴 핀 전용</td></tr>
+  <tr><td>Back to School Nail Designs 개학 네일</td><td>300%</td><td>지난주 트래픽 잠재력 <b>0</b></td><td>🔴 <b>2주 연속 허수</b></td></tr>
+  <tr><td><b>Pumpkin Patch Outfits 호박농장 나들이 옷</b></td><td><b>300%</b></td><td>검색 <b>2,600</b> · 난이도 <b>0</b></td><td>🟢 <b>작지만 진짜 · 완전 무경쟁</b></td></tr>
+  <tr><td>Party and Home Decorating Ideas</td><td>200%</td><td>시즌 장식 72%와 같은 흐름</td><td>🟢 확인됨</td></tr>
+ </table>
+ </div>
+ <p class="rdnote"><b>플랫폼 에디터 선정 6개 중 2개가 DIY·공예</b>입니다 — ①<b>"십자수를 멈출 수 없다"</b>(<code>embroidery ideas</code> +20%) ②<b>"이케바나 파티를 열자"</b>(<code>fall flowers</code> +100%). 나머지는 조츠 패션 · 요거트볼 · 사슴 네일 · 투스카나 무드입니다. <b>크로셰 신호와 같은 방향</b>입니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>④ 4중 교차 판정 (핀터레스트 × 드랍쉬핑/eBay × Etsy × 구글)</h3>
+ <div class="verd">
+  <div class="vc reveal"><span class="tag">🟢🟢🟢 4중 전부 일치 · 이번 주 유일</span><h4>부 바스켓</h4><div class="en">Boo Basket — 이웃·동료 문 앞에 두는 할로윈 선물 바구니</div><div class="nums"><span>구글 50,000 · 난이도 0</span><span>Etsy 3,484 · 난이도 33</span><span>미국 검색자 74%</span><span>틱톡 410만 재생</span><span>eBay 할로윈 성공률 63%</span></div><p>네 소스가 전부 같은 방향인 건 이번 주 <b>이것 하나뿐</b>입니다. 구글 트래픽 잠재력도 13,000으로 큽니다.</p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 블로그+광고 · Etsy는 금지</span><h4>커플·듀오 코스튬</h4><div class="en">Couples Halloween costumes</div><div class="nums"><span>구글 51,000 · 난이도 7</span><span>트래픽 잠재력 66,000</span><span>틱톡 2,490만 재생 / 31.6만 공유</span><span>Etsy 난이도 93~100 ⛔</span></div><p><b>트래픽 잠재력이 검색량보다 큽니다</b> — 한 글로 여러 롱테일을 동시에 먹을 수 있다는 뜻입니다. 단 Etsy는 닫혔습니다.</p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 eBay 리셀링 전용</span><h4>할로윈 야외장식</h4><div class="en">Halloween outdoor decorations</div><div class="nums"><span>eBay 성공률 63% · 1위 0.3%</span><span>Etsy 난이도 99 ⛔</span><span>핀 시즌 장식 ▲72%</span><span>구글 13,000 · 난이도 54</span></div><p>같은 물건인데 <b>Etsy는 완전히 닫혔고 eBay는 활짝 열렸습니다.</b> 채널 선택이 전부입니다.</p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 Etsy 롱테일 + 블로그</span><h4>크로셰 롱테일</h4><div class="en">Crochet longtail — not the broad keyword</div><div class="nums"><span>Etsy 급상승 1·2·7·32위</span><span>롱테일 미국 81.8%</span><span>광의어 미국 17.1% ⛔</span><span>구글 8,800 · 난이도 0</span></div><p>핀터레스트 에디터 픽 1번도 십자수입니다. <b>단 광의어 <code>crochet pattern</code>은 손대면 안 됩니다.</b></p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 Etsy 전용 · 구글은 막힘</span><h4>코랄라인 (할로윈 IP)</h4><div class="en">Coraline</div><div class="nums"><span>Etsy 검색 4,139 · 경쟁 4,386</span><span>Etsy 난이도 1</span><span>구글 난이도 70 ⛔</span><span>최고 리스팅 $3,311</span><span>미국 58.6%</span></div><p>상위 10개 중 <b>4개가 크로셰</b>이고 Age 12일·20일 신규가 이미 상위입니다. ⚠️ 저작권 IP라 팬아트 판매는 위험합니다.</p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 드랍쉬핑 + 블로그 · D-7</span><h4>공구·정비 세트</h4><div class="en">Tools &amp; maintenance sets</div><div class="nums"><span>틱톡샵 신규 4개 · 최대 $9.1M</span><span>알리 상승 8건 중 6건</span><span>구글 socket set 난이도 1</span><span>wrench set 17,000 · 난이도 2</span></div><p>노동절(D-7) 공구 세일 + 9월 가을 유지보수 시즌이 겹칩니다. <b>지난 4주 리포트가 한 번도 안 짚은 구간</b>입니다.</p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 Etsy + 블로그 · 선점</span><h4>어드벤트 캘린더</h4><div class="en">Advent calendar</div><div class="nums"><span>구글 145,000 · 난이도 9</span><span>Etsy 8,162 · 난이도 30</span><span>Age 7일 신규가 상위 진입</span><span>미국 36.6%(영어권 59.2%)</span></div><p>크리스마스 머리 키워드(난이도 39)는 이미 닫혔는데 <b>여기는 아직 열려 있습니다.</b></p></div>
+  <div class="vc reveal"><span class="tag">🟢🟢 리셀링 + 블로그 · Etsy 금지</span><h4>전기담요·가을 난방</h4><div class="en">Heated blanket</div><div class="nums"><span>eBay 3주 연속 상승 (2주 +92.5%)</span><span>eBay 성공률 55%</span><span>구글 91,000 · 난이도 9</span><span>Etsy hoodie blanket 난이도 95 ⛔</span></div><p>$3,903 → $4,908 → <b>$7,513</b>. 시즌 캘린더보다 먼저 움직인 지표입니다.</p></div>
+  <div class="vc reveal" style="border-top-color:var(--down)"><span class="tag" style="background:var(--down)">🔴 금지 — 실체 없음</span><h4>블러셔·브론저</h4><div class="en">Blushes &amp; bronzers</div><div class="nums"><span>핀 969% · 2주 연속 1위</span><span>구글 검색 <b>400</b></span><span>틱톡샵 신규 0개</span><span>신상 위너 0개</span></div><p>핀터레스트 상승률만 보고 들어가면 안 되는 <b>교과서적 사례</b>입니다. 지난주 마스카라에 이어 <b>두 번 연속 같은 실패</b>입니다.</p></div>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>⑤ 판정이 엇갈리거나 뒤집힌 것</h3>
+ <p class="rdnote" style="margin:0 0 12px">같은 키워드도 <b>플랫폼마다 난이도가 다릅니다.</b> 둘 다 맞는 값이므로 출처를 라벨로 구분해서 읽어야 합니다. 나머지 수치는 위 ③·④번과 아래 ⑥번 표에 있습니다.</p>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>대상</th><th>왜 엇갈리나</th><th>이번 주 결론</th></tr>
+  <tr><td><b>coraline</b></td><td>Etsy 난이도 <b>1</b> ↔ 구글 난이도 <b>70</b></td><td>둘 다 맞다 → <b>Etsy 전용</b></td></tr>
+  <tr><td><b>iphone 17 case</b></td><td>구글 난이도 <b>3</b> ↔ Etsy 난이도 <b>52</b></td><td><b>블로그+제휴 전용.</b> Etsy는 이미 붐빔</td></tr>
+  <tr><td><b>thanksgiving decor</b></td><td>구글 난이도 <b>9</b> ↔ Etsy 난이도 <b>100</b></td><td><b>블로그만.</b> Etsy 진입 금지</td></tr>
+  <tr><td><b>twitch overlay</b></td><td>Etsy 난이도 <b>37</b> ↔ 구글 난이도 <b>55</b></td><td><b>Etsy 쪽이 낫다</b> (드문 역전)</td></tr>
+  <tr><td><b>fursuit</b></td><td>Etsy 난이도 1 ↔ 구글 39 · 경쟁 <b>4주 연속 15,205</b></td><td>"닫히는 자리"가 아니라 <b>원래 안 붐비는 자리</b> — 재분류</td></tr>
+  <tr><td><b>digital planner</b></td><td>구글 45 · Etsy 75 · <b>미국 14.4%</b></td><td><b>지난주 추천 철회.</b> 세 지표가 전부 나쁘다</td></tr>
+  <tr><td><b>crocs charms / jibbitz</b></td><td>급상승 8건 ↔ 검색량 Unknown</td><td><b>허수. 진입 금지</b></td></tr>
+  <tr><td><b>christmas decorations</b></td><td>구글 난이도 <b>20 → 39</b> (1주 만에)</td><td>머리 키워드는 <b>닫혔다.</b> 롱테일만</td></tr>
+  <tr><td><b>teddy bear crochet blanket pattern</b></td><td>급상승 1위·난이도 1 ↔ 최고 매출 $327</td><td>진입은 쉬운데 <b>시장이 작다</b></td></tr>
+  <tr><td><b>개학</b></td><td>플랫폼 캘린더 D-1 ↔ eBay 진입 0건</td><td><b>캘린더는 날짜만 맞았다</b></td></tr>
+ </table>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>⑥ ★ 구글 수요는 큰데 경쟁이 얇은 키워드 (난이도 20 이하만)</h3>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>키워드</th><th>월 검색량</th><th>구글 난이도</th><th>광고단가</th><th>트래픽 잠재력</th><th>메모</th></tr>
+  <tr><td><b>advent calendar</b></td><td>145,000</td><td><b>9</b></td><td>$0.15</td><td>8,600</td><td>Etsy도 난이도 30 · 7일 신규 진입</td></tr>
+  <tr><td><b>elf on the shelf</b></td><td>129,000</td><td><b>18</b></td><td>$0.10</td><td><b>48,000</b></td><td>잠재력이 검색량의 37%</td></tr>
+  <tr><td>humidifier</td><td>220,000</td><td>14</td><td>$0.20</td><td>32,000</td><td>가을 실내 시즌</td></tr>
+  <tr><td>heated blanket</td><td>91,000</td><td><b>9</b></td><td>$0.15</td><td>30,000</td><td>eBay 2주 +92.5%</td></tr>
+  <tr><td>iphone 17 case</td><td>88,000</td><td><b>3</b></td><td>$0.25</td><td>12,000</td><td>페이스북 광고 이미 가동</td></tr>
+  <tr><td>wide leg jeans</td><td>84,000</td><td><b>6</b></td><td>$0.35</td><td>16,000</td><td>틱톡샵 $6.5M</td></tr>
+  <tr><td><b>couples halloween costumes</b></td><td>51,000</td><td><b>7</b></td><td>$0.06</td><td><b>66,000</b></td><td><b>잠재력이 검색량보다 크다</b></td></tr>
+  <tr><td><b>boo basket</b></td><td><b>50,000</b></td><td><b>0</b></td><td>$0.20</td><td>13,000</td><td>4중 전부 일치</td></tr>
+  <tr><td>christmas stockings</td><td>37,000</td><td><b>0</b></td><td>$0.30</td><td>3,400</td><td>2주 연속 난이도 0</td></tr>
+  <tr><td>squishy toys</td><td>36,000</td><td><b>0</b></td><td>$0.15</td><td>20</td><td>AI 발굴 스퀴시 3종</td></tr>
+  <tr><td>book nook</td><td>30,000</td><td><b>6</b></td><td>$0.35</td><td>9,000</td><td>Etsy도 난이도 41</td></tr>
+  <tr><td>socket set</td><td>28,000</td><td><b>1</b></td><td>$0.20</td><td>3,300</td><td>노동절 D-7</td></tr>
+  <tr><td>amigurumi</td><td>27,000</td><td>11</td><td>$0.15</td><td>14,000</td><td>크로셰</td></tr>
+  <tr><td>white t shirt</td><td>25,000</td><td><b>2</b></td><td>$0.45</td><td>10,000</td><td>eBay 30일 니치 <b>1위 $151,910</b></td></tr>
+  <tr><td>fall decor</td><td>23,000</td><td><b>2</b></td><td>$0.25</td><td>500</td><td>Etsy는 난이도 85</td></tr>
+  <tr><td>winter coats</td><td>20,000</td><td><b>1</b></td><td>$0.35</td><td><b>39,000</b></td><td>잠재력이 검색량의 2배</td></tr>
+  <tr><td>pokemon binder</td><td>17,000</td><td><b>1</b></td><td>$0.15</td><td>4,600</td><td>Etsy 경쟁 2,918</td></tr>
+  <tr><td>wrench set</td><td>17,000</td><td><b>2</b></td><td>$0.20</td><td>600</td><td>틱톡샵 $9.1M</td></tr>
+  <tr><td>pre lit christmas tree</td><td>14,000</td><td><b>6</b></td><td>$0.25</td><td>5,900</td><td>eBay $5,525</td></tr>
+  <tr><td>christmas inflatables</td><td>13,000</td><td><b>3</b></td><td>$0.20</td><td>4,200</td><td>eBay $2,984</td></tr>
+  <tr><td>floating candles</td><td>11,000</td><td><b>0</b></td><td>$0.30</td><td>150</td><td>틱톡 1,210만 재생</td></tr>
+  <tr><td>hoodie blanket</td><td>9,400</td><td><b>2</b></td><td>$0.25</td><td>1,700</td><td>신상 위너 진입</td></tr>
+  <tr><td>crochet blanket pattern</td><td>8,800</td><td><b>0</b></td><td>$0.06</td><td><b>12,000</b></td><td>검색량의 1.4배</td></tr>
+  <tr><td>corduroy pants women</td><td>6,100</td><td><b>0</b></td><td>$0.30</td><td>4,000</td><td>틱톡샵 $1.9M</td></tr>
+  <tr><td><b>notion template</b></td><td>5,300</td><td><b>6</b></td><td><b>$0.70</b></td><td><b>27,000</b></td><td><b>잠재력이 검색량의 5배 · 광고단가 최고</b></td></tr>
+  <tr><td>pumpkin patch outfits</td><td>2,600</td><td><b>0</b></td><td>$0.10</td><td>1,100</td><td>핀 저장 ▲300%</td></tr>
+  <tr><td>led shop light</td><td>2,300</td><td><b>1</b></td><td>$0.25</td><td>4,700</td><td>eBay $97,603</td></tr>
+  <tr><td>halloween costumes for dogs</td><td>2,000</td><td>5</td><td>$0.10</td><td>2,200</td><td>틱톡 880만 재생</td></tr>
+  <tr><td>keurig k cup</td><td>900</td><td><b>0</b></td><td>$0.40</td><td>5,900</td><td>eBay 30일 니치 2위 $131,312</td></tr>
+  <tr><td>decorative tapestry</td><td>70</td><td><b>4</b></td><td>$0.40</td><td><b>24,000</b></td><td>검색은 작은데 잠재력 24,000</td></tr>
+ </table>
+ </div>
+ <p class="rdnote">★ <b>트래픽 잠재력이 검색량보다 큰 것 6개</b> — <code>couples halloween costumes</code>(51,000 → 66,000) · <code>notion template</code>(5,300 → 27,000) · <code>decorative tapestry</code>(70 → 24,000) · <code>winter coats</code>(20,000 → 39,000) · <code>crochet blanket pattern</code>(8,800 → 12,000) · <code>keurig k cup</code>(900 → 5,900). <b>한 편의 글로 여러 롱테일을 동시에 먹을 수 있는 주제</b>라는 뜻입니다. 난이도 0~10 구간은 개인 블로그로도 1페이지가 가능합니다.</p>
+
+ <h3 class="btitle"><span class="bar"></span>⑦ ⚠️ 시들해지는 것 · 셀러 과포화 — "늦음"의 종류를 구분해서</h3>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>대상</th><th>어떤 종류의 늦음인가</th><th>근거</th></tr>
+  <tr><td><b>뷰티 (블러셔·브론저)</b></td><td><b>실체 없음</b> — 핀에서만 돔</td><td>핀 969% ↔ 구글 검색 <b>400</b> · 틱톡샵 신규 0개 · 신상 위너 0개</td></tr>
+  <tr><td><b>개학</b></td><td><b>시즌 종료</b></td><td>D-1인데 eBay 30일 니치 진입 0건 · Etsy <code>school backpack</code> 검색 23</td></tr>
+  <tr><td><b>크록스 참(jibbitz)</b></td><td><b>검색량 허수</b></td><td>급상승 8건인데 전부 검색량 Unknown/20 미만 · <code>crocs charms</code> 난이도 72</td></tr>
+  <tr><td><b>크리스마스 머리 키워드</b></td><td><b>1주 만에 닫힘</b></td><td>구글 난이도 <b>20 → 39</b></td></tr>
+  <tr><td><b>Etsy 할로윈·크리스마스 장식 전반</b></td><td><b>난이도 100</b></td><td><code>halloween decor</code> 99 · <code>spooky</code> 100 · <code>ornament</code> 100 · <code>thanksgiving decor</code> 100</td></tr>
+  <tr><td><b>digital planner</b></td><td><b>국가 비중 착시 + 승자독식</b></td><td>미국 14.4% · 상위 10개 중 4개가 매출 $0</td></tr>
+  <tr><td><b>전기·전자 소품 (소싱처)</b></td><td><b>실판매 급락</b></td><td>모션센서 전구 −$284.1K · 나노테이프 −$228K · 이어폰 −$179.7K</td></tr>
+  <tr><td><b>teddy bear crochet blanket pattern</b></td><td><b>시장이 작음</b></td><td>급상승 1위인데 상위 10개 매출 합계 $667</td></tr>
+  <tr><td><b>cbmtools (eBay 셀러)</b></td><td><b>규모는 있으나 회전 사망</b></td><td>피드백 138,179인데 30일 매출 $5,526</td></tr>
+ </table>
+ </div>
+
+ <h3 class="btitle"><span class="bar"></span>⑧ AI로 만들 수 있나 · ⑨ 용도별 한 줄 정리</h3>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>대상</th><th>가능</th><th>조건</th></tr>
+  <tr><td>부바스켓 태그·라벨 (디지털)</td><td>✅</td><td>텍스트+그래픽 조합이라 <b>AI 제작이 가장 잘 맞는 자리</b></td></tr>
+  <tr><td>노션 템플릿</td><td>✅</td><td>구조 설계가 핵심이라 적합 · 광고단가 $0.70로 최고</td></tr>
+  <tr><td>크로셰·아미구루미 PDF 패턴</td><td>⚠️</td><td>도안 자체는 <b>실물 검증이 필요</b>. AI는 설명문·다이어그램 편집까지</td></tr>
+  <tr><td>코랄라인 등 IP 파생 상품</td><td>❌</td><td><b>저작권 있는 IP</b>다. 팬아트 판매는 위험 — 조사·콘텐츠용으로만</td></tr>
+  <tr><td>어드벤트 캘린더 실물 · 할로윈 야외장식</td><td>❌</td><td>실물 제작·리셀링. AI는 리스팅 문구까지</td></tr>
+ </table>
+ </div>
+ <div class="note" style="margin-top:18px">
+ <b>Etsy로 팔 것</b> — <code>coraline</code>(경쟁 4,386·난이도 1·미국 58.6%) · <code>pokemon binder</code>(경쟁 2,918·난이도 1) · <code>grinch phone case</code>(경쟁 606·난이도 1) · <code>advent calendar</code>(난이도 30) · <b>부바스켓 태그</b>(난이도 33·미국 74%) · <code>notion template</code>(난이도 16) · 크로셰 <b>롱테일</b><br><br>
+ <b>블로그+제휴로 쓸 것</b> — <code>couples halloween costumes</code>(51,000·7·잠재 <b>66,000</b>) · <code>advent calendar</code>(145,000·9) · <code>elf on the shelf</code>(129,000·18·잠재 48,000) · <code>boo basket</code>(50,000·<b>0</b>) · <code>heated blanket</code>(91,000·9) · <code>iphone 17 case</code>(88,000·3) · <code>notion template</code>(잠재 <b>27,000</b>)<br><br>
+ <b>광고로 돌릴 것</b> — 커플·듀오 코스튬(공유 31.6만) · 아기·반려동물 코스튬(공유 38.7만) · 애니매트로닉 언박싱<br><br>
+ <b>리셀링(eBay)으로 할 것</b> — <b>할로윈 장식 지금 당장</b>(성공률 63%·1위 셀러 0.3%) · 전기담요(2주 +92.5%) · 크리스마스 야외장식(단가 $72.37) · 화이트 티셔츠($151,910) · LED·조명(11개 니치 $41만+)<br><br>
+ <b>드랍쉬핑으로 할 것</b> — 공구·정비 세트(노동절 D-7) · 가을 여성복(코듀로이·와이드진·긴팔) · 후디 블랭킷 · 스퀴시<br><br>
+ <b>선점만 해둘 것</b> — 추수감사절 D-87 · 크리스마스 D-116은 <b>블로그만</b>. Etsy는 난이도 100이라 금지<br><br>
+ <b>🚫 금지</b> — 블러셔·브론저(실체 없음) · 크록스 참(허수) · <code>digital planner</code> 광의어(미국 14.4%) · Etsy 할로윈/크리스마스 장식 광의어(난이도 99~100) · 개학(D-1 종료)
+ </div>
+</section>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--ds)"></span>🎬 지금 트렌디해서 찍기 좋은 영상 아이디어 3</h3>
+ <div class="ideas">
+  <div class="idea reveal"><div class="n bhs">01</div><h4>할로윈, Etsy에 올리면 안 되고 eBay에 올려야 하는 이유</h4><p>같은 <b>"할로윈 장식"</b>인데 Etsy는 난이도 99~100에 경쟁 리스팅 <b>131만개</b>, eBay는 성공 리스팅 <b>63%</b>에 1위 셀러 <b>0.3%</b>입니다. <b>같은 물건, 정반대 결과</b>를 한 화면에 나란히 놓고 보여주는 구성.</p></div>
+  <div class="idea reveal"><div class="n bhs">02</div><h4>상승률 969% 카테고리에 들어갔다가 망하는 법</h4><p>블러셔·브론저가 2주 연속 핀터레스트 쇼핑 클릭 1위인데, 구글 검색은 <b>400</b>이고 신규 베스트셀러 23개 중 <b>0개</b>입니다. <b>"상승률"과 "시장 크기"는 완전히 다른 말</b>이라는 걸 수치로 보여주기.</p></div>
+  <div class="idea reveal"><div class="n bhs">03</div><h4>뜨개질이 돌아왔다 — 광의어로 들어가면 미국 손님을 못 받는다</h4><p>Etsy 급상승 <b>1·2·7·32위가 전부 크로셰</b>인데, 광의어 <code>crochet pattern</code>은 미국 검색자가 <b>17.1%</b>, 롱테일 <code>teddy bear crochet blanket pattern</code>은 <b>81.8%</b>입니다. 검색량이 아니라 <b>검색자 국가 비중</b>을 먼저 보라는 이야기.</p></div>
+ </div>
+
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>💡 핵심 인사이트 5</h3>
+ <div class="ins">
+  <div class="insc reveal"><div class="n bhs">INSIGHT 01</div><h4>"네 소스가 같은 방향"을 만족한 건 이번 주 딱 하나다</h4><p><b>부 바스켓</b>이 구글 50,000/난이도 0, Etsy 3,484/난이도 33/미국 74%, 틱톡 410만 재생, eBay 할로윈 성공률 63%로 <b>4중 전부 일치</b>했습니다. 나머지는 전부 두 소스 이하입니다. 지난주 정한 "최상위 추천은 2주 연속 유지된 신호만 쓴다"에 이번 주 <b>"4중 일치를 최우선에 둔다"</b>를 더합니다.</p></div>
+  <div class="insc reveal"><div class="n bhs">INSIGHT 02</div><h4>핀터레스트 상승률은 단독으로 쓰면 두 번 연속 틀린다</h4><p>지난주 마스카라(핀 ▲157% → 실판매 0), 이번 주 블러셔·브론저(핀 <b>969%</b> → 구글 검색 <b>400</b> · 틱톡샵 <b>0개</b>). <b>두 번 다 같은 실패</b>입니다. 핀터레스트는 <b>방향만 주고 크기는 안 줍니다</b> — 앞으로 핀터레스트 항목은 <b>구글 절대 검색량으로 반드시 걸러서</b> 싣습니다.</p></div>
+  <div class="insc reveal"><div class="n bhs">INSIGHT 03</div><h4>검색자 국가 비중 함정에 세 번째로 걸렸다 — 이번엔 지난주 자기 추천이었다</h4><p>지난주 "디지털 플래너 $15 단가 구간으로 가라"고 썼는데 <code>digital planner</code>의 <b>미국 검색자는 14.4%</b>(파키스탄 25%·모로코 12.2%·인도 8.4%)입니다. <code>crochet pattern</code>(17.1%) · <code>budget planner</code>(12.3%)에 이은 <b>세 번째</b>입니다. 반면 롱테일 <code>teddy bear crochet blanket pattern</code>은 <b>81.8%</b> — <b>광의어는 국가 비중을 확인하기 전에 추천하지 않습니다.</b></p></div>
+  <div class="insc reveal"><div class="n bhs">INSIGHT 04</div><h4>"저경쟁"에는 두 종류가 있고 하나는 함정이다</h4><p>이번 주 Etsy 급상승 100개 중 크록스 참이 8건이나 됐고 경쟁이 0~277로 극단적으로 낮았는데, <b>검색량이 전부 Unknown 또는 20 미만</b>이었습니다. 같은 난이도 1이라도 <code>coraline</code>은 검색 4,139·경쟁 4,386(<b>진짜 자리</b>), <code>teddy bear crochet blanket pattern</code>은 검색 635에 상위 10개 매출 합계 $667(<b>작은 자리</b>)입니다. <b>경쟁 숫자만 보지 말고 검색량과 상위 리스팅 매출을 같이 봐야 합니다.</b></p></div>
+  <div class="insc reveal"><div class="n bhs">INSIGHT 05</div><h4>9월 1일은 "개학 → 할로윈"이 아니라 "개학 → 집수리 → 할로윈"이다</h4><p>이번 주 가장 강한 실판매 신호는 할로윈이 아니라 <b>공구·정비</b>였습니다. 틱톡샵 신규 23개 중 공구 4개(최대 $9.1M), 소싱처 상승 8건 중 6건이 정비·청소 도구, eBay 7일 회전 상품에 멀티툴, 구글 <code>socket set</code> 난이도 1 · <code>wrench set</code> 2. <b>노동절(D-7) 공구 세일 + 9월 가을 유지보수 시즌</b>이 겹치는 구간을 지난 4주 리포트가 <b>한 번도 짚지 않았습니다.</b> 시즌 캘린더에 "공휴일" 말고 <b>"생활 주기"</b>를 하나 더 넣어야 합니다.</p></div>
+ </div>
+
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>📅 다음 주에 확인할 것</h3>
+ <p class="rdnote" style="margin:0 0 14px">이번 주 데이터가 <b>결론이 안 난 채</b> 남은 것들입니다. 다음 주 같은 자리에서 다시 재면 맞았는지 틀렸는지 나옵니다.</p>
+ <div class="verd">
+  <div class="vc reveal"><span class="tag">다음 주 바로</span><h4>부 바스켓 4중 일치가 실판매로 내려오나</h4><div class="en">Boo Basket — first real test</div><div class="nums"><span>구글 50,000 / 난이도 0</span><span>Etsy 3,484 / 난이도 33</span><span>틱톡 410만 재생</span></div><p>Etsy <code>boo basket</code> 상위 리스팅에 <b>Age 30일 이하 신규가 늘었는지</b>를 봅니다. 4중 일치 규칙의 첫 실전 검증입니다.</p></div>
+  <div class="vc reveal"><span class="tag">다음 주 바로</span><h4>공구·정비가 노동절을 지나서도 유지되나</h4><div class="en">Tools — after Labor Day (9/7)</div><div class="nums"><span>틱톡샵 신규 4개</span><span>소싱처 상승 6/8</span><span>socket set 난이도 1</span></div><p>노동절 다음 주 틱톡샵 신규 목록에 공구가 <b>몇 개 남는지</b>. 세일 때문이면 사라지고, 시즌이면 남습니다.</p></div>
+  <div class="vc reveal"><span class="tag">다음 주 바로</span><h4>크로셰가 2주 연속 상위를 유지하나</h4><div class="en">Crochet — spike or trend</div><div class="nums"><span>일간 1·2·7·32위</span><span>에디터 픽 1번</span><span>구글 난이도 0</span></div><p>같은 일간 급상승 100위 안의 크로셰 건수를 다시 셉니다. <b>1주짜리 튐인지 추세인지</b>가 여기서 갈립니다.</p></div>
+  <div class="vc reveal"><span class="tag">9월 초</span><h4>아이폰 17 액세서리 8→4 되돌림이 진짜였나</h4><div class="en">iPhone 17 accessories — reversal?</div><div class="nums"><span>케이스 3 유지</span><span>액세서리 8 → 4</span><span>검색 88,000</span></div><p>구글 난이도를 한 번 더 잽니다. 다시 8이면 지난주 판단이 맞고, <b>4 이하면 지난주 인사이트를 철회</b>해야 합니다.</p></div>
+  <div class="vc reveal"><span class="tag">9월 초</span><h4>크리스마스 롱테일이 15를 넘나</h4><div class="en">Christmas longtail — KD watch</div><div class="nums"><span>추수감사절 데코 9</span><span>크리스마스 공예 9</span><span>머리 키워드 39</span></div><p>같은 3개 구글 난이도. 머리는 이미 닫혔고 <b>롱테일이 15를 넘으면 선점 구간 종료</b>입니다.</p></div>
+  <div class="vc reveal"><span class="tag">9월 초</span><h4>전기담요 상승이 4주로 이어지나</h4><div class="en">Heated blanket — 4th week</div><div class="nums"><span>$3,903 → $4,908 → $7,513</span><span>2주 +92.5%</span><span>성공률 55%</span></div><p>eBay 30일 니치의 전기담요 매출. <b>4주 연속이면 시즌 캘린더보다 믿을 만한 선행 지표</b>로 승격합니다.</p></div>
+ </div>
+
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>📊 데이터 출처</h3>
+ <div class="srcs">
+  <a class="src" href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener"><div class="sn">Sell The Trend</div><div class="sw">PART A · 드랍쉬핑</div><div class="sd">틱톡샵 신규 베스트셀러 23개 · 누적 매출 발굴 상품 26개 · 신상 위너 32개 · 소싱처 판매 증감률 24개 · 틱톡/페이스북 광고 크리에이티브 · 상위 10 니치</div></a>
+  <a class="src" href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener"><div class="sn">ZIK Analytics</div><div class="sw">PART B · eBay</div><div class="sd">30일 트렌딩 니치 56개 · 7일 회전 상품 · 시즌 이벤트 캘린더(D-day+키워드) · 트렌딩 셀러 11곳 · 진입 검증(회전율·성공 리스팅·점유율·롱테일 경쟁도)</div></a>
+  <a class="src" href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener"><div class="sn">eRank</div><div class="sw">PART C · Etsy</div><div class="sd">일간 급상승 검색어 100개 · 대량 키워드 조회 80개 · 키워드 정밀 수치(검색·클릭·CTR·경쟁 리스팅·난이도·검색자 국가 비중) · 상위 리스팅 5개 키워드</div></a>
+  <a class="src" href="https://trends.pinterest.com/" target="_blank" rel="noopener"><div class="sn">Pinterest Trends</div><div class="sw">PART D · 방향 · 타이밍</div><div class="sd">쇼핑 클릭 증가율 TOP 10 · 저장 급등 키워드 · 에디터 선정 6건 · 주간/월간 검색어 변화. 절대 검색량은 제공하지 않습니다</div></a>
+  <a class="src" href="https://ahrefs.com/" target="_blank" rel="noopener"><div class="sn">Ahrefs</div><div class="sw">PART D · 구글 수치</div><div class="sd">구글 검색량 · 키워드 난이도 · 광고단가(CPC) · 트래픽 잠재력 — 이번 주 <b>70개 키워드</b> 조회</div></a>
+  <a class="src" href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener"><div class="sn">NRF · 공개 자료</div><div class="sw">시즌 배경 (§왜 바뀌었나)</div><div class="sd">전미소매협회 — 할로윈 지출 $131억(전년 대비 +12.9%) · 참여율 73% · 1인당 $114.45 · 코스튬 $43억/장식 $42억/사탕 $39억 (<b>2025년 조사 기준</b>). 공개 업계 자료 — 원사 소매 시장 2026년 $84억 → 2036년 $137억(연 5.0%), 수요의 58%가 18~34세</div></a>
+ </div>
+ <p class="srcnote">각 도구 이름을 누르면 해당 사이트로 이동합니다. 일부 링크에는 추천 코드가 포함돼 있으며, 이용해도 추가 비용은 발생하지 않습니다. 리포트의 수치와 판단은 링크 여부와 무관하게 실제 조회 결과만을 따릅니다.</p>
+</section>
+
+<footer>
+ 수치는 <b>2026년 8월 31일 실측</b>입니다. 드랍쉬핑의 <b>누적 매출</b>과 <b>잠재 매출</b>은 구분해 표기했습니다.
+ Etsy의 검색량·클릭·CTR·경쟁 리스팅 수·난이도·검색자 국가 비중은 라이브 실측이고, 리스팅별 판매 건수와 매출은 <b>조회수 기반 추정치(Est.)</b>입니다.
+ 핀터레스트 수치는 절대 검색량이 아니라 <b>전월 대비 변화율</b>입니다(플랫폼이 절대값을 제공하지 않습니다).
+ 구글 검색량·난이도·광고단가·트래픽 잠재력은 별도 SEO 데이터 기준이며, 광고단가는 원자료의 센트 값을 달러로 환산한 실제 금액입니다.
+ eBay 수치는 약 100개 리스팅 샘플 기반 추정이며 플랫폼 공식 전수 데이터가 아닙니다. <b>회전율(Sell through)은 전환율이 아닙니다.</b>
+ 니치 랭킹은 월 단위로 갱신되므로 같은 달 안에서는 변하지 않습니다.
+ 시즌 배경 수치(할로윈 지출·원사 시장 규모)는 전미소매협회 조사와 공개 업계 자료를 참조한 것이며 본 리포트가 직접 측정한 값이 아닙니다. 할로윈 지출은 <b>2025년 조사 기준</b>입니다(2026년 조사 미발표).
+ Etsy 월간 인기 검색어는 2026년 8월분이 아직 집계 전이라 <b>2026년 7월 기준</b>입니다.
+ &nbsp;·&nbsp; 생성일 2026년 8월 31일 (Week 36)
+</footer>
+
+</div>
+<script>
+(function(){
+ var els=[].slice.call(document.querySelectorAll('.reveal'));
+ function showAll(){els.forEach(function(e){e.classList.add('on')});}
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{threshold:0.06});
+  els.forEach(function(e){io.observe(e)});
+ } else { showAll(); }
+ setTimeout(showAll,2200);
+ window.addEventListener('load',function(){setTimeout(showAll,600)});
+
+ var nums=[].slice.call(document.querySelectorAll('[data-count]'));
+ function run(el){
+  if(el.dataset.done)return; el.dataset.done='1';
+  var target=parseFloat(el.getAttribute('data-count'))||0;
+  var suf=el.getAttribute('data-suffix')||'';
+  var t0=null, dur=1100;
+  function step(ts){
+   if(!t0)t0=ts;
+   var p=Math.min((ts-t0)/dur,1);
+   var v=Math.floor(target*(1-Math.pow(1-p,3)));
+   el.textContent=v.toLocaleString('en-US')+suf;
+   if(p<1)requestAnimationFrame(step); else el.textContent=target.toLocaleString('en-US')+suf;
+  }
+  requestAnimationFrame(step);
+ }
+ if('IntersectionObserver' in window){
+  var io2=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting)run(x.target)})},{threshold:0.4});
+  nums.forEach(function(e){io2.observe(e)});
+ } else { nums.forEach(run); }
+ setTimeout(function(){nums.forEach(run)},2500);
+})();
+</script>
+</body>
+</html>
