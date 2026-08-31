@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미국주부 · 이번 주 미국에서 잘 팔리는 것 (요약본) · 2026-08-31</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --ink2:#574A3F;
+ --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+ --hdr:#211913; --line:#EADFD1; --up:#1E9E5A; --down:#D23B3B; --new:#E08A1E; --eb:#5B4B9E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;background:var(--bg)}
+header{background:var(--hdr);border-top:10px solid var(--ds);color:#fff;padding:46px 46px 40px}
+header .brand{font-family:'Black Han Sans',sans-serif;font-size:clamp(22px,2.6vw,30px);color:var(--gold);line-height:1;margin-bottom:10px}
+header .kick{font-size:clamp(11px,1.15vw,14px);font-weight:800;letter-spacing:.26em;color:#C9B79E;margin-bottom:18px}
+header h1{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:clamp(56px,6.2vw,68px);line-height:1.12;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+header .sub{margin-top:14px;font-size:18px;color:#E9DECF;font-weight:500;max-width:780px}
+header .chips{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+header .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:700}
+header .chip.gold{background:var(--gold);border-color:var(--gold);color:#211913}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:34px 46px 8px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px;text-align:center}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:40px;line-height:1}
+.kpi.a .num{color:var(--ds)} .kpi.b .num{color:var(--etd)} .kpi.c .num{color:var(--etp)} .kpi.d .num{color:var(--gold)}
+.kpi .lab{margin-top:10px;font-size:14px;font-weight:700;color:var(--ink2)}
+.kpi .delta{margin-top:7px;font-size:13px;font-weight:800}
+.kpi .delta.up{color:var(--up)} .kpi .delta.dn{color:var(--down)} .kpi .delta.fl{color:var(--ink2)}
+section{padding:26px 46px}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:30px;margin:14px 0 6px;padding-bottom:10px;border-bottom:4px solid}
+.partA .parttitle{color:var(--ds);border-color:var(--ds)}
+.partEtsy .parttitle{color:var(--etd);border-color:var(--etd)}
+.partlead{font-size:15px;color:var(--ink2);margin-bottom:20px;font-weight:500}
+.btitle{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:21px;margin:26px 0 14px;color:var(--ink);display:flex;align-items:center;gap:9px}
+.btitle .bar{width:6px;height:22px;border-radius:3px;background:var(--ds)}
+.partEtsy .btitle .bar{background:var(--etd)}
+.ranks{display:flex;flex-direction:column;gap:9px}
+.rank{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 17px}
+.rank .pos{font-weight:800;font-size:19px;color:var(--ds);min-width:30px}
+.partEtsy .rank .pos{color:var(--etd)}
+.rank .nm{font-weight:800;font-size:16px;flex:1 1 auto;min-width:150px;color:var(--ink)}
+.rank .sig{font-size:13px;font-weight:800;padding:4px 11px;border-radius:999px}
+.sig.up{background:#E4F5EC;color:var(--up)} .sig.new{background:#FCEBD5;color:var(--new)} .sig.fl{background:#EFE7DC;color:var(--ink2)} .sig.dn{background:#FBEAEA;color:var(--down)}
+.rank .ev{font-size:13.5px;color:var(--ink2);flex-basis:100%;margin-top:5px;padding-left:44px;font-weight:500}
+.rank .nm .gl{display:block;font-size:13.5px;font-weight:700;color:var(--etd);margin-top:3px}
+.partA .rank .nm .gl{color:var(--ds)}
+.kw .gl{display:block;font-size:12.5px;font-weight:800;margin-top:2px;opacity:.95}
+.partSum .parttitle{color:var(--gold);border-color:var(--gold)}
+.partSum .btitle .bar{background:var(--gold)}
+.partSum .rank .pos{color:var(--gold)}
+.partEbay .parttitle{color:var(--eb);border-color:var(--eb)}
+.partEbay .btitle .bar{background:var(--eb)}
+.partEbay .rank .pos{color:var(--eb)}
+.partEbay .rank .nm .gl{color:var(--eb)}
+.partEbay .card .price{color:var(--eb)}
+.partEbay .card .lk:hover{border-color:var(--eb);color:var(--eb)}
+.partEbay .vc{border-top-color:var(--eb)}
+.partEbay .vc .tag{background:var(--eb)}
+.verd{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.vc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px 18px;border-top:6px solid var(--gold)}
+.vc .tag{font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;display:inline-block}
+.vc h4{font-weight:800;font-size:17px;margin:9px 0 2px;color:var(--ink)}
+.vc .en{font-size:12.5px;font-weight:600;color:#8A7B6C}
+.vc .nums{margin:10px 0 8px;display:flex;flex-wrap:wrap;gap:6px}
+.vc .nums span{font-size:12.5px;font-weight:800;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink2)}
+.vc p{font-size:14px;color:var(--ink2);font-weight:500}
+.sig3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.s3{border-radius:14px;padding:16px 18px;border:1px solid var(--line);background:var(--paper);border-left:7px solid}
+.s3 .st{font-size:12.5px;font-weight:800;letter-spacing:.05em}
+.s3 h5{font-weight:800;font-size:18px;margin:6px 0 4px;color:var(--ink)}
+.s3 p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.whyc{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:18px}
+.whyc h4{font-weight:800;font-size:17px;color:var(--ds);margin-bottom:8px}
+.whyc p{font-size:14.5px;color:var(--ink2);font-weight:500}
+.whyc .en{display:block;font-size:13px;font-weight:600;color:#8A7B6C}
+.whyconc{margin-top:14px;background:#211913;color:#fff;border-radius:13px;padding:15px 18px;font-size:15px;font-weight:700}
+.whyconc b{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{position:relative;width:100%;aspect-ratio:1/1;background:linear-gradient(135deg,#FDEFE0,#F6DFC9);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .fire{position:absolute;top:9px;left:9px;background:var(--ds);color:#fff;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;z-index:2}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card .nm{font-weight:800;font-size:15.5px;color:var(--ink);line-height:1.35}
+.card .en{font-size:12px;font-weight:600;color:#8A7B6C;margin-top:3px}
+.card .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.card .price{font-weight:800;font-size:15px;color:var(--ds)}
+.card .rev{font-size:13px;font-weight:700;color:var(--ink2)}
+.card .tr{font-size:12.5px;font-weight:800;padding:3px 9px;border-radius:999px}
+.tr.up{background:#E4F5EC;color:var(--up)} .tr.dn{background:#FBEAEA;color:var(--down)} .tr.new{background:#FCEBD5;color:var(--new)}
+.card .links{margin-top:auto;padding-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card .lk{font-size:12px;font-weight:800;text-decoration:none;padding:6px 11px;border-radius:8px;border:1.5px solid var(--line);color:var(--ink2)}
+.card .lk:hover{border-color:var(--ds);color:var(--ds)}
+.partEtsy .card .price{color:var(--etp)} .partEtsy .card .lk:hover{border-color:var(--etd);color:var(--etd)}
+.note{background:#FFF3E2;border:1px solid #F0DCBE;border-left:6px solid var(--new);border-radius:13px;padding:15px 18px;font-size:14.5px;font-weight:600;color:#5C4A32;margin-bottom:18px}
+.rdnote{margin-top:14px;font-size:14px;color:var(--ink2);font-weight:600}
+.buck{margin:24px 0 14px;font-size:14.5px;color:var(--ink2);font-weight:600}
+.chipsw{display:flex;flex-wrap:wrap;gap:9px}
+.kw{display:inline-flex;flex-direction:column;gap:2px;text-decoration:none;padding:9px 14px;border-radius:11px;border:2px solid;font-weight:800;font-size:14.5px}
+.kw small{font-size:12px;font-weight:700;opacity:.85}
+.kw.g{border-color:#9FD9BC;background:#EDF9F2;color:#126B41}
+.kw.y{border-color:#F0DCBE;background:#FFF6E8;color:#8A6410}
+.kw.r{border-color:#F0C9C9;background:#FCEFEF;color:#9E2A2A}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{background:var(--hdr);color:#fff;font-weight:800;padding:11px 12px;text-align:left;font-size:13.5px}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink2);font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--paper)}
+.tbl td b{color:var(--ink)}
+.tblwrap{overflow-x:auto}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.calc{border-radius:13px;padding:15px 16px;border:1px solid var(--line);background:var(--paper)}
+.calc .lt{font-size:20px;line-height:1}
+.calc h5{font-weight:800;font-size:16px;margin:8px 0 5px;color:var(--ink)}
+.calc p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.idea{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:20px;border-top:6px solid var(--ds)}
+.idea .n{font-family:'Black Han Sans',sans-serif;font-size:30px;color:var(--ds);line-height:1}
+.idea h4{font-weight:800;font-size:17px;margin:8px 0 8px;color:var(--ink)}
+.idea p{font-size:14px;color:var(--ink2);font-weight:500}
+.ins{display:flex;flex-direction:column;gap:14px}
+.insc{background:#211913;color:#fff;border-radius:15px;padding:22px 24px}
+.insc .n{font-family:'Black Han Sans',sans-serif;font-size:22px;color:var(--gold)}
+.insc h4{font-weight:800;font-size:19px;margin:6px 0 9px;color:#fff}
+.insc p{font-size:14.5px;color:#E4D9C9;font-weight:500}
+.insc p b{color:#fff}
+.srcbar{background:#2C2119;border-bottom:1px solid #3D2F24;padding:13px 46px;display:flex;flex-wrap:wrap;align-items:center;gap:7px 12px}
+.srcbar .lb{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-right:2px}
+.srcbar a{font-size:13.5px;font-weight:800;color:#EFE4D4;text-decoration:none;border-bottom:1.5px solid rgba(201,138,18,.45);padding-bottom:1px}
+.srcbar a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.srcbar .dot{color:#6B5B4B;font-size:12px}
+.srcs{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.src{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:15px 17px;transition:.15s}
+.src:hover{border-left-color:var(--ds);transform:translateY(-2px);box-shadow:0 8px 18px rgba(120,80,40,.10)}
+.src .sn{font-weight:800;font-size:17px;color:var(--ink)}
+.src .sn::after{content:' ↗';font-size:13px;color:var(--gold)}
+.src .sw{font-size:12.5px;font-weight:800;color:var(--ds);margin-top:3px}
+.src .sd{font-size:13.5px;color:var(--ink2);font-weight:500;margin-top:7px}
+.srcnote{margin-top:14px;font-size:13px;color:#7A6A59;font-weight:600}
+footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46px 40px;font-size:13px;color:#7A6A59;font-weight:600}
+.chartbox{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 4px}
+.chartbox .ct{font-weight:800;font-size:17px;color:var(--ink);margin-bottom:4px}
+.chartbox .cs{font-size:13.5px;color:var(--ink2);font-weight:600;margin-bottom:16px}
+.chartbox svg{width:100%;height:auto;display:block;overflow:visible}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:170px 1fr auto;gap:12px;align-items:center}
+.bar .bl{font-size:14px;font-weight:800;color:var(--ink);text-align:right;line-height:1.3}
+.bar .bl small{display:block;font-size:12px;font-weight:600;color:#8A7B6C}
+.bar .bt{height:24px;background:#EFE7DC;border-radius:6px;overflow:hidden}
+.bar .bf{display:block;height:100%;border-radius:6px;min-width:4px}
+.bar .bv{font-size:14px;font-weight:800;white-space:nowrap;color:var(--ink2)}
+.barsec{font-size:14px;font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.barsec:first-child{margin-top:0}
+.psrc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;background:#2C2119;border-radius:12px;padding:12px 16px;margin:0 0 18px}
+.psrc .pl{font-size:11.5px;font-weight:800;letter-spacing:.14em;color:var(--gold)}
+.psrc a{font-size:14px;font-weight:800;color:#fff;text-decoration:none;border-bottom:2px solid rgba(201,138,18,.55);padding-bottom:1px}
+.psrc a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.psrc .pw{font-size:13px;font-weight:600;color:#C9B79E}
+@media(max-width:700px){
+ .bar{grid-template-columns:1fr auto;gap:4px 10px}
+ .bar .bl{grid-column:1/-1;text-align:left}
+ .bar .bt{height:20px}
+ .bar .bv{font-size:13.5px}
+ .chartbox{padding:18px 16px}
+}
+.chartbox .lgd{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:13px;font-weight:700;color:var(--ink2)}
+.chartbox .lgd i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){header h1{font-size:clamp(21px,calc(7.9vw - 3px),60px)}.srcbar{padding:12px 20px}.kpis,.cards,.whys,.ideas,.cal,.verd,.sig3,.srcs{grid-template-columns:repeat(2,1fr)}section{padding:22px 20px}header{padding:32px 20px}.kpis{padding:24px 20px 4px}footer{padding:22px 20px 32px}}
+@media(max-width:560px){
+ .kpis,.whys,.ideas,.verd,.sig3,.srcs{grid-template-columns:1fr}
+ /* 제품·시즌 카드는 2열 유지 — 모바일 세로 길이를 절반으로 (2026-08-31) */
+ .cards,.cal{grid-template-columns:repeat(2,1fr);gap:11px}
+ .cards .card .body{padding:11px 11px 13px}
+ .cards .card .nm{font-size:14px;line-height:1.32}
+ .cards .card .en{font-size:12px}
+ .cards .card .price{font-size:14px}
+ .cards .card .rev{font-size:12px}
+ .cards .card .tr{font-size:12px;padding:3px 7px}
+ .cards .card .fire{font-size:12px;padding:3px 7px}
+ .cards .card .links{gap:6px;padding-top:10px}
+ .cards .card .lk{font-size:12px;padding:5px 9px}
+ .cards .card .meta{gap:5px}
+ .calc h5{font-size:15px}
+ .calc p{font-size:12.5px}
+ .calc{padding:13px 13px}
+}
+</style><style>
+.vbadge{display:inline-block;background:var(--ds);color:#fff;font-size:13px;font-weight:800;padding:6px 14px;border-radius:999px;margin-bottom:12px}
+.fullbtn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#211913;font-size:15px;font-weight:800;text-decoration:none;padding:13px 22px;border-radius:12px;margin-top:6px}
+.fullbtn:hover{background:#E0A02A}
+.bigq{background:#211913;color:#fff;border-radius:16px;padding:24px 26px;margin:8px 0 4px}
+.bigq .qn{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--gold);margin-bottom:8px}
+.bigq h3{font-size:22px;font-weight:800;line-height:1.35;margin-bottom:10px}
+.bigq p{font-size:15px;color:#E4D9C9;font-weight:500;line-height:1.6}
+.bigq p b{color:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.two .col{border-radius:15px;padding:18px 20px;border:1px solid var(--line)}
+.two .go{background:#EDF9F2;border-color:#9FD9BC}
+.two .no{background:#FCEFEF;border-color:#F0C9C9}
+.two h4{font-size:17px;font-weight:800;margin-bottom:12px}
+.two .go h4{color:#126B41} .two .no h4{color:#9E2A2A}
+.two li{list-style:none;font-size:14.5px;font-weight:700;color:var(--ink);padding:7px 0;border-top:1px solid rgba(0,0,0,.06);line-height:1.45}
+.two li:first-child{border-top:0}
+.two li small{display:block;font-size:12.5px;font-weight:600;color:#6B5B4B;margin-top:2px}
+.scoreline{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 16px}
+.scoreline span{font-size:14px;font-weight:800;padding:8px 15px;border-radius:999px}
+@media(max-width:700px){
+ .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+ .tbl{min-width:620px}
+ .tbl th,.tbl td{font-size:13.5px;padding:9px 10px}
+ .tbl th:first-child,.tbl td:first-child{min-width:120px}
+}
+@media(max-width:640px){.two{grid-template-columns:1fr}.bigq h3{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+ <div class="brand">미국주부</div>
+ <div class="kick">WEEKLY US TREND REPORT</div>
+ <div class="vbadge">📺 요약본 · 5분 안에 보는 이번 주</div>
+ <h1>이번 주 미국에서 잘 팔리는 것</h1>
+ <p class="sub">네 곳의 실측 데이터에서 <b>결정에 필요한 것만</b> 뽑았습니다. 전체 수치는 아래 링크에 있습니다.</p>
+ <div class="chips">
+  <span class="chip gold">2026년 8월 31일</span>
+  <span class="chip">Week 36</span>
+  <span class="chip">Etsy 키워드 140개 · 구글 99개 실측</span>
+  <span class="chip">할로윈 D-61</span>
+ </div>
+</header>
+
+<div class="srcbar">
+ <span class="lb">DATA SOURCES</span>
+ <a href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener">Sell The Trend</a><span class="dot">·</span>
+ <a href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener">ZIK Analytics</a><span class="dot">·</span>
+ <a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener">eRank</a><span class="dot">·</span>
+ <a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a><span class="dot">·</span>
+ <a href="https://ahrefs.com/" target="_blank" rel="noopener">Ahrefs</a><span class="dot">·</span>
+ <a href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener">NRF</a>
+</div>
+
+<div class="kpis">
+ <div class="kpi a reveal"><div class="num" data-count="204000">0</div><div class="lab">엘프 온 더 셸프<br>구글 월 검색량</div><div class="delta up">난이도 0 · 이번 주 최대 빈자리</div></div>
+ <div class="kpi b reveal"><div class="num" data-count="63" data-suffix="%">0</div><div class="lab">eBay 할로윈 장식<br>성공 리스팅 비율</div><div class="delta up">1위 셀러 점유율 0.3%</div></div>
+ <div class="kpi c reveal"><div class="num" data-count="4" data-suffix="자리">0</div><div class="lab">Etsy 급상승 상위를<br>크로셰가 차지</div><div class="delta up">지난주 TOP100 이탈 → 1위</div></div>
+ <div class="kpi d reveal"><div class="num" data-count="92" data-suffix=".5%">0</div><div class="lab">eBay 전기담요<br>2주간 매출 상승</div><div class="delta up">3주 연속 상승</div></div>
+</div>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>지난주 예측, 맞았나?</h3>
+ <div class="scoreline">
+  <span style="background:#E4F5EC;color:#1E9E5A">✅ 적중 2</span>
+  <span style="background:#FFF3E2;color:#8A6410">⚠️ 부분 적중 2</span>
+  <span style="background:#FBEAEA;color:#D23B3B">❌ 빗나감 2</span>
+ </div>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>항목</th><th>지난주 → 이번 주</th><th>판정</th></tr>
+  <tr><td><b>퍼수트</b></td><td>경쟁 15,205 → <b>15,205</b></td><td>✅ <b>4주 연속 그대로</b> — "닫히는 자리"가 아니라 원래 안 붐비는 자리로 재분류</td></tr>
+  <tr><td><b>아이폰 17 케이스</b></td><td>난이도 3 → <b>3 유지</b> (검색 88,000)</td><td>✅ 창은 아직 열려 있다. 단 <b>액세서리가 8→4로 되돌아가</b> 지난주 근거가 약해졌다</td></tr>
+  <tr><td><b>크리스마스 롱테일</b></td><td>머리 키워드 20 → <b>39</b></td><td>⚠️ 방향은 맞았지만 <b>속도를 크게 과소평가</b>. 롱테일(9)은 아직 열림</td></tr>
+  <tr><td><b>크리스마스 SVG</b></td><td>전부 323일+ → <b>#7이 22일</b></td><td>⚠️ <b>문은 열렸는데 문틈만큼.</b> 그 신규의 매출은 $7</td></tr>
+  <tr><td><b>개학</b></td><td>D-8 → <b>D-1인데 eBay 진입 0건</b></td><td>❌ <b>안 팔렸다.</b> 캘린더는 날짜만 맞았다</td></tr>
+  <tr><td><b>뷰티</b></td><td>브러시 $153,117 → <b>틱톡샵 신규 0개</b></td><td>❌ <b>빗나감.</b> 블러셔로 안 갔고 실판매가 통째로 빠져나갔다</td></tr>
+ </table>
+ </div>
+ <div class="note" style="margin-top:16px">빗나간 둘의 공통점 — <b>"핀터레스트나 플랫폼 캘린더가 가리켰는데 실판매가 안 따라온 것"</b>입니다. 이번 주부터 그 둘만으로는 추천하지 않습니다.</div>
+</section>
+
+<section>
+ <div class="bigq reveal">
+  <div class="qn">이번 주 핵심 01</div>
+  <h3>9월 1일은 "개학 → 할로윈"이 아니라 "개학 → 집수리 → 할로윈"입니다</h3>
+  <p>이번 주 가장 강한 실판매 신호는 할로윈이 아니라 <b>공구·정비</b>였습니다. 틱톡샵 신규 23개 중 <b>공구가 4개</b>(최대 $9.1M), 소싱처 상승 8건 중 <b>6건이 정비·청소 도구</b>, eBay 7일 회전 상품에 멀티툴. 구글은 <b>socket set 난이도 1 · wrench set 2</b>입니다. <b>노동절(9월 7일 · D-7) 공구 세일 + 9월 가을 유지보수 시즌</b>이 겹치는 구간인데, 지난 4주 리포트가 한 번도 짚지 않았습니다.</p>
+ </div>
+ <div class="chartbox reveal">
+  <div class="ct">틱톡샵 신규 베스트셀러 23개 — 카테고리가 갈아엎어졌습니다</div>
+  <div class="cs">주문 1만 건 이상 + 최근 등록순. 전부 8월 30일 등록된 신상입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">여성복<small>전부 가을 아이템으로 전환</small></div><div class="bt"><span class="bf" style="width:100%;background:#D24A2E"></span></div><div class="bv">11개</div></div>
+   <div class="bar"><div class="bl">공구·하드웨어<small>🆕 지난주 0개 → 이번 주 4개</small></div><div class="bt"><span class="bf" style="width:36.4%;background:#1E9E5A"></span></div><div class="bv">4개</div></div>
+   <div class="bar"><div class="bl">홈·도서·유아·잡화<small></small></div><div class="bt"><span class="bf" style="width:36.4%;background:#C98A12"></span></div><div class="bv">4개</div></div>
+   <div class="bar"><div class="bl">자동차·스포츠·남성복<small></small></div><div class="bt"><span class="bf" style="width:27.3%;background:#5B4B9E"></span></div><div class="bv">3개</div></div>
+   <div class="bar"><div class="bl">뷰티<small>지난주엔 한 브랜드가 화면을 다 먹었음</small></div><div class="bt"><span class="bf" style="width:0%;background:#D23B3B"></span></div><div class="bv">0개 ▼</div></div>
+  </div>
+  <div class="lgd"><span>📌 여성복 11개는 전부 <b>코듀로이·와이드진·긴팔·플러시베스트</b>로 갈아탔습니다 — 구글 <code>corduroy pants</code> 60,000 · <b>난이도 0</b></span></div>
+ </div>
+</section>
+
+<section>
+ <div class="bigq reveal">
+  <div class="qn">이번 주 핵심 02</div>
+  <h3>할로윈은 Etsy가 아니라 eBay입니다 — 같은 물건, 정반대 결과</h3>
+  <p>같은 "할로윈 장식"인데 <b>Etsy는 난이도 99~100에 경쟁 리스팅 131만개</b>로 완전히 닫혔고, <b>eBay는 성공 리스팅 63%에 1위 셀러 점유율 0.3%</b>로 활짝 열려 있습니다. 채널을 잘못 고르면 같은 물건을 못 팝니다. 제목에 넣을 롱테일은 <b>Halloween Decorations Outdoor</b>(경쟁 29 · 판매 51)입니다.</p>
+ </div>
+ <div class="chartbox reveal">
+  <div class="ct">eBay 세 시장 — "10개 올리면 몇 개가 팔리는가"</div>
+  <div class="cs">셋 다 1위 셀러 점유율이 1% 미만입니다. 독점 셀러가 없습니다. ⚠️ 약 100개 리스팅 샘플 기반 추정치입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">할로윈 장식<small>회전형 · 30일 335건</small></div><div class="bt"><span class="bf" style="width:63%;background:#1E9E5A"></span></div><div class="bv">63% · 평균 $21.43</div></div>
+   <div class="bar"><div class="bl">전기담요<small>균형형 · 30일 매출 $9,736</small></div><div class="bt"><span class="bf" style="width:55%;background:#C98A12"></span></div><div class="bv">55% · 평균 $42.28</div></div>
+   <div class="bar"><div class="bl">크리스마스 야외장식<small>단가형 · 10개 중 6개는 안 팔림</small></div><div class="bt"><span class="bf" style="width:38%;background:#D23B3B"></span></div><div class="bv">38% · 평균 $72.37</div></div>
+  </div>
+  <div class="lgd"><span>📌 전기담요는 <b>$3,903 → $4,908 → $7,513</b>으로 <b>3주 연속</b> 올랐습니다(2주 +92.5%). 시즌 캘린더보다 먼저 움직인 지표입니다.</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="bigq reveal">
+  <div class="qn">이번 주 핵심 03</div>
+  <h3>뜨개질이 돌아왔습니다 — 그런데 광의어로 들어가면 미국 손님을 못 받습니다</h3>
+  <p>Etsy 일간 급상승 <b>1위·2위·7위·32위를 크로셰</b>가 차지했고(지난주엔 TOP100에서 완전히 빠졌었습니다), 핀터레스트 에디터 픽 1번도 <b>"십자수를 멈출 수 없다"</b>입니다. 그런데 <b>광의어는 전부 막혀 있습니다</b> — <code>cross stitch pattern</code> 난이도 <b>99</b>(경쟁 63만), <code>embroidery pattern</code> <b>100</b>(경쟁 121만). 게다가 광의어 <code>crochet pattern</code>은 <b>미국 검색자가 17.1%</b>뿐입니다.</p>
+ </div>
+ <div class="chartbox reveal">
+  <div class="ct">같은 축척으로 그린 경쟁 리스팅 수 — 아래쪽이 안 보이는 게 요점입니다</div>
+  <div class="cs">위는 공예 광의어, 아래는 같은 주에 찾은 롱테일입니다.</div>
+  <div class="barsec" style="color:#D23B3B">🔴 광의어 — 들어갈 수 없는 곳</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">embroidery pattern<small>자수 패턴 · 난이도 100</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv">1,214,149개</div></div>
+   <div class="bar"><div class="bl">cross stitch pattern<small>십자수 패턴 · 난이도 99</small></div><div class="bt"><span class="bf" style="width:51.9%;background:#D23B3B"></span></div><div class="bv">630,186개</div></div>
+   <div class="bar"><div class="bl">crochet pattern<small>크로셰 패턴 · 미국 17.1%</small></div><div class="bt"><span class="bf" style="width:49.5%;background:#D23B3B"></span></div><div class="bv">600,496개</div></div>
+  </div>
+  <div class="barsec" style="color:#1E9E5A">🟢 롱테일 — 같은 축척</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">coraline<small>난이도 1 · 검색 4,139 · 미국 58.6%</small></div><div class="bt"><span class="bf" style="width:0.36%;background:#1E9E5A"></span></div><div class="bv">4,386개</div></div>
+   <div class="bar"><div class="bl">pokemon binder<small>난이도 1 · 검색 3,833 · 미국 51.8%</small></div><div class="bt"><span class="bf" style="width:0.24%;background:#1E9E5A"></span></div><div class="bv">2,918개</div></div>
+   <div class="bar"><div class="bl">elf on the shelf props<small>난이도 38 · 엘프 소품</small></div><div class="bt"><span class="bf" style="width:0.23%;background:#1E9E5A"></span></div><div class="bv">2,813개</div></div>
+   <div class="bar"><div class="bl">wooden advent calendar<small>난이도 23 · 나무 어드벤트</small></div><div class="bt"><span class="bf" style="width:0.09%;background:#1E9E5A"></span></div><div class="bv">1,119개</div></div>
+   <div class="bar"><div class="bl">teddy bear crochet blanket pattern<small>난이도 1 · <b>미국 81.8%</b></small></div><div class="bt"><span class="bf" style="width:0.04%;background:#1E9E5A"></span></div><div class="bv">522개</div></div>
+  </div>
+  <div class="lgd"><span>📌 <b>공예 붐은 진짜인데 광의어로는 못 들어갑니다.</b> 롱테일은 경쟁이 <b>1,000분의 1</b>이고 미국 비중도 훨씬 높습니다.</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="bigq reveal">
+  <div class="qn">이번 주 핵심 04</div>
+  <h3>핀터레스트 1위 969%의 실체가 없습니다 — 두 주 연속 같은 함정</h3>
+  <p>블러셔·브론저가 <b>2주 연속 핀터레스트 쇼핑 클릭 1위</b>(980% → 969%)인데, 구글 <code>blush and bronzer</code> 검색은 <b>400</b>이고 틱톡샵 신규 베스트셀러 23개 중 뷰티는 <b>0개</b>, 신상 위너에도 <b>0개</b>입니다. 지난주 마스카라(핀 ▲157% → 실판매 0)에 이어 <b>두 번 연속 같은 실패</b>입니다. <b>핀터레스트는 방향만 주고 크기는 안 줍니다.</b></p>
+ </div>
+ <div class="chartbox reveal">
+  <div class="ct">구글 월 검색량으로 걸러본 결과</div>
+  <div class="cs">핀터레스트가 가리킨 것과, 이번 주 실제로 찾은 빈자리를 같은 축척으로 놓았습니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">elf on the shelf ideas<small>🟢 난이도 0 · 잠재 43,000</small></div><div class="bt"><span class="bf" style="width:100%;background:#1E9E5A"></span></div><div class="bv">204,000</div></div>
+   <div class="bar"><div class="bl">pumpkin carving ideas<small>🟢 난이도 7 · 잠재 38,000</small></div><div class="bt"><span class="bf" style="width:112.3%;background:#1E9E5A"></span></div><div class="bv">229,000</div></div>
+   <div class="bar"><div class="bl">advent calendar<small>🟢 난이도 9 · Etsy도 30</small></div><div class="bt"><span class="bf" style="width:71.1%;background:#1E9E5A"></span></div><div class="bv">145,000</div></div>
+   <div class="bar"><div class="bl">couples halloween costumes<small>🟢 난이도 7 · <b>잠재 66,000</b></small></div><div class="bt"><span class="bf" style="width:25%;background:#1E9E5A"></span></div><div class="bv">51,000</div></div>
+   <div class="bar"><div class="bl">boo basket<small>🟢 난이도 0 · <b>4중 전부 일치</b></small></div><div class="bt"><span class="bf" style="width:24.5%;background:#1E9E5A"></span></div><div class="bv">50,000</div></div>
+   <div class="bar"><div class="bl">blush and bronzer<small>🔴 핀터레스트 969% 1위인데…</small></div><div class="bt"><span class="bf" style="width:0.2%;background:#D23B3B"></span></div><div class="bv">400</div></div>
+  </div>
+  <div class="lgd"><span><i style="background:#1E9E5A"></i>구글로 확인된 진짜 수요</span><span><i style="background:#D23B3B"></i>핀에서만 도는 트렌드</span><span>📌 <b>마스카라는 이번 주 핀터레스트 TOP10에서도 빠졌습니다</b> — 지난주 판정이 맞았습니다.</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="bigq reveal">
+  <div class="qn">이번 주 핵심 05</div>
+  <h3>"난이도가 낮다"와 "돈이 된다"는 다른 말입니다</h3>
+  <p>이번 주 상위 리스팅을 <b>11개 키워드</b>까지 파고들었더니, 난이도만 보고 추천하면 안 되는 자리가 셋 나왔습니다. <code>book nook</code>은 난이도 41로 열려 보이는데 <b>상위 10개 중 7개가 매출 $0</b>이고 최고가 $140입니다. 반대로 <code>pokemon binder</code>는 <b>매출 $0이 1개뿐</b>이고 <b>등록 39일짜리가 이미 $659</b>를 벌었습니다. <b>같은 저난이도인데 결과가 정반대입니다.</b></p>
+ </div>
+ <div class="chartbox reveal">
+  <div class="ct">상위 10개 리스팅 중 "매출 $0"이 몇 개인가</div>
+  <div class="cs">Est. 매출은 조회수 기반 추정치입니다. 막대가 길수록 나쁜 자리입니다.</div>
+  <div class="bars">
+   <div class="bar"><div class="bl">halloween crochet pattern<small>🔴 난이도 69 · 미국 18.6% · 유일한 수익 리스팅이 9년차</small></div><div class="bt"><span class="bf" style="width:100%;background:#D23B3B"></span></div><div class="bv">8개 / 10</div></div>
+   <div class="bar"><div class="bl">book nook<small>🔴 난이도 41인데 최고 매출 $140</small></div><div class="bt"><span class="bf" style="width:87.5%;background:#D23B3B"></span></div><div class="bv">7개 / 10</div></div>
+   <div class="bar"><div class="bl">digital planner<small>🔴 1·2위가 $39만·$23만 독식 · 미국 14.4%</small></div><div class="bt"><span class="bf" style="width:50%;background:#E08A1E"></span></div><div class="bv">4개 / 10</div></div>
+   <div class="bar"><div class="bl">teddy bear crochet blanket pattern<small>🟡 급상승 1위인데 10개 합계 $667</small></div><div class="bt"><span class="bf" style="width:37.5%;background:#C98A12"></span></div><div class="bv">3개 / 10</div></div>
+   <div class="bar"><div class="bl">pokemon binder<small>🟢 최고 $9,566 · <b>39일 신규가 $659</b></small></div><div class="bt"><span class="bf" style="width:12.5%;background:#1E9E5A"></span></div><div class="bv">1개 / 10</div></div>
+  </div>
+  <div class="lgd"><span>📌 <b>경쟁 숫자는 판단의 시작일 뿐 근거가 아닙니다.</b> 추천 전에 상위 리스팅 매출을 반드시 봐야 합니다.</span></div>
+ </div>
+ <div class="note" style="margin-top:16px">🌍 <b>덧붙여 — 국가 비중 함정에 네 번째로 걸렸고, 이번엔 이 리포트 자신의 추천이었습니다.</b> 오늘 1차본에서 <code>notion template</code>을 "Etsy로 팔 것"에 넣었는데, 재보니 <b>미국 검색자가 14.1%</b>(파키스탄 25.7%)였습니다. <code>crochet pattern</code>(17.1%) · <code>budget planner</code>(12.3%) · <code>digital planner</code>(14.4%)에 이은 네 번째이고, <b>네 건 모두 "광의어 + 디지털 다운로드"</b>입니다. → Etsy 추천은 철회하고, 대신 <b>구글에서는 최고 자리</b>입니다(<code>notion dashboard</code> 광고단가 <b>$3.00</b>으로 이번 주 1위).</div>
+</section>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--ds)"></span>영상에 비출 제품 6개</h3>
+ <div class="cards">
+  <div class="card reveal"><div class="thumb"><span class="fire">🔧 매출 $9.1M</span><img src="https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/a56dceb48e2148e29cddfef213b9a940~tplv-fhlh96nyum-crop-webp:800:800.webp" alt="19pc 오픈엔드 렌치 세트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🔧</div>&quot;)"></div><div class="body"><div class="nm">19pc 초박형 오픈엔드 렌치 세트</div><div class="en">19pc Super-Thin Open End Wrench Set</div><div class="meta"><span class="price">$38.99–45.99</span><span class="rev">232K개 판매 · 8/30 등록</span><span class="tr new">구글 난이도 2</span></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎃 23시간 전 등록</span><img src="https://funnels-frontend.s3.us-east-2.amazonaws.com/uploads/FAqH5ts3ZEt6krwpQMiEWxvBAguuszQF1787986816.jpeg" alt="할로윈 마녀 램프" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧙</div>&quot;)"></div><div class="body"><div class="nm">할로윈 밤을 위한 마녀 램프</div><div class="en">WitchGlow Lamp — Halloween Nights</div><div class="meta"><span class="price">마진 $46.41</span><span class="rev">잠재 매출 $79,275</span><span class="tr new">신상 위너 1위</span></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🟢 39일 만에 $659</span><img src="https://i.etsystatic.com/64239272/r/il/f2f8ab/8490271203/il_570xN.8490271203_d07l.jpg" alt="포켓몬 바인더 플레이스홀더" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🃏</div>&quot;)"></div><div class="body"><div class="nm">포켓몬 바인더 플레이스홀더 (도감 1-1025)</div><div class="en">Pokemon Binder Placeholders, Complete Pokedex</div><div class="meta"><span class="price">$19.98</span><span class="rev">경쟁 2,918 · 난이도 1</span><span class="tr up">미국 51.8%</span></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">✨ 4중 전부 일치</span><img src="https://i.etsystatic.com/18623087/r/il/8ef936/8074687400/il_570xN.8074687400_rb5y.jpg" alt="할로윈 부바스켓 플래시라이트" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🔦</div>&quot;)"></div><div class="body"><div class="nm">할로윈 플래시라이트 (부바스켓 파버)</div><div class="en">Halloween Flashlight: Boo Baskets, Non Candy Favors</div><div class="meta"><span class="price">$0.80</span><span class="rev">Est. 판매 1,430</span><span class="tr up">구글 50,000 · 난이도 0</span></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🆕 등록 7일</span><img src="https://i.etsystatic.com/67334111/r/il/360e4c/8424447158/il_570xN.8424447158_124l.jpg" alt="스노우맨 어드벤트 캘린더 크로셰 패턴" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>⛄</div>&quot;)"></div><div class="body"><div class="nm">스노우맨 어드벤트 캘린더 패턴 (크로셰 PDF)</div><div class="en">Snowman Advent Calendar Pattern, Crochet PDF</div><div class="meta"><span class="price">$3.34</span><span class="rev">7일 만에 상위 10위</span><span class="tr new">Etsy 난이도 30</span></div></div></div>
+  <div class="card reveal"><div class="thumb"><span class="fire">🎄 구글 204,000 / 난이도 0</span><img src="https://i.etsystatic.com/61095187/r/il/618ff5/7993413496/il_570xN.7993413496_7l34.jpg" alt="니들펠트 엘프 피규어" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=&#39;display:flex;align-items:center;justify-content:center;height:100%;font-size:52px&#39;>🧝</div>&quot;)"></div><div class="body"><div class="nm">니들펠트 엘프 피규어 (양모 미니어처)</div><div class="en">Needle Felt Elf Figurine, Wool Woodland Elf</div><div class="meta"><span class="price">$36.00</span><span class="rev">Est. 매출 $2,304</span><span class="tr up">미국 51.1%</span></div></div></div>
+ </div>
+</section>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>그래서 이번 주엔 뭘 하나</h3>
+ <div class="two">
+  <div class="col go reveal">
+   <h4>🟢 지금 들어갈 것</h4>
+   <ul>
+    <li>할로윈 장식 <span style="font-weight:600">(eBay · 지금 당장)</span><small>성공 리스팅 63% · 1위 셀러 0.3% · 평균가 $21.43 · 제목에 Halloween Decorations Outdoor</small></li>
+    <li>부 바스켓 <span style="font-weight:600">(Etsy + 블로그)</span><small>구글 50,000·난이도 0 / Etsy 난이도 33 · 미국 74% · 틱톡 410만 재생 — 유일한 4중 일치</small></li>
+    <li>엘프 온 더 셸프 <span style="font-weight:600">(블로그 1순위)</span><small>구글 204,000·<b>난이도 0</b>·잠재 43,000 / Etsy 소품 롱테일 난이도 38</small></li>
+    <li>포켓몬 바인더 <span style="font-weight:600">(Etsy)</span><small>검색 3,833에 경쟁 2,918 · 난이도 1 · 미국 51.8% · 39일 신규가 $659</small></li>
+    <li>공구·정비 세트 <span style="font-weight:600">(드랍쉬핑 · 노동절 D-7)</span><small>구글 socket set 난이도 1 · wrench set 2 · 틱톡샵 4개 신규 · 소싱처 상승 6/8</small></li>
+    <li>나무 어드벤트 캘린더 <span style="font-weight:600">(Etsy · 크리스마스 선점)</span><small>Etsy 경쟁 1,119·난이도 23 / 구글 3,000·난이도 0·잠재 7,500</small></li>
+   </ul>
+  </div>
+  <div class="col no reveal">
+   <h4>🔴 들어가지 말 것</h4>
+   <ul>
+    <li>블러셔·브론저<small>핀터레스트 969%로 2주 연속 1위인데 <b>구글 검색 400</b> · 틱톡샵 신규 0개</small></li>
+    <li>Etsy 할로윈 디자인 파일<small>20개 중 <b>12개가 난이도 100</b> · 열린 건 영화 IP 롱테일뿐인데 저작권 문제</small></li>
+    <li>노션 템플릿 · 디지털 플래너 (Etsy)<small>미국 검색자 <b>14.1% / 14.4%</b> — 오늘 1차본 추천을 철회합니다. 구글(블로그)로는 유효</small></li>
+    <li>북눅 (book nook)<small>난이도 41로 열려 보이지만 <b>상위 10개 중 7개가 매출 $0</b> · 최고 $140</small></li>
+    <li>공예 광의어<small><code>cross stitch pattern</code> 난이도 99 · <code>embroidery pattern</code> 100 — <b>롱테일로만</b></small></li>
+    <li>"선물" 계열 광의어 (Etsy)<small>teacher/coworker/secret santa/hostess 전부 <b>난이도 100</b> — 구글에선 난이도 0~4라 <b>블로그로</b></small></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>📅 다음 주에 확인할 것</h3>
+ <div class="tblwrap">
+ <table class="tbl">
+  <tr><th>언제</th><th>항목</th><th>현재 수치</th><th>무엇을 다시 재면 판정되나</th></tr>
+  <tr><td>다음 주 바로</td><td><b>부 바스켓 4중 일치가 실판매로 내려오나</b></td><td>구글 50,000/0 · Etsy 3,484/33</td><td>Etsy 상위 리스팅에 <b>Age 30일 이하 신규가 늘었는지</b>. 4중 일치 규칙의 첫 검증</td></tr>
+  <tr><td>다음 주 바로</td><td><b>공구가 노동절(9/7)을 지나서도 남나</b></td><td>틱톡샵 신규 4개 · 소싱처 6/8</td><td>틱톡샵 신규 목록의 공구 개수. <b>세일 때문이면 사라지고 시즌이면 남습니다</b></td></tr>
+  <tr><td>다음 주 바로</td><td><b>크로셰가 2주 연속 상위를 유지하나</b></td><td>일간 1·2·7·32위</td><td>급상승 100위 안의 크로셰 건수. <b>1주짜리 튐인지 추세인지</b>가 갈립니다</td></tr>
+  <tr><td>9~10월</td><td><b>엘프 온 더 셸프 난이도 0이 유지되나</b></td><td>구글 204,000 · 난이도 0</td><td>12월 시즌이라 10월부터 경쟁이 붙습니다. <b>난이도가 언제 올라가는지가 블로그 진입 마감선</b></td></tr>
+ </table>
+ </div>
+ <div style="text-align:center;margin-top:26px">
+  <a class="fullbtn" href="https://mikukjubu-report.github.io/2026-08-31.html" target="_blank" rel="noopener">📄 전체 리포트 보기 — 제품 24개 · 표 13개 · 키워드 239개 전 수치</a>
+ </div>
+</section>
+
+<section>
+ <h3 class="btitle"><span class="bar" style="background:var(--gold)"></span>📊 데이터 출처</h3>
+ <div class="srcs">
+  <a class="src reveal" href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener"><div class="sn">Sell The Trend</div><div class="sw">드랍쉬핑</div><div class="sd">틱톡샵 신규 베스트셀러 23개 · 누적 매출 발굴 상품 26개 · 신상 위너 32개 · 소싱처 판매 증감률 24개 · 광고 크리에이티브</div></a>
+  <a class="src reveal" href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener"><div class="sn">ZIK Analytics</div><div class="sw">eBay</div><div class="sd">30일 트렌딩 니치 56개 · 시즌 캘린더 D-day · 회전율 · 성공 리스팅 비율 · 셀러 점유율 · 롱테일 경쟁도</div></a>
+  <a class="src reveal" href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener"><div class="sn">eRank</div><div class="sw">Etsy</div><div class="sd">일간 급상승 검색어 100개 · 대량 키워드 도구 <b>140개</b> · 상위 리스팅 <b>11개 키워드</b> · 검색자 국가 비중 <b>11개</b></div></a>
+  <a class="src reveal" href="https://trends.pinterest.com/" target="_blank" rel="noopener"><div class="sn">Pinterest Trends</div><div class="sw">방향 · 타이밍</div><div class="sd">쇼핑 클릭 증가율 TOP 10 · 저장 급등 키워드 · 에디터 선정 6건. 절대 검색량은 제공하지 않습니다</div></a>
+  <a class="src reveal" href="https://ahrefs.com/" target="_blank" rel="noopener"><div class="sn">Ahrefs</div><div class="sw">구글 수치</div><div class="sd">검색량 · 키워드 난이도 · 광고단가 · 트래픽 잠재력 (<b>99개</b>)</div></a>
+  <a class="src reveal" href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener"><div class="sn">NRF · 공개 자료</div><div class="sw">시즌 배경</div><div class="sd">할로윈 지출 $131억 · 참여율 73% · 장식 $42억이 사탕 $39억을 넘어섬 (<b>2025년 조사 기준</b>)</div></a>
+ </div>
+ <p class="srcnote">각 도구 이름을 누르면 해당 사이트로 이동합니다. 일부 링크에는 추천 코드가 포함돼 있으며, 이용해도 <b>추가 비용은 발생하지 않습니다.</b> 리포트의 수치와 판단은 링크 여부와 무관하게 실제 조회 결과만을 따릅니다.</p>
+</section>
+
+<footer>
+ 이 페이지는 <b>요약본</b>입니다 — 전체 수치와 표는 <a href="https://mikukjubu-report.github.io/2026-08-31.html" style="color:#8A6410;font-weight:800">전체 리포트</a>에 있습니다.
+ 수치는 2026년 8월 31일 실측이며, Etsy 리스팅별 판매·매출과 eBay 수치는 <b>추정치</b>입니다(eBay는 약 100개 리스팅 샘플 기반).
+ <b>회전율(Sell through)은 전환율이 아닙니다.</b>
+ 핀터레스트 수치는 절대 검색량이 아니라 <b>전월 대비 변화율</b>이고, 구글 검색량·난이도·광고단가는 별도 SEO 데이터 기준입니다.
+ 시즌 배경 수치는 전미소매협회 조사와 공개 업계 자료를 참조했으며 본 리포트가 직접 측정한 값이 아닙니다.
+ &nbsp;·&nbsp; 생성일 2026년 8월 31일 (Week 36)
+</footer>
+
+</div>
+<script>
+(function(){
+ var els=[].slice.call(document.querySelectorAll('.reveal'));
+ function showAll(){els.forEach(function(e){e.classList.add('on')});}
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{threshold:0.06});
+  els.forEach(function(e){io.observe(e)});
+ } else { showAll(); }
+ setTimeout(showAll,2200);
+ window.addEventListener('load',function(){setTimeout(showAll,600)});
+ var nums=[].slice.call(document.querySelectorAll('[data-count]'));
+ function run(el){
+  if(el.dataset.done)return; el.dataset.done='1';
+  var target=parseFloat(el.getAttribute('data-count'))||0;
+  var suf=el.getAttribute('data-suffix')||'';
+  var t0=null,dur=1100;
+  function step(ts){
+   if(!t0)t0=ts;
+   var p=Math.min((ts-t0)/dur,1);
+   var v=Math.floor(target*(1-Math.pow(1-p,3)));
+   el.textContent=v.toLocaleString('en-US')+suf;
+   if(p<1)requestAnimationFrame(step); else el.textContent=target.toLocaleString('en-US')+suf;
+  }
+  requestAnimationFrame(step);
+ }
+ if('IntersectionObserver' in window){
+  var io2=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting)run(x.target)})},{threshold:0.4});
+  nums.forEach(function(e){io2.observe(e)});
+ } else { nums.forEach(run); }
+ setTimeout(function(){nums.forEach(run)},2500);
+})();
+</script>
+</body>
+</html>
