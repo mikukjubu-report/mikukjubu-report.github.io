@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미국주부 · 이번 주 미국에서 잘 팔리는 것 · 2026-09-21</title>
+<meta name="description" content="2026년 9월 21일 주간 미국 트렌드 리포트 — Etsy 키워드 160개 · 상위 리스팅 15개 키워드 · 핀터레스트 4개 화면 실측">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#FFFFFF; --paper:#FFF7EE; --ink:#1B1510; --ink2:#574A3F;
+ --ds:#D24A2E; --etd:#0B6E99; --etp:#9B2D6B; --gold:#C98A12;
+ --hdr:#211913; --line:#EADFD1; --up:#1E9E5A; --down:#D23B3B; --new:#E08A1E; --eb:#5B4B9E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.bhs{font-family:'Black Han Sans',sans-serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;background:var(--bg)}
+header{background:var(--hdr);border-top:10px solid var(--ds);color:#fff;padding:46px 46px 40px}
+header .brand{font-family:'Black Han Sans',sans-serif;font-size:clamp(22px,2.6vw,30px);color:var(--gold);line-height:1;margin-bottom:10px}
+header .kick{font-size:clamp(11px,1.15vw,14px);font-weight:800;letter-spacing:.26em;color:#C9B79E;margin-bottom:18px}
+header h1{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:clamp(56px,6.2vw,68px);line-height:1.12;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+header .sub{margin-top:14px;font-size:18px;color:#E9DECF;font-weight:500;max-width:780px}
+header .chips{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+header .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:700}
+header .chip.gold{background:var(--gold);border-color:var(--gold);color:#211913}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:34px 46px 8px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px;text-align:center}
+.kpi .num{font-family:'Black Han Sans',sans-serif;font-size:40px;line-height:1}
+.kpi.a .num{color:var(--ds)} .kpi.b .num{color:var(--etd)} .kpi.c .num{color:var(--etp)} .kpi.d .num{color:var(--gold)}
+.kpi .lab{margin-top:10px;font-size:14px;font-weight:700;color:var(--ink2)}
+.kpi .delta{margin-top:7px;font-size:13px;font-weight:800}
+.kpi .delta.up{color:var(--up)} .kpi .delta.dn{color:var(--down)} .kpi .delta.fl{color:var(--ink2)}
+section{padding:26px 46px}
+.parttitle{font-family:'Black Han Sans',sans-serif;font-size:30px;margin:14px 0 6px;padding-bottom:10px;border-bottom:4px solid}
+.partA .parttitle{color:var(--ds);border-color:var(--ds)}
+.partEtsy .parttitle{color:var(--etd);border-color:var(--etd)}
+.partlead{font-size:15px;color:var(--ink2);margin-bottom:20px;font-weight:500}
+.btitle{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:21px;margin:26px 0 14px;color:var(--ink);display:flex;align-items:center;gap:9px}
+.btitle .bar{width:6px;height:22px;border-radius:3px;background:var(--ds)}
+.partEtsy .btitle .bar{background:var(--etd)}
+.ranks{display:flex;flex-direction:column;gap:9px}
+.rank{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 17px}
+.rank .pos{font-weight:800;font-size:19px;color:var(--ds);min-width:30px}
+.partEtsy .rank .pos{color:var(--etd)}
+.rank .nm{font-weight:800;font-size:16px;flex:1 1 auto;min-width:150px;color:var(--ink)}
+.rank .sig{font-size:13px;font-weight:800;padding:4px 11px;border-radius:999px}
+.sig.up{background:#E4F5EC;color:var(--up)} .sig.new{background:#FCEBD5;color:var(--new)} .sig.fl{background:#EFE7DC;color:var(--ink2)} .sig.dn{background:#FBEAEA;color:var(--down)}
+.rank .ev{font-size:13.5px;color:var(--ink2);flex-basis:100%;margin-top:5px;padding-left:44px;font-weight:500}
+.rank .nm .gl{display:block;font-size:13.5px;font-weight:700;color:var(--etd);margin-top:3px}
+.partA .rank .nm .gl{color:var(--ds)}
+.kw .gl{display:block;font-size:12.5px;font-weight:800;margin-top:2px;opacity:.95}
+.partSum .parttitle{color:var(--gold);border-color:var(--gold)}
+.partSum .btitle .bar{background:var(--gold)}
+.partSum .rank .pos{color:var(--gold)}
+.partEbay .parttitle{color:var(--eb);border-color:var(--eb)}
+.partEbay .btitle .bar{background:var(--eb)}
+.partEbay .rank .pos{color:var(--eb)}
+.partEbay .rank .nm .gl{color:var(--eb)}
+.partEbay .card .price{color:var(--eb)}
+.partEbay .vc{border-top-color:var(--eb)}
+.partEbay .vc .tag{background:var(--eb)}
+.verd{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.vc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px 18px;border-top:6px solid var(--gold)}
+.vc .tag{font-size:12px;font-weight:800;color:#fff;background:var(--gold);border-radius:999px;padding:3px 10px;display:inline-block}
+.vc h4{font-weight:800;font-size:17px;margin:9px 0 2px;color:var(--ink)}
+.vc .en{font-size:12.5px;font-weight:600;color:#8A7B6C}
+.vc .nums{margin:10px 0 8px;display:flex;flex-wrap:wrap;gap:6px}
+.vc .nums span{font-size:12.5px;font-weight:800;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink2)}
+.vc p{font-size:14px;color:var(--ink2);font-weight:500}
+.sig3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.s3{border-radius:14px;padding:16px 18px;border:1px solid var(--line);background:var(--paper);border-left:7px solid}
+.s3 .st{font-size:12.5px;font-weight:800;letter-spacing:.05em}
+.s3 h5{font-weight:800;font-size:18px;margin:6px 0 4px;color:var(--ink)}
+.s3 p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.whyc{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:18px}
+.whyc h4{font-weight:800;font-size:17px;color:var(--ds);margin-bottom:8px}
+.whyc p{font-size:14.5px;color:var(--ink2);font-weight:500}
+.whyc .en{display:block;font-size:13px;font-weight:600;color:#8A7B6C}
+.whyconc{margin-top:14px;background:#211913;color:#fff;border-radius:13px;padding:15px 18px;font-size:15px;font-weight:700}
+.whyconc b{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column}
+.card .thumb{position:relative;width:100%;aspect-ratio:1/1;background:linear-gradient(135deg,#FDEFE0,#F6DFC9);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .fire{position:absolute;top:9px;left:9px;background:var(--ds);color:#fff;font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;z-index:2}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card .nm{font-weight:800;font-size:15.5px;color:var(--ink);line-height:1.35}
+.card .en{font-size:12px;font-weight:600;color:#8A7B6C;margin-top:3px}
+.card .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.card .price{font-weight:800;font-size:15px;color:var(--ds)}
+.card .rev{font-size:13px;font-weight:700;color:var(--ink2)}
+.card .tr{font-size:12.5px;font-weight:800;padding:3px 9px;border-radius:999px}
+.tr.up{background:#E4F5EC;color:var(--up)} .tr.dn{background:#FBEAEA;color:var(--down)} .tr.new{background:#FCEBD5;color:var(--new)}
+.card .links{margin-top:auto;padding-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card .lk{font-size:12px;font-weight:800;text-decoration:none;padding:6px 11px;border-radius:8px;border:1.5px solid var(--line);color:var(--ink2)}
+.card .lk:hover{border-color:var(--ds);color:var(--ds)}
+.partEtsy .card .price{color:var(--etp)} .partEtsy .card .lk:hover{border-color:var(--etd);color:var(--etd)}
+.note{background:#FFF3E2;border:1px solid #F0DCBE;border-left:6px solid var(--new);border-radius:13px;padding:15px 18px;font-size:14.5px;font-weight:600;color:#5C4A32;margin-bottom:18px}
+.rdnote{margin-top:14px;font-size:14px;color:var(--ink2);font-weight:600}
+.buck{margin:24px 0 14px;font-size:14.5px;color:var(--ink2);font-weight:600}
+.chipsw{display:flex;flex-wrap:wrap;gap:9px}
+.kw{display:inline-flex;flex-direction:column;gap:2px;text-decoration:none;padding:9px 14px;border-radius:11px;border:2px solid;font-weight:800;font-size:14.5px}
+.kw small{font-size:12px;font-weight:700;opacity:.85}
+.kw.g{border-color:#9FD9BC;background:#EDF9F2;color:#126B41}
+.kw.y{border-color:#F0DCBE;background:#FFF6E8;color:#8A6410}
+.kw.r{border-color:#F0C9C9;background:#FCEFEF;color:#9E2A2A}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{background:var(--hdr);color:#fff;font-weight:800;padding:11px 12px;text-align:left;font-size:13.5px}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink2);font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--paper)}
+.tbl td b{color:var(--ink)}
+.tblwrap{overflow-x:auto}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.calc{border-radius:13px;padding:15px 16px;border:1px solid var(--line);background:var(--paper)}
+.calc .lt{font-size:20px;line-height:1}
+.calc h5{font-weight:800;font-size:16px;margin:8px 0 5px;color:var(--ink)}
+.calc p{font-size:13.5px;color:var(--ink2);font-weight:600}
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.idea{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:20px;border-top:6px solid var(--ds)}
+.idea .n{font-family:'Black Han Sans',sans-serif;font-size:30px;color:var(--ds);line-height:1}
+.idea h4{font-weight:800;font-size:17px;margin:8px 0 8px;color:var(--ink)}
+.idea p{font-size:14px;color:var(--ink2);font-weight:500}
+.ins{display:flex;flex-direction:column;gap:14px}
+.insc{background:#211913;color:#fff;border-radius:15px;padding:22px 24px}
+.insc .n{font-family:'Black Han Sans',sans-serif;font-size:22px;color:var(--gold)}
+.insc h4{font-weight:800;font-size:19px;margin:6px 0 9px;color:#fff}
+.insc p{font-size:14.5px;color:#E4D9C9;font-weight:500}
+.insc p b{color:#fff}
+.srcbar{background:#2C2119;border-bottom:1px solid #3D2F24;padding:13px 46px;display:flex;flex-wrap:wrap;align-items:center;gap:7px 12px}
+.srcbar .lb{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-right:2px}
+.srcbar a{font-size:13.5px;font-weight:800;color:#EFE4D4;text-decoration:none;border-bottom:1.5px solid rgba(201,138,18,.45);padding-bottom:1px}
+.srcbar a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.srcbar .dot{color:#6B5B4B;font-size:12px}
+.srcs{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.src{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:13px;padding:15px 17px;transition:.15s}
+.src:hover{border-left-color:var(--ds);transform:translateY(-2px);box-shadow:0 8px 18px rgba(120,80,40,.10)}
+.src .sn{font-weight:800;font-size:17px;color:var(--ink)}
+.src .sn::after{content:' ↗';font-size:13px;color:var(--gold)}
+.src .sw{font-size:12.5px;font-weight:800;color:var(--ds);margin-top:3px}
+.src .sd{font-size:13.5px;color:var(--ink2);font-weight:500;margin-top:7px}
+.srcnote{margin-top:14px;font-size:13px;color:#7A6A59;font-weight:600}
+footer{background:var(--paper);border-top:1px solid var(--line);padding:26px 46px 40px;font-size:13px;color:#7A6A59;font-weight:600}
+.chartbox{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 4px}
+.chartbox .ct{font-weight:800;font-size:17px;color:var(--ink);margin-bottom:4px}
+.chartbox .cs{font-size:13.5px;color:var(--ink2);font-weight:600;margin-bottom:16px}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:170px 1fr auto;gap:12px;align-items:center}
+.bar .bl{font-size:14px;font-weight:800;color:var(--ink);text-align:right;line-height:1.3}
+.bar .bl small{display:block;font-size:12px;font-weight:600;color:#8A7B6C}
+.bar .bt{height:24px;background:#EFE7DC;border-radius:6px;overflow:hidden}
+.bar .bf{display:block;height:100%;border-radius:6px;min-width:4px}
+.bar .bv{font-size:14px;font-weight:800;white-space:nowrap;color:var(--ink2)}
+.barsec{font-size:14px;font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.barsec:first-child{margin-top:0}
+.psrc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;background:#2C2119;border-radius:12px;padding:12px 16px;margin:0 0 18px}
+.psrc .pl{font-size:11.5px;font-weight:800;letter-spacing:.14em;color:var(--gold)}
+.psrc a{font-size:14px;font-weight:800;color:#fff;text-decoration:none;border-bottom:2px solid rgba(201,138,18,.55);padding-bottom:1px}
+.psrc a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.psrc .pw{font-size:13px;font-weight:600;color:#C9B79E}
+.scoreline{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.scoreline span{font-size:14.5px;font-weight:800;border-radius:999px;padding:7px 16px;border:2px solid}
+.scoreline .ok{border-color:#9FD9BC;background:#EDF9F2;color:#126B41}
+.scoreline .pt{border-color:#F0DCBE;background:#FFF6E8;color:#8A6410}
+.scoreline .no{border-color:#C9C2D9;background:#F1EFF7;color:#4A3F7A}
+.warn{background:#FCEFEF;border:1px solid #F0C9C9;border-left:6px solid var(--down);border-radius:13px;padding:16px 19px;font-size:14.5px;font-weight:600;color:#7A2A2A;margin-bottom:18px}
+.warn b{color:#5E1D1D}
+@media(max-width:700px){
+ .bar{grid-template-columns:1fr auto;gap:4px 10px}
+ .bar .bl{grid-column:1/-1;text-align:left}
+ .bar .bt{height:20px}
+ .bar .bv{font-size:13.5px}
+ .chartbox{padding:18px 16px}
+ .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+ .tbl{min-width:680px}
+ .tbl th,.tbl td{font-size:13.5px;padding:9px 10px}
+ .tbl th:first-child,.tbl td:first-child{min-width:132px}
+}
+.chartbox .lgd{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:13px;font-weight:700;color:var(--ink2)}
+.chartbox .lgd i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){header h1{font-size:clamp(21px,calc(7.9vw - 3px),60px)}.srcbar{padding:12px 20px}.kpis,.cards,.whys,.ideas,.cal,.verd,.sig3,.srcs{grid-template-columns:repeat(2,1fr)}section{padding:22px 20px}header{padding:32px 20px}.kpis{padding:24px 20px 4px}footer{padding:22px 20px 32px}}
+@media(max-width:560px){
+ .kpis,.whys,.ideas,.verd,.sig3,.srcs{grid-template-columns:1fr}
+ .cards,.cal{grid-template-columns:repeat(2,1fr);gap:11px}
+ .cards .card .body{padding:11px 11px 13px}
+ .cards .card .nm{font-size:14px;line-height:1.32}
+ .cards .card .en{font-size:12px}
+ .cards .card .price{font-size:14px}
+ .cards .card .rev{font-size:12px}
+ .cards .card .tr{font-size:12px;padding:3px 7px}
+ .cards .card .fire{font-size:12px;padding:3px 7px}
+ .cards .card .links{gap:6px;padding-top:10px}
+ .cards .card .lk{font-size:12px;padding:5px 9px}
+ .cards .card .meta{gap:5px}
+ .calc h5{font-size:15px}
+ .calc p{font-size:12.5px}
+ .calc{padding:13px 13px}
+}
+
+.partPin .parttitle{color:var(--eb);border-color:var(--eb)}
+.partPin .btitle .bar{background:var(--eb)}
+.partPin .rank .pos{color:var(--eb)}
+.partPin .rank .nm .gl{color:var(--eb)}
+.partPin .vc{border-top-color:var(--eb)}
+.partPin .vc .tag{background:var(--eb)}
+.dead{background:#F4F1EC;border:1px solid var(--line);border-left:6px solid #9A8C7C;border-radius:14px;padding:18px 20px;margin:14px 0 6px}
+.dead h4{font-weight:800;font-size:18px;color:#5A4E42;margin-bottom:6px}
+.dead p{font-size:14.5px;color:var(--ink2);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">미국주부</div>
+<div class="kick">WEEKLY US TREND REPORT</div>
+<h1>이번 주 미국에서 잘 팔리는 것</h1>
+<p class="sub">키워드 난이도가 낮은데 매출이 $26인 곳, 상위 10개가 전부 60일 이하인 곳 — 이번 주는 "들어갈 수 있는 곳"과 "돈이 되는 곳"이 가장 크게 갈렸습니다.</p>
+<div class="chips"><span class="chip gold">2026년 9월 21일 · Week 39</span><span class="chip">Etsy 키워드 160개</span><span class="chip">상위 리스팅 15개 키워드</span><span class="chip">할로윈 D-40</span></div>
+</header>
+<div class="srcbar"><span class="lb">DATA SOURCES</span><a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener nofollow">eRank</a><span class="dot">·</span><a href="https://trends.pinterest.com/" target="_blank" rel="noopener nofollow">Pinterest Trends</a><span class="dot">·</span><a href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener nofollow">Sell The Trend</a><span class="dot">·</span><a href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener nofollow">ZIK Analytics</a><span class="dot">·</span><a href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener nofollow">NRF</a></div>
+<div class="kpis">
+<div class="kpi a reveal"><div class="num bhs">160</div><div class="lab">조회한 Etsy 키워드</div><div class="delta fl">8배치 · 지난주 140개</div></div>
+<div class="kpi b reveal"><div class="num bhs">92.4%</div><div class="lab">시머 팟 미국 검색자 비중</div><div class="delta fl">올해 측정 최고치</div></div>
+<div class="kpi c reveal"><div class="num bhs">47</div><div class="lab">난이도 100인 키워드</div><div class="delta fl">160개 중 29.4%</div></div>
+<div class="kpi d reveal"><div class="num bhs">D-40</div><div class="lab">할로윈까지</div><div class="delta fl">10월 31일 · 토요일</div></div>
+</div>
+<section class="partA">
+<div class="warn reveal"><b>⛔ 이번 주는 5개 소스 중 2개가 열리지 않았습니다.</b><br>드랍쉬핑 · eBay 리서치 도구가 <b>로그인 세션 만료</b>로 접속되지 않아 해당 파트를 싣지 못했습니다. 비밀번호를 입력하거나 계정을 추측해 로그인하지 않았습니다. 대신 Etsy 조사를 평소 기준(키워드 140개 · 상위 리스팅 10개 키워드)보다 올려 <b>키워드 160개 · 상위 리스팅 15개 키워드</b>로 팠고, 판정은 <b>핀터레스트 × Etsy × 구글 3중 교차</b>로 했습니다.</div>
+<h2 class="parttitle">PART A · 이번 주 시장 지도</h2>
+<div class="psrc"><span class="pl">이 데이터는 어디서 보나</span><a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener nofollow">eRank</a><span class="pw">Etsy 일간 급상승 검색어 · 대량 키워드 도구</span><a href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener nofollow">NRF</a><span class="pw">시즌 소비 조사 공개 자료</span></div>
+<p class="partlead">지난주가 남긴 숙제부터 답하고, 이번 주 순위와 그 이유를 봅니다.</p>
+<div class="btitle"><span class="bar"></span>① 지난주 예측, 맞았나</div>
+<div class="scoreline"><span class="ok">✅ 적중 1</span><span class="pt">⚠️ 부분 1</span><span class="no">⏸ 판정 불가 6</span></div>
+<div class="tblwrap"><table class="tbl"><tr><th>지난주 질문</th><th>지난주 → 이번 주</th><th>판정</th></tr>
+<tr><td><b>Etsy 스퀴시 신규가 계속 파나</b></td><td>상위 10개 매출 $0 <b>1개 → 3개</b> · 합계 <b>$4,246 → $2,232</b>(−47.4%)</td><td>✅ 적중 — 지난주 기준대로 <b>문이 닫히기 시작</b></td></tr>
+<tr><td><b>코랄라인 32일 인쇄물이 계속 크나</b></td><td>그 리스팅은 상위 10개에서 이탈. 키워드 전체는 합계 $3,982 · $0 2개 · 90일 이하 <b>7개</b> · 미국 58.4%</td><td>⚠️ 부분 — 리스팅 단위는 미측정, 키워드는 여전히 열림</td></tr>
+<tr><td><b>할로윈 회전율 99%가 유지되나</b></td><td>eBay 도구 세션 만료로 미측정</td><td>⏸ 판정 불가</td></tr>
+<tr><td><b>크리스마스 니치가 2주 연속 줄어드나</b></td><td>eBay 도구 세션 만료로 미측정</td><td>⏸ 판정 불가</td></tr>
+<tr><td><b>전기담요가 5번째로 오르나</b></td><td>eBay 도구 세션 만료로 미측정</td><td>⏸ 판정 불가</td></tr>
+<tr><td><b>스퀴시 3종 누적 주문이 또 늘었나</b></td><td>드랍쉬핑 도구 세션 만료로 미측정</td><td>⏸ 판정 불가</td></tr>
+<tr><td><b>구글 난이도 0 급증이 되돌아오나</b></td><td>해당 도구를 9월 15일 지시로 리포트에서 제외. 이번 주부터 난이도는 <b>Etsy 난이도</b> 하나만 사용</td><td>⏸ 항목 폐기(지표 교체)</td></tr>
+<tr><td><b>10월 니치 랭킹에 홈데코가 남나</b></td><td>10월 첫 주 예정 + 도구 세션 만료</td><td>⏸ 10월로 이월</td></tr>
+</table></div>
+<div class="note reveal">지난주 항목 밖에서 추가로 판정된 것 세 가지 — <b>북눅</b>은 8월 31일 "상위 10개 중 $0이 7개, 최고 $140"으로 추천 금지였는데 이번 주 <b>$0 3개 · 최고 $4,655</b>로 바뀌어 그 판정을 철회합니다. <b>아크 레이더스</b>는 상위 합계가 <b>$27,759 → $54,675(+97.0%)</b>로 두 배가 됐습니다. <b>퍼수트</b> 경쟁 리스팅 수는 <b>4주 연속 15,205</b>로 똑같습니다 — 이 지표는 월 단위로만 갱신되므로 주간 판단에 쓰면 안 됩니다.</div>
+<div class="btitle"><span class="bar"></span>② 이번 주 핫 카테고리</div>
+<div class="ranks">
+<div class="rank reveal"><span class="pos">1</span><span class="nm">시머 팟 · 계절 향<span class="gl">Simmer pot</span></span><span class="sig new">🆕 3중 교차 일치</span><div class="ev">핀터레스트 저장 +50% · 구글 27,100 · Etsy 상위 10개 합계 $26,727 · 미국 검색자 92.4%</div></div>
+<div class="rank reveal"><span class="pos">2</span><span class="nm">할로윈 코스튬 · 부자재<span class="gl">Halloween costumes</span></span><span class="sig up">▲▲ 시즌 정점</span><div class="ev">핀터레스트 쇼핑 클릭 1위 +92% · 급상승 상위 47개에 3건 · 올해 할로윈 지출 사상 최대 $13.1B 전망</div></div>
+<div class="rank reveal"><span class="pos">3</span><span class="nm">반려동물 · 고양이<span class="gl">Pets and cats</span></span><span class="sig new">🆕 급상승 상위 47개 중 고양이 9건</span><div class="ev">검은 메인쿤 · 삼색 고양이 · 마눌 고양이 · 고양이 밥그릇… 반려동물 코스튬 지출만 $0.86B</div></div>
+<div class="rank reveal"><span class="pos">4</span><span class="nm">팬덤 굿즈 (게임 · 영화)<span class="gl">Fandom merch</span></span><span class="sig up">▲ 매출 급증</span><div class="ev">아크 레이더스 +97.0% · 코랄라인 90일 이하 7개 · 스트레인저 싱스 난이도 1</div></div>
+<div class="rank reveal"><span class="pos">5</span><span class="nm">키누사이가 · 신생 공예<span class="gl">Kinusaiga</span></span><span class="sig new">🆕 상위 전부 60일 이하</span><div class="ev">경쟁 리스팅 228개 · 난이도 1 · 대형 마트에 2026년형 키트가 막 깔림</div></div>
+<div class="rank reveal"><span class="pos">6</span><span class="nm">난방 · 벽난로<span class="gl">Fireplace</span></span><span class="sig up">▲ 핀 +56%</span><div class="ev">벽난로 용품 클릭 5위 · 벽난로 스크린 난이도 4 · 미국 검색자 84.9%</div></div>
+<div class="rank reveal"><span class="pos">7</span><span class="nm">북눅 · 책 굿즈<span class="gl">Book nook</span></span><span class="sig up">▲ 판정 뒤집힘</span><div class="ev">매출 $0 7개 → 3개 · 최고 $140 → $4,655</div></div>
+<div class="rank reveal"><span class="pos">8</span><span class="nm">크리스마스 (물건)<span class="gl">Christmas goods</span></span><span class="sig fl">─ 선점 구간</span><div class="ev">어드벤트 캘린더 구글 201,000 · 난이도 30 — 단 Etsy 상위 합계는 아직 $1,838</div></div>
+<div class="rank reveal"><span class="pos">9</span><span class="nm">스퀴시<span class="gl">Squishy</span></span><span class="sig dn">▼ 닫히는 중</span><div class="ev">매출 $0 1 → 3개 · 상위 합계 −47.4%</div></div>
+<div class="rank reveal"><span class="pos">10</span><span class="nm">크리스마스 (디자인 파일)<span class="gl">Christmas design files</span></span><span class="sig dn">⛔ 전부 막힘</span><div class="ev">배치 3의 20개 중 15개가 난이도 90 이상, 그중 11개가 100</div></div>
+</div>
+<div class="btitle"><span class="bar"></span>③ 왜 바뀌었나</div>
+<div class="whys">
+<div class="whyc reveal"><h4>올해 할로윈 지출이 사상 최대<span class="en">Record $13.1B Halloween spend</span></h4><p>9월 2~9일 소비자 8,045명 조사에서 올해 할로윈 지출은 <b>$13.1B</b>로 작년 $11.6B, 종전 최고 $12.2B를 모두 넘을 전망입니다. 73%가 할로윈을 챙기고, 79%는 관세 때문에 가격이 오를 것으로 봅니다. 반려동물 코스튬만 <b>$0.86B</b> — 급상승 상위 47개에 고양이 키워드만 9건, 개까지 합치면 12건 들어온 것과 맞물립니다. 올해 10월 31일은 <b>토요일</b>입니다.</p></div>
+<div class="whyc reveal"><h4>홀리데이 쇼핑이 앞당겨졌다<span class="en">Holiday shopping pulled forward</span></h4><p>관세·물류 불확실성 때문에 소매업체가 5월부터 재고를 당겨 쌓았고 소비자도 먼저 움직입니다. <b>66%가 7~10월 사이에 시작</b>하겠다고 답했고 11월부터는 26%뿐입니다. 그래서 크리스마스 <b>물건</b>은 지금이 선점 구간인데, 크리스마스 <b>디자인 파일</b>은 이미 난이도 90~100으로 닫혔습니다.</p></div>
+<div class="whyc reveal"><h4>키누사이가가 키트에서 도안으로 넘어간다<span class="en">Kinusaiga moves to patterns</span></h4><p>1980년대 일본에서 시작된 <b>무바느질 천 모자이크</b> 공예입니다. 2026년 들어 대형 마트에 완제품 키트가 깔리고 지역 공예 스튜디오에 정규 수업이 생겼습니다. 키트를 산 사람은 다음에 <b>도안(PDF)</b>을 찾습니다 — Etsy 상위 10개가 전부 60일 이하인 이유입니다.</p></div>
+</div>
+<div class="whyconc reveal">한 줄 결론 — <b>수요가 크다는 것과 자리가 비었다는 것은 전혀 다른 말입니다.</b> 할로윈은 지출이 사상 최대인데 Etsy 상위 10개에 신규가 <b>0개</b>고, 키누사이가는 시장이 작은데 상위 10개가 <b>전부 60일 이하</b>입니다.</div>
+<div class="btitle"><span class="bar"></span>④ 이번 주 Etsy 일간 급상승 검색어</div>
+<div class="note reveal">이번 주는 <b>순위 변동(Change) 열이 100개 전부 비어</b> 있어 전주 대비 상승폭을 낼 수 없었습니다. 검색량과 경쟁 리스팅 수만으로 읽습니다. 아래 표에서 <b>굵은 숫자</b>는 경쟁이 특히 얇은 칸입니다.</div>
+<div class="tblwrap"><table class="tbl"><tr><th>#</th><th>키워드</th><th>한국어</th><th>Etsy 검색</th><th>경쟁 리스팅</th></tr>
+<tr><td>1</td><td><a href="https://www.etsy.com/search?q=coasters" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">coasters</a></td><td>컵받침</td><td>14,918</td><td>406,218</td></tr>
+<tr><td>2</td><td><a href="https://www.etsy.com/search?q=brookline" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">brookline</a></td><td>브루클라인</td><td>209</td><td>338</td></tr>
+<tr><td>3</td><td><a href="https://www.etsy.com/search?q=cats" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cats</a></td><td>고양이</td><td>6,172</td><td>1,890,391</td></tr>
+<tr><td>4</td><td><a href="https://www.etsy.com/search?q=cello" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cello</a></td><td>첼로</td><td>286</td><td>9,179</td></tr>
+<tr><td>5</td><td><a href="https://www.etsy.com/search?q=cinnabar" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cinnabar</a></td><td>진사(붉은 광물)</td><td>208</td><td>4,707</td></tr>
+<tr><td>6</td><td><a href="https://www.etsy.com/search?q=mabosstiff" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">mabosstiff</a></td><td>마보스티프</td><td>1,666</td><td>12</td></tr>
+<tr><td>7</td><td><a href="https://www.etsy.com/search?q=carfax" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">carfax</a></td><td>카팩스</td><td>13,688</td><td>31</td></tr>
+<tr><td>8</td><td><a href="https://www.etsy.com/search?q=crochet%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet pattern</a></td><td>크로셰 도안</td><td>31,977</td><td>600,496</td></tr>
+<tr><td>9</td><td><a href="https://www.etsy.com/search?q=art" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">art</a></td><td>아트</td><td>25,051</td><td>35,242,388</td></tr>
+<tr><td>10</td><td><a href="https://www.etsy.com/search?q=wall%20art" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wall art</a></td><td>벽 장식</td><td>53,423</td><td>15,248,319</td></tr>
+<tr><td>11</td><td><a href="https://www.etsy.com/search?q=black%20maine%20coon" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">black maine coon</a></td><td>검은 메인쿤</td><td>210</td><td>1,334</td></tr>
+<tr><td>12</td><td><a href="https://www.etsy.com/search?q=fluffy%20black%20cat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fluffy black cat</a></td><td>털복숭이 검은 고양이</td><td>20 미만</td><td>2,196</td></tr>
+<tr><td>13</td><td><a href="https://www.etsy.com/search?q=tibetan%20mastiff" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tibetan mastiff</a></td><td>티베탄 마스티프</td><td>1,494</td><td>1,011</td></tr>
+<tr><td>14</td><td><a href="https://www.etsy.com/search?q=cat%20painting%20original" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cat painting original</a></td><td>고양이 그림 원화</td><td>20 미만</td><td>10,334</td></tr>
+<tr><td>15</td><td><a href="https://www.etsy.com/search?q=ceramic%20dog%20figurine" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ceramic dog figurine</a></td><td>세라믹 강아지 피규어</td><td>20 미만</td><td>6,095</td></tr>
+<tr><td>16</td><td><a href="https://www.etsy.com/search?q=snoopy" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snoopy</a></td><td>스누피</td><td>14,470</td><td>29,354</td></tr>
+<tr><td>17</td><td><a href="https://www.etsy.com/search?q=lion%20dancer" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">lion dancer</a></td><td>사자춤</td><td>미확인</td><td>1,296</td></tr>
+<tr><td>18</td><td><a href="https://www.etsy.com/search?q=piping%20plover" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">piping plover</a></td><td>피리물떼새</td><td>20 미만</td><td>446</td></tr>
+<tr><td>19</td><td><a href="https://www.etsy.com/search?q=cat%20dish" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cat dish</a></td><td>고양이 식기</td><td>20 미만</td><td>8,988</td></tr>
+<tr><td>20</td><td><a href="https://www.etsy.com/search?q=pallas%20cat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">pallas cat</a></td><td>마눌 고양이</td><td>430</td><td>214</td></tr>
+<tr><td>21</td><td><a href="https://www.etsy.com/search?q=tortie%20cat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tortie cat</a></td><td>삼색 고양이</td><td>272</td><td>1,496</td></tr>
+<tr><td>22</td><td><a href="https://www.etsy.com/search?q=cat%20bowl" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cat bowl</a></td><td>고양이 밥그릇</td><td>240</td><td>13,986</td></tr>
+<tr><td>23</td><td><a href="https://www.etsy.com/search?q=cinnabar%20jewelry" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cinnabar jewelry</a></td><td>진사 주얼리</td><td>20 미만</td><td>2,933</td></tr>
+<tr><td>24</td><td><a href="https://www.etsy.com/search?q=wedding%20website" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wedding website</a></td><td>웨딩 웹사이트</td><td>4,388</td><td>8,785</td></tr>
+<tr><td>25</td><td><a href="https://www.etsy.com/search?q=couch" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">couch</a></td><td>소파</td><td>2,104</td><td>126,147</td></tr>
+<tr><td>26</td><td><a href="https://www.etsy.com/search?q=silkie%20chicken" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">silkie chicken</a></td><td>실키 닭</td><td>20 미만</td><td>1,860</td></tr>
+<tr><td>27</td><td><a href="https://www.etsy.com/search?q=cat%20painting" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cat painting</a></td><td>고양이 그림</td><td>986</td><td>82,825</td></tr>
+<tr><td>28</td><td><a href="https://www.etsy.com/search?q=snowy%20owl" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snowy owl</a></td><td>흰올빼미</td><td>218</td><td>7,320</td></tr>
+<tr><td>29</td><td><a href="https://www.etsy.com/search?q=fall%20door%20mat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall door mat</a></td><td>가을 현관매트</td><td>531</td><td>10,416</td></tr>
+<tr><td>30</td><td><a href="https://www.etsy.com/search?q=grinch" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">grinch</a></td><td>그린치</td><td>8,231</td><td>128,612</td></tr>
+<tr><td>31</td><td><a href="https://www.etsy.com/search?q=spiderman%20costume" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">spiderman costume</a></td><td>스파이더맨 코스튬</td><td>2,621</td><td>2,927</td></tr>
+<tr><td>32</td><td><a href="https://www.etsy.com/search?q=stl%20files" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">stl files</a></td><td>STL 파일</td><td>5,954</td><td>179,604</td></tr>
+</table></div>
+<div class="warn reveal"><b>⛔ 저경쟁 허수를 반드시 거를 것.</b> 급상승에는 경쟁 리스팅이 0에 가까운 키워드가 무더기로 올라옵니다. 이번 주 <b>마보스티프(12) · 카팩스(31) · 아이 규칙 포스터(66) · 피리물떼새(446)</b>는 구글 검색량이 확인되지 않거나 Etsy 검색이 20 미만입니다. <b>경쟁이 없다는 건 아무도 안 판다는 뜻이기도 합니다.</b> 이번 주 살아남은 저경쟁 키워드는 스파이더맨 코스튬(2,927) · 키누사이가 패턴(228) · 티베탄 마스티프(1,011) · 마눌 고양이(214) 넷이고, 그중 <b>상위 리스팅 매출까지 확인된 건 앞의 둘</b>뿐입니다.</div>
+</section>
+<section class="partEtsy">
+<h2 class="parttitle">PART B · Etsy — 직접 만들어 팔기</h2>
+<div class="psrc"><span class="pl">이 데이터는 어디서 보나</span><a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener nofollow">eRank</a><span class="pw">대량 키워드 도구(20개씩 8배치) · 상위 리스팅 화면 · 검색자 국가 비중 · 월간 인기 검색어</span></div>
+<p class="partlead">이번 주 주력 파트입니다. 키워드 160개, 상위 리스팅 15개 키워드, 국가 비중 15개를 실측했습니다.</p>
+<div class="btitle"><span class="bar"></span>① 상위 리스팅 15개 키워드 — 추천의 최종 근거</div>
+<div class="note reveal">난이도가 아니라 <b>여기를 봅니다.</b> 상위 10개 중 매출 $0이 몇 개인지, 90일 이하 신규가 상위에 들어와 있는지, 검색자 중 미국이 몇 %인지 — 이 셋으로 판정합니다.</div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>한국어</th><th>상위10 합계</th><th>매출 $0</th><th>최고 1개</th><th>90일 이하</th><th>미국 비중</th><th>판정</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20costume" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween costume</a></td><td><b>할로윈 코스튬</b></td><td><b>$119,914</b></td><td>1개</td><td>$90,900</td><td>0개</td><td>31.6%</td><td>🔴 신규 진입 불가</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=arc%20raiders" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">arc raiders</a></td><td><b>아크 레이더스</b></td><td><b>$54,675</b></td><td>2개</td><td>$26,992</td><td>0개</td><td>42.7%</td><td>🟡 매출 2배인데 신규 진입 0</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=boo%20basket" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">boo basket</a></td><td><b>부 바스켓 (할로윈 선물바구니)</b></td><td><b>$48,724</b></td><td>3개</td><td>$45,633</td><td>7개</td><td>51.8%</td><td>🟡 1개가 합계의 94%를 먹음</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fireplace%20screen" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fireplace screen</a></td><td><b>벽난로 스크린</b></td><td><b>$30,265</b></td><td>5개</td><td>$20,399</td><td>5개</td><td>84.9%</td><td>🟡 고단가 추정이라 매출 신뢰도 낮음</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=simmer%20pot" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">simmer pot</a></td><td><b>시머 팟 (끓이는 방향제)</b></td><td><b>$26,727</b></td><td>2개</td><td>$9,540</td><td>5개</td><td>92.4%</td><td>🟢🟢 <b>이번 주 1위</b></td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20tree%20skirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas tree skirt</a></td><td><b>크리스마스 트리 스커트</b></td><td><b>$18,139</b></td><td>6개</td><td>$14,256</td><td>6개</td><td>33.3%</td><td>🟡 1위가 실물이 아니라 크로셰 도안</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=spiderman%20costume" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">spiderman costume</a></td><td><b>스파이더맨 코스튬</b></td><td><b>$15,665</b></td><td>3개</td><td>$10,309</td><td>7개</td><td>51.7%</td><td>🟢 열림 (⚠️저작권)</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=book%20nook" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">book nook</a></td><td><b>북눅 (책장 디오라마)</b></td><td><b>$9,956</b></td><td>3개</td><td>$4,655</td><td>3개</td><td>35.8%</td><td>🟡 8/31 추천 금지 판정 철회</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=coraline" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">coraline</a></td><td><b>코랄라인</b></td><td><b>$3,982</b></td><td>2개</td><td>$1,677</td><td>7개</td><td>58.4%</td><td>🟢 열림 (⚠️저작권)</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=squishy" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">squishy</a></td><td><b>스퀴시</b></td><td><b>$2,232</b></td><td>3개</td><td>$563</td><td>9개</td><td>50.4%</td><td>🔻 닫히는 중</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=kinusaiga%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">kinusaiga pattern</a></td><td><b>키누사이가 패턴</b></td><td><b>$2,129</b></td><td>5개</td><td>$749</td><td>10개</td><td>41.7%</td><td>🟢 새로 생긴 시장 (주석 참조)</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=advent%20calendar" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">advent calendar</a></td><td><b>어드벤트 캘린더</b></td><td><b>$1,838</b></td><td>3개</td><td>$1,092</td><td>6개</td><td>33.7%</td><td>🟡 문은 열렸으나 작다</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=elf%20on%20the%20shelf" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">elf on the shelf</a></td><td><b>엘프 온 더 셸프</b></td><td><b>$1,588</b></td><td>3개</td><td>$695</td><td>5개</td><td>50.6%</td><td>🟡 작다</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=ugly%20christmas%20sweater" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ugly christmas sweater</a></td><td><b>어글리 크리스마스 스웨터</b></td><td><b>$398</b></td><td>5개</td><td>$150</td><td>4개</td><td>39.2%</td><td>🔴 금지</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=grinch%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">grinch svg</a></td><td><b>그린치 SVG</b></td><td><b>$26</b></td><td>8개</td><td>$20</td><td>4개</td><td>34.8%</td><td>🔴 금지</td></tr>
+</table></div>
+<div class="warn reveal"><b>키누사이가 패턴 판정에 붙이는 주석 — 규칙의 예외를 그대로 적습니다.</b><br>기계적으로는 "매출 $0이 5개 이상이면 추천 금지"에 걸립니다. 그런데 상위 10개가 <b>전부 60일 이하</b>이고 90일 넘는 리스팅이 <b>하나도 없습니다</b>. 이건 "다들 팔아봤는데 안 팔리는 곳"이 아니라 <b>"아직 아무도 오래 팔아본 적이 없는 곳"</b>입니다. 같은 $0라도 뜻이 정반대라서 🟡~🟢로 올려 기록하고, <b>$0 개수 규칙은 상위에 오래된 리스팅이 섞여 있을 때만 유효하다</b>는 단서를 답니다. 다음 주에 다시 재서 이 예외가 맞았는지 봅니다.</div>
+<div class="chartbox reveal"><div class="ct">상위 10개 리스팅 매출 합계 (추정)</div><div class="cs">같은 축척입니다. 아래 그린치 SVG 막대가 거의 안 보이는 것이 요점입니다 — 난이도 27인데 합계가 $26입니다.</div><div class="bars">
+<div class="bar"><div class="bl">할로윈 코스튬<small>halloween costume</small></div><div class="bt"><span class="bf" style="width:100%;background:#1E9E5A"></span></div><div class="bv">$119,914</div></div><div class="bar"><div class="bl">아크 레이더스<small>arc raiders</small></div><div class="bt"><span class="bf" style="width:46%;background:#1E9E5A"></span></div><div class="bv">$54,675</div></div><div class="bar"><div class="bl">부 바스켓 (할로윈 선물바구니)<small>boo basket</small></div><div class="bt"><span class="bf" style="width:41%;background:#C98A12"></span></div><div class="bv">$48,724</div></div><div class="bar"><div class="bl">벽난로 스크린<small>fireplace screen</small></div><div class="bt"><span class="bf" style="width:25%;background:#D23B3B"></span></div><div class="bv">$30,265</div></div><div class="bar"><div class="bl">시머 팟 (끓이는 방향제)<small>simmer pot</small></div><div class="bt"><span class="bf" style="width:22%;background:#1E9E5A"></span></div><div class="bv">$26,727</div></div><div class="bar"><div class="bl">크리스마스 트리 스커트<small>christmas tree skirt</small></div><div class="bt"><span class="bf" style="width:15%;background:#D23B3B"></span></div><div class="bv">$18,139</div></div><div class="bar"><div class="bl">스파이더맨 코스튬<small>spiderman costume</small></div><div class="bt"><span class="bf" style="width:13%;background:#C98A12"></span></div><div class="bv">$15,665</div></div><div class="bar"><div class="bl">북눅 (책장 디오라마)<small>book nook</small></div><div class="bt"><span class="bf" style="width:8%;background:#C98A12"></span></div><div class="bv">$9,956</div></div><div class="bar"><div class="bl">코랄라인<small>coraline</small></div><div class="bt"><span class="bf" style="width:4%;background:#1E9E5A"></span></div><div class="bv">$3,982</div></div><div class="bar"><div class="bl">스퀴시<small>squishy</small></div><div class="bt"><span class="bf" style="width:4%;background:#C98A12"></span></div><div class="bv">$2,232</div></div><div class="bar"><div class="bl">키누사이가 패턴<small>kinusaiga pattern</small></div><div class="bt"><span class="bf" style="width:4%;background:#D23B3B"></span></div><div class="bv">$2,129</div></div><div class="bar"><div class="bl">어드벤트 캘린더<small>advent calendar</small></div><div class="bt"><span class="bf" style="width:4%;background:#C98A12"></span></div><div class="bv">$1,838</div></div><div class="bar"><div class="bl">엘프 온 더 셸프<small>elf on the shelf</small></div><div class="bt"><span class="bf" style="width:4%;background:#C98A12"></span></div><div class="bv">$1,588</div></div><div class="bar"><div class="bl">어글리 크리스마스 스웨터<small>ugly christmas sweater</small></div><div class="bt"><span class="bf" style="width:4%;background:#D23B3B"></span></div><div class="bv">$398</div></div><div class="bar"><div class="bl">그린치 SVG<small>grinch svg</small></div><div class="bt"><span class="bf" style="width:4%;background:#D23B3B"></span></div><div class="bv">$26</div></div></div><div class="lgd"><span><i style="background:#1E9E5A"></i>매출 $0 2개 이하</span><span><i style="background:#C98A12"></i>3~4개</span><span><i style="background:#D23B3B"></i>5개 이상</span></div></div>
+<div class="chartbox reveal"><div class="ct">상위 10개 중 등록 90일 이하 신규가 몇 개인가 — "문이 열린 정도"</div><div class="cs">0개면 신규가 상위에 못 들어간다는 뜻이고, 10개면 그 자리를 아무도 오래 잡지 못했다는 뜻입니다.</div><div class="bars">
+<div class="bar"><div class="bl">키누사이가 패턴<small>kinusaiga pattern</small></div><div class="bt"><span class="bf" style="width:100%;background:#1E9E5A"></span></div><div class="bv">10개 / 10개</div></div><div class="bar"><div class="bl">스퀴시<small>squishy</small></div><div class="bt"><span class="bf" style="width:90%;background:#1E9E5A"></span></div><div class="bv">9개 / 10개</div></div><div class="bar"><div class="bl">스파이더맨 코스튬<small>spiderman costume</small></div><div class="bt"><span class="bf" style="width:70%;background:#1E9E5A"></span></div><div class="bv">7개 / 10개</div></div><div class="bar"><div class="bl">코랄라인<small>coraline</small></div><div class="bt"><span class="bf" style="width:70%;background:#1E9E5A"></span></div><div class="bv">7개 / 10개</div></div><div class="bar"><div class="bl">부 바스켓 (할로윈 선물바구니)<small>boo basket</small></div><div class="bt"><span class="bf" style="width:70%;background:#1E9E5A"></span></div><div class="bv">7개 / 10개</div></div><div class="bar"><div class="bl">어드벤트 캘린더<small>advent calendar</small></div><div class="bt"><span class="bf" style="width:60%;background:#1E9E5A"></span></div><div class="bv">6개 / 10개</div></div><div class="bar"><div class="bl">크리스마스 트리 스커트<small>christmas tree skirt</small></div><div class="bt"><span class="bf" style="width:60%;background:#1E9E5A"></span></div><div class="bv">6개 / 10개</div></div><div class="bar"><div class="bl">벽난로 스크린<small>fireplace screen</small></div><div class="bt"><span class="bf" style="width:50%;background:#C98A12"></span></div><div class="bv">5개 / 10개</div></div><div class="bar"><div class="bl">시머 팟 (끓이는 방향제)<small>simmer pot</small></div><div class="bt"><span class="bf" style="width:50%;background:#C98A12"></span></div><div class="bv">5개 / 10개</div></div><div class="bar"><div class="bl">엘프 온 더 셸프<small>elf on the shelf</small></div><div class="bt"><span class="bf" style="width:50%;background:#C98A12"></span></div><div class="bv">5개 / 10개</div></div><div class="bar"><div class="bl">그린치 SVG<small>grinch svg</small></div><div class="bt"><span class="bf" style="width:40%;background:#C98A12"></span></div><div class="bv">4개 / 10개</div></div><div class="bar"><div class="bl">어글리 크리스마스 스웨터<small>ugly christmas sweater</small></div><div class="bt"><span class="bf" style="width:40%;background:#C98A12"></span></div><div class="bv">4개 / 10개</div></div><div class="bar"><div class="bl">북눅 (책장 디오라마)<small>book nook</small></div><div class="bt"><span class="bf" style="width:30%;background:#C98A12"></span></div><div class="bv">3개 / 10개</div></div><div class="bar"><div class="bl">할로윈 코스튬<small>halloween costume</small></div><div class="bt"><span class="bf" style="width:4%;background:#D23B3B"></span></div><div class="bv">0개 / 10개</div></div><div class="bar"><div class="bl">아크 레이더스<small>arc raiders</small></div><div class="bt"><span class="bf" style="width:4%;background:#D23B3B"></span></div><div class="bv">0개 / 10개</div></div></div><div class="lgd"><span><i style="background:#1E9E5A"></i>6개 이상 — 열림</span><span><i style="background:#C98A12"></i>3~5개</span><span><i style="background:#D23B3B"></i>2개 이하 — 고착</span></div></div>
+<div class="btitle"><span class="bar"></span>② 검색자 국가 비중 15개 — 수요인가, 셀러 몰림인가</div>
+<div class="chartbox reveal"><div class="ct">검색자 중 미국 비중</div><div class="cs">베트남 · 파키스탄 비중이 높은 키워드는 미국 구매자가 아니라 <b>해외 셀러가 시장조사하러 치는 검색어</b>로 봅니다.</div><div class="bars">
+<div class="bar"><div class="bl">시머 팟 (끓이는 방향제)<small>simmer pot</small></div><div class="bt"><span class="bf" style="width:92%;background:#1E9E5A"></span></div><div class="bv">92.4%</div></div><div class="bar"><div class="bl">벽난로 스크린<small>fireplace screen</small></div><div class="bt"><span class="bf" style="width:85%;background:#1E9E5A"></span></div><div class="bv">84.9%</div></div><div class="bar"><div class="bl">코랄라인<small>coraline</small></div><div class="bt"><span class="bf" style="width:58%;background:#1E9E5A"></span></div><div class="bv">58.4%</div></div><div class="bar"><div class="bl">부 바스켓 (할로윈 선물바구니)<small>boo basket</small></div><div class="bt"><span class="bf" style="width:52%;background:#1E9E5A"></span></div><div class="bv">51.8%</div></div><div class="bar"><div class="bl">스파이더맨 코스튬<small>spiderman costume</small></div><div class="bt"><span class="bf" style="width:52%;background:#1E9E5A"></span></div><div class="bv">51.7%</div></div><div class="bar"><div class="bl">엘프 온 더 셸프<small>elf on the shelf</small></div><div class="bt"><span class="bf" style="width:51%;background:#1E9E5A"></span></div><div class="bv">50.6%</div></div><div class="bar"><div class="bl">스퀴시<small>squishy</small></div><div class="bt"><span class="bf" style="width:50%;background:#1E9E5A"></span></div><div class="bv">50.4%</div></div><div class="bar"><div class="bl">아크 레이더스<small>arc raiders</small></div><div class="bt"><span class="bf" style="width:43%;background:#D23B3B"></span></div><div class="bv">42.7%</div></div><div class="bar"><div class="bl">키누사이가 패턴<small>kinusaiga pattern</small></div><div class="bt"><span class="bf" style="width:42%;background:#D23B3B"></span></div><div class="bv">41.7%</div></div><div class="bar"><div class="bl">어글리 크리스마스 스웨터<small>ugly christmas sweater</small></div><div class="bt"><span class="bf" style="width:39%;background:#D23B3B"></span></div><div class="bv">39.2%</div></div><div class="bar"><div class="bl">북눅 (책장 디오라마)<small>book nook</small></div><div class="bt"><span class="bf" style="width:36%;background:#D23B3B"></span></div><div class="bv">35.8%</div></div><div class="bar"><div class="bl">그린치 SVG<small>grinch svg</small></div><div class="bt"><span class="bf" style="width:35%;background:#D23B3B"></span></div><div class="bv">34.8%</div></div><div class="bar"><div class="bl">어드벤트 캘린더<small>advent calendar</small></div><div class="bt"><span class="bf" style="width:34%;background:#D23B3B"></span></div><div class="bv">33.7%</div></div><div class="bar"><div class="bl">크리스마스 트리 스커트<small>christmas tree skirt</small></div><div class="bt"><span class="bf" style="width:33%;background:#D23B3B"></span></div><div class="bv">33.3%</div></div><div class="bar"><div class="bl">할로윈 코스튬<small>halloween costume</small></div><div class="bt"><span class="bf" style="width:32%;background:#D23B3B"></span></div><div class="bv">31.6%</div></div></div><div class="lgd"><span><i style="background:#1E9E5A"></i>미국 50% 이상</span><span><i style="background:#D23B3B"></i>50% 미만 — 셀러 몰림 의심</span></div></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>한국어</th><th>미국</th><th>검색자 상위 국가</th></tr>
+<tr><td>simmer pot</td><td><b>시머 팟 (끓이는 방향제)</b></td><td><b>92.4%</b></td><td>미국 92.4 · 호주 7.6</td></tr>
+<tr><td>fireplace screen</td><td><b>벽난로 스크린</b></td><td><b>84.9%</b></td><td>미국 84.9 · 파키스탄 4.5 · 호주 1.8</td></tr>
+<tr><td>coraline</td><td><b>코랄라인</b></td><td><b>58.4%</b></td><td>미국 58.4 · 베트남 12.1 · 영국 5.8</td></tr>
+<tr><td>boo basket</td><td><b>부 바스켓 (할로윈 선물바구니)</b></td><td><b>51.8%</b></td><td>미국 51.8 · 영국 13.2 · 파키스탄 10.8</td></tr>
+<tr><td>spiderman costume</td><td><b>스파이더맨 코스튬</b></td><td><b>51.7%</b></td><td>미국 51.7 · 인도 10.9 · 영국 7.2</td></tr>
+<tr><td>elf on the shelf</td><td><b>엘프 온 더 셸프</b></td><td><b>50.6%</b></td><td>미국 50.6 · 영국 10.1 · 파키스탄 9.0</td></tr>
+<tr><td>squishy</td><td><b>스퀴시</b></td><td><b>50.4%</b></td><td>미국 50.4 · 프랑스 19.2 · 파키스탄 13.0</td></tr>
+<tr><td>arc raiders</td><td><b>아크 레이더스</b></td><td><b>42.7%</b></td><td>미국 42.7 · 영국 11.0 · 베트남 8.1</td></tr>
+<tr><td>kinusaiga pattern</td><td><b>키누사이가 패턴</b></td><td><b>41.7%</b></td><td>미국 41.7 · 파키스탄 30.9 · 영국 17.5</td></tr>
+<tr><td>ugly christmas sweater</td><td><b>어글리 크리스마스 스웨터</b></td><td><b>39.2%</b></td><td>베트남 44.6 · 미국 39.2 · 캐나다 3.0</td></tr>
+<tr><td>book nook</td><td><b>북눅 (책장 디오라마)</b></td><td><b>35.8%</b></td><td>미국 35.8 · 베트남 16.9 · 영국 13.1</td></tr>
+<tr><td>grinch svg</td><td><b>그린치 SVG</b></td><td><b>34.8%</b></td><td>파키스탄 47.3 · 미국 34.8 · 베트남 4.7</td></tr>
+<tr><td>advent calendar</td><td><b>어드벤트 캘린더</b></td><td><b>33.7%</b></td><td>미국 33.7 · 베트남 27.9 · 영국 13.1</td></tr>
+<tr><td>christmas tree skirt</td><td><b>크리스마스 트리 스커트</b></td><td><b>33.3%</b></td><td>미국 33.3 · 베트남 30.0 · 파키스탄 7.7</td></tr>
+<tr><td>halloween costume</td><td><b>할로윈 코스튬</b></td><td><b>31.6%</b></td><td>미국 31.6 · 베트남 30.5 · 파키스탄 17.1</td></tr>
+</table></div>
+<div class="rdnote">15개 중 <b>9개가 미국 50% 미만</b>입니다. 그중 상위 매출까지 죽어 있는 <b>그린치 SVG(파키스탄 47.3%) · 어글리 크리스마스 스웨터(베트남 44.6%) · 할로윈 코스튬(베트남 30.5%)</b>은 "미국 소비자 수요"가 아니라 "셀러 몰림"으로 읽어야 합니다. 반대로 미국 비중 1·2위인 <b>시머 팟(92.4%) · 벽난로 스크린(84.9%)</b>이 이번 주 추천 1·2위입니다.</div>
+<div class="btitle"><span class="bar"></span>③ 제품 — 성격별로 골고루</div>
+<div class="buck reveal"><b style="color:#D24A2E;font-size:17px">🔥 지금 제일 잘 팔리는 것</b><br>매출 최상위입니다. 나이는 상관없습니다 — 49일짜리 신규와 1,059일짜리 고참이 나란히 있습니다.</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/5365060/r/il/e27307/8330565046/il_570xN.8330565046_g5ax.jpg" alt="Halloween Simmer Pot Kit | Witch Kitchen Botanical Blend" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">할로윈 시머 팟 키트 · 마녀의 부엌</div><div class="en">Halloween Simmer Pot Kit | Witch Kitchen Botanical Blend</div><div class="meta"><span class="price">$9.00</span><span class="rev">판매 1,060건 · 매출 $9,540</span><span class="tr new">등록 49일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4548677151" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Halloween%20Simmer%20Pot%20Kit%20|%20Witch%20Kitchen" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">1059일</span><img src="https://i.etsystatic.com/45747808/r/il/670c0c/7160769226/il_570xN.7160769226_9vkp.jpg" alt="Crisp Fall Morning | Natural Simmer Pot | Mess-Free Reusable" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">가을 시머 팟 · 재사용형</div><div class="en">Crisp Fall Morning | Natural Simmer Pot | Mess-Free Reusable</div><div class="meta"><span class="price">$12.00</span><span class="rev">판매 569건 · 매출 $6,828</span><span class="tr up">등록 1059일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1597595045" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Crisp%20Fall%20Morning%20|%20Natural%20Simmer%20Pot%20" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">250일</span><img src="https://i.etsystatic.com/55006330/r/il/31812d/7859774980/il_570xN.7859774980_39wn.jpg" alt="Arc Raiders Leaper Light up Figurine - 3D Printed" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">아크 레이더스 리퍼 3D 피규어</div><div class="en">Arc Raiders Leaper Light up Figurine - 3D Printed</div><div class="meta"><span class="price">$30.99</span><span class="rev">판매 871건 · 매출 $26,992</span><span class="tr up">등록 250일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4440729007" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Arc%20Raiders%20Leaper%20Light%20up%20Figurine%20-%203" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+</div>
+<div class="buck reveal"><b style="color:#C98A12;font-size:17px">💚 오랫동안 사랑받는 것</b><br>등록 500일이 넘었는데 아직도 팝니다. 시즌을 타지 않는 물건이 무엇인지 보여줍니다.</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">3513일</span><img src="https://i.etsystatic.com/5477637/r/il/fa0d2a/1138113746/il_570xN.1138113746_tnmw.jpg" alt="Cabbage Patch Hat 11 colors, Newborn to Adult wig Pigtails" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">양배추인형 모자 · 11색</div><div class="en">Cabbage Patch Hat 11 colors, Newborn to Adult wig Pigtails</div><div class="meta"><span class="price">$18.00</span><span class="rev">판매 5,050건 · 매출 $90,900</span><span class="tr up">등록 3513일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/510540335" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Cabbage%20Patch%20Hat%2011%20colors" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">3258일</span><img src="https://i.etsystatic.com/12003198/r/il/893e6a/1328297652/il_570xN.1328297652_pryh.jpg" alt="Crochet Christmas Tree Skirt - Crochet Tree Skirt PDF" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">크로셰 트리 스커트 도안</div><div class="en">Crochet Christmas Tree Skirt - Crochet Tree Skirt PDF</div><div class="meta"><span class="price">$4.99</span><span class="rev">판매 2,857건 · 매출 $14,256</span><span class="tr up">등록 3258일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/552220286" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Crochet%20Christmas%20Tree%20Skirt%20-%20Crochet%20T" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">5858일</span><img src="https://i.etsystatic.com/5477701/r/il/16a742/172310297/il_570xN.172310297.jpg" alt="Whimsical Cat Fireplace Screen" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">고양이 벽난로 스크린 (수제)</div><div class="en">Whimsical Cat Fireplace Screen</div><div class="meta"><span class="price">$85.00</span><span class="rev">판매 89건 · 매출 $7,565</span><span class="tr up">등록 5858일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/55680118" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Whimsical%20Cat%20Fireplace%20Screen" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+</div>
+<div class="buck reveal"><b style="color:#9B2D6B;font-size:17px">🎃 지금 시즌이라 뜨는 것</b><br>할로윈 D-40 구간에서 실제로 돈이 되고 있는 형태입니다.</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">777일</span><img src="https://i.etsystatic.com/34523747/r/il/3e08f6/7281494502/il_570xN.7281494502_qrc5.jpg" alt="Hygge Fall Gift Box, Boo Basket, Spooky Season Gift" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">부 바스켓 · 아늑한 가을 선물세트</div><div class="en">Hygge Fall Gift Box, Boo Basket, Spooky Season Gift</div><div class="meta"><span class="price">$73.96</span><span class="rev">판매 617건 · 매출 $45,633</span><span class="tr up">등록 777일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1773419695" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Hygge%20Fall%20Gift%20Box" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">375일</span><img src="https://i.etsystatic.com/18623087/r/il/aea83f/8560761855/il_570xN.8560761855_2py2.jpg" alt="Halloween Flashlight: Boo Baskets, Non Candy Favors" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">할로윈 손전등 · 사탕 대신 주는 답례품</div><div class="en">Halloween Flashlight: Boo Baskets, Non Candy Favors</div><div class="meta"><span class="price">$0.80</span><span class="rev">판매 1,656건 · 매출 $1,325</span><span class="tr dn">등록 375일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4367057799" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Halloween%20Flashlight:%20Boo%20Baskets" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">2708일</span><img src="https://i.etsystatic.com/18173219/r/il/cd1ad8/5033553326/il_570xN.5033553326_a84p.jpg" alt="1980s TINA TURNER Premium Halloween Costume Theatrical Wig" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">1980년대 티나 터너 코스튬 가발</div><div class="en">1980s TINA TURNER Premium Halloween Costume Theatrical Wig</div><div class="meta"><span class="price">$45.00</span><span class="rev">판매 309건 · 매출 $13,905</span><span class="tr up">등록 2708일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/686851932" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=1980s%20TINA%20TURNER%20Premium%20Halloween%20Cost" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+</div>
+<div class="buck reveal"><b style="color:#E08A1E;font-size:17px">🆕 새로 나온 것</b><br>등록 90일 이하인데 이미 상위에 있습니다. <b>여기가 지금 비어 있는 자리</b>입니다.</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/62527597/r/il/000bb7/8335231169/il_570xN.8335231169_erkz.jpg" alt="Fall Kinusaiga Pattern Bundle, 5 Autumn Fabric Art Templates" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">가을 키누사이가 패턴 번들 5종</div><div class="en">Fall Kinusaiga Pattern Bundle, 5 Autumn Fabric Art Templates</div><div class="meta"><span class="price">$9.99</span><span class="rev">판매 75건 · 매출 $749</span><span class="tr new">등록 60일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4542559005" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Fall%20Kinusaiga%20Pattern%20Bundle" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/21548350/r/il/f663c2/8562035185/il_570xN.8562035185_h8o6.jpg" alt="120+ Kinusaiga Patterns Bundle, Whole Shop No-Sew Fabric Art PDF" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">키누사이가 패턴 120종 번들</div><div class="en">120+ Kinusaiga Patterns Bundle, Whole Shop No-Sew Fabric Art PDF</div><div class="meta"><span class="price">$21.00</span><span class="rev">판매 30건 · 매출 $630</span><span class="tr new">등록 37일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4555907141" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=120+%20Kinusaiga%20Patterns%20Bundle" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">242일</span><img src="https://i.etsystatic.com/63037239/r/il/e59950/7627349064/il_570xN.7627349064_gcr8.jpg" alt="Black Spiderman costume | Adult Superhero Cosplay Jumpsuit" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">검정 스파이더맨 코스튬 점프수트</div><div class="en">Black Spiderman costume | Adult Superhero Cosplay Jumpsuit</div><div class="meta"><span class="price">$169.00</span><span class="rev">판매 61건 · 매출 $10,309</span><span class="tr up">등록 242일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4445091098" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Black%20Spiderman%20costume%20|%20Adult%20Superher" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/60971754/r/il/29633a/8305594764/il_570xN.8305594764_6joz.jpg" alt="Coraline Phone Case, Stained Glass Cute Halloween Phone Case" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">코랄라인 스테인드글라스 폰케이스</div><div class="en">Coraline Phone Case, Stained Glass Cute Halloween Phone Case</div><div class="meta"><span class="price">$24.00</span><span class="rev">판매 31건 · 매출 $744</span><span class="tr new">등록 55일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4545170526" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Coraline%20Phone%20Case" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/16892760/r/il/dc08fc/8541699471/il_570xN.8541699471_skr8.jpg" alt="Elf Dumpling Squishy Prop | Elf Prop" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">엘프 만두 스퀴시 소품</div><div class="en">Elf Dumpling Squishy Prop | Elf Prop</div><div class="meta"><span class="price">$7.50</span><span class="rev">판매 75건 · 매출 $563</span><span class="tr new">등록 15일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4569848062" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Elf%20Dumpling%20Squishy%20Prop%20|%20Elf%20Prop" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+</div>
+<div class="buck reveal"><b style="color:#D23B3B;font-size:17px">⚠️ 들어가면 안 되는 것</b><br>상위에 있는데도 매출이 없거나, 1위조차 두 자릿수 달러입니다.</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">1014일</span><img src="https://i.etsystatic.com/19844967/r/il/2bb0e1/5588985480/il_570xN.5588985480_skoo.jpg" alt="Layered grinch face christmas svg bundle" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">그린치 얼굴 SVG 번들 (상위 1위인데 $19.50)</div><div class="en">Layered grinch face christmas svg bundle</div><div class="meta"><span class="price">$3.90</span><span class="rev">판매 5건 · 매출 $20</span><span class="tr dn">등록 1014일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1619093884" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Layered%20grinch%20face%20christmas%20svg%20bundle" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">1402일</span><img src="https://i.etsystatic.com/29655501/r/il/8a969c/4408105233/il_570xN.4408105233_jtoq.jpg" alt="Christmas Couple Svg | Ugly Christmas Sweaters Svg" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">어글리 크리스마스 스웨터 SVG (상위 1위 $149.70)</div><div class="en">Christmas Couple Svg | Ugly Christmas Sweaters Svg</div><div class="meta"><span class="price">$3.74</span><span class="rev">판매 40건 · 매출 $150</span><span class="tr dn">등록 1402일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1336114192" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Christmas%20Couple%20Svg%20|%20Ugly%20Christmas%20Sw" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">1784일</span><img src="https://i.etsystatic.com/25303161/c/882/882/70/70/il/233921/7137761292/il_570xN.7137761292_lnjf.jpg" alt="Deer Fireplace Screen - Rustic Mesh 3 Panel - Personalized" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">사슴 벽난로 스크린 (고단가 추정 주의)</div><div class="en">Deer Fireplace Screen - Rustic Mesh 3 Panel - Personalized</div><div class="meta"><span class="price">$399.99</span><span class="rev">판매 51건 · 매출 $20,399</span><span class="tr up">등록 1784일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1098796382" target="_blank" rel="noopener nofollow">상품 보기</a><a class="lk" href="https://www.etsy.com/search?q=Deer%20Fireplace%20Screen%20-%20Rustic%20Mesh%203%20Pa" target="_blank" rel="noopener nofollow">Etsy에서 검색</a></div></div></div>
+</div>
+<div class="cards">
+<div class="card reveal"><div class="thumb"><span class="fire">177일</span><img src="https://i.etsystatic.com/53096746/r/il/2882b5/7899863811/il_570xN.7899863811_ko51.jpg" alt="ACOTAR Bookshelf Tavern Sign | Book Nook Decor" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">ACOTAR 책장 선술집 간판 (북눅)</div><div class="en">ACOTAR Bookshelf Tavern Sign | Book Nook Decor</div><div class="meta"><span class="price">$26.60</span><span class="rev">판매 175건 · 매출 $4,655</span><span class="tr dn">등록 177일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4479073235" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">384일</span><img src="https://i.etsystatic.com/57648933/r/il/ed141a/7161815062/il_570xN.7161815062_rd75.jpg" alt="DIY Owl Bookstore Book Nook Kit: 3D Wooden Puzzle with LED" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">부엉이 책방 북눅 키트 (LED)</div><div class="en">DIY Owl Bookstore Book Nook Kit: 3D Wooden Puzzle with LED</div><div class="meta"><span class="price">$32.47</span><span class="rev">판매 104건 · 매출 $3,377</span><span class="tr dn">등록 384일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4362137294" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">845일</span><img src="https://i.etsystatic.com/52390218/c/1632/1632/383/383/il/7b488a/7981048599/il_570xN.7981048599_4fjh.jpg" alt="Coraline Starbucks 24oz Cold Cup" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">코랄라인 스타벅스 24oz 콜드컵</div><div class="en">Coraline Starbucks 24oz Cold Cup</div><div class="meta"><span class="price">$13.00</span><span class="rev">판매 129건 · 매출 $1,677</span><span class="tr dn">등록 845일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/1724573450" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">176일</span><img src="https://i.etsystatic.com/62970505/r/il/5774c6/7956637150/il_570xN.7956637150_9ztm.jpg" alt="Arc Raiders Leaper Figure, Magnetic Floating Collectible" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">아크 레이더스 자기부상 피규어</div><div class="en">Arc Raiders Leaper Figure, Magnetic Floating Collectible</div><div class="meta"><span class="price">$25.33</span><span class="rev">판매 1,040건 · 매출 $26,342</span><span class="tr up">등록 176일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4479276950" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">394일</span><img src="https://i.etsystatic.com/61467883/r/il/02f7dd/8381268252/il_570xN.8381268252_fw25.jpg" alt="Fall Simmer Pot Kits | Natural Dried Fruit &amp; Spice Scents" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">가을 시머 팟 키트 · 말린 과일·향신료</div><div class="en">Fall Simmer Pot Kits | Natural Dried Fruit &amp; Spice Scents</div><div class="meta"><span class="price">$7.50</span><span class="rev">판매 595건 · 매출 $4,463</span><span class="tr dn">등록 394일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4356826474" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">314일</span><img src="https://i.etsystatic.com/61822651/r/il/eb91b9/7430877147/il_570xN.7430877147_hz0h.jpg" alt="WW2 Tank Advent Calendar 2025: 2D Acrylic Christmas Gift" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">2차대전 전차 어드벤트 캘린더 2025</div><div class="en">WW2 Tank Advent Calendar 2025: 2D Acrylic Christmas Gift</div><div class="meta"><span class="price">$28.00</span><span class="rev">판매 39건 · 매출 $1,092</span><span class="tr dn">등록 314일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4402798394" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/66739388/c/2240/3000/0/0/il/cd619b/8401412254/il_570xN.8401412254_srya.jpg" alt="Comfort Colors Coraline Vintage Shirt, Retro Movie Graphic Tee" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">코랄라인 빈티지 티셔츠</div><div class="en">Comfort Colors Coraline Vintage Shirt, Retro Movie Graphic Tee</div><div class="meta"><span class="price">$27.99</span><span class="rev">판매 21건 · 매출 $588</span><span class="tr new">등록 33일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4558492970" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+<div class="card reveal"><div class="thumb"><span class="fire">90일 이하</span><img src="https://i.etsystatic.com/19779901/r/il/c866c9/8471256212/il_570xN.8471256212_qpiy.jpg" alt="100 Kinusaiga Patterns Bundle, No Sew Fabric Art" referrerpolicy="no-referrer" loading="lazy" onerror="this.style.display=&quot;none&quot;;this.parentNode.insertAdjacentHTML(&quot;beforeend&quot;,&quot;<div style=\&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:38px\&quot;>\ud83d\udecd\ufe0f</div>&quot;)"></div><div class="body"><div class="nm">키누사이가 패턴 100종 번들</div><div class="en">100 Kinusaiga Patterns Bundle, No Sew Fabric Art</div><div class="meta"><span class="price">$17.00</span><span class="rev">판매 37건 · 매출 $629</span><span class="tr new">등록 19일</span></div><div class="links"><a class="lk" href="https://www.etsy.com/listing/4567280985" target="_blank" rel="noopener nofollow">상품 보기</a></div></div></div>
+</div>
+<div class="note reveal"><b>포맷별 가격대 (이번 주 실측).</b> 디지털 패턴 PDF <b>$3.90~21.00</b> · 시머 팟 키트 <b>$7.50~12.00</b> · 할로윈 답례품 <b>$0.80</b> · 코스튬 실물 <b>$25~169</b> · 벽난로 스크린 <b>$85~452</b>. → <b>디지털 패턴은 볼륨으로 벌고, 실물 시즌 상품은 단가로 법니다.</b> 1,060건 팔린 시머 팟 키트($9)와 51건 팔린 벽난로 스크린($399.99)이 비슷한 크기의 매출을 냅니다.</div>
+<div class="btitle"><span class="bar"></span>④ 저경쟁 롱테일 — 색으로 구분</div>
+<div class="chipsw">
+<a class="kw g" href="https://www.etsy.com/search?q=simmer%20pot" target="_blank" rel="noopener nofollow">시머 팟<span class="gl">simmer pot</span><small>검색 203 · 경쟁 2,935 · 난이도 58 · 미국 92.4%</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=fireplace%20screen" target="_blank" rel="noopener nofollow">벽난로 스크린<span class="gl">fireplace screen</span><small>검색 1,170 · 경쟁 1,405 · 난이도 4</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=kinusaiga%20pattern" target="_blank" rel="noopener nofollow">키누사이가 패턴<span class="gl">kinusaiga pattern</span><small>검색 298 · 경쟁 228 · 난이도 1</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=spiderman%20costume" target="_blank" rel="noopener nofollow">스파이더맨 코스튬<span class="gl">spiderman costume</span><small>검색 2,621 · 경쟁 2,927 · 난이도 2</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=gambeson" target="_blank" rel="noopener nofollow">갬비슨<span class="gl">gambeson</span><small>검색 2,157 · 경쟁 747 · 난이도 1</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=amigurumi%20hedgehog%20pattern" target="_blank" rel="noopener nofollow">아미구루미 고슴도치 도안<span class="gl">amigurumi hedgehog pattern</span><small>검색 2,062 · 경쟁 696 · 난이도 1</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=alpine%20crochet%20blanket%20pattern" target="_blank" rel="noopener nofollow">알파인 크로셰 담요 도안<span class="gl">alpine crochet blanket pattern</span><small>검색 469 · 경쟁 70 · 난이도 1</small></a>
+<a class="kw g" href="https://www.etsy.com/search?q=incense%20holder" target="_blank" rel="noopener nofollow">인센스 홀더<span class="gl">incense holder</span><small>검색 8,111 · 경쟁 13,853 · 난이도 12</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=advent%20calendar" target="_blank" rel="noopener nofollow">어드벤트 캘린더<span class="gl">advent calendar</span><small>검색 8,347 · 경쟁 33,071 · 난이도 30</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=elf%20on%20the%20shelf%20accessories" target="_blank" rel="noopener nofollow">엘프 온 더 셸프 소품<span class="gl">elf on the shelf accessories</span><small>검색 200 · 경쟁 2,248 · 난이도 53</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=letter%20from%20santa" target="_blank" rel="noopener nofollow">산타의 편지<span class="gl">letter from santa</span><small>검색 696 · 경쟁 8,692 · 난이도 55</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=nativity%20set" target="_blank" rel="noopener nofollow">성탄 구유 세트<span class="gl">nativity set</span><small>검색 1,158 · 경쟁 21,388 · 난이도 63</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=gingerbread%20svg" target="_blank" rel="noopener nofollow">진저브레드 SVG<span class="gl">gingerbread svg</span><small>검색 483 · 경쟁 12,536 · 난이도 71</small></a>
+<a class="kw y" href="https://www.etsy.com/search?q=snowman%20svg" target="_blank" rel="noopener nofollow">눈사람 SVG<span class="gl">snowman svg</span><small>검색 504 · 경쟁 18,331 · 난이도 78</small></a>
+<a class="kw r" href="https://www.etsy.com/search?q=grinch%20svg" target="_blank" rel="noopener nofollow">그린치 SVG<span class="gl">grinch svg</span><small>난이도 27인데 상위 합계 $26 · $0 8개</small></a>
+<a class="kw r" href="https://www.etsy.com/search?q=ugly%20christmas%20sweater" target="_blank" rel="noopener nofollow">어글리 크리스마스 스웨터<span class="gl">ugly christmas sweater</span><small>구글 165,000인데 상위 합계 $398</small></a>
+<a class="kw r" href="https://www.etsy.com/search?q=halloween%20nail%20decals" target="_blank" rel="noopener nofollow">할로윈 네일 데칼<span class="gl">halloween nail decals</span><small>핀 저장 +100%인데 Etsy 검색 20 미만</small></a>
+<a class="kw r" href="https://www.etsy.com/search?q=christmas%20sublimation" target="_blank" rel="noopener nofollow">크리스마스 승화 파일<span class="gl">christmas sublimation</span><small>검색 244 · 경쟁 484,058 · 난이도 100</small></a>
+</div>
+<div class="rdnote">초록 = 경쟁이 얇고 매출도 확인된 자리 · 노랑 = 문은 열렸으나 시장이 작거나 미검증 · 빨강 = 숫자만 좋고 실제로는 돈이 안 되는 곳.</div>
+<div class="btitle"><span class="bar"></span>⑤ 대량 키워드 160개 (8배치 전체)</div>
+<div class="chartbox reveal"><div class="ct">Etsy 난이도 구간별 분포 (160개)</div><div class="cs">난이도 100이 <b>47개(29.4%)</b>입니다. 90 이상까지 합치면 64개(40.0%) — 조회한 키워드의 5분의 2는 새로 들어갈 자리가 없습니다.</div><div class="bars">
+<div class="bar"><div class="bl">난이도 0~10<small>22개</small></div><div class="bt"><span class="bf" style="width:47%;background:#1E9E5A"></span></div><div class="bv">22개 · 13.8%</div></div><div class="bar"><div class="bl">난이도 11~30<small>16개</small></div><div class="bt"><span class="bf" style="width:34%;background:#5BAE7B"></span></div><div class="bv">16개 · 10.0%</div></div><div class="bar"><div class="bl">난이도 31~60<small>25개</small></div><div class="bt"><span class="bf" style="width:53%;background:#C98A12"></span></div><div class="bv">25개 · 15.6%</div></div><div class="bar"><div class="bl">난이도 61~89<small>31개</small></div><div class="bt"><span class="bf" style="width:66%;background:#E08A1E"></span></div><div class="bv">31개 · 19.4%</div></div><div class="bar"><div class="bl">난이도 90~99<small>17개</small></div><div class="bt"><span class="bf" style="width:36%;background:#D24A2E"></span></div><div class="bv">17개 · 10.6%</div></div><div class="bar"><div class="bl">난이도 100<small>47개</small></div><div class="bt"><span class="bf" style="width:100%;background:#8E1B1B"></span></div><div class="bv">47개 · 29.4%</div></div><div class="bar"><div class="bl">난이도 미확인<small>2개</small></div><div class="bt"><span class="bf" style="width:4%;background:#9A8C7C"></span></div><div class="bv">2개 · 1.2%</div></div></div></div>
+<div class="buck reveal"><b style="font-size:16px">배치 1 · 이번 주 급상승 · 시즌</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=grinch" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">grinch</a></td><td>8,231</td><td>128,612</td><td>60</td><td>550,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=spiderman%20costume" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">spiderman costume</a></td><td>2,621</td><td>2,927</td><td><b>2</b></td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20costume" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween costume</a></td><td>6,251</td><td>431,184</td><td>92</td><td>2,240,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fall%20door%20mat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall door mat</a></td><td>531</td><td>10,416</td><td>65</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=snowy%20owl" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snowy owl</a></td><td>218</td><td>7,320</td><td>76</td><td>74,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=coasters" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">coasters</a></td><td>14,918</td><td>406,218</td><td>72</td><td>74,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=snoopy" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snoopy</a></td><td>14,470</td><td>29,354</td><td><b>15</b></td><td>550,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=cat%20painting" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cat painting</a></td><td>986</td><td>82,825</td><td>96</td><td>6,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tibetan%20mastiff" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tibetan mastiff</a></td><td>1,494</td><td>1,011</td><td><b>1</b></td><td>246,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=pallas%20cat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">pallas cat</a></td><td>430</td><td>214</td><td><b>1</b></td><td>135,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=wedding%20website" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wedding website</a></td><td>4,388</td><td>8,785</td><td><b>15</b></td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=funny%20shirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">funny shirt</a></td><td>11,573</td><td>3,262,906</td><td>100</td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=stl%20files" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">stl files</a></td><td>5,954</td><td>179,604</td><td>74</td><td>18,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=anime" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">anime</a></td><td>17,286</td><td>989,806</td><td>88</td><td>1,220,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=rug" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">rug</a></td><td>18,033</td><td>561,180</td><td>75</td><td>301,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=moonstone%20stud%20earrings" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">moonstone stud earrings</a></td><td>727</td><td>2,981</td><td>31</td><td>480</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=black%20maine%20coon" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">black maine coon</a></td><td>210</td><td>1,334</td><td>40</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tortie%20cat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tortie cat</a></td><td>272</td><td>1,496</td><td>37</td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=kinusaiga%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">kinusaiga pattern</a></td><td>298</td><td>228</td><td><b>1</b></td><td>2,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20decor" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween decor</a></td><td>14,033</td><td>1,317,768</td><td>99</td><td>135,000</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 2 · 디지털 광의어 (닫힌 곳 확인)</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=svg%20bundle" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">svg bundle</a></td><td>6,214</td><td>497,456</td><td>95</td><td>170</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=digital%20planner" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">digital planner</a></td><td>19,025</td><td>627,282</td><td>76</td><td>12,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=notion%20template" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">notion template</a></td><td>7,601</td><td>16,948</td><td><b>17</b></td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=crochet%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet pattern</a></td><td>31,977</td><td>600,496</td><td>64</td><td>90,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=printable%20wall%20art" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">printable wall art</a></td><td>8,523</td><td>2,760,314</td><td>100</td><td>1,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=budget%20spreadsheet" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">budget spreadsheet</a></td><td>4,258</td><td>22,571</td><td>36</td><td>18,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=digital%20download" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">digital download</a></td><td>16,843</td><td>8,592,990</td><td>100</td><td>3,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=clipart" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">clipart</a></td><td>7,594</td><td>2,133,738</td><td>100</td><td>110,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=sublimation%20designs" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">sublimation designs</a></td><td>3,627</td><td>643,994</td><td>100</td><td>1,300</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=png%20bundle" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">png bundle</a></td><td>2,511</td><td>769,535</td><td>100</td><td>50</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=coloring%20pages" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">coloring pages</a></td><td>6,227</td><td>382,616</td><td>89</td><td>550,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=wedding%20invitation%20template" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wedding invitation template</a></td><td>3,030</td><td>409,726</td><td>100</td><td>33,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=canva%20template" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">canva template</a></td><td>7,354</td><td>1,135,712</td><td>100</td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=resume%20template" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">resume template</a></td><td>6,982</td><td>32,833</td><td>34</td><td>450,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=sewing%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">sewing pattern</a></td><td>8,932</td><td>2,557,962</td><td>100</td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=knitting%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">knitting pattern</a></td><td>2,443</td><td>342,247</td><td>100</td><td>18,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=amigurumi%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">amigurumi pattern</a></td><td>7,382</td><td>197,609</td><td>71</td><td>5,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=cross%20stitch%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cross stitch pattern</a></td><td>6,173</td><td>630,186</td><td>100</td><td>33,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=planner%20stickers" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">planner stickers</a></td><td>5,435</td><td>454,246</td><td>96</td><td>6,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=machine%20embroidery%20designs" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">machine embroidery designs</a></td><td>1,789</td><td>174,071</td><td>99</td><td>22,200</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 3 · 시즌 디자인 파일 (svg · png · 승화)</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween svg</a></td><td>2,133</td><td>232,058</td><td>100</td><td>1,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20png" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween png</a></td><td>7,957</td><td>489,210</td><td>89</td><td>3,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fall%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall svg</a></td><td>1,717</td><td>122,702</td><td>93</td><td>590</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=thanksgiving%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">thanksgiving svg</a></td><td>865</td><td>64,395</td><td>94</td><td>720</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas svg</a></td><td>5,189</td><td>412,076</td><td>95</td><td>2,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20png" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas png</a></td><td>11,108</td><td>842,655</td><td>94</td><td>5,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=grinch%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">grinch svg</a></td><td>3,039</td><td>10,610</td><td><b>27</b></td><td>2,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=ornament%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ornament svg</a></td><td>675</td><td>90,344</td><td>100</td><td>480</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=pumpkin%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">pumpkin svg</a></td><td>578</td><td>85,492</td><td>100</td><td>1,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=ghost%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ghost svg</a></td><td>448</td><td>60,969</td><td>100</td><td>1,300</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=thanksgiving%20png" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">thanksgiving png</a></td><td>3,082</td><td>137,031</td><td>82</td><td>1,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=santa%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">santa svg</a></td><td>567</td><td>78,864</td><td>100</td><td>590</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20shirt%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas shirt svg</a></td><td>543</td><td>117,623</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=retro%20christmas%20png" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">retro christmas png</a></td><td>453</td><td>141,439</td><td>100</td><td>20</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=teacher%20christmas%20shirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">teacher christmas shirt</a></td><td>467</td><td>108,592</td><td>100</td><td>720</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20sublimation" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas sublimation</a></td><td>244</td><td>484,058</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=gingerbread%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">gingerbread svg</a></td><td>483</td><td>12,536</td><td>71</td><td>480</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=snowman%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snowman svg</a></td><td>504</td><td>18,331</td><td>78</td><td>720</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=reindeer%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">reindeer svg</a></td><td>57</td><td>21,933</td><td>100</td><td>390</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=winter%20svg" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">winter svg</a></td><td>206</td><td>74,934</td><td>100</td><td>140</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 4 · 다음 시즌 선점 (물건 이름)</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=advent%20calendar" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">advent calendar</a></td><td>8,347</td><td>33,071</td><td><b>30</b></td><td>201,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20tree%20skirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas tree skirt</a></td><td>1,747</td><td>18,056</td><td>51</td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=elf%20on%20the%20shelf%20accessories" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">elf on the shelf accessories</a></td><td>200</td><td>2,248</td><td>53</td><td>3,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=nativity%20set" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">nativity set</a></td><td>1,158</td><td>21,388</td><td>63</td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=letter%20from%20santa" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">letter from santa</a></td><td>696</td><td>8,692</td><td>55</td><td>6,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=snow%20globe" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">snow globe</a></td><td>966</td><td>39,973</td><td>81</td><td>60,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=nutcracker" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">nutcracker</a></td><td>2,890</td><td>101,565</td><td>77</td><td>201,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tree%20topper" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tree topper</a></td><td>1,220</td><td>35,259</td><td>73</td><td>33,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=stocking%20holder" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">stocking holder</a></td><td>707</td><td>38,016</td><td>87</td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20card%20holder" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas card holder</a></td><td>552</td><td>41,652</td><td>94</td><td>4,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20village" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas village</a></td><td>1,224</td><td>77,006</td><td>90</td><td>60,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=family%20christmas%20pajamas" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">family christmas pajamas</a></td><td>1,718</td><td>66,473</td><td>79</td><td>74,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fall%20wreath" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall wreath</a></td><td>6,632</td><td>103,095</td><td>60</td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=thanksgiving%20table%20runner" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">thanksgiving table runner</a></td><td>306</td><td>9,378</td><td>74</td><td>2,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=hanukkah%20menorah" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">hanukkah menorah</a></td><td>97</td><td>19,732</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=gingerbread%20house%20kit" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">gingerbread house kit</a></td><td>27</td><td>2,790</td><td>100</td><td>60,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20countdown" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas countdown</a></td><td>410</td><td>22,413</td><td>87</td><td>74,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=personalized%20ornament" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">personalized ornament</a></td><td>1,782</td><td>916,563</td><td>100</td><td>2,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=baby%20first%20christmas%20ornament" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">baby first christmas ornament</a></td><td>960</td><td>119,346</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=ugly%20christmas%20sweater" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ugly christmas sweater</a></td><td>5,761</td><td>133,362</td><td>68</td><td>165,000</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 5 · 팬덤 · IP · 수집품 (저작권 주의)</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=arc%20raiders" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">arc raiders</a></td><td>8,123</td><td>548</td><td><b>1</b></td><td>1,000,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=pokemon%20binder" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">pokemon binder</a></td><td>4,095</td><td>2,918</td><td><b>1</b></td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=labubu" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">labubu</a></td><td>15,048</td><td>10,612</td><td><b>1</b></td><td>2,240,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=smiski" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">smiski</a></td><td>6,168</td><td>2,321</td><td><b>1</b></td><td>246,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=sonny%20angel" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">sonny angel</a></td><td>2,048</td><td>5,493</td><td><b>21</b></td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=jellycat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">jellycat</a></td><td>3,732</td><td>2,615</td><td><b>1</b></td><td>2,740,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=coraline" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">coraline</a></td><td>4,079</td><td>4,386</td><td><b>2</b></td><td>823,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=kpop%20demon%20hunters" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">kpop demon hunters</a></td><td>26,982</td><td>45,218</td><td><b>11</b></td><td>3,350,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=stardew%20valley" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">stardew valley</a></td><td>11,991</td><td>8,197</td><td><b>1</b></td><td>368,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=zelda" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">zelda</a></td><td>10,166</td><td>27,144</td><td><b>21</b></td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=warhammer" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">warhammer</a></td><td>13,212</td><td>65,941</td><td>35</td><td>368,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=mtg%20deck%20box" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">mtg deck box</a></td><td>4,964</td><td>5,507</td><td><b>2</b></td><td>8,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=lorcana" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">lorcana</a></td><td>2,280</td><td>5,449</td><td><b>19</b></td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=gundam" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">gundam</a></td><td>5,618</td><td>4,393</td><td><b>1</b></td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=hollow%20knight%20silksong" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">hollow knight silksong</a></td><td>671</td><td>2,121</td><td><b>25</b></td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=one%20piece%20card" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">one piece card</a></td><td>43</td><td>4,032</td><td>99</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tcg%20playmat" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tcg playmat</a></td><td>1,255</td><td>9,599</td><td>44</td><td>2,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=funko%20pop%20display" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">funko pop display</a></td><td>218</td><td>1,881</td><td>47</td><td>1,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=wednesday%20addams" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wednesday addams</a></td><td>613</td><td>6,653</td><td>52</td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=stranger%20things" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">stranger things</a></td><td>8,768</td><td>8,805</td><td><b>1</b></td><td>3,350,000</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 6 · 공예 · 핸드메이드 롱테일</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=mushroom%20lamp" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">mushroom lamp</a></td><td>1,103</td><td>3,052</td><td><b>22</b></td><td>14,800</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=incense%20holder" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">incense holder</a></td><td>8,111</td><td>13,853</td><td><b>12</b></td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=amigurumi%20hedgehog%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">amigurumi hedgehog pattern</a></td><td>2,062</td><td>696</td><td><b>1</b></td><td>20</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=alpine%20crochet%20blanket%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">alpine crochet blanket pattern</a></td><td>469</td><td>70</td><td><b>1</b></td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=crochet%20dinosaur%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet dinosaur pattern</a></td><td>1,223</td><td>4,821</td><td><b>30</b></td><td>4,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=skadis" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">skadis</a></td><td>2,732</td><td>1,515</td><td><b>1</b></td><td>14,800</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=gambeson" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">gambeson</a></td><td>2,157</td><td>747</td><td><b>1</b></td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tarot%20deck" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">tarot deck</a></td><td>10,476</td><td>29,067</td><td><b>22</b></td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=dnd%20dice" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">dnd dice</a></td><td>15,971</td><td>50,862</td><td><b>25</b></td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=crochet%20blanket%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet blanket pattern</a></td><td>12,869</td><td>59,733</td><td>33</td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=boo%20basket" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">boo basket</a></td><td>3,480</td><td>16,100</td><td>33</td><td>74,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=macrame%20plant%20hanger" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">macrame plant hanger</a></td><td>1,892</td><td>9,408</td><td>35</td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=resin%20tray" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">resin tray</a></td><td>716</td><td>30,939</td><td>82</td><td>1,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=crochet%20pumpkin%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet pumpkin pattern</a></td><td>462</td><td>10,703</td><td>68</td><td>6,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=felted%20wool%20ornament" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">felted wool ornament</a></td><td>미확인</td><td>10,629</td><td>—</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=beeswax%20candle" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">beeswax candle</a></td><td>53</td><td>23,104</td><td>100</td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=punch%20needle%20kit" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">punch needle kit</a></td><td>1,262</td><td>8,595</td><td>42</td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=crochet%20snowman%20pattern" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">crochet snowman pattern</a></td><td>210</td><td>5,838</td><td>72</td><td>1,900</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=wood%20burning%20art" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">wood burning art</a></td><td>20 미만</td><td>7,849</td><td>100</td><td>4,400</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=pottery%20mug" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">pottery mug</a></td><td>2,373</td><td>55,051</td><td>68</td><td>2,900</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 7 · 핀터레스트 신호 검증 · 크로스</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=squishy" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">squishy</a></td><td>4,840</td><td>11,262</td><td><b>18</b></td><td>301,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=needoh" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">needoh</a></td><td>2,023</td><td>20 미만</td><td><b>1</b></td><td>4,090,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=heated%20blanket" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">heated blanket</a></td><td>316</td><td>102</td><td><b>1</b></td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20nail%20decals" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween nail decals</a></td><td>20 미만</td><td>2,691</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=press%20on%20nails%20halloween" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">press on nails halloween</a></td><td>20 미만</td><td>13,300</td><td>100</td><td>3,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=simmer%20pot" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">simmer pot</a></td><td>203</td><td>2,935</td><td>58</td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=blazer" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">blazer</a></td><td>567</td><td>83,155</td><td>100</td><td>368,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=cast%20iron%20skillet" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cast iron skillet</a></td><td>29</td><td>5,968</td><td>100</td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fall%20wreath%20front%20door" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall wreath front door</a></td><td>138</td><td>29,694</td><td>100</td><td>12,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=cowboy%20boots" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">cowboy boots</a></td><td>193</td><td>69,000</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=bridal%20hair%20comb" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">bridal hair comb</a></td><td>103</td><td>15,316</td><td>100</td><td>1,300</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=rhinestone%20nails" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">rhinestone nails</a></td><td>20 미만</td><td>21,903</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=deer%20print" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">deer print</a></td><td>43</td><td>61,762</td><td>100</td><td>6,600</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=headband" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">headband</a></td><td>4,291</td><td>309,405</td><td>93</td><td>90,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=dot%20day%20shirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">dot day shirt</a></td><td>221</td><td>4,392</td><td>65</td><td>1,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=costume%20accessories" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">costume accessories</a></td><td>20 미만</td><td>257,038</td><td>100</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fireplace%20screen" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fireplace screen</a></td><td>1,170</td><td>1,405</td><td><b>4</b></td><td>40,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=face%20cream" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">face cream</a></td><td>20 미만</td><td>9,353</td><td>100</td><td>14,800</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=thanksgiving%20shirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">thanksgiving shirt</a></td><td>3,257</td><td>335,218</td><td>100</td><td>8,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20pajamas" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas pajamas</a></td><td>1,829</td><td>114,111</td><td>90</td><td>110,000</td></tr>
+</table></div>
+<div class="buck reveal"><b style="font-size:16px">배치 8 · 추적 중인 머리 키워드 재측정</b></div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>Etsy 검색</th><th>경쟁 리스팅</th><th>Etsy 난이도</th><th>구글 검색량(추정)</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20shirt" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween shirt</a></td><td>13,272</td><td>1,246,507</td><td>99</td><td>18,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween</a></td><td>45,078</td><td>4,118,370</td><td>98</td><td>1,000,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas</a></td><td>41,113</td><td>12,791,009</td><td>100</td><td>1,000,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=ornament" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">ornament</a></td><td>15,603</td><td>2,530,778</td><td>100</td><td>110,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fall" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fall</a></td><td>10,090</td><td>3,016,904</td><td>100</td><td>301,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fursuit" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">fursuit</a></td><td>23,979</td><td>15,205</td><td><b>1</b></td><td>49,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=lighting" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">lighting</a></td><td>13,387</td><td>283,005</td><td>66</td><td>90,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=curtains" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">curtains</a></td><td>14,697</td><td>142,667</td><td>49</td><td>201,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=leather%20jacket" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">leather jacket</a></td><td>8,244</td><td>55,189</td><td>41</td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=custom%20phone%20case" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">custom phone case</a></td><td>4,178</td><td>80,052</td><td>64</td><td>33,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=iphone%2017%20case" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">iphone 17 case</a></td><td>7,673</td><td>76,490</td><td>50</td><td>165,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=iphone%2017%20accessories" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">iphone 17 accessories</a></td><td>20 미만</td><td>-</td><td>—</td><td>-</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20decorations" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas decorations</a></td><td>4,814</td><td>832,752</td><td>100</td><td>135,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20crafts" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas crafts</a></td><td>1,356</td><td>1,925,321</td><td>100</td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=thanksgiving%20decor" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">thanksgiving decor</a></td><td>1,133</td><td>455,327</td><td>100</td><td>27,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=elf%20on%20the%20shelf" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">elf on the shelf</a></td><td>1,957</td><td>16,705</td><td>47</td><td>246,000</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=book%20nook" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">book nook</a></td><td>6,687</td><td>48,228</td><td>43</td><td>90,500</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=digital%20products" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">digital products</a></td><td>31,237</td><td>156,839</td><td>35</td><td>8,100</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=halloween%20decorations%20outdoor" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">halloween decorations outdoor</a></td><td>913</td><td>41,909</td><td>83</td><td>22,200</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=christmas%20ornaments%20handmade" target="_blank" rel="noopener nofollow" style="color:#0B6E99;font-weight:800;text-decoration:none">christmas ornaments handmade</a></td><td>789</td><td>146,702</td><td>100</td><td>5,400</td></tr>
+</table></div>
+<div class="note reveal"><b>월간 인기 검색어는 이번 주 한 문단으로 줄입니다.</b> 9월분이 아직 집계 전이라 화면이 비어 있고, 8월분은 지난주와 완전히 같습니다 — shirt 82,890 · halloween 74,880 · wall art 64,870 · tshirt 56,860 · stickers 52,860 · digital products 50,850 · earrings 43,850 · ring 39,840 · crochet pattern 37,840 · home decor 37,840. 10개 중 시즌성이 있는 건 2위 halloween 하나뿐이고 나머지 9개는 1년 내내 같은 순서입니다. <b>이 표로는 주간 판단을 하지 않습니다.</b></div>
+</section>
+<section class="partPin">
+<h2 class="parttitle">PART C · 핀터레스트 — 방향과 타이밍</h2>
+<div class="psrc"><span class="pl">이 데이터는 어디서 보나</span><a href="https://trends.pinterest.com/" target="_blank" rel="noopener nofollow">Pinterest Trends</a><span class="pw">시즌 신호등 · 쇼핑 클릭 순위 · 저장 급등 · 검색어 급등 · 에디터 픽</span></div>
+<p class="partlead">핀터레스트는 <b>절대 검색량을 주지 않습니다.</b> 변화율과 시즌 상태만 줍니다. 절대값은 구글 검색량과 Etsy 검색량으로 교차했습니다.</p>
+<div class="btitle"><span class="bar"></span>① 시즌 신호등</div>
+<div class="cal">
+<div class="calc reveal"><div class="lt">🔴</div><h5>할로윈</h5><p><b>Rising</b><br>D-40 · 10/31 토요일</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>추수감사절</h5><p><b>Approaching</b><br>D-66 · 11/26</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>하누카</h5><p><b>Approaching</b><br>D-74 · 12/4</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>크리스마스</h5><p><b>Approaching</b><br>D-95 · 12/25</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>새해 전야</h5><p><b>Approaching</b><br>날짜 미정</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>밸런타인데이</h5><p><b>Approaching</b><br>날짜 미정</p></div>
+<div class="calc reveal"><div class="lt">🟡</div><h5>성 패트릭 데이</h5><p><b>Approaching</b><br>날짜 미정</p></div>
+</div>
+<div class="rdnote"><b>지난주와 완전히 동일합니다</b> — 이 지표는 주 단위로 갱신되지 않습니다. 다만 "Rising이 할로윈 하나뿐"이라는 사실을 Etsy 신호(할로윈 상위 10개에 신규 0개)와 합치면 <b>수요는 지금 정점인데 공급 자리는 닫혔다</b>는 뜻이 됩니다.</div>
+<div class="btitle"><span class="bar"></span>② 쇼핑 클릭이 튄 카테고리 TOP 10</div>
+<div class="chartbox reveal"><div class="ct">핀터레스트 아웃바운드 클릭 · 전월 대비</div><div class="cs">여기서 튄다고 Etsy에서 팔리는 건 아닙니다. 오른쪽 표에서 구글 · Etsy로 교차한 결과를 보세요.</div><div class="bars">
+<div class="bar"><div class="bl">코스튬 · 부자재<small>Costumes & accessories</small></div><div class="bt"><span class="bf" style="width:100%;background:#5B4B9E"></span></div><div class="bv">+92%</div></div><div class="bar"><div class="bl">조리기구<small>Cookware</small></div><div class="bt"><span class="bf" style="width:99%;background:#5B4B9E"></span></div><div class="bv">+91%</div></div><div class="bar"><div class="bl">시즌 · 홀리데이 장식<small>Seasonal & holiday decorations</small></div><div class="bt"><span class="bf" style="width:91%;background:#5B4B9E"></span></div><div class="bv">+84%</div></div><div class="bar"><div class="bl">페이스 로션 · 크림<small>Face lotions & creams</small></div><div class="bt"><span class="bf" style="width:85%;background:#5B4B9E"></span></div><div class="bv">+78%</div></div><div class="bar"><div class="bl">벽난로 · 장작난로 용품<small>Fireplace & wood stove accessories</small></div><div class="bt"><span class="bf" style="width:61%;background:#5B4B9E"></span></div><div class="bv">+56%</div></div><div class="bar"><div class="bl">리스 · 갈란드<small>Wreaths & garlands</small></div><div class="bt"><span class="bf" style="width:60%;background:#5B4B9E"></span></div><div class="bv">+55%</div></div><div class="bar"><div class="bl">부츠<small>Boots</small></div><div class="bt"><span class="bf" style="width:57%;background:#8B7FBE"></span></div><div class="bv">+52%</div></div><div class="bar"><div class="bl">머리빗 · 헤어콤<small>Hair combs</small></div><div class="bt"><span class="bf" style="width:50%;background:#8B7FBE"></span></div><div class="bv">+46%</div></div><div class="bar"><div class="bl">코트 · 재킷<small>Coats & jackets</small></div><div class="bt"><span class="bf" style="width:48%;background:#8B7FBE"></span></div><div class="bv">+44%</div></div><div class="bar"><div class="bl">아우터<small>Outerwear</small></div><div class="bt"><span class="bf" style="width:48%;background:#8B7FBE"></span></div><div class="bv">+44%</div></div></div></div>
+<div class="tblwrap"><table class="tbl"><tr><th>#</th><th>카테고리</th><th>%MoM</th><th>구글에서 확인됐나</th><th>Etsy에서 확인됐나</th></tr>
+<tr><td>1</td><td><b>코스튬 · 부자재</b></td><td>+92%</td><td>halloween costume 2,240,000 ✅</td><td>난이도 92 · 신규 0개 ⚠️</td></tr>
+<tr><td>2</td><td><b>조리기구</b></td><td>+91%</td><td>cast iron skillet 165,000 ✅</td><td>Etsy 검색 29 · 난이도 100 ❌</td></tr>
+<tr><td>3</td><td><b>시즌 · 홀리데이 장식</b></td><td>+84%</td><td>halloween decorations outdoor 22,200 ✅</td><td>난이도 83 ⚠️</td></tr>
+<tr><td>4</td><td><b>페이스 로션 · 크림</b></td><td>+78%</td><td>face cream 14,800 ✅</td><td>Etsy 검색 20 미만 ❌</td></tr>
+<tr><td>5</td><td><b>벽난로 · 장작난로 용품</b></td><td>+56%</td><td>fireplace screen 40,500 ✅</td><td><b>난이도 4 · 미국 84.9% ✅</b></td></tr>
+<tr><td>6</td><td><b>리스 · 갈란드</b></td><td>+55%</td><td>fall wreath 27,100 ✅</td><td>난이도 60 ⚠️</td></tr>
+<tr><td>7</td><td><b>부츠</b></td><td>+52%</td><td>cowboy boots 확인 안 됨</td><td>Etsy 검색 193 · 난이도 100 ❌</td></tr>
+<tr><td>8</td><td><b>머리빗 · 헤어콤</b></td><td>+46%</td><td>bridal hair comb 1,300</td><td>Etsy 검색 103 · 난이도 100 ❌</td></tr>
+<tr><td>9</td><td><b>코트 · 재킷</b></td><td>+44%</td><td>leather jacket 165,000 ✅</td><td>난이도 41 ⚠️</td></tr>
+<tr><td>10</td><td><b>아우터</b></td><td>+44%</td><td>blazer 368,000 ✅</td><td>Etsy 검색 567 · 난이도 100 ❌</td></tr>
+</table></div>
+<div class="warn reveal"><b>핀터레스트에서 튄 10개 중 Etsy에서 자리가 확인된 건 벽난로 용품 하나뿐입니다.</b> 조리기구(91%) · 페이스 크림(78%) · 부츠(52%) · 헤어콤(46%) · 아우터(44%)는 구글 수요는 있는데 Etsy가 아닙니다. 이건 "트렌드가 가짜"라는 뜻이 아니라 <b>"팔 채널이 Etsy가 아니다"</b>라는 뜻입니다 — 블로그 · 제휴로 가야 하는 항목들입니다.</div>
+<div class="btitle"><span class="bar"></span>③ 저장이 급등한 것 — 구글 검색량으로 거르기</div>
+<div class="tblwrap"><table class="tbl"><tr><th>#</th><th>트렌드</th><th>한국어</th><th>%MoM</th><th>절대 검색량으로 거른 결과</th></tr>
+<tr><td>1</td><td>Halloween-themed nail designs</td><td><b>할로윈 네일 디자인</b></td><td>+100%</td><td><b>press on nails halloween 3,600 · halloween nail decals 확인 안 됨 → 🔴 핀에서만 도는 트렌드</b></td></tr>
+<tr><td>2</td><td>Halloween DIY Decorations and Activities</td><td><b>할로윈 DIY 장식 · 활동</b></td><td>+80%</td><td>halloween decorations outdoor 22,200 → 🟡 실체 있음</td></tr>
+<tr><td>3</td><td>Halloween Party and Home Decorating Ideas</td><td><b>할로윈 파티 · 홈데코</b></td><td>+50%</td><td>halloween decor 135,000 → 🟢 실체 있음</td></tr>
+<tr><td>4</td><td>Simmer Pot Recipes</td><td><b>시머 팟 레시피</b></td><td>+50%</td><td><b>simmer pot 27,100 + Etsy 상위 합계 $26,727 → 🟢🟢 이번 주 1위</b></td></tr>
+<tr><td>5</td><td>Casual Blazer Outfits</td><td><b>캐주얼 블레이저 코디</b></td><td>+40%</td><td>blazer 368,000인데 Etsy 검색 567 · 난이도 100 → 🔴 채널 불일치</td></tr>
+</table></div>
+<div class="warn reveal"><b>3주 연속 같은 교훈입니다.</b> 핀터레스트 %만 보고 들어가면 안 됩니다. 지난주 브로우 메이크업(핀 +157% ↔ 구글 1,000), 그 전주 블러셔(핀 +969% ↔ 구글 400)에 이어 이번 주는 <b>할로윈 네일(핀 +100% ↔ Etsy 검색 20 미만)</b>이 같은 함정입니다.</div>
+<div class="btitle"><span class="bar"></span>④ 검색어 급등 · 에디터 픽</div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>한국어</th><th>주간</th><th>월간</th><th>연간</th><th>Etsy에 있나</th></tr>
+<tr><td>dot day shirt</td><td><b>도트데이 티셔츠</b></td><td>+400%</td><td>10,000%+</td><td>1,500%</td><td>검색 221 · 경쟁 4,392 · 난이도 65 · 구글 1,000 → 유일하게 잡힘</td></tr>
+<tr><td>absurd pose</td><td><b>엉뚱한 포즈</b></td><td>+40%</td><td>10,000%+</td><td>10,000%+</td><td>Etsy 상품 아님</td></tr>
+<tr><td>minimuse</td><td><b>미니뮤즈</b></td><td>+400%</td><td>10,000%+</td><td>10,000%+</td><td>Etsy 상품 아님</td></tr>
+<tr><td>minimise gacha</td><td><b>미니마이즈 가챠</b></td><td>+600%</td><td>10,000%+</td><td>10,000%+</td><td>Etsy 상품 아님</td></tr>
+<tr><td>minimise</td><td><b>미니마이즈</b></td><td>+20%</td><td>10,000%+</td><td>10,000%+</td><td>Etsy 상품 아님</td></tr>
+</table></div>
+<div class="tblwrap" style="margin-top:14px"><table class="tbl"><tr><th>에디터 픽</th><th>한국어</th><th>대표 키워드</th><th>Etsy 판정</th></tr>
+<tr><td>90s Hair Accessories</td><td><b>90년대 헤어 액세서리</b></td><td>hairstyles headband +30%</td><td>headband Etsy 검색 4,291인데 난이도 93 ❌</td></tr>
+<tr><td>High-Protein Bowls</td><td><b>고단백 볼</b></td><td>sweet potato and ground beef recipes +20%</td><td>Etsy 상품 아님 ❌</td></tr>
+<tr><td>Bedazzled Everything</td><td><b>전부 다 반짝이게</b></td><td>bedazzled nails +200%</td><td>rhinestone nails 검색 20 미만 · 난이도 100 ❌</td></tr>
+<tr><td>Fawn Season Aesthetic</td><td><b>아기사슴 시즌 무드</b></td><td>deer nails +60%</td><td>deer print 검색 43 · 난이도 100 ❌</td></tr>
+</table></div>
+<div class="rdnote">검색어 급등 5개 중 Etsy에서 잡히는 건 <b>도트데이 티셔츠 하나</b>, 에디터 픽 4개 중에는 <b>하나도 없습니다.</b> 이 두 화면은 Etsy가 아니라 <b>숏폼 · 블로그 소재</b>로 쓰는 자리입니다.</div>
+</section>
+<section class="partSum">
+<h2 class="parttitle">PART D · 종합 판정 — 어디에 뭘 팔까</h2>
+<div class="psrc"><span class="pl">이 데이터는 어디서 보나</span><a href="https://trends.pinterest.com/" target="_blank" rel="noopener nofollow">Pinterest Trends</a><span class="pw">방향 · 타이밍</span><a href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener nofollow">eRank</a><span class="pw">Etsy 경쟁 · 난이도 · 상위 매출 · 구글 검색량(추정)</span></div>
+<p class="partlead">이번 주는 드랍쉬핑 · eBay 데이터가 없어 <b>3중 교차</b>(핀터레스트 × Etsy × 구글)로 판정했습니다. 4중 교차는 두 도구 로그인이 복구되는 다음 주에 복원합니다.</p>
+<div class="btitle"><span class="bar"></span>① 3중 교차 판정</div>
+<div class="verd">
+<div class="vc reveal"><span class="tag">지금 당장</span><h4>시머 팟</h4><div class="en">Simmer pot</div><div class="nums"><span>핀 저장 +50%</span><span>구글 27,100</span><span>Etsy 상위 $26,727</span><span>미국 92.4%</span><span>90일 이하 5개</span></div><p>세 소스가 동시에 가리키는 유일한 항목입니다. 49일짜리 할로윈 시머 팟 키트가 1,060건 · $9,540을 팔았습니다. 실물 소모품이라 재구매가 붙습니다.</p></div>
+<div class="vc reveal"><span class="tag">지금 당장</span><h4>벽난로 · 난로 용품</h4><div class="en">Fireplace accessories</div><div class="nums"><span>핀 클릭 +56%</span><span>구글 40,500</span><span>난이도 4</span><span>미국 84.9%</span></div><p>경쟁 리스팅이 1,405개뿐이고 미국 비중이 84.9%입니다. 다만 상위 매출이 $399짜리 한 개에 쏠려 있어 <b>고단가 추정치는 그대로 믿지 마세요</b> — 소품(장작 거치대 · 성냥통)으로 우회하는 편이 안전합니다.</p></div>
+<div class="vc reveal"><span class="tag">선점</span><h4>키누사이가 패턴</h4><div class="en">Kinusaiga pattern</div><div class="nums"><span>경쟁 228</span><span>난이도 1</span><span>상위 10개 전부 60일 이하</span><span>구글 2,900</span></div><p>상위 10개 나이가 0·0·0·3·5·7·19·24·37·60일입니다. 90일 넘는 리스팅이 하나도 없습니다. 시장은 작지만 <b>문이 완전히 열려 있는 유일한 자리</b>입니다.</p></div>
+<div class="vc reveal"><span class="tag">롱테일로 우회</span><h4>스파이더맨 코스튬</h4><div class="en">Spiderman costume</div><div class="nums"><span>경쟁 2,927</span><span>난이도 2</span><span>90일 이하 7개</span><span>미국 51.7%</span></div><p>할로윈 코스튬 본체는 신규 0개로 닫혔는데, 캐릭터 이름을 붙인 한 칸 옆은 3일·5일·11일짜리가 상위에 있습니다. <b>⚠️ 캐릭터 저작권·상표를 반드시 확인하세요.</b></p></div>
+<div class="vc reveal"><span class="tag">선점</span><h4>코랄라인</h4><div class="en">Coraline</div><div class="nums"><span>90일 이하 7개</span><span>미국 58.4%</span><span>구글 823,000</span><span>상위 $3,982</span></div><p>팬덤 인쇄물·굿즈는 신규가 계속 상위에 들어옵니다. 33일짜리 티셔츠가 $588, 55일짜리 폰케이스가 $744. <b>⚠️ 저작권 영역입니다.</b></p></div>
+<div class="vc reveal"><span class="tag">판정 뒤집힘</span><h4>북눅</h4><div class="en">Book nook</div><div class="nums"><span>$0 7개 → 3개</span><span>최고 $140 → $4,655</span><span>합계 $9,956</span></div><p>8월 31일에 "추천 금지"로 적었던 곳입니다. 두 달 만에 시장이 생겼습니다. 177일짜리 책장 간판이 175건 · $4,655. <b>이전 판정을 철회합니다.</b></p></div>
+<div class="vc reveal"><span class="tag">지켜보기</span><h4>아크 레이더스</h4><div class="en">Arc Raiders</div><div class="nums"><span>상위 $54,675 (+97.0%)</span><span>경쟁 548</span><span>90일 이하 0개</span></div><p>매출은 한 주 만에 두 배가 됐는데 게임 동시접속은 8월 대비 −15.4%입니다. 상위 10개가 전부 119~293일이라 <b>지금 새로 들어가 상위에 붙기는 어렵습니다.</b> 10월 대형 업데이트가 변수입니다.</p></div>
+<div class="vc reveal"><span class="tag">작지만 열림</span><h4>어드벤트 캘린더</h4><div class="en">Advent calendar</div><div class="nums"><span>난이도 30</span><span>구글 201,000</span><span>상위 $1,838</span><span>90일 이하 6개</span></div><p>구글 수요는 20만인데 Etsy 상위 10개 합계가 $1,838뿐입니다. <b>문은 열렸으나 시장이 작습니다</b> — 저비용 인쇄물로 붙여볼 자리지 주력으로 삼을 곳은 아닙니다.</p></div>
+<div class="vc reveal"><span class="tag">올해는 늦음</span><h4>할로윈 코스튬</h4><div class="en">Halloween costume</div><div class="nums"><span>신규 0개</span><span>난이도 92</span><span>상위 Age 360~4,013일</span></div><p>지출은 사상 최대 $13.1B인데 Etsy 상위 10개에 90일 이하가 <b>하나도 없습니다.</b> 수요와 자리는 다릅니다. 올해는 롱테일로만 우회하세요.</p></div>
+<div class="vc reveal"><span class="tag">철수 구간</span><h4>스퀴시</h4><div class="en">Squishy</div><div class="nums"><span>$0 1 → 3개</span><span>합계 −47.4%</span><span>구글 301,000</span></div><p>지난주에 세운 기준("$0가 3개 이상이면 닫히기 시작")에 그대로 걸렸습니다. 구글 수요는 여전히 크지만 Etsy 상위에서 돈이 빠지고 있습니다.</p></div>
+<div class="vc reveal"><span class="tag">금지</span><h4>그린치 SVG</h4><div class="en">Grinch SVG</div><div class="nums"><span>난이도 27</span><span>상위 합계 $26</span><span>$0 8개</span><span>파키스탄 47.3%</span></div><p>이번 주 가장 강한 반례입니다. 난이도만 보면 가장 들어가기 쉬운 크리스마스 키워드인데 <b>상위 10개를 다 합쳐 $26</b>입니다. 1위조차 $19.50.</p></div>
+<div class="vc reveal"><span class="tag">금지</span><h4>어글리 크리스마스 스웨터</h4><div class="en">Ugly Christmas sweater</div><div class="nums"><span>구글 165,000</span><span>상위 합계 $398</span><span>$0 5개</span><span>베트남 44.6%</span></div><p>구글 수요는 16만인데 Etsy 상위 합계가 $398이고 검색자 1위가 베트남입니다. <b>구글이 크다고 Etsy에서 팔리는 게 아닙니다.</b></p></div>
+</div>
+<div class="btitle"><span class="bar"></span>② 구글 수요는 큰데 Etsy 경쟁이 얇은 키워드</div>
+<div class="tblwrap"><table class="tbl"><tr><th>키워드</th><th>한국어</th><th>구글 검색량(추정)</th><th>Etsy 경쟁 리스팅</th><th>Etsy 난이도</th><th>비고</th></tr>
+<tr><td><a href="https://www.etsy.com/search?q=needoh" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">needoh</a></td><td><b>니도(감각 완구 브랜드)</b></td><td>4,090,000</td><td>20 미만</td><td>1</td><td>⚠️ 상표 · 어린이제품 인증 필요</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=stranger%20things" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">stranger things</a></td><td><b>스트레인저 싱스</b></td><td>3,350,000</td><td>8,805</td><td>1</td><td>⚠️ 저작권</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=jellycat" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">jellycat</a></td><td><b>젤리캣</b></td><td>2,740,000</td><td>2,615</td><td>1</td><td>⚠️ 브랜드</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=labubu" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">labubu</a></td><td><b>라부부</b></td><td>2,240,000</td><td>10,612</td><td>1</td><td>⚠️ 브랜드</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=arc%20raiders" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">arc raiders</a></td><td><b>아크 레이더스</b></td><td>1,000,000</td><td><b>548</b></td><td>1</td><td>상위 매출 2배 · 신규 진입은 막힘</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=coraline" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">coraline</a></td><td><b>코랄라인</b></td><td>823,000</td><td>4,386</td><td>2</td><td>⚠️ 저작권 · 신규 7개 들어옴</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=smiski" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">smiski</a></td><td><b>스미스키</b></td><td>246,000</td><td>2,321</td><td>1</td><td>⚠️ 브랜드</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=tibetan%20mastiff" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">tibetan mastiff</a></td><td><b>티베탄 마스티프</b></td><td>246,000</td><td><b>1,011</b></td><td>1</td><td>저작권 무관 · 매출 미검증</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=pallas%20cat" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">pallas cat</a></td><td><b>마눌 고양이</b></td><td>135,000</td><td><b>214</b></td><td>1</td><td>저작권 무관 · 매출 미검증</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=fireplace%20screen" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">fireplace screen</a></td><td><b>벽난로 스크린</b></td><td>40,500</td><td><b>1,405</b></td><td>4</td><td><b>미국 84.9% · 매출 확인됨</b></td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=incense%20holder" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">incense holder</a></td><td><b>인센스 홀더</b></td><td>27,100</td><td>13,853</td><td>12</td><td>저작권 무관</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=gambeson" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">gambeson</a></td><td><b>갬비슨(중세 갑옷 속옷)</b></td><td>22,200</td><td><b>747</b></td><td>1</td><td>저작권 무관</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=skadis" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">skadis</a></td><td><b>스카디스(타공판 액세서리)</b></td><td>14,800</td><td>1,515</td><td>1</td><td>⚠️ 가구 브랜드 상표</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=mushroom%20lamp" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">mushroom lamp</a></td><td><b>버섯 램프</b></td><td>14,800</td><td>3,052</td><td>22</td><td>저작권 무관</td></tr>
+<tr><td><a href="https://www.etsy.com/search?q=grinch%20svg" target="_blank" rel="noopener nofollow" style="color:#C98A12;font-weight:800;text-decoration:none">grinch svg</a></td><td><b>그린치 SVG</b></td><td>2,900</td><td>10,610</td><td>27</td><td>⛔ 상위 합계 $26 — 숫자만 보면 속습니다</td></tr>
+</table></div>
+<div class="chartbox reveal"><div class="ct">같은 축척으로 본 구글 수요 vs Etsy 경쟁</div><div class="cs">위 6개는 구글 검색량, 아래 6개는 같은 키워드의 Etsy 경쟁 리스팅 수입니다. <b>축척이 같습니다</b> — 아래 막대가 거의 안 보이는 것이 요점입니다.</div>
+<div class="barsec">구글 월 검색량 (추정)</div><div class="bars">
+<div class="bar"><div class="bl">니도<small>needoh</small></div><div class="bt"><span class="bf" style="width:100%;background:#C98A12"></span></div><div class="bv">4,090,000</div></div><div class="bar"><div class="bl">스트레인저 싱스<small>stranger things</small></div><div class="bt"><span class="bf" style="width:82%;background:#C98A12"></span></div><div class="bv">3,350,000</div></div><div class="bar"><div class="bl">라부부<small>labubu</small></div><div class="bt"><span class="bf" style="width:55%;background:#C98A12"></span></div><div class="bv">2,240,000</div></div><div class="bar"><div class="bl">아크 레이더스<small>arc raiders</small></div><div class="bt"><span class="bf" style="width:24%;background:#C98A12"></span></div><div class="bv">1,000,000</div></div><div class="bar"><div class="bl">코랄라인<small>coraline</small></div><div class="bt"><span class="bf" style="width:20%;background:#C98A12"></span></div><div class="bv">823,000</div></div><div class="bar"><div class="bl">벽난로 스크린<small>fireplace screen</small></div><div class="bt"><span class="bf" style="width:4%;background:#C98A12"></span></div><div class="bv">40,500</div></div></div>
+<div class="barsec">같은 키워드의 Etsy 경쟁 리스팅 수 — 축척 동일</div><div class="bars">
+<div class="bar"><div class="bl">니도<small>needoh</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">20개 (20 미만)</div></div><div class="bar"><div class="bl">스트레인저 싱스<small>stranger things</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">8,805개</div></div><div class="bar"><div class="bl">라부부<small>labubu</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">10,612개</div></div><div class="bar"><div class="bl">아크 레이더스<small>arc raiders</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">548개</div></div><div class="bar"><div class="bl">코랄라인<small>coraline</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">4,386개</div></div><div class="bar"><div class="bl">벽난로 스크린<small>fireplace screen</small></div><div class="bt"><span class="bf" style="width:4%;background:#D24A2E"></span></div><div class="bv">1,405개</div></div></div><div class="lgd"><span><i style="background:#C98A12"></i>구글 월 검색량</span><span><i style="background:#D24A2E"></i>Etsy 경쟁 리스팅 수</span></div></div>
+<div class="warn reveal"><b>이 표의 사용법.</b> 난이도가 낮다는 건 "들어갈 수 있다"이지 "팔린다"가 아닙니다. 위 15개 중 <b>상위 리스팅 매출까지 확인한 건 아크 레이더스 · 벽난로 스크린 · 그린치 SVG 셋</b>이고, 그중 돈이 되는 건 앞의 둘입니다. <b>나머지 12개는 반드시 상위 리스팅을 먼저 보고 들어가세요.</b></div>
+<div class="btitle"><span class="bar"></span>③ ⚠️ 시들해지는 것 · 셀러 과포화 — "늦음"의 종류를 구분합니다</div>
+<div class="tblwrap"><table class="tbl"><tr><th>항목</th><th>늦음의 종류</th><th>숫자</th></tr>
+<tr><td><b>할로윈 코스튬</b></td><td>신규가 상위에 못 들어감</td><td>상위 10개 Age 360~4,013일 · 90일 이하 0개</td></tr>
+<tr><td><b>스퀴시</b></td><td>팔리던 게 안 팔리기 시작</td><td>매출 $0 1→3개 · 합계 $4,246→$2,232</td></tr>
+<tr><td><b>크리스마스 디자인 파일</b></td><td>난이도 100</td><td>20개 중 15개가 90 이상, 11개가 100</td></tr>
+<tr><td><b>그린치 SVG · 어글리 스웨터</b></td><td>국가 비중 착시(셀러 몰림)</td><td>파키스탄 47.3% · 베트남 44.6%가 검색자 1위</td></tr>
+<tr><td><b>블레이저 · 조리기구 · 부츠 · 헤어콤</b></td><td>채널 불일치</td><td>핀 +44~91% ↔ Etsy 난이도 100</td></tr>
+<tr><td><b>할로윈 네일</b></td><td>핀에서만 도는 트렌드</td><td>저장 +100% ↔ Etsy 검색 20 미만</td></tr>
+<tr><td><b>퍼수트 경쟁 15,205</b></td><td>지표가 안 움직임(월 갱신)</td><td>4주 연속 동일 — 주간 판단에 쓰면 안 됨</td></tr>
+<tr><td><b>급상승의 초저경쟁 4종</b></td><td>허수</td><td>경쟁 12 · 31 · 66 · 446인데 검색량 20 미만 또는 미확인</td></tr>
+</table></div>
+<div class="btitle"><span class="bar"></span>④ 이번 주 항목, AI로 만들 수 있나</div>
+<div class="tblwrap"><table class="tbl"><tr><th>항목</th><th>가능?</th><th>조건</th></tr>
+<tr><td><b>키누사이가 패턴 PDF</b></td><td>✅</td><td>도안 라인아트 + 색 배치표. 상위 리스팅이 전부 PDF 번들이라 형태가 이미 증명됐습니다</td></tr>
+<tr><td><b>어드벤트 캘린더 인쇄물</b></td><td>✅</td><td>24칸 템플릿 — 단 Etsy 상위 합계가 $1,838로 작습니다</td></tr>
+<tr><td><b>고양이 · 반려동물 아트</b></td><td>✅</td><td>급상승 상위 47개 중 고양이 9건. 단 cat painting 난이도 96, wall art 경쟁 1,524만이라 <b>품종 롱테일</b>로만</td></tr>
+<tr><td><b>시머 팟 레시피 카드(디지털)</b></td><td>⚠️</td><td>실물 키트가 본체입니다. 디지털만으로는 상위 10개에 하나도 없습니다</td></tr>
+<tr><td><b>크리스마스 SVG · PNG</b></td><td>⚠️</td><td>만들 수는 있으나 난이도 90~100이라 노출이 안 됩니다</td></tr>
+<tr><td><b>코랄라인 · 스파이더맨 굿즈</b></td><td>❌</td><td>저작권 · 상표. 팬아트 판매는 권리자 단속 대상입니다</td></tr>
+<tr><td><b>벽난로 스크린</b></td><td>❌</td><td>금속 가공 실물입니다</td></tr>
+</table></div>
+<div class="btitle"><span class="bar"></span>⑤ 용도별 한 줄 정리</div>
+<div class="sig3">
+<div class="s3 reveal" style="border-left-color:#1E9E5A"><div class="st" style="color:#1E9E5A">ETSY에 지금 올릴 것</div><p>시머 팟 키트 · 키누사이가 패턴 PDF · 벽난로 주변 소품</p></div>
+<div class="s3 reveal" style="border-left-color:#0B6E99"><div class="st" style="color:#0B6E99">블로그 + 제휴로 쓸 것</div><p>조리기구 · 부츠 · 아우터 · 페이스 크림 — 구글 수요는 크고 Etsy엔 자리가 없습니다</p></div>
+<div class="s3 reveal" style="border-left-color:#C98A12"><div class="st" style="color:#C98A12">지금 만들고 11월에 팔 것</div><p>어드벤트 캘린더 · 넛크래커 · 트리 스커트. 광의어 말고 <b>물건 이름</b>으로</p></div>
+<div class="s3 reveal" style="border-left-color:#9B2D6B"><div class="st" style="color:#9B2D6B">롱테일로 우회할 것</div><p>캐릭터 + 코스튬 조합(스파이더맨형). ⚠️ 저작권 확인 필수</p></div>
+<div class="s3 reveal" style="border-left-color:#5B4B9E"><div class="st" style="color:#5B4B9E">숏폼 소재로만 쓸 것</div><p>할로윈 네일 · 블레이저 코디 · 도트데이 티셔츠 — 판매 말고 조회수용</p></div>
+<div class="s3 reveal" style="border-left-color:#D23B3B"><div class="st" style="color:#D23B3B">금지</div><p>그린치 SVG · 어글리 크리스마스 스웨터 · 크리스마스 승화 파일 · 급상승 초저경쟁 4종</p></div>
+</div>
+</section>
+<section>
+<div class="btitle"><span class="bar" style="background:#D24A2E"></span>지금 트렌디해서 찍기 좋은 영상 아이디어</div>
+<div class="ideas">
+<div class="idea reveal"><div class="n bhs">01</div><h4>난이도 27인데 매출은 $26</h4><p>그린치 SVG 한 건으로 "키워드 난이도만 보면 안 되는 이유"를 끝까지 보여줍니다. 상위 10개 중 8개가 $0, 1위가 $19.50, 검색자 1위가 파키스탄 47.3% — <b>세 장면이면 끝납니다.</b></p></div>
+<div class="idea reveal"><div class="n bhs">02</div><h4>상위 10개가 전부 60일 이하인 카테고리</h4><p>키누사이가. 화면에 등록일 열(0 · 0 · 0 · 3 · 5 · 7 · 19 · 24 · 37 · 60일)을 그대로 띄우는 것만으로 설명이 됩니다. "이런 곳을 어떻게 찾는가"가 본편입니다.</p></div>
+<div class="idea reveal"><div class="n bhs">03</div><h4>할로윈은 D-40인데 이미 늦었다</h4><p>같은 시즌 같은 카테고리인데 정반대입니다. halloween costume 신규 <b>0개</b> ↔ spiderman costume 신규 <b>7개</b>. "한 칸 옆으로 가는 법"을 보여주세요.</p></div>
+</div>
+<div class="btitle"><span class="bar" style="background:#C98A12"></span>핵심 인사이트 5</div>
+<div class="ins">
+<div class="insc reveal"><div class="n bhs">INSIGHT 01</div><h4>이번 주 하나만 가져간다면 시머 팟입니다.</h4><p>세 소스가 동시에 가리킵니다 — 핀터레스트 저장 <b>+50%</b> · 구글 <b>27,100</b> · Etsy 상위 10개 합계 <b>$26,727</b>. 특히 <b>미국 검색자 비중 92.4%</b>는 올해 측정한 것 중 최고치입니다. 49일짜리 신규가 1,060건을 팔았습니다 — 자리가 아직 있다는 뜻입니다.</p></div>
+<div class="insc reveal"><div class="n bhs">INSIGHT 02</div><h4>난이도는 "들어갈 수 있나"만 말하고 "팔리나"는 말하지 않습니다.</h4><p>그린치 SVG 난이도 27 → 매출 <b>$26</b>. 벽난로 스크린 난이도 4 → 매출 <b>$30,265</b>. 같은 저난이도인데 <b>1,000배 차이</b>가 납니다. 난이도로 후보를 고른 뒤 반드시 상위 리스팅 매출을 확인해야 합니다. 이번 주 저난이도 15개 중 매출까지 확인한 건 3개뿐이고, 그중 2개만 돈이 됐습니다.</p></div>
+<div class="insc reveal"><div class="n bhs">INSIGHT 03</div><h4>검색자 국가 비중이 "수요"와 "셀러 몰림"을 가릅니다.</h4><p>15개 중 <b>9개가 미국 50% 미만</b>입니다. 그린치 SVG(파키스탄 47.3%)와 어글리 크리스마스 스웨터(베트남 44.6%)는 미국 소비자가 아니라 <b>해외 셀러가 치는 검색어</b>이고, 두 키워드 모두 상위 매출이 죽어 있는 것이 증거입니다. 반대로 미국 비중 1·2위인 시머 팟(92.4%) · 벽난로 스크린(84.9%)이 이번 주 추천 1·2위입니다.</p></div>
+<div class="insc reveal"><div class="n bhs">INSIGHT 04</div><h4>핀터레스트만 보면 3주 연속 같은 함정에 빠집니다.</h4><p>이번 주 쇼핑 클릭 TOP 10 중 <b>Etsy에서 자리가 확인된 건 1개(벽난로 용품)</b>뿐입니다. 저장 급등 1위 할로윈 네일(+100%)은 Etsy 검색 20 미만입니다. 핀터레스트는 <b>"무엇이 뜨는지"는 맞히지만 "어디서 파는지"는 못 맞힙니다.</b> 절대 검색량으로 반드시 거르세요.</p></div>
+<div class="insc reveal"><div class="n bhs">INSIGHT 05</div><h4>같은 시즌 안에서도 "물건"과 "디자인 파일"의 문이 다릅니다.</h4><p>크리스마스 물건(어드벤트 캘린더 난이도 30 · 트리 스커트 51 · 구유 세트 63)은 아직 열려 있고, 크리스마스 디자인 파일은 20개 중 <b>15개가 난이도 90 이상</b>입니다. 할로윈도 같습니다 — 코스튬 본체는 닫혔고(신규 0개) 캐릭터 롱테일은 열려 있습니다(신규 7개). <b>"시즌이 늦었나"가 아니라 "어느 쪽 문이 닫혔나"를 물어야 합니다.</b></p></div>
+</div>
+<div class="btitle"><span class="bar" style="background:#C98A12"></span>📅 다음 주에 확인할 것</div>
+<p class="partlead">이번 주 데이터가 <b>결론이 안 난 채 남은 것</b>들입니다. 각 항목에 현재 수치와 판정 기준을 함께 적었습니다.</p>
+<div class="verd">
+<div class="vc reveal"><span class="tag">가장 먼저</span><h4>두 도구 로그인이 복구되나</h4><div class="en">Two tools - session restored?</div><div class="nums"><span>드랍쉬핑 · eBay 세션 만료</span><span>지난주 이월 4건</span></div><p>크롬에서 두 사이트에 한 번 로그인하면 됩니다. 복구되면 할로윈 회전율 · 크리스마스 니치 · 전기담요 · 스퀴시 주문 <b>4건을 한꺼번에 판정</b>하고 4중 교차를 복원합니다.</p></div>
+<div class="vc reveal"><span class="tag">다음 주 바로</span><h4>시머 팟이 2주 연속 유지되나</h4><div class="en">Simmer pot - second week</div><div class="nums"><span>상위 $26,727</span><span>$0 2개</span><span>49일 신규 1,060건</span></div><p>같은 상위 10개 합계와 $0 개수를 다시 잽니다. <b>$0가 4개 이상이면 추천 철회</b>, 합계가 유지되면 "시즌 내내 간다"로 확정합니다.</p></div>
+<div class="vc reveal"><span class="tag">다음 주 바로</span><h4>키누사이가에 90일 넘는 리스팅이 생기나</h4><div class="en">Kinusaiga - does anyone hold the spot?</div><div class="nums"><span>상위 10개 Age 0~60일</span><span>합계 $2,129</span><span>$0 5개</span></div><p>90일 초과 리스팅이 상위에 남으면 "시장이 자리 잡는 중", 전부 다시 신규로 바뀌면 "아직 아무도 못 붙잡는 곳"입니다. <b>$0 5개 예외 판정이 맞았는지도 여기서 갈립니다.</b></p></div>
+<div class="vc reveal"><span class="tag">다음 주 바로</span><h4>스퀴시 $0가 4개를 넘나</h4><div class="en">Squishy - past the line?</div><div class="nums"><span>$0 3개</span><span>합계 $2,232 (−47.4%)</span></div><p>4개 이상 + 합계 추가 하락이면 <b>철수 확정</b>입니다. 반등하면 이번 주가 일시적 하락이었던 것으로 기록합니다.</p></div>
+<div class="vc reveal"><span class="tag">2주 내</span><h4>아크 레이더스 상위에 신규가 들어오나</h4><div class="en">Arc Raiders - any newcomer?</div><div class="nums"><span>매출 $54,675 (+97.0%)</span><span>90일 이하 0개</span><span>게임 동접 −15.4%</span></div><p>10월 대형 업데이트 전후로 다시 잽니다. 신규가 들어오면 "지금도 늦지 않음", 계속 0이면 "상위 고착"으로 확정합니다.</p></div>
+<div class="vc reveal"><span class="tag">2주 내</span><h4>북눅 회복이 진짜인가</h4><div class="en">Book nook - real recovery?</div><div class="nums"><span>$0 7개 → 3개</span><span>최고 $140 → $4,655</span><span>합계 $9,956</span></div><p>합계와 $0 개수를 다시 잽니다. 유지되면 8월 31일 "추천 금지" 판정을 <b>공식 철회</b>합니다.</p></div>
+<div class="vc reveal"><span class="tag">10월 첫 주</span><h4>크리스마스 물건이 실제 판매로 넘어가나</h4><div class="en">Christmas goods - real sales?</div><div class="nums"><span>어드벤트 캘린더 상위 $1,838</span><span>난이도 30</span><span>구글 201,000</span></div><p>상위 10개 합계가 <b>$5,000을 넘으면</b> "선점 구간 끝, 실판매 시작"입니다. 그대로면 Etsy에서는 크리스마스 물건이 안 팔린다는 뜻입니다.</p></div>
+<div class="vc reveal"><span class="tag">10월 중</span><h4>키누사이가 구글 검색량이 2,900을 넘나</h4><div class="en">Kinusaiga - Google demand</div><div class="nums"><span>구글 2,900</span><span>Etsy 검색 298</span></div><p>구글이 먼저 커지면 블로그 · 제휴로도 열립니다. 그대로면 <b>Etsy 전용 니치</b>로 확정하고 그에 맞게만 다룹니다.</p></div>
+</div>
+<div class="btitle"><span class="bar" style="background:#C98A12"></span>📊 데이터 출처</div>
+<div class="srcs">
+<a class="src reveal" href="https://erank.com?fpr=mikuk25" target="_blank" rel="noopener nofollow"><div class="sn">eRank</div><div class="sw">PART B · Etsy + 구글 검색량</div><div class="sd">일간 급상승 검색어 100개 · 대량 키워드 <b>160개(8배치)</b> · 상위 리스팅 <b>15개 키워드</b> · 검색자 국가 비중 <b>15개</b> · 월간 인기 검색어(8월분)</div></a>
+<a class="src reveal" href="https://trends.pinterest.com/" target="_blank" rel="noopener nofollow"><div class="sn">Pinterest Trends</div><div class="sw">PART C · 방향 · 타이밍</div><div class="sd">시즌 신호등 7개 · 쇼핑 클릭 TOP 10 · 저장 급등 5건 · 검색어 급등 5건 · 에디터 픽 4건. 절대 검색량은 제공하지 않습니다</div></a>
+<a class="src reveal" href="https://nrf.com/research-insights/holiday-data-and-trends" target="_blank" rel="noopener nofollow"><div class="sn">NRF · 공개 자료</div><div class="sw">PART A · 시즌 배경</div><div class="sd">할로윈 지출 $13.1B 전망(9월 2~9일 · 소비자 8,045명 조사) · 홀리데이 쇼핑 조기 시작 66% · 게임 동시접속 통계</div></a>
+<a class="src reveal" href="https://www.SellTheTrend.com/join/erinpak" target="_blank" rel="noopener nofollow"><div class="sn">Sell The Trend</div><div class="sw">드랍쉬핑</div><div class="sd">❌ <b>이번 주 세션 만료로 0건.</b> 평소에는 틱톡샵 베스트셀러 · AI 발굴 상품 · 신상 위너 · 소싱처 판매 증감 · 광고 크리에이티브를 제공합니다</div></a>
+<a class="src reveal" href="https://www.zikanalytics.com/r/ebay-killer" target="_blank" rel="noopener nofollow"><div class="sn">ZIK Analytics</div><div class="sw">eBay</div><div class="sd">❌ <b>이번 주 세션 만료로 0건.</b> 평소에는 30일 트렌딩 니치 · 시즌 이벤트 캘린더 · 7일 회전 상품 · 진입 검증을 제공합니다</div></a>
+</div>
+<div class="srcnote">각 도구 이름을 누르면 해당 사이트로 이동합니다. 일부 링크에는 추천 코드가 포함돼 있으며, 이용해도 추가 비용은 발생하지 않습니다. 리포트의 수치와 판단은 링크 여부와 무관하게 실제 조회 결과만을 따릅니다.</div>
+</section>
+<footer>
+<p>수치는 <b>2026년 9월 21일 실측</b>입니다. Etsy의 판매 건수와 매출은 <b>조회수 기반 추정치(Est.)</b>이며, 검색량 · 경쟁 리스팅 수 · 난이도 · 검색자 국가 비중은 <b>월 단위로 갱신</b>됩니다.</p>
+<p style="margin-top:8px">구글 검색량은 Etsy 키워드 도구가 제공하는 <b>추정치</b>이며, 본문의 난이도는 전부 <b>Etsy 난이도</b> 하나로 통일했습니다. 핀터레스트 수치는 절대 검색량이 아니라 <b>전월 대비 변화율</b>입니다.</p>
+<p style="margin-top:8px">이번 주는 드랍쉬핑 · eBay 데이터를 <b>로그인 세션 만료로 수집하지 못했습니다.</b> 지난주 숫자를 재활용하지 않았고, 해당 파트는 비워 두었습니다.</p>
+<p style="margin-top:12px">주간 미국 트렌드 리포트 &nbsp;·&nbsp; 생성일 2026년 9월 21일 (Week 39)</p>
+</footer>
+</div>
+<script>
+(function(){
+ var els=[].slice.call(document.querySelectorAll('.reveal'));
+ function showAll(){els.forEach(function(e){e.classList.add('on')});}
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+ } else { showAll(); }
+ setTimeout(showAll,2500);
+ window.addEventListener('load',function(){setTimeout(showAll,1200)});
+ var nums=[].slice.call(document.querySelectorAll('.kpi .num'));
+ nums.forEach(function(n){
+  var t=n.textContent, m=t.match(/^([^0-9]*)([0-9.,]+)(.*)$/);
+  if(!m) return; var pre=m[1], end=parseFloat(m[2].replace(/,/g,'')), suf=m[3];
+  if(!isFinite(end)) return;
+  var dec=(m[2].indexOf('.')>-1)?1:0, st=null, dur=900;
+  function step(ts){ if(!st) st=ts; var p=Math.min((ts-st)/dur,1);
+   var v=(end*p);
+   n.textContent=pre+(dec?v.toFixed(1):Math.round(v).toLocaleString('en-US'))+suf;
+   if(p<1) requestAnimationFrame(step); }
+  requestAnimationFrame(step);
+ });
+})();
+</script>
+</body>
+</html>
