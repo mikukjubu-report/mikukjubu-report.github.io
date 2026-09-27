@@ -1,2 +1,3 @@
+# member-only reports - crawling disallowed
 User-agent: *
 Disallow: /
